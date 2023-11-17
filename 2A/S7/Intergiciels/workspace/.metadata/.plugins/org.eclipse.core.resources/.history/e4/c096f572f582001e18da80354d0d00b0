@@ -1,0 +1,28 @@
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.*;
+
+public class CarnetImpl extends UnicastRemoteObject implements Carnet{
+
+	HashMap<String, RFiche> listRFiche;
+	String nom;
+	
+	public CarnetImpl(String name) throws RemoteException {
+		this.nom = name;
+		this.listRFiche = new HashMap<String, RFiche>();
+	}
+
+	@Override
+	public void Ajouter(SFiche sf) throws RemoteException {
+		// TODO Auto-generated method stub
+		this.listRFiche.put(sf.getNom(), new RFicheImpl(sf.getNom(), sf.getEmail()));
+		
+	}
+
+	@Override
+	public RFiche Consulter(String n, boolean forward) throws RemoteException {
+		// TODO Auto-generated method stub
+		return this.listRFiche.get(n);
+	}
+	
+}

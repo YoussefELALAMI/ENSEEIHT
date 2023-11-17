@@ -1,0 +1,25 @@
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
+
+public class SFicheImpl extends UnicastRemoteObject implements SFiche {
+
+	private String Nom;
+	private String Email;
+	SFicheImpl(String Nom, String Email) throws RemoteException {
+		this.Nom = Nom;
+		this.Email = Email;
+	}
+
+	@Override
+	public String getNom() {
+		
+		return null;
+	}
+
+	@Override
+	public String getEmail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

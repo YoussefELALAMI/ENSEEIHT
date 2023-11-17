@@ -1,0 +1,23 @@
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
+
+public class CarnetImpl extends UnicastRemoteObject implements Carnet{
+
+	SFiche server; 
+	public CarnetImpl() throws RemoteException {
+		
+	}
+
+	@Override
+	public void Ajouter(SFiche sf) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public RFiche Consulter(String n, boolean forward) throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
