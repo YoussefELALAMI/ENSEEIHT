@@ -1,0 +1,19 @@
+Algorithme de Newton :
+ Partant d'un point x0 que l'on choisit de préférence proche du zéro à trouver (en faisant des estimations grossières par exemple), on approche la fonction au premier ordre, autrement dit, on la considère asymptotiquement égale à sa tangente en ce point :
+				f ( x ) ≃ f ( x 0 ) + f ′ ( x 0 ) ( x − x 0 )
+
+ Partant de là, pour trouver un zéro de cette fonction d'approximation, il suffit de calculer l'intersection de la droite tangente avec l'axe des abscisses, c'est-à-dire résoudre l'équation affine :
+				0 = f ( x 0 ) + f ′ ( x 0 ) ( x − x 0 )
+				
+ On obtient alors un point x1 qui en général a de bonnes chances d'être plus proche du vrai zéro de f que le point x0 précédent. Par cette opération, on peut donc espérer améliorer l'approximation par itérations successives (voir projet-optinum/newton.gif) : on approche à nouveau la fonction par sa tangente en x 1 pour obtenir un nouveau point x2, etc.
+
+ Cette méthode requiert que la fonction possède une tangente en chacun des points de la suite que l'on construit par itération, par exemple il suffit que f soit dérivable.
+ 
+ Formellement, on part d'un point x0 appartenant à l'ensemble de définition de la fonction et on construit par récurrence la suite :
+
+	x_{k + 1} = x_k − f ( x_k ) / f ′ ( x_k ) 
+
+où f' désigne la dérivée de la fonction f. Le point x_{k+1} est bien la solution de l'équation affine :
+	f(x_k) + f'(x_k) (x-x_k) = 0
+
+Il se peut que la récurrence doive se terminer, si à l'étape k, xk n'appartient pas au domaine de définition ou si la dérivée f '(xk) est nulle ; dans ces cas, la méthode échoue. 
