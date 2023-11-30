@@ -1,5 +1,8 @@
 // Time-stamp: <06 jui 2023 11:58 Philippe Queinnec>
 
+/* VoieUniqueCondition.java et VoieUniqueAutomate.java : squelettes pour deux implantations de cette interface. */
+
+
 import CSP.*;
 
 /** Réalisation de la voie unique avec des canaux JCSP. */
@@ -44,9 +47,61 @@ public class VoieUniqueAutomate implements VoieUnique {
 
     /****************************************************************/
 
+    enum Etat { Libre, sensSN, sensNS};
     class Scheduler implements Runnable {
+        private Etat etat = Etat.Libre;
+        private int nbTrains;
         public void run() {
-            /* XXXX TODO XXXX */
+            var altLibre = new Alternative<>(entrerSN, entrerNS);
+            var altEnterSN = new Alternative<>(entrerSN, sortir);
+            var altEnterNS = new Alternative<>(entrerNS, sortir);
+            while (true) {
+                if (etat == Etat.Libre){
+                    switch (altLibre.select()) {
+                        case EntrerSN:
+                            entrerSN.read();
+                            etat = Etat.sensSN;
+                            nbTrains = 1;
+                            break;
+
+                        case EntrerNS:
+                            entrerNS.read();
+                            etat = Etat.sensNS;
+                            nbTrains = 1;
+                            break;
+                    }
+                }else if (etat == Etat.sensSN){
+                    switch (altEnterSN.select()) {
+                        case EntrerSN:
+                            entrerSN.read();
+                            nbTrains++;
+                            break;
+
+                        case Sortir:
+                            sortir.read();
+                            nbTrains--;
+                            if (nbTrains == 0) {
+                                etat = Etat.Libre;
+                            }
+                            break;
+                    }
+                } else {
+                    switch (altEnterNS.select()) {
+                        case EntrerNS:
+                            entrerNS.read();
+                            nbTrains++;
+                            break;
+
+                        case Sortir:
+                            sortir.read();
+                            nbTrains--;
+                            if (nbTrains == 0) {
+                                etat = Etat.Libre;
+                            }
+                            break;
+                    }
+                }
+            }
         }
     } // class Scheduler
 }

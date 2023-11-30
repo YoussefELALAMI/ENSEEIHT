@@ -1,5 +1,7 @@
 // Time-stamp: <02 mai 2013 14:09 queinnec@enseeiht.fr>
 
+/* Sens.java et Position.java : définition des constantes de sens et position d’un train. */
+
 /** Sens de circulation d'un train */
 public enum Sens {
 

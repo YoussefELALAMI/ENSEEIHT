@@ -1,5 +1,7 @@
 // Time-stamp: <02 mai 2013 14:13 queinnec@enseeiht.fr>
 
+/* VoieUnique.java : interface de la synchronisation entre trains. */
+
 /** Interface des implantations de la synchronisation.
  * Les trains sont supposés bien se comporter :
  *   { sens <- ...; entrer(sens); sortir(sens); }*

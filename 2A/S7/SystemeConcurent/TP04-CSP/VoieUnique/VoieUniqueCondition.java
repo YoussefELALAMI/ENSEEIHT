@@ -1,5 +1,7 @@
 // Time-stamp: <06 jui 2023 11:59 Philippe Queinnec>
 
+/* VoieUniqueCondition.java et VoieUniqueAutomate.java : squelettes pour deux implantations de cette interface. */
+
 import CSP.*;
 
 /** Réalisation de la voie unique avec des canaux JCSP. */
@@ -43,11 +45,46 @@ public class VoieUniqueCondition implements VoieUnique {
     }
 
     /****************************************************************/
-
     class Scheduler implements Runnable {
+        private int nbTrainsSN = 0;
+        private int nbTrainsNS = 0;
+        private boolean sensSN = false;
+        private boolean sensNS = false;
         public void run() {
-            /* XXXX TODO XXXX */
+            var gentrersn = new GuardedChannel<>(entrerSN, () -> ((nbTrainsNS == 0) && (nbTrainsNS < 3) && !(sensSN)));
+            var gentrerns = new GuardedChannel<>(entrerNS, () -> ((nbTrainsSN == 0) && (nbTrainsSN < 3) && !(sensNS)));
+            var gsortir = new GuardedChannel<>(sortir, Predicate::True);
+            var alt = new Alternative<>(gentrersn, gentrerns, gsortir);
+            while (true) {
+                switch (alt.select()) {
+                    case EntrerSN:
+                        if (nbTrainsSN < 3) {
+                            entrerSN.read();
+                            nbTrainsSN++;
+                            break;
+                        } else {
+                            break;
+                        }
+
+                    case EntrerNS:
+                        if (nbTrainsNS < 3) {
+                            entrerNS.read();
+                            nbTrainsNS++;
+                            break; 
+                        } else {
+                            break;
+                        }
+                        
+                    
+                    case Sortir:
+                        sortir.read();
+                        if (nbTrainsNS > 0){
+                            nbTrainsNS--;
+                        } else {
+                            nbTrainsSN--;
+                        }
+                }
+            }
         }
     } // class Scheduler
 }
-

@@ -61,6 +61,9 @@ public class PhiloCondition implements StrategiePhilo {
             @SuppressWarnings("unchecked")
             GuardedChannel<ChannelId> gchan[] = new GuardedChannel[2 * nbPhilosophes];
             /* XXXX TODO: initialiser gchan. */
+            for(int i = 0; i < gchan.length; i++){
+                gchan[i] = GuardedChannel<>(entrer, () -> etat[i]);
+            }
             /* XXXX TODO: construire l'alternative. */
             /* XXXX TODO: boucle avec select et traitement selon l'id du canal où une lecture est possible. */
         }

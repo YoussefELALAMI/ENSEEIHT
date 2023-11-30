@@ -1,5 +1,7 @@
 // Time-stamp: <02 mai 2013 14:08 queinnec@enseeiht.fr>
 
+/* ProcessusTrain.java : code d’un train. */
+
 import Synchro.Simulateur;
 
 /** Comportement d'un train. */
