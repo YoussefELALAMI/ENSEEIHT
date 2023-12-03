@@ -31,6 +31,7 @@ public class MaxTabThread {
         List<Integer> results = new LinkedList<>();
 
         // Démarrer les activités
+        
         // Le traitement du tableau est décomposé en segement de taille taskSize : [0..taskSize[, [taskSize..2*taskSize[ etc
         // et une activité est créée pour traiter chaque segment.
         // On fera attention que la taille du tableau n'est pas nécessairement un multiple de taskSize : le dernier segment peut être plus court (utiliser Math.min(..., array.length)).
