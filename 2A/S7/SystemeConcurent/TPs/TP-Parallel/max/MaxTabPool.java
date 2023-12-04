@@ -34,7 +34,14 @@ public class MaxTabPool {
         // Le traitement du tableau est décomposé en segement de taille taskSize : [0..taskSize[, [taskSize..2*taskSize[ etc
         // et une tâche est créée pour traiter chaque segment.
         // On fera attention que la taille du tableau n'est pas nécessairement un multiple de taskSize : le dernier segment peut être plus court (utiliser Math.min(..., array.length)).
-        /* XXXX À COMPLÉTER XXXX */
+        List<PartialMax> jobs = new ArrayList<PartialMax>();
+        int startIndex = 0;
+        while(startIndex < array.length){
+            int endIndex = Math.min(startIndex + taskSize, array.length);
+            PartialMax PM = new PartialMax(array, startIndex, endIndex);
+            jobs.add(PM);
+            startIndex+=taskSize;
+        }
 
         // Récupérer les résultats et les fusionner
         /* XXXX À COMPLÉTER XXXX */
