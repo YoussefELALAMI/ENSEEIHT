@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.6.0_33
+Built-By: jorged
+Created-By: Apache Maven
+Archiver-Version: Plexus Archiver
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.extension.tw
+ ilio/pom.xml
+SHA1-Digest: vxtqpkaZ7yaknz3tAGivhz1/+dM=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.extension.tw
+ ilio/pom.properties
+SHA1-Digest: VWgH8LuW75/DQ0d6yKiX/vojnYk=
+
+Name: feature.xml
+SHA1-Digest: c1L0+cRPkHGAbNsva0fc6QcsXRE=
+

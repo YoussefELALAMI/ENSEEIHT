@@ -1,0 +1,96 @@
+This document contains step by step how to create custom plugin with editor for your own component.
+
+1) Download and install Eclipse appropriate version (http://www.eclipse.org/)
+
+2) Download and install GEF plugin appropriate version (http://www.eclipse.org/gef/)
+
+3) Download and install CloverETL Designer plugin (http://www.cloveretl.com/)
+
+4) Run Eclipse development platform (eclipse.exe)
+
+5) Create new project in your workspace
+	- File / New / Project... / Plug-in development / Plug-in project / Next
+	
+	- on the next wizard page set project name (example MyComponentEditor) / Next
+	
+	- in the Plug-in properties tab you can change Plug-in ID (example cz.opensys.mycomponent.editor) and
+	Plug-in Provider (example OpenSys s.r.o.)
+	
+	- you can also setup full qualified name of activator in Activator edit box
+	(example cz.opensys.mycomponent.Activator)
+	
+	- Finish
+	
+6) Open plug-in manifest editor - double-click on META-INF/MANIFEST.MF file in Package Explorer
+
+7) On Dependences tab you have to add CloverETL Designer plugin into Required Plug-in list
+	- click Add button and type com.cloveretl.gui (equivalently select this plugin from the list below) / OK
+	
+	- in the same way choose also org.eclipse.ui.views plugin as required
+		
+8) Still in manifest editor choose Extensions tab and via Add button add extension point com.cloveretl.gui.editor
+	- setup id and name of extension point in Extension detail dialog (example cz.opensys.mycomponent.myeditors)
+	
+	- via right clicking on the extension point you can add new editor description New / editor
+	
+	- now on the right side you can fill dialog with editor information
+		- id - identifier of editor usually used in component XML description for property editor (example myEditor)
+			i.e.
+				<property category="clover" displayName="My property" modifiable="true" name="myProperty" nullable="true">
+					<singleType name="myEditor"/>
+				</property>
+		- name - full name of your editor (example 'Custom editor for my new component')
+		- class - full qualified class name which implement UIPropertyToolkit interface
+		(example cz.opensys.mycomponent.editor.UIMyEditorPropertyToolkit)
+
+9) Now last task to create your own attribute editor is implementation of class defined in previous step.
+	For better support of common used action is recommended don't implement direct UIPropertyToolkit interface 
+	but extend AbstractUIPropertyToolkit. Implementation of easy multiline editor follows:
+	
+10) For plugin deployment purpose Eclipse framework has in-builded ant script generator.
+	- invoke context menu on plugin.xml / PDE Tools / Create Ant Build File
+	
+	- build.xml ant script has been created in your project directory
+	
+	- now just run this script with 'clean' and 'build.update.jar' targets
+		- context menu on build.xml file / Run as / Ant Build...
+		- on the target page of the launch dialog check clean and build.update.jar targets
+	
+	- in your project directory appears jar package with new eclipse plugin which contains 
+		your new custom property editor
+	
+11) Install the plugin - copy jar package into <eclipse_home>/plugins directory and restart your eclipse if necessary
+
+Your new property editor can be used in your custom components, which description can be also bundled
+in the same plugin.
+
+12) Create new file with xml component(s) description (example components.xml)
+	i.e.
+		<?xml version="1.0" encoding="UTF-8"?>
+		<ETLComponentList>
+			<ETLComponent category="writers" className="cz.opensys.MyComponent" iconPath="icons/dataWriter32.png" name="My component" smallIconPath="icons/dataWriter16.png" type="MY_COMPONENT">
+				<shortDescription/>
+				<description/>
+				<inputPorts>
+					<singlePort name="0"/>
+				</inputPorts>
+				<outputPorts/>
+				<properties>
+					<property category="basic" displayName="My property" modifiable="true" name="myProperty" nullable="true">
+						<singleType name="myEditor"/>
+					</property>
+				</properties>
+			</ETLComponent>
+		</ETLComponentList>
+
+13) In the manifest editor on the Extensions page add new extension point com.cloveretl.gui.component.
+	And add new nested node 'component' (see step 8) for example with this settings:
+		- id = cz.opensys.mycomponent
+		- file = components.xml
+
+14) Update build script, so that your new component description will be included in the plugin jar package.
+	- on the Build page of manifest dialog in Binary build tree check file with component description (example components.xml)
+	
+	- regenerate and start ant build script (see step 10)
+	
+15) That's all, your plugin is ready to extend CloverETL Designer with your own component and proprietary attribute editor.

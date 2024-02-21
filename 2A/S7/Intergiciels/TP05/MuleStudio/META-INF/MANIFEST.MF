@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_33 (Apple Inc.)
+
+Name: examples/SpellChecker/spellcheck.xml
+SHA1-Digest: 2WTwPdB1H31JHel2CNGQMZw7sYU=
+
+Name: examples/AjaxSpellChecker/HTMLfile/SpellChecker.html
+SHA1-Digest: dKVOj34229BaygIcpMNNCmRPXok=
+
+Name: examples/AjaxSpellChecker/TransformFile/sample.xml
+SHA1-Digest: GYmVHwV3LxgQj3028E7bC8gxrw0=
+

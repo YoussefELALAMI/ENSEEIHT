@@ -21,7 +21,7 @@ public class Client {
 		Record r = proxy.getRecord("1111111111");
 		Student s = proxy.getStudent("Alain", "Tchana");
 		
-		System.out.println("Student Name : " + s.getFirstname() + s.getLastname() + " INE : " + r.getINE());
+		System.out.println("Student Name : " + s.getFirstname() + " " + s.getLastname() + " INE : " + r.getINE());
 	}
 
 }

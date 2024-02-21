@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.6.0_33
+Built-By: jorged
+Created-By: Apache Maven
+Archiver-Version: Plexus Archiver
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.extension.ma
+ gento/pom.properties
+SHA1-Digest: AQ5W3KMLvS8XDQRkAczk57Ovmcs=
+
+Name: feature.xml
+SHA1-Digest: Mh8PIr1g74LAzO2KBod28FhyJfA=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.extension.ma
+ gento/pom.xml
+SHA1-Digest: cfLQXMq7n1IUGw21DwPEWFyNE84=
+

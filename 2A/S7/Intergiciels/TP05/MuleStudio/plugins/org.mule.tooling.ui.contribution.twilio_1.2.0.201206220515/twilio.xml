@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<namespace xmlns="http://www.mulesoft.org/schema/mule/tooling.attributes" xmlns:mule="http://www.mulesoft.org/schema/mule/core" prefix="twilio" url="http://www.mulesoft.org/schema/mule/twilio">
+  <global-cloud-connector extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" image="icons/large/twilio-connector-48x32.png" localId="config" icon="icons/small/twilio-connector-24x16.png" description="Global Twilio configuration information." caption="Twilio">
+    <attribute-category description="Twilio configuration properties." caption="General">
+      <group caption="Generic" id="twilioGenericProperties">
+        <name required="true" description="Give a name to this configuration so it can be later referenced by config-ref." caption="Name" name="name"></name>
+      </group>
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The account sid to be used to connect to Twilio." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The authentication token to be used to connect to Twilio." caption="Auth Token" name="authToken"></string>
+      </group>
+    </attribute-category>
+  </global-cloud-connector>
+  <cloud-connector extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" image="icons/large/twilio-connector-48x32.png" localId="twilio-connector" icon="icons/small/twilio-connector-24x16.png" description="Twilio is a provider of cloud API for voice and SMS communications for customers who want to use phone services as
+marketing leverage." caption="Twilio" aliasId="org.mule.tooling.ui.modules.core.pattern.twilio">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="twilioConnectorGeneric">
+        <modeSwitch description="Operation." caption="Operation" name="Twilio operations to execute">
+          <mode modeLabel="Add incoming phone number by area code" modeId="http://www.mulesoft.org/schema/mule/twilio/add-incoming-phone-number-by-area-code"></mode>
+          <mode modeLabel="Add incoming phone number by phone number" modeId="http://www.mulesoft.org/schema/mule/twilio/add-incoming-phone-number-by-phone-number"></mode>
+          <mode modeLabel="Add new caller id" modeId="http://www.mulesoft.org/schema/mule/twilio/add-new-caller-id"></mode>
+          <mode modeLabel="Change call state" modeId="http://www.mulesoft.org/schema/mule/twilio/change-call-state"></mode>
+          <mode modeLabel="Create application" modeId="http://www.mulesoft.org/schema/mule/twilio/create-application"></mode>
+          <mode modeLabel="Create sub account" modeId="http://www.mulesoft.org/schema/mule/twilio/create-sub-account"></mode>
+          <mode modeLabel="Delete application" modeId="http://www.mulesoft.org/schema/mule/twilio/delete-application"></mode>
+          <mode modeLabel="Delete incoming phone number" modeId="http://www.mulesoft.org/schema/mule/twilio/delete-incoming-phone-number"></mode>
+          <mode modeLabel="Delete notification" modeId="http://www.mulesoft.org/schema/mule/twilio/delete-notification"></mode>
+          <mode modeLabel="Delete outgoing caller id" modeId="http://www.mulesoft.org/schema/mule/twilio/delete-outgoing-caller-id"></mode>
+          <mode modeLabel="Delete participant" modeId="http://www.mulesoft.org/schema/mule/twilio/delete-participant"></mode>
+          <mode modeLabel="Delete recording" modeId="http://www.mulesoft.org/schema/mule/twilio/delete-recording"></mode>
+          <mode modeLabel="Exchange phone numbers between subaccounts" modeId="http://www.mulesoft.org/schema/mule/twilio/exchange-phone-numbers-between-subaccounts"></mode>
+          <mode modeLabel="Get account details" modeId="http://www.mulesoft.org/schema/mule/twilio/get-account-details"></mode>
+          <mode modeLabel="Get all accounts details" modeId="http://www.mulesoft.org/schema/mule/twilio/get-all-accounts-details"></mode>
+          <mode modeLabel="Get all applications" modeId="http://www.mulesoft.org/schema/mule/twilio/get-all-applications"></mode>
+          <mode modeLabel="Get all notifications" modeId="http://www.mulesoft.org/schema/mule/twilio/get-all-notifications"></mode>
+          <mode modeLabel="Get all outgoing caller ids" modeId="http://www.mulesoft.org/schema/mule/twilio/get-all-outgoing-caller-ids"></mode>
+          <mode modeLabel="Get all sms messages" modeId="http://www.mulesoft.org/schema/mule/twilio/get-all-sms-messages"></mode>
+          <mode modeLabel="Get application" modeId="http://www.mulesoft.org/schema/mule/twilio/get-application"></mode>
+          <mode modeLabel="Get available phone numbers" modeId="http://www.mulesoft.org/schema/mule/twilio/get-available-phone-numbers"></mode>
+          <mode modeLabel="Get available phone numbers advanced seach" modeId="http://www.mulesoft.org/schema/mule/twilio/get-available-phone-numbers-advanced-seach"></mode>
+          <mode modeLabel="Get available toll free numbers" modeId="http://www.mulesoft.org/schema/mule/twilio/get-available-toll-free-numbers"></mode>
+          <mode modeLabel="Get call" modeId="http://www.mulesoft.org/schema/mule/twilio/get-call"></mode>
+          <mode modeLabel="Get calls" modeId="http://www.mulesoft.org/schema/mule/twilio/get-calls"></mode>
+          <mode modeLabel="Get conference" modeId="http://www.mulesoft.org/schema/mule/twilio/get-conference"></mode>
+          <mode modeLabel="Get conferences" modeId="http://www.mulesoft.org/schema/mule/twilio/get-conferences"></mode>
+          <mode modeLabel="Get incoming phone numbers" modeId="http://www.mulesoft.org/schema/mule/twilio/get-incoming-phone-numbers"></mode>
+          <mode modeLabel="Get incoming phone numbers by incoming phone number sid" modeId="http://www.mulesoft.org/schema/mule/twilio/get-incoming-phone-numbers-by-incoming-phone-number-sid"></mode>
+          <mode modeLabel="Get notification" modeId="http://www.mulesoft.org/schema/mule/twilio/get-notification"></mode>
+          <mode modeLabel="Get notifications by call sid" modeId="http://www.mulesoft.org/schema/mule/twilio/get-notifications-by-call-sid"></mode>
+          <mode modeLabel="Get outgoing caller id by outgoing caller id sid" modeId="http://www.mulesoft.org/schema/mule/twilio/get-outgoing-caller-id-by-outgoing-caller-id-sid"></mode>
+          <mode modeLabel="Get participant" modeId="http://www.mulesoft.org/schema/mule/twilio/get-participant"></mode>
+          <mode modeLabel="Get participants" modeId="http://www.mulesoft.org/schema/mule/twilio/get-participants"></mode>
+          <mode modeLabel="Get recording" modeId="http://www.mulesoft.org/schema/mule/twilio/get-recording"></mode>
+          <mode modeLabel="Get recordings" modeId="http://www.mulesoft.org/schema/mule/twilio/get-recordings"></mode>
+          <mode modeLabel="Get sandbox" modeId="http://www.mulesoft.org/schema/mule/twilio/get-sandbox"></mode>
+          <mode modeLabel="Get sms message" modeId="http://www.mulesoft.org/schema/mule/twilio/get-sms-message"></mode>
+          <mode modeLabel="Get sub account by account sid" modeId="http://www.mulesoft.org/schema/mule/twilio/get-sub-account-by-account-sid"></mode>
+          <mode modeLabel="Get sub account by friendly name" modeId="http://www.mulesoft.org/schema/mule/twilio/get-sub-account-by-friendly-name"></mode>
+          <mode modeLabel="Get transcription by transcription sid" modeId="http://www.mulesoft.org/schema/mule/twilio/get-transcription-by-transcription-sid"></mode>
+          <mode modeLabel="Get transcriptions" modeId="http://www.mulesoft.org/schema/mule/twilio/get-transcriptions"></mode>
+          <mode modeLabel="Make call" modeId="http://www.mulesoft.org/schema/mule/twilio/make-call"></mode>
+          <mode modeLabel="Send sms message" modeId="http://www.mulesoft.org/schema/mule/twilio/send-sms-message"></mode>
+          <mode modeLabel="Update account" modeId="http://www.mulesoft.org/schema/mule/twilio/update-account"></mode>
+          <mode modeLabel="Update application" modeId="http://www.mulesoft.org/schema/mule/twilio/update-application"></mode>
+          <mode modeLabel="Update incoming phone numbers" modeId="http://www.mulesoft.org/schema/mule/twilio/update-incoming-phone-numbers"></mode>
+          <mode modeLabel="Update outgoing caller id by outgoing caller id sid" modeId="http://www.mulesoft.org/schema/mule/twilio/update-outgoing-caller-id-by-outgoing-caller-id-sid"></mode>
+          <mode modeLabel="Update participant status" modeId="http://www.mulesoft.org/schema/mule/twilio/update-participant-status"></mode>
+          <mode modeLabel="Update sandbox" modeId="http://www.mulesoft.org/schema/mule/twilio/update-sandbox"></mode>
+        </modeSwitch>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector abstract="true" image="icons/large/twilio-connector-48x32.png" localId="abstractTwilioConnectorGeneric" icon="icons/small/twilio-connector-24x16.png" description="Interact with Twilio." caption="Abstracttwilioconnectorgeneric">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractTwilioConnectorGeneric">
+        <globalRef requiredType="http://www.mulesoft.org/schema/mule/twilio/config" required="true" description="Specify which configuration to use for this invocation." caption="Config Reference" name="config-ref"></globalRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-account-details" icon="icons/small/twilio-connector-24x16.png" caption="Get Account Details">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The account sid for which to get the details, leave empty to use to use." caption="Account Sid" name="accountSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-all-accounts-details" icon="icons/small/twilio-connector-24x16.png" caption="Get All Accounts Details">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Only return the Account resources with friendly names that exactly match this name." caption="Friendly Name" name="friendlyName"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.AccountStatus" required="false" supportsExpressions="true" description="Only return Account resources with the given status. Can be closed, suspended or active." caption="Account Status" name="accountStatus">
+          <option value="ACTIVE"></option>
+          <option value="CLOSED"></option>
+          <option value="SUSPENDED"></option>
+        </enum>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="update-account" icon="icons/small/twilio-connector-24x16.png" caption="Update Account">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Update the human-readable description of this account." caption="Friendly Name" name="friendlyName"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.AccountStatus" required="false" supportsExpressions="true" description="Alter the status of this account: use closed to irreversibly close this account, suspended to temporarily suspend it, or active to reactivate it." caption="Account Status" name="accountStatus">
+          <option value="ACTIVE"></option>
+          <option value="CLOSED"></option>
+          <option value="SUSPENDED"></option>
+        </enum>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="create-sub-account" icon="icons/small/twilio-connector-24x16.png" caption="Create Sub Account">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="A human readable description of the new subaccount, up to 64 characters. Defaults to &quot;SubAccount Created at {YYYY-MM-DD HH:MM meridiam&quot;." caption="Friendly Name" name="friendlyName"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-sub-account-by-account-sid" icon="icons/small/twilio-connector-24x16.png" caption="Get Sub Account By Account Sid">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The account sid to use in the query." caption="Account Sid" name="accountSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-sub-account-by-friendly-name" icon="icons/small/twilio-connector-24x16.png" caption="Get Sub Account By Friendly Name">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The friendly name to use in the query." caption="Friendly Name" name="friendlyName"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="exchange-phone-numbers-between-subaccounts" icon="icons/small/twilio-connector-24x16.png" caption="Exchange Phone Numbers Between Subaccounts">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The account sid from where to get the number, leave empty to use." caption="Account Sid From" name="accountSidFrom"></string>
+        <string javaType="java.lang.String" required="true" description="The account sid where to transfer the phone number." caption="Account Sid To" name="accountSidTo"></string>
+        <string javaType="java.lang.String" required="true" description="The incoming phone number sid to transfer." caption="Incoming Phone Number Sid" name="incomingPhoneNumberSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-available-phone-numbers" icon="icons/small/twilio-connector-24x16.png" caption="Get Available Phone Numbers">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Find phone numbers in the specified Area Code. Only available for North American numbers." caption="Area Code" name="areaCode"></string>
+        <string javaType="java.lang.String" required="false" description="A pattern to match phone numbers on. Valid characters are '*' and [0-9a-zA-Z]. The '*' character will match any single digit." caption="Contains" name="contains"></string>
+        <string javaType="java.lang.String" required="false" description="Limit results to a particular postal code. Given a phone number, search within the same postal code as that number." caption="In Postal Code" name="inPostalCode"></string>
+        <string javaType="java.lang.String" required="false" description="Limit results to a particular region (i.e. State/Province). Given a phone number, search within the same Region as that number." caption="In Region" name="inRegion"></string>
+        <string javaType="java.lang.String" required="true" description="A country code in ISO 3166-1 alpha-2 format (e.g. 'US' for United States, 'CA' for Canada)." caption="Iso Country Code" name="isoCountryCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-available-phone-numbers-advanced-seach" icon="icons/small/twilio-connector-24x16.png" caption="Get Available Phone Numbers Advanced Seach">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Find phone numbers in the specified Area Code. Only available for North American numbers." caption="Area Code" name="areaCode"></string>
+        <string javaType="java.lang.String" required="false" description="A pattern to match phone numbers on. Valid characters are '*' and [0-9a-zA-Z]. The '*' character will match any single digit." caption="Contains" name="contains"></string>
+        <string javaType="java.lang.String" required="false" description="Limit results to a particular postal code. Given a phone number, search within the same postal code as that number." caption="In Postal Code" name="inPostalCode"></string>
+        <string javaType="java.lang.String" required="false" description="Limit results to a particular region (i.e. State/Province). Given a phone number, search within the same Region as that number." caption="In Region" name="inRegion"></string>
+        <string javaType="java.lang.String" required="true" description="A country code in ISO 3166-1 alpha-2 format (e.g. 'US' for United States, 'CA' for Canada)." caption="Iso Country Code" name="isoCountryCode"></string>
+      </group>
+      <group caption="Advanced" id="advanced">
+        <string javaType="java.lang.String" required="false" description="Given a latitude/longitude pair lat,long find geographically close numbers within Distance miles." caption="Near Lat Long" name="nearLatLong"></string>
+        <string javaType="java.lang.String" required="false" description="Given a phone number, find a geographically close number within Distance miles. Distance defaults to 25 miles." caption="Near Phone Number" name="nearPhoneNumber"></string>
+        <string javaType="java.lang.String" required="false" description="Limit results to a specific Local access and transport area (LATA). Given a phone number, search within the same LATA as that number." caption="In Lata" name="inLata"></string>
+        <string javaType="java.lang.String" required="false" description="Limit results to a specific rate center, or given a phone number search within the same rate center as that number. Requires InLata to be set as well." caption="In Rate Center" name="inRateCenter"></string>
+        <string javaType="java.lang.String" required="false" description="Specifies the search radius for a Near- query in miles. If not specified this defaults to 25 miles." caption="Distance" name="distance"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-available-toll-free-numbers" icon="icons/small/twilio-connector-24x16.png" caption="Get Available Toll Free Numbers">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="A pattern to match phone numbers on. Valid characters are '*' and [0-9a-zA-Z]. The '*' character will match any single digit." caption="Contains" name="contains"></string>
+        <string javaType="java.lang.String" required="true" description="A country code in ISO 3166-1 alpha-2 format (e.g. 'US' for United States, 'CA' for Canada)." caption="Iso Country Code" name="isoCountryCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-outgoing-caller-id-by-outgoing-caller-id-sid" icon="icons/small/twilio-connector-24x16.png" caption="Get Outgoing Caller Id By Outgoing Caller Id Sid">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The outgoing caller id sid to use in the query." caption="Outgoing Caller Id Sid" name="outgoingCallerIdSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="update-outgoing-caller-id-by-outgoing-caller-id-sid" icon="icons/small/twilio-connector-24x16.png" caption="Update Outgoing Caller Id By Outgoing Caller Id Sid">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="A human readable description of a Caller ID, with maximum length of 64 characters. Defaults to a nicely formatted version of the phone number." caption="Friendly Name" name="friendlyName"></string>
+        <string javaType="java.lang.String" required="true" description="The outgoing caller id sid to update." caption="Outgoing Caller Id Sid" name="outgoingCallerIdSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-all-outgoing-caller-ids" icon="icons/small/twilio-connector-24x16.png" caption="Get All Outgoing Caller Ids">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Only show the caller id resource that exactly matches this name." caption="Friendly Name" name="friendlyName"></string>
+        <string javaType="java.lang.String" required="false" description="Only show the caller id resource that exactly matches this phone number." caption="Phone Number" name="phoneNumber"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="add-new-caller-id" icon="icons/small/twilio-connector-24x16.png" caption="Add New Caller Id">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="A human readable description for the new caller ID with maximum length 64 characters. Defaults to a nicely formatted version of the number." caption="Friendly Name" name="friendlyName"></string>
+        <string javaType="java.lang.String" required="true" description="The phone number to verify. Should be formatted with a '+' and country code e.g., +16175551212 (E.164 format). Twilio will also accept unformatted US numbers e.g., (415) 555-1212, 415-555-1212." caption="Phone Number" name="phoneNumber"></string>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The number of seconds, between 0 and 60, to delay before initiating the validation call. Defaults to 0." caption="Call Delay" name="callDelay"></integer>
+        <string javaType="java.lang.String" required="false" description="Digits to dial after connecting the validation call." caption="Extension" name="extension"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="delete-outgoing-caller-id" icon="icons/small/twilio-connector-24x16.png" caption="Delete Outgoing Caller Id">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The outgoing caller id sid to delete." caption="Outgoing Caller Id Sid" name="outgoingCallerIdSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-incoming-phone-numbers-by-incoming-phone-number-sid" icon="icons/small/twilio-connector-24x16.png" caption="Get Incoming Phone Numbers By Incoming Phone Number Sid">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The incoming phone number sid to use in the query." caption="Incoming Phone Number Sid" name="incomingPhoneNumberSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="update-incoming-phone-numbers" icon="icons/small/twilio-connector-24x16.png" caption="Update Incoming Phone Numbers">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Calls to this phone number will start a new TwiML session with this API version. Either 2010-04-01 or 2008-08-01." caption="Api Version" name="apiVersion"></string>
+        <string javaType="java.lang.String" required="false" description="A human readable description of the new incoming phone number resource, with maximum length 64 characters." caption="Friendly Name" name="friendlyName"></string>
+        <string javaType="java.lang.String" required="true" description="The incoming phone number sid to use." caption="Incoming Phone Number Sid" name="incomingPhoneNumberSid"></string>
+        <string javaType="java.lang.String" required="false" description="The unique 34 character id of the account to which you wish to transfer this phone number." caption="Account Sid Destination" name="accountSidDestination"></string>
+      </group>
+      <group caption="Voice Settings" id="voice Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody dials the new phone number." caption="Voice Url" name="voiceUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the VoiceUrl. Must be either GET or POST. Defaults to POST." caption="Voice Method" name="voiceMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML at Url." caption="Voice Fallback Flow" name="voice-fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request to pass statusCallback parameters (such as call ended) to your application." caption="Status Callback Flow" name="status-callback-flow-ref"></flowRef>
+        <boolean javaType="java.lang.Boolean" required="false" supportsExpressions="true" description="Do a lookup of a caller's name from the CNAM database and post it to your app. Either true or false." caption="Voice Caller Id Lookup" name="voiceCallerIdLookup"></boolean>
+        <string javaType="java.lang.String" required="false" description="The 34 character sid of the application Twilio should use to handle phone calls to this number. If a VoiceApplicationSid is present, Twilio will ignore all of the voice urls above and use those set on the application instead." caption="Voice Application Sid" name="voiceApplicationSid"></string>
+      </group>
+      <group caption="SMS Settings" id="sMS Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody sends an SMS to the phone number." caption="Sms Url" name="smsUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the SmsUrl. Must be either GET or POST. Defaults to POST." caption="Sms Method" name="smsMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML defined by sms." caption="Sms Fallback Flow" name="sms-fallback-flow-ref"></flowRef>
+        <string javaType="java.lang.String" required="false" description="The 34 character sid of the application Twilio should use to handle SMSs sent to this number. If a SmsApplicationSid is present, Twilio will ignore all of the SMS urls above and use those set on the application instead." caption="Sms Application Sid" name="smsApplicationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="delete-incoming-phone-number" icon="icons/small/twilio-connector-24x16.png" caption="Delete Incoming Phone Number">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The incoming phone number sid to delete." caption="Incoming Phone Number Sid" name="incomingPhoneNumberSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-incoming-phone-numbers" icon="icons/small/twilio-connector-24x16.png" caption="Get Incoming Phone Numbers">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Only show the incoming phone number resources with friendly names that exactly match this name." caption="Friendly Name" name="friendlyName"></string>
+        <string javaType="java.lang.String" required="false" description="Only show the incoming phone number resources that match this pattern. You can specify partial numbers and use '*' as a wildcard for any digit." caption="Phone Number" name="phoneNumber"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="add-incoming-phone-number-by-phone-number" icon="icons/small/twilio-connector-24x16.png" caption="Add Incoming Phone Number By Phone Number">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="A human readable description of the new incoming phone number. Maximum 64 characters. Defaults to a formatted version of the number." caption="Friendly Name" name="friendlyName"></string>
+        <string javaType="java.lang.String" required="true" description="The phone number you want to purchase. The number should be formated starting with a '+' followed by the country code and the number in E.164 format e.g., '+15105555555'." caption="Phone Number" name="phoneNumber"></string>
+      </group>
+      <group caption="Voice Settings" id="voice Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody dials the new phone number." caption="Voice Url" name="voiceUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the VoiceUrl. Must be either GET or POST. Defaults to POST." caption="Voice Method" name="voiceMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML at Url." caption="Voice Fallback Flow" name="voice-fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request to pass status parameters (such as call ended) to your application." caption="Status Callback Flow" name="status-callback-flow-ref"></flowRef>
+        <boolean javaType="java.lang.Boolean" required="false" supportsExpressions="true" description="Do a lookup of a caller's name from the CNAM database and post it to your app. Either true or false. Defaults to false." caption="Voice Caller Id Lookup" name="voiceCallerIdLookup"></boolean>
+        <string javaType="java.lang.String" required="false" description="The 34 character sid of the application Twilio should use to handle phone calls to the new number. If a VoiceApplicationSid is present, Twilio will ignore all of the voice urls above and use those set on the application." caption="Voice Application Sid" name="voiceApplicationSid"></string>
+      </group>
+      <group caption="SMS Settings" id="sMS Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody sends an SMS to the phone number." caption="Sms Url" name="smsUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the SmsUrl. Must be either GET or POST. Defaults to POST." caption="Sms Method" name="smsMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML defined by SmsUrl." caption="Sms Fallback Flow" name="sms-fallback-flow-ref"></flowRef>
+        <string javaType="java.lang.String" required="false" description="The 34 character sid of the application Twilio should use to handle SMSs sent to the new number. If a SmsApplicationSid is present, Twilio will ignore all of the SMS urls above and use those set on the application." caption="Sms Application Sid" name="smsApplicationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="add-incoming-phone-number-by-area-code" icon="icons/small/twilio-connector-24x16.png" caption="Add Incoming Phone Number By Area Code">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The area code in which you'd like a new incoming phone number. Any three digit, US area code is valid. Twilio will provision a random phone number within this area code for you." caption="Area Code" name="areaCode"></string>
+        <string javaType="java.lang.String" required="false" description="A human readable description of the new incoming phone number. Maximum 64 characters. Defaults to a formatted version of the number." caption="Friendly Name" name="friendlyName"></string>
+      </group>
+      <group caption="Voice Settings" id="voice Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody dials the new phone number." caption="Voice Url" name="voiceUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the VoiceUrl. Must be either GET or POST. Defaults to POST." caption="Voice Method" name="voiceMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML at Url." caption="Voice Fallback Flow" name="voice-fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request to pass status parameters (such as call ended) to your application." caption="Status Callback Flow" name="status-callback-flow-ref"></flowRef>
+        <boolean javaType="java.lang.Boolean" required="false" supportsExpressions="true" description="Do a lookup of a caller's name from the CNAM database and post it to your app. Either true or false. Defaults to false." caption="Voice Caller Id Lookup" name="voiceCallerIdLookup"></boolean>
+        <string javaType="java.lang.String" required="false" description="The 34 character sid of the application Twilio should use to handle phone calls to the new number. If a VoiceApplicationSid is present, Twilio will ignore all of the voice urls above and use those set on the application." caption="Voice Application Sid" name="voiceApplicationSid"></string>
+      </group>
+      <group caption="SMS Settings" id="sMS Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody sends an SMS to the phone number." caption="Sms Url" name="smsUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the SmsUrl. Must be either GET or POST. Defaults to POST." caption="Sms Method" name="smsMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML defined by SmsUrl." caption="Sms Fallback Flow" name="sms-fallback-flow-ref"></flowRef>
+        <string javaType="java.lang.String" required="false" description="The 34 character sid of the application Twilio should use to handle SMSs sent to the new number. If a SmsApplicationSid is present, Twilio will ignore all of the SMS urls above and use those set on the application." caption="Sms Application Sid" name="smsApplicationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-application" icon="icons/small/twilio-connector-24x16.png" caption="Get Application">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The application sid to use in the query." caption="Application Sid" name="applicationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="update-application" icon="icons/small/twilio-connector-24x16.png" caption="Update Application">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Requests to this application's URLs will start a new TwiML session with this API version. Either 2010-04-01 or 2008-08-01." caption="Api Version" name="apiVersion"></string>
+        <string javaType="java.lang.String" required="true" description="The application sid to update." caption="Application Sid" name="applicationSid"></string>
+        <string javaType="java.lang.String" required="false" description="A human readable description of the application, with maximum length 64 characters." caption="Friendly Name" name="friendlyName"></string>
+      </group>
+      <group caption="Voice Settings" id="voice Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody dials a phone number assigned to this application." caption="Voice Url" name="voiceUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the VoiceUrl. Either GET or POST." caption="Voice Method" name="voiceMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML defined by VoiceUrl." caption="Voice Fallback Flow" name="voice-fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request to pass status parameters (such as call ended) to your application." caption="Status Callback Flow" name="status-callback-flow-ref"></flowRef>
+        <boolean javaType="java.lang.Boolean" required="false" supportsExpressions="true" description="Do a lookup of a caller's name from the CNAM database and post it to your app. Either true or false." caption="Voice Caller Id Lookup" name="voiceCallerIdLookup"></boolean>
+      </group>
+      <group caption="SMS Settings" id="sMS Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody sends an SMS to a phone number assigned to this application." caption="Sms Url" name="smsUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the SmsUrl. Either GET or POST." caption="Sms Method" name="smsMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML defined by SmsUrl." caption="Sms Fallback Flow" name="sms-fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="Twilio will make a POST request to this flow to pass status parameters (such as sent or failed) to your application if you specify this application's Sid as the ApplicationSid on an outgoing SMS request." caption="Sms Status Callback Flow" name="sms-status-callback-flow-ref"></flowRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="delete-application" icon="icons/small/twilio-connector-24x16.png" caption="Delete Application">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The application sid to use." caption="Application Sid" name="applicationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-all-applications" icon="icons/small/twilio-connector-24x16.png" caption="Get All Applications">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Only return the Application resources with friendly names that exactly match this name." caption="Friendly Name" name="friendlyName"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="create-application" icon="icons/small/twilio-connector-24x16.png" caption="Create Application">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Requests to this application's URLs will start a new TwiML session with this API version. Either 2010-04-01 or 2008-08-01. Defaults to your account's default API version." caption="Api Version" name="apiVersion"></string>
+        <string javaType="java.lang.String" required="true" description="A human readable description of the new application. Maximum 64 characters." caption="Friendly Name" name="friendlyName"></string>
+      </group>
+      <group caption="Voice Settings" id="voice Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody dials a phone number assigned to this application." caption="Voice Url" name="voiceUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the VoiceUrl. Must be either GET or POST. Defaults to POST." caption="Voice Method" name="voiceMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML at Url." caption="Voice Fallback Flow" name="voice-fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request to pass status parameters (such as call ended) to your application." caption="Status Callback Flow" name="status-callback-flow-ref"></flowRef>
+        <boolean javaType="java.lang.Boolean" required="false" supportsExpressions="true" description="Do a lookup of a caller's name from the CNAM database and post it to your app. Either true or false. Defaults to false." caption="Voice Caller Id Lookup" name="voiceCallerIdLookup"></boolean>
+      </group>
+      <group caption="SMS Settings" id="sMS Settings">
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody sends an SMS to a phone number assigned to this application." caption="Sms Url" name="smsUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the SmsUrl. Must be either GET or POST. Defaults to POST." caption="Sms Method" name="smsMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML defined by SmsUrl." caption="Sms Fallback Flow" name="sms-fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="Twilio will make a POST request to this flow to pass status parameters (such as sent or failed) to your application if you specify this application's Sid as the ApplicationSid on an outgoing SMS request." caption="Sms Status Callback Flow" name="sms-status-callback-flow-ref"></flowRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-call" icon="icons/small/twilio-connector-24x16.png" caption="Get Call">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The call sid to use in the query." caption="Call Sid" name="callSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-calls" icon="icons/small/twilio-connector-24x16.png" caption="Get Calls">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Only show calls from this phone number." caption="From" name="from"></string>
+        <string javaType="java.lang.String" required="false" description="Only show calls that started on this date, given as YYYY-MM-DD. Also supports inequalities, such as StartTime=YYYY-MM-DD for calls that started at or after midnight on a date." caption="Start Time" name="startTime"></string>
+        <string javaType="java.lang.String" required="false" description="Only show calls currently in this status. May be queued, ringing, in-progress, completed, failed, busy, or no-answer." caption="Status" name="status"></string>
+        <string javaType="java.lang.String" required="false" description="Only show calls to this phone number." caption="To" name="to"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="make-call" icon="icons/small/twilio-connector-24x16.png" caption="Make Call">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The phone number to use as the caller id. Format with a '+' and country code e.g., +16175551212 (E.164 format). Must be a Twilio number or a valid outgoing caller id for your account." caption="From" name="from"></string>
+        <string javaType="java.lang.String" required="true" description="The number to call formatted with a '+' and country code e.g., +16175551212 (E.164 format). Twilio will also accept unformatted US numbers e.g., (415) 555-1212, 415-555-1212." caption="To" name="to"></string>
+      </group>
+      <group caption="Voice Settings" id="voice Settings">
+        <string javaType="java.lang.String" required="false" description="The fully qualified URL that should be consulted when the call connects. Just like when you set a URL on a phone number for handling inbound calls." caption="Url" name="url"></string>
+        <string javaType="java.lang.String" required="false" description="The 34 character sid of the application Twilio should use to handle this phone call. If this parameter is present, Twilio will ignore all of the voice URLs passed and use the URLs set on the application." caption="Application Sid" name="applicationSid"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method Twilio should use when making its request to the above Url parameter's value. Defaults to POST. If an ApplicationSid parameter is present, this parameter is ignored." caption="Method" name="method">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+      </group>
+      <group caption="Callbacks" id="callbacks">
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request if an error occurs requesting or executing the TwiML at Url. If an ApplicationSid parameter is present, this parameter is ignored." caption="Fallback Flow" name="fallback-flow-ref"></flowRef>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will request when the call ends to notify your app. If an ApplicationSid parameter is present, this parameter is ignored." caption="Status Callback Flow" name="status-callback-flow-ref"></flowRef>
+      </group>
+      <group caption="Advanced" id="advanced">
+        <string javaType="java.lang.String" required="false" description="A string of keys to dial after connecting to the number. Valid digits in the string include: any digit (0-9), '#' and '*'. For example, if you connected to a company phone number, and wanted to dial extension 1234 and then the pound key, use SendDigits=1234#. Remember to URL-encode this string, since the '#' character has special meaning in a URL." caption="Send Digits" name="sendDigits"></string>
+        <string javaType="java.lang.String" required="false" description="Tell Twilio to try and determine if a machine (like voicemail) or a human has answered the call. Possible values are Continue and Hangup." caption="If Machine" name="ifMachine"></string>
+        <string javaType="java.lang.String" required="false" description="The integer number of seconds that Twilio should allow the phone to ring before assuming there is no answer. Default is 60 seconds, the maximum is 999 seconds. Note, you could set this to a low value, such as 15, to hangup before reaching an answering machine or voicemail." caption="Timeout" name="timeout"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="change-call-state" icon="icons/small/twilio-connector-24x16.png" caption="Change Call State">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The call sid to modify." caption="Call Sid" name="callSid"></string>
+        <string javaType="java.lang.String" required="false" description="Either canceled or completed. Specifying canceled will attempt to hangup calls that are queued or ringing but not affect calls already in progress. Specifying completed will attempt to hang up a call even if it's already in progress." caption="Status" name="status"></string>
+        <string javaType="java.lang.String" required="false" description="A valid URL that returns TwiML. Twilio will immediately redirect the call to the new TwiML." caption="Url" name="url"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method Twilio should use when requesting the above URL. Defaults to POST." caption="Method" name="method">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-conference" icon="icons/small/twilio-connector-24x16.png" caption="Get Conference">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The conference sid to use in the query." caption="Conference Sid" name="conferenceSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-conferences" icon="icons/small/twilio-connector-24x16.png" caption="Get Conferences">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Only show conferences that started on this date, given as YYYY-MM-DD. You can also specify inequality, such as DateCreated=YYYY-MM-DD for conferences that started at or after midnight on a date." caption="Date Created" name="dateCreated"></string>
+        <string javaType="java.lang.String" required="false" description="Only show conferences that were last updated on this date, given as YYYY-MM-DD. You can also specify inequality, such as DateUpdated=YYYY-MM-DD for conferences that were updated at or after midnight on a date." caption="Date Updated" name="dateUpdated"></string>
+        <string javaType="java.lang.String" required="false" description="List conferences who's FriendlyName is the exact match of this string." caption="Friendly Name" name="friendlyName"></string>
+        <string javaType="java.lang.String" required="false" description="Only show conferences currently in with this status. May be init, in-progress, or completed." caption="Status" name="status"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-participant" icon="icons/small/twilio-connector-24x16.png" caption="Get Participant">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The call sid to use in the query." caption="Call Sid" name="callSid"></string>
+        <string javaType="java.lang.String" required="true" description="The conference sid to use in the query." caption="Conference Sid" name="conferenceSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="update-participant-status" icon="icons/small/twilio-connector-24x16.png" caption="Update Participant Status">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The call sid to use." caption="Call Sid" name="callSid"></string>
+        <string javaType="java.lang.String" required="true" description="The conference sid to use." caption="Conference Sid" name="conferenceSid"></string>
+        <boolean javaType="java.lang.Boolean" required="true" supportsExpressions="true" description="Specifying true will mute the participant, while false will un-mute." caption="Muted" name="muted"></boolean>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="delete-participant" icon="icons/small/twilio-connector-24x16.png" caption="Delete Participant">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The call sid to use." caption="Call Sid" name="callSid"></string>
+        <string javaType="java.lang.String" required="true" description="The conference sid to use." caption="Conference Sid" name="conferenceSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-participants" icon="icons/small/twilio-connector-24x16.png" caption="Get Participants">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The conference sid to use in the query." caption="Conference Sid" name="conferenceSid"></string>
+        <boolean javaType="java.lang.Boolean" required="false" supportsExpressions="true" description="Only show participants that are muted or unmuted. Either true or false." caption="Muted" name="muted"></boolean>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-sms-message" icon="icons/small/twilio-connector-24x16.png" caption="Get Sms Message">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The SMS message sid to use in the query." caption="Sms Message Sid" name="smsMessageSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-all-sms-messages" icon="icons/small/twilio-connector-24x16.png" caption="Get All Sms Messages">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Only show SMS messages sent on this date, given as YYYY-MM-DD. Example: DateSent=2009-07-06. You can also specify inequality, such as DateSent=YYYY-MM-DD for SMS messages sent on or after midnight on a date." caption="Date Sent" name="dateSent"></string>
+        <string javaType="java.lang.String" required="false" description="Only show SMS messages from this phone number." caption="From" name="from"></string>
+        <string javaType="java.lang.String" required="false" description="Only show SMS messages to this phone number." caption="To" name="to"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="send-sms-message" icon="icons/small/twilio-connector-24x16.png" caption="Send Sms Message">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The text of the message you want to send, limited to 160 characters." caption="Body" name="body"></string>
+        <string javaType="java.lang.String" required="true" description="A Twilio number enabled for SMS. Only phone numbers purchased from Twilio work here; you cannot (for example) spoof SMS messages from your own cell phone number." caption="From" name="from"></string>
+        <string javaType="java.lang.String" required="true" description="The destination phone number. Format with a '+' and country code e.g., +16175551212 (E.164 format). Twilio will also accept unformatted US numbers e.g., (415) 555-1212, 415-555-1212." caption="To" name="to"></string>
+        <flowRef supportSubflow="true" supportFlow="true" javaType="org.mule.api.callback.HttpCallback" required="false" description="A flow that Twilio will POST to when your message is processed. Twilio will POST the SmsSid as well as SmsStatus=sent or SmsStatus=failed." caption="Status Callback Flow" name="status-callback-flow-ref"></flowRef>
+        <string javaType="java.lang.String" required="false" description="Twilio will POST SmsSid as well as SmsStatus=sent or SmsStatus=failed to the URL in the SmsStatusCallback property of this Application. If the StatusCallback parameter above is also passed, the Application's SmsStatusCallback parameter will take precedence." caption="Application Sid" name="applicationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-recording" icon="icons/small/twilio-connector-24x16.png" caption="Get Recording">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The recording sid to use in the query." caption="Recording Sid" name="recordingSid"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.RecordingType" required="true" supportsExpressions="true" description="The recording type to use." caption="Recording Type" name="recordingType">
+          <option value="MP3"></option>
+          <option value="WAV"></option>
+          <option value="XML"></option>
+        </enum>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="delete-recording" icon="icons/small/twilio-connector-24x16.png" caption="Delete Recording">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The recording sid to use." caption="Recording Sid" name="recordingSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-recordings" icon="icons/small/twilio-connector-24x16.png" caption="Get Recordings">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="Show only recordings made during the call given by this sid." caption="Call Sid" name="callSid"></string>
+        <string javaType="java.lang.String" required="false" description="Only show recordings created on the given date. Should be formatted as YYYY-MM-DD. You can also specify inequality, such as DateCreated=YYYY-MM-DD for recordings generated at or after midnight on a date." caption="Date Created" name="dateCreated"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-transcription-by-transcription-sid" icon="icons/small/twilio-connector-24x16.png" caption="Get Transcription By Transcription Sid">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The transcription sid to use in the query." caption="Transcription Sid" name="transcriptionSid"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.TranscriptionFormat" required="true" supportsExpressions="true" description="The transcription format of the response." caption="Transcription Format" name="transcriptionFormat">
+          <option value="TXT"></option>
+          <option value="XML"></option>
+        </enum>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-transcriptions" icon="icons/small/twilio-connector-24x16.png" caption="Get Transcriptions">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="The recording sid to use in the query." caption="Recording Sid" name="recordingSid"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.TranscriptionFormat" required="true" supportsExpressions="true" description="The transcription format for the response." caption="Transcription Format" name="transcriptionFormat">
+          <option value="TXT"></option>
+          <option value="XML"></option>
+        </enum>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-notification" icon="icons/small/twilio-connector-24x16.png" caption="Get Notification">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The account sid to use in the query." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The notification sid to use in the query." caption="Notification Sid" name="notificationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="delete-notification" icon="icons/small/twilio-connector-24x16.png" caption="Delete Notification">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The notification sid to use." caption="Notification Sid" name="notificationSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-all-notifications" icon="icons/small/twilio-connector-24x16.png" caption="Get All Notifications">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="An integer log level corresponding to the type of notification: 0 is ERROR, 1 is WARNING." caption="Log" name="log"></integer>
+        <string javaType="java.lang.String" required="false" description="Only show notifications for this date. Should be formatted as YYYY-MM-DD. You can also specify inequality, such as MessageDate=YYYY-MM-DD for messages logged at or after midnight on a date." caption="Message Date" name="messageDate"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-notifications-by-call-sid" icon="icons/small/twilio-connector-24x16.png" caption="Get Notifications By Call Sid">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="true" description="The call sid to use in the query." caption="Call Sid" name="callSid"></string>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="An integer log level corresponding to the type of notification: 0 is ERROR, 1 is WARNING." caption="Log" name="log"></integer>
+        <string javaType="java.lang.String" required="false" description="Only show notifications for this date. Should be formatted as YYYY-MM-DD. You can also specify inequality, such as MessageDate=YYYY-MM-DD for messages logged at or after midnight on a date." caption="Message Date" name="messageDate"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="get-sandbox" icon="icons/small/twilio-connector-24x16.png" caption="Get Sandbox">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twilio/abstractTwilioConnectorGeneric" abstract="true" image="icons/large/twilio-connector-48x32.png" localId="update-sandbox" icon="icons/small/twilio-connector-24x16.png" caption="Update Sandbox">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optionally override globally configured Account SID." caption="Account Sid" name="accountSid"></string>
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody sends an SMS to the sandbox." caption="Sms Url" name="smsUrl"></string>
+        <string javaType="java.lang.String" required="false" description="The URL that Twilio should request when somebody calls this sandbox." caption="Voice Url" name="voiceUrl"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the SmsUrl. Must be either GET or POST. Defaults to POST." caption="Sms Method" name="smsMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+        <enum allowsCustom="true" javaType="org.mule.module.twilio.HttpMethod" required="false" supportsExpressions="true" description="The HTTP method that should be used to request the above URL. Must be either GET or POST. Defaults to POST." caption="Voice Method" name="voiceMethod">
+          <option value="GET"></option>
+          <option value="POST"></option>
+        </enum>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+</namespace>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.6.0_33
+Built-By: jorged
+Created-By: Apache Maven
+Archiver-Version: Plexus Archiver
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.servers/pom.pro
+ perties
+SHA1-Digest: gRWR8la1hJFyHQ/PNtxi3yOQgyY=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.servers/pom.xml
+SHA1-Digest: hWk7XiJmUw+bcpZS090SUuMvKug=
+
+Name: feature.xml
+SHA1-Digest: yGIrg3xSBVddkzdylkGxZ328/O0=
+

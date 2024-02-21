@@ -1,0 +1,713 @@
+*******************************************************************************
+                          CloverETL Designer - HISTORY of RELEASES
+*******************************************************************************
+
+REL 3-3-0-M2
+------------
+* Support for list and map fields in metadata (container types)
+* CTL2 change in assignment operator '=' (now it assigns by value, not reference)
+* New components for JSON (JSONReader/JSONWriter)
+* New components for Java Beans (JavaBeanReader/Writer, JavaMapReader/Writer) - pass data in Java objects through dictionary
+* Introducing a new XMLReader component based on XPath queries
+* Search functions in Designer - Shift-Space to place new components, Ctrl-O to search components in the open graph
+* Merge metadata function in Designer - create new metadata from existing ones by merging fields together
+- Components can be renamed in the Edit component dialog by clicking their names
+- DB connection dialog - added multiple templates for a new connection to choose from
+- Introducing new license manager and eclipse update site format
+- Webservice client: added "Timeout" attribute + ability to print SOAP request/response in DEBUG mode
+
+
+REL 3-3-0-M1
+------------
+* New Excel spreadsheet components: SpreadsheetDataReader, SpreadsheetDataWriter
+* Graph elements locking (safety)
+* Metadata grouping in outline
+* MS Access and Generic ODBC drivers support
+* ComplexDataReader: support for regular expressions in selector
+- View data improvements
+
+
+REL 3.2.1
+---------
+- Fix of View Data dialog error when data contained NULL value/s
+- WebServiceClient name space support fixed
+- XMLExtract mapping dialog not handling recursive XSDs correctly fixed
+
+
+REL 3-2-0
+---------
+* Dynamic Edge Buffers
+* Transformation Editor Enhancements
+* Field Labels
+* Designer Activation redesigned with new licenses
+
+
+REL 3-1-2
+---------
+* White-labeling support - Clover can be branded as needed for OEM partners
+* Mac GUI crash fixes
+* Metadata extraction from flat file supports quoted field names
+* XMLWriter and XMLExtract - fixed bug in generating XML Schema on the Server 
+* MSSQLDataWriter - HOST\INSTANCE is now supported
+
+
+REL 3-1-0
+---------
+* XML components visual redesign
+	- brand new XMLWriter interface with visual and source editors
+	- improved XMLExtract UI - create and modify metadata inside the mapping dialog
+* Graph editor visual improvements
+	- handy description bar
+	- component autosize for component name
+	- improved edge handling
+* DnD in graph editor improved
+	- drag'n'drop features for dragging files to graph, outline, etc.
++ Primitive sequence support (no file required)
++ Graph zoom and scroll information is preserved
++ Java class wizard intergration into Transform Editor
++ Alt-drag note → does not work as a container
++ Auto-mapping in Transform Editor is case-insensitive
++ View data is not modal any more
+	- multiple View data windows can be open at the same time
++ Cobol CopyBook format metadata extract wizard
+
+
+REL 3-0-2
+---------
++ Extract metadata from database can now handle unknown JDBC data types
++ Fixed NPE when linking a lookup table
+
+
+REL 3-0-1
+---------
++ fixed opening of the fact table loader wizard
++ fixed XML mapping dialog breaking the mapping with skipped elements
++ updated Oracle built-in driver class
++ fixed annoying delays and hang-ups when working with SQL in Oracle
++ components in palette are now sorted in alphabetical order
++ fixed Transform Dialog issues when working with faulty lookups
++ Filter in SQL editor fixed
++ Import metadata from XSD fixed for names not conforming to Clover conventions
++ Tracking view incorrect CPU load fixed
++ Regular expression tester fix for incorrect regexps
+
+
+REL 3-0-0
+---------
++ Brand new transformation language – CTL2
++ Dictionary support in the Designer
++ Bundled examples with easy setup
++ Extracting metadata from DBF files
++ HTTP authentication support in HTTPConnector component
++ Improved edge drawing for complex graphs
++ CSV compliant flat file reading/writing
++ Default locale can be specified globally for the environment
++ FTP wildcards support added
++ Fact Table Loader wizard
++ Dictionary data types support enhanced to all CloverETL data types
++ Optimized resource allocation in CloverETL Server/Designer
++ Hundreds of minor functional and usability improvements
+
+
+REL 2-9-5
+---------
++ Added support for custom extension point to add extra VM arguments to graph run configuration
+
+
+REL 2-9-4
+---------
++ added support for IBM Java
+
+
+REL 2-9-3
+---------
++ Special characters in external transformations are no longer expanded
+
+
+REL 2-9-2
+---------
+Features:
++ Multiple external elements (metadata, connections, etc.) can now be linked by multiselect in file dialog
+
+Fixes:
++ SQL-2-Clover and vice versa type conversions optimized
++ SQLite support improved
++ added record type in Variables tab of Transform Editor
++ Fixed Oracle-specific crash with specific driver-level Java access
++ Fixed slow DB extract metadata for large table
++ added "parent" and "root" buttons to file dialog
++ double-dash comments in SQL are now possible
++ Invalid metadata in extract from flat file can now be save on user request
++ CTL editor fixed - rarely break CTL code syntax
++ Mac specific GUI fixes (font size, shortcut keys)
+  
+
+REL 2-9-1
+---------
+Fixes:
++ File dialog improvements
++ Browsing of Server projects on separate tab
++ Linking of external parameter files fixed
++ Occasional freeze on Mac OS fixed
+
+
+REL 2-9-0
+---------
+Features:
++ Parameter files can be located outside project 
++ Completely redesigned File URL dialog for better user experience
++ Parsing of NULL values from flat file by specifying custom "null" keyword
++ new component for connecting to Infobright database
++ new component for connecting to Web Services
++ Improved User's Guide
++ Quick Start Guide
++ Aspell lookup threshold setting fine tuning
++ Eclipse branding for bundle version
+
+Fixed:
++ Path to JAR in JMS connection definition now supports parameters
++ Export: image path in HTML file fixed
++ missing column names when browsing Oracle database
++ external metadata from outside project can be now used
+
+
+REL 2-8-1
+---------
+Features:
++ Support for SQLite database browsing
++ Drivers for Microsoft SQL Server and Sybase are bundled with Designers and readily available
++ Dynamic default value hints display current values based on graph settings
++ JDBC driver can be specified without loading the JAR - thus allowing the JAR to be on classpath
++ Unified use of Clover file URL dialog
+
+Fixed:
++ Minor usability fixes in Server integration (Designer Pro)
++ Parameter file linking in Server project
++ Fixed occasional exceptions when loading external lookup tables
+ 
+
+REL 2-8-0
+---------
+Features:
++ Unified versioning of CloverETL Engine and Designer (starting with 2.8.0)
++ Designer has two versions: Designer and Designer Pro
++ CloverETL Server Integration - connect to Server (Designer Pro only)
+
+
+
+REL-2-2-2
+---------
+Features:
++ CompanyTransactionsTutorial contains readme.html with general information about this turorial
+
+Fixes:
++ Installation problem with Eclipse 3.5 - Galileo
++ Validation of SQL queries with parameters (i.e. containing '?') in where clause
++ DBInputTable - parse error on last field of metadata causes error
++ When trying to Create database table using metadata and connection, the Execute button is disabled 
+
+
+REL-2-2-1
+---------
+Features:
++ Support of TAR in URL file dialog
++ SelectorURL attribute in MultilevelReader uses file dialog
++ XMLExtract - features definition 
++ Automated date formatting in DataGenerator
+
+Fixes:
++ Relative paths and parameters in JMS connection
++ External JMS connection problems
++ XSD import problems
++ DialogSettings fixed
++ Fixed SQL queries where table names contained $
++ DB connection jar driver with spaces fix
++ DB connection driver resetting
++ Editing of external metadata with invalid id
++ File url dialog bugfixes
++ Transform editor bugfixes
++ ArrayIndexOutOfBoundsException in Fastsort when runSize < 50 
++ Other fixes
+
+
+REL 2-2-0
+---------
+Features:
++ new tracking fields introduced - Peak CPU, Byte flow peak, Record flow peak, 
+	Waiting records, Average waiting records
++ some tracking fields renamed (Avg rows -> Record flow, Avg bytes -> Byte flow)
++ phase of selected components can be incremented or decremented
++ the export for connections, lookup tables, parameters and sequences
++ multi externalization of lookup tables, metadata and connections 
++ more keys for SequenceChecker
++ Clover search improved:
+       add search components by type (GUI name too)
+       fileURL attribute is split and parts of the path are searched too
+       change way of looking for pattern - now search pattern matched the text
++ view data shows whitespace and unprintable characters in both text and hex format
++ view data dialog allows "Goto line"
++ In all DB connection dialog, all graph connections are available
++ SQL Query editor can automatically quote database object names
++ import/export to CloverServer sandbox
++ notes move components which are inside them
++ descriptions of metadata fields and record
++ additional confirmation dialogs (e.g. pressing Esc in component editor)
++ regex tester in transformation and filter editors
++ JMS connection combo box for JMSReader/Writer
++ show whitespace characters in the metadata editor
++ metadata editor shows all locales supported by the JVM
++ automatic refresh of the project after graph finishes 
++ new Debug properties dialog for edges with debug mode enabled
++ debugged data records numbered with their real ordinal numbers
++ external sequences (defining, using, exporting, in/externalization)
++ filter editor: lookups, sequences and parameters references added
++ JNDI field added to DBConnection
++ PassThrough added to component context menu
++ transform editor: autoscroll to highlighted transformation
+
+Fixes:
++ xsd dialog for the import had optional delimiters instead of mandatory
++ XSD2Clover metadata created string type instead of boolean type
++ DB connection didn't convert its default name to the same name of internal DB connection
++ Externalization of DB connections
++ bugs in old DataGenerator
++ xs namespace for the xsd import didn't work 
++ improved detection of invalid graph during loading
++ various fixes for Mac OS X
++ tweaked palette order of some transformer components
++ metadata editor opens additional classes of invalid metadata
++ Clover search stopped at invalid graphs 
++ removed flicker of some widgets
++ Filter ALL in SQL editor fixed
++ CTL contents assist fixed for records and fields with the same name
++ selecting metadata for an edge updates the "blue" (i.e. same metadata) color on all edges
++ updated copyright info and website links in "About" dialogs
++ 11 bugfixes in transformation editor including various d&d, highlighting, speed buttons and focus behaviour 
++ custom trim attribute in metadata editor caused NPE
++ undo and redo of DB lookup internalization fixed
++ undo and redo for externalization of parameters fixed
++ component property editor refreshing fixed
++ internalization of connection model was corrupted
++ component property dialog buttons don't disappear anymore when connector is not specified
++ XML Schema in XML Extract mapping editor allows remote includes
++ bad cancel handling for some new objects fixed
++ some "browse" dialogs now open in project directory or last opened folder instead of home directory
++ XML extract mapping editor - added vertical sash to allow resizing
++ property type "properties" support general UTF-8 characters
++ project renaming caused problems with further editing (bad refresh)
++ annoying "Operation in progress" dialog for each keystroke in XLS Metadata wizard removed
++ approximative Join - key editor works better when there is an error
++ labels describing objects added for externalizing/internalizing of multiple tables - user knows what GUI asks him now
++ key dialogs for merging components display warnings if no slave port is specified
++ unable to open sequence without fileURL
++ JMSConnection copy into clipboard was broken
++ auto-layout fixed
++ metadata editor problems when record name or time is invalid
++ export of lookup tables breaks the lookup table
++ external DBConnection copy&paste didn't work
++ cross-graph copy&paste broken
++ linking external connection - doesn't include "name" property
++ some dialogs layout fixed
++ DB connection and extract metadata from DB wizard fixes
++ linking external lookup table links its required elements too
++ multiple link and internalization for lookup tables
++ externalize/export wizards offer right destination folder inside the project for various elements
++ metadata attached preview path parameters display fixed
++ join key editors are made consistent
++ slow test for archives
++ some internal code cleanup
++ a lot more minor issues fixed
+
+REL 2-1-3
+---------
+Fixes:
++ Correct transform function name in denormalizer default CTL code
+
+REL 2-1-2
+---------
+Features:
++ Accented characters are recognized as unprintable characters in Data View dialog
++ Clover search improved, more intuitive
++ More pre-defined format strings in Metadata dialog when defining date/number; highlite spaces in format string
++ Importer for upgrade of Java Reformat 2.5.x > 2.6.x
++ Country locales in metadata editor
+
+Fixes:
++ When extracting metadata from a flat file, data types are misinterpreted.
++ Approximative Join Key cell editor fails when trying to open without connectors attached
++ Create table dialog doesn't work with no available db connection
++ CTL Lite Transform editor: d&d of input field to transforms list doesn't work
++ Transform editor error line grows to very large size upon resizing when filled with bug report
++ Externalization of lookup table corrupts the id of connection to be externalized
++ Bad validation of CTL code with parameters
++ Unable to use "find" feature in the source view of graph editor
++ Transform editor doesn't open in some cases of bad CTL code
++ Import metadata from flat file doesnt work with parameters when PROJECT is set to "."
++ Transform editor didn't work correctly with CTL Lite combined with Java 
++ Unable to invoked find field by type
+
+REL 2-1-1
+---------
+Features:
++ XMLExtract mapping dialog 
+
+Fixes:
++ find fields by type
++ external lookup tables
++ file URL dialog generates invalid FTP URL
++ transform editor validator not updated with changed metadata
++ SequenceChecker component category
++ running graph with different engine
+
+REL 2-1-0
+---------
+Features:
++ find dialog - Ctrl+f is usable in graph editor
++ shared lookup table
++ PersistentLookupTable
++ AspellLookupTable
++ for PROJECT parameter use "." instead of absolute path
++ XML Extract to ignore element where outPort is not specified
++ partial dictionary suppport in GUI
++ when sql query returns empty reult set. write it in the first row of data table
++ ExtSort "Sort order" attribute is deprecated (order is specified for each field in sort key)
++ metadata editor UP/DOWN arrows tuning
++ SequenceChecker reintroduced into GUI
++ externalization of lookup table wizard updated
++ edge right click/create metadata assigns them to edge as well
++ trimming attributes and their default values for various components
++ file URL dialog bookmarks
++ LdapReader/LdapWriter editors updated
+
+Fixes:
++ GridView very slow display with large number of columns
++ XML Writer fails when no data are sent to that node
++ Proper jdbc config disapears when clicking on jdbc driver
++ JMX grid view blinking
++ A number of records isn't displayed for the 1st edge if 0th one doesn't exist
++ metadata editor shows different types for fields and for records
++ transform attribute priorities united among components
++ view data filter expression fixed
++ URL file dialog problems when PROJECT is set to "."
++ view data on multi-part output files (writers) reads only single file
++ two graphs with shared sequence share edge record counters as well 
++ the input edge into "passThrough" component doesn't display record count
++ cut&Paste between two notes with international characters
++ number of processed records is not shown for edges, which follow after empty port
+
+
+REL 2-0-3
+---------
+
++ components can be disabled through eclipse extension point (for other clover plugins)
++ minor improvements:
+  - allowed multiselect for parameters,connections and metedata in external link and internalize operations
+  - flat file metadata wizard supports graph parameters
+  - others
++ bugfixes:
+  - editable properties line bug fixed
+  - CTL postfix increment and decrement operator fixed
+  - creating metadata in CTL editor creates delimiters correctly
+  - autofilling with default delimiters caused problems
+  - better system resources control
+  - others
+
+REL 2-0-2
+---------
++ minor improvements:
+  - DataGenerator layout
+  - attributes for CloverDataWriter cleaned
+  - added default reader, writer icons
+
+REL 2-0
+---------
++ CTL editor with syntax highlighting, error highlighting, outline and content assist
++ visual transformation editor for CTL
++ regular expression tester
++ user name of the author and last modifier of the graph are saved into its XML
++ selection of metadata in the outline highlights the connectors which use it
++ wizard for importing external CloverETL projects
++ changed ranges editor for Partition component
++ connector tooltip contains metadata
++ all mappings use the same editor
++ new pages for lookup table editation
++ keyboard shortcuts in graph:
+	- F2 starts direct edit of notes 
+	- ENTER launcher the open action, i.e. editor for components, metadata etc.
++ direct editing of component name
++ JMX plugin was completely reworked according new engine implementation
++ cleanup of properties of graph elements, improved their display order
++ double click in restricted file dialog works
++ deprecated components have grey color
++ improved component descriptions
++ edge debug directory is now specified in CloverETL preferences page,
+	old temp folder definition directly on graph is now ignored  
++ context menu shows that by default edge type is detected
++ additional options in Clover run configuration (Java heap size, Java server mode,
+	turn off JMX, log level, path to alternative engine)
++ component phase is automatically updated in order to preserve phase order
++ exporting graph to HTML report
++ exporting/importing metadata to XSD definition file
++ bugfixes 
++ XMLWriter features: useRootElement, singleLine, DTD, XSD location, namespaces
++ JMSconn dialog modifications
++ MergeJoin: new attribute ascendingInputs
+
+REL 1-10-4
+----------
++ updates and bugfixes in XLS metadata import
++ connector reordering bug fixed
++ minor bugfixes
+
+REL 1-10-3
+----------
++ fixed possible NPE in metadata model
++ fixed race condition in outline
++ handle empty record name
+
+REL 1-10-2
+----------
++ XSL Transformation component
+
+REL 1-10-1
+----------
++ new button in file url dialog for port reading or writing 
++ fixed error handling during graph editor startup
++ fixed output ports higher than 9
+
+REL 1-10
+---------
+New features:
++ support for editing the contents of the dictionary via the Clover launch configuration
++ parsing workbench 
+	- metadata editor allows preview attachment of plain text
+	- preview with error highlighting
+	- preview allows more interactive metadata editing
+	- integrated into extraction of metadata from flat file
++ bugfixes 
+
+REL 1-9-2
+---------
+Release fixing bugs from 1.9.1 version.
+
++ updated copyright information in the About CloverETL dialog.
++ metadata model ignores field properties with empty values (i.e. size="").
++ SequenceWizard - better handling with parameters
++ minor bugfixes
+
+
+REL 1-9-1
+---------
+Release in particular repairing bugs from 1.9.0 version.
+
++ the Trash component has new charset parameter
++ updated mysql jdbc driver, added postresql jdbc driver
++ added URL edit icon in URL file editor
++ minor bugfixes
+
+REL 1-9-0
+---------
+New features:
++ new editor for "Ranges" attribute of Partition component
++ new editor for "Default foreign key" attribute of CheckForeignKey component
++ a graph can be exported into an image in png format
++ GUI recognizes and can handle unknown type of connections, lookup tables and sequences
++ new features of grid data view:
+	- filter expression
+	- sort data on column click
+	- searching text
+	- go to record
+	- go to line
+	- copy record/field
+	- hide/show unprintable characters
+	- hide/show columns
+	- one record view on double-click
++ possibility of editing data attribute in Simple/Range lookup table pages
++ double click on edge with no metadata (or selecting "Edit" in the right-click context menu)
+	displays a menu where user can select existing metadata or create new internal and external metadata
++ new metadata editor
++ new graph editor with 2 tabs, one with the visual graph editor, other with the XML source of the graph
++ ascending/descending flag in sort component can be specified per each key field
++ new project update - allows automatical creation of selected directories, 
+	places them into parameter file and use as defaults when creating new resources
++ copy & paste of metadata across edges
++ added new join key editor for the ExtHashJoin and ExtMergeJoin components
++ internalization/externalization for graph elements:
+	- metadata
+	- graph parameters
+	- connections
++ small filter editor updates - find dialog, line and column number
+
+REL 1-8-7
+---------
+Maintenance release with commercial purpose.
+
+REL 1-8-6
+---------
+Release in particular repairing bugs from 1.8.5 version.
+
++ connector metadata can be selected via the right-click context menu
++ re-arranged the right-click context menu actions
++ new JMS connection dialog was introduced
+
+REL 1-8-5
+---------
+Release in particular repairing bugs from 1.8.4 version.
+
+Changes/bug fixes:
++ mapping editor has a pluggable model element comparator (the default one uses Object.equals())
++ fixed the refreshing and usage of other than the default content provider in the mapping editor
++ filter expression dialog correctly handles no metadata on an input edge
++ transform dialog does not save empty assignment; new better visualisation of assignments
++ aggregation mapping dialog shows fields in the correct order
+
+REL 1-8-4
+---------
+Release in particular repairing bugs from 1.8.3 version.
+
+Changes/bug fixes:
++ password encryption for build-in JDBC drivers is fixed
++ simple mapping dialog has correct order of input metadata fields
+
+REL 1-8-3
+---------
+Release in particular repairing bugs from 1.8.2 version.
+
+Changes/bug fixes:
++ unknown connections were introduced - each parameter of unknown connection is now editable;
+	for instance it could be used for a JMS connection, which is not currently supported by the CloverETL Designer
++ name of metadata extracted from database, which does not provide table names, is set based on sql request
++ combobox with lookup tables shows both 'name' and 'id' attributes
+
+REL 1-8-2
+---------
+Release in particular repairing bugs from 1.8.1 version.
+
+Changes/bug fixes:
++ the metadata editing dialog has a specific minimum size, so that the horizontal
+    scrollbar doesn't dissapear
+
+REL 1-8-1
+---------
+Release in particular repairing bugs from 1.8.0 version.
+
+Changes/bug fixes:
++ the 'Ext Merge Join' and 'Ext Hash Join' components are now again available in the component palette
+
+REL 1-8-0 commercial purpose release
+---------
++ new extension point for connection - gui can be extended by new dialogs/wizards for custom connection types
++ gui now interoperates with engine's JDBC driver extension point - all build-in JDBC drivers are
+	available in the DB connection dialog
++ support for all new engine's components 
+	- "DB2 Data Writer" - DB2 bulk loader
+	- "Informix Data Writer" - Informix bulk loader
+	- "MSSQL Data Writer" - SQL Server bulk loader
++ the DB connection wizard now supports multifile JDBC drivers
++ an internal metadata object can be exported to the external form
++ a lot of fixes of current features
+
+REL 1-7-1
+---------
+Release in particular repairing bugs from 1.7.0 version.
+
+Changes/bug fixes:
++ a Note can be created also using drag&drop from the component palette
++ the license agreement text was updated
++ a timeout fot tracking server initialization was changed to 10 seconds
++ fix in the filter expression dialog - validation is consistence with engine side validation
++ better backward compatibility with Eclipse 3.1
++ few other small fixes
+
+REL 1-7-0
+---------
+New features:
++ new graph export wizard - all gui related XML tags can be
+	removed, all external parts of graph (external connections, 
+	external metadata and external parameter files) can be
+	embedded into
+	graph as internal objects - ideal for moving graph between
+	dev & prod systems
++ new graph tracking view; component and edge runtime status
+	information are also displayed directly in the graph editor
++ graph parameters can be used to in all attributes of graph
+	elements (components, edges,
+	connections, ...) and are properly handled
++ new wizard to create Clover metadata from SQL-DDL
+	statements
++ improved visualization of component ports
++ graph definition can include text-notes
++ support for new range lookup tables introduced in
+	CloverETL 2.2
++ new dialog for definition of parameters of Aggregate
+	component
++ list of available components in the palette can be
+	configured in the Clover preferences section
++ full support for DataGenerator component
+
+REL 1-6-0
+---------
+New features:
++ log4j plugin - new way how to collect information about running engine; all log messages are collected
+	except console view also in new "Clover - log4j" view
++ graph validation - graph is validated during editation, all components and their attributes are marked
+	if they are not valid setuped and simultaneously all problems reported by engine via checkConfig
+	methods are shown in the similar way
++ new license plugin was introduced
++ support for new components -
+	Data Generator
+	Structure Data Writer
+	Normalizer
+	Denormalizer
+	Extended Merge Join - handle multiple slaves
+	Extended Hash Join - handle multiple slaves
+	Lookup Join
+	Lookup Table Reader/Writer
+
+REL 1-5-0
+---------
+New features:
++ graphs import wizard to convert them from ver. 1.x to ver. 2.x
++ new graph parameters: created, guiVersion, licenseType, modified, revision
++ in the clover preferences panel it is possible to set default CloverETL engine and plug-ins location
++ new components -
+	XLS Data Reader
+	XLS Data Writer
+	Clover Data Reader
+	Clover Data Writer
+	LDAP Reader
+	LDAP Writer
+	MySql Writer
+	Oracle Writer
+	XMLExtract was amplified
+
+Changes:
++ new wizard for creating and editing lookup tables
++ new possibilities in dialog �Run� when running graph - definition of all command line parameters
+
+REL 1-4-0
+---------
+New features:
++SQL query editor
++create table from clover metadata
++browse database dialog
++edge debugging
++graph appearance customization
++graph auto-layouting
++select table dialog
++SQL insert statement editor
+
+REL 1-3-0
+---------
+First release which requires Eclipse 3.1
+
+New features:
++add filter expression dialog
++searching in plain text data view
++disable components (include pass through option)
++support for graph parameters in file component property
++edge reconnectiong
+
+Changes:
++Eclipse 3.1 support
++numbering lines in data view

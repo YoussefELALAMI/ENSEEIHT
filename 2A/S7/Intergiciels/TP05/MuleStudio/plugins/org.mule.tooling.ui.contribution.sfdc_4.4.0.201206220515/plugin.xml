@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.mule.tooling.core.contribution">
+      <externalContribution
+            contributionJar="mule-module-sfdc-4.4.jar"
+            contributionLibPathInMule="/plugins"
+            contributionLibs="mule-module-sfdc-4.4.zip"
+            contributionNamespace="http://www.mulesoft.org/schema/mule/sfdc"
+            contributionNamespaceFile="http://www.mulesoft.org/schema/mule/sfdc/4.0/mule-sfdc.xsd"
+            contributionNamespacePrefix="sfdc"
+            contributionType="cloud-connector"
+            icon="icons/small/sfdc-connector-24x16.png"
+            name="Salesforce"
+            path="salesforce.xml"
+            version="4.4">
+      </externalContribution>
+   </extension>
+
+</plugin>

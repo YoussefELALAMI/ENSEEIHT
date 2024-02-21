@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.mule.tooling.core.contribution">
+      <externalContribution
+      		name="Data Mapper"
+            contributionLibPathInMule="/plugins"
+            contributionLibs="mule-module-data-mapper.zip"
+            contributionNamespace="http://www.mulesoft.org/schema/mule/ee/data-mapper"
+            contributionNamespaceFile="http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd"
+            contributionNamespacePrefix="data-mapper"
+            contributionType="component"
+            path="datamapper.xml"
+            version="3.2.0">
+      </externalContribution>
+   </extension>
+
+</plugin>

@@ -1,0 +1,14 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: kCZSk4ZxSL6Er1Ab5V1dgjixvNs=
+Created-By: 1.6.0_33 (Apple Inc.)
+SHA1-Digest-Manifest: SAb23erawjB5b9NnMUNL8I/FP1Y=
+
+Name: examples/SpellChecker/spellcheck.xml
+SHA1-Digest: r0V4WLkfJ1gBAIt5kr1se3x4ByU=
+
+Name: examples/AjaxSpellChecker/TransformFile/sample.xml
+SHA1-Digest: biS8IcafTbXZnFfq5fQLQyZPc1g=
+
+Name: examples/AjaxSpellChecker/HTMLfile/SpellChecker.html
+SHA1-Digest: hJ3OhbLi9V4Q8Ai4n15DBTGryH4=
+

@@ -1,0 +1,94 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Built-By: jorged
+Bundle-Name: Mule Welcome plugin
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
+Bundle-Vendor: MuleSoft Inc.
+Build-Jdk: 1.6.0_33
+Bundle-Version: 1.3.0.201206220515
+Bundle-Activator: org.mule.tooling.welcome.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.mule.tooling.welcome; singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: intro/css/graphics/NewProjectTemplate-Hover-48x48.png
+SHA1-Digest: b3QNbTtPClUnX6by8IO8V99Ny60=
+
+Name: intro/css/graphics/sample_hov.gif
+SHA1-Digest: pT1cuGZHIE/eawlmJy8IJeyn/48=
+
+Name: intro/css/graphics/MoreInfo-Hover-32x32.png
+SHA1-Digest: LolmOcNrv5huC4IBi03mPe0dfxU=
+
+Name: intro/css/graphics/NewProject-Hover-32x32.png
+SHA1-Digest: /2bIBDG+9UFf06zvM7Hpoh4TP0c=
+
+Name: intro/css/graphics/GettingStarted-Rest-32x32.png
+SHA1-Digest: Wj5mW16ZAQ3hJbgklACpVjG2Mbw=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.welcome/pom.xml
+SHA1-Digest: B1zqmHE2tKH3E2H0x7h36YmqJ5A=
+
+Name: intro/css/graphics/NewProject-Rest-32x32.png
+SHA1-Digest: zhPaDOip8/lEiqAiQih63mHu5V0=
+
+Name: intro/css/graphics/NewProjectTemplate-Rest-32x32.png
+SHA1-Digest: Bc64IyP411ysLQcpUAiykKuDnuI=
+
+Name: org/mule/tooling/welcome/Activator.class
+SHA1-Digest: SgeVmcycR99yCy3nkl7AV+cQwiQ=
+
+Name: intro/css/graphics/GettingStarted-Hover-48x48.png
+SHA1-Digest: ikLLEFhh/TLlnfz8CeOKcSCtV/k=
+
+Name: intro/css/graphics/sample.gif
+SHA1-Digest: OsOwwGCPqpKtMzE67kFfiFQyPvQ=
+
+Name: intro/css/graphics/MoreInfo-Rest-32x32.png
+SHA1-Digest: 1NTT71sI4yvsLDNI34/anmW1rho=
+
+Name: intro/css/graphics/NewProjectTemplate-Hover-32x32.png
+SHA1-Digest: csdbwXuYXtYXGfn8r7mY633A38w=
+
+Name: intro/css/graphics/NewProjectTemplate-Rest-48x48.png
+SHA1-Digest: 5/V2apPappKklAz062bUa5VuBNI=
+
+Name: intro/css/graphics/NewProject-Hover-48x48.png
+SHA1-Digest: Mkeh8GBK5JXFTLyWCYqmgK9FjEs=
+
+Name: intro/css/graphics/GettingStarted-Hover-32x32.png
+SHA1-Digest: IbooT8yUU4xg2sAXedXirszja+A=
+
+Name: intro/introContent.xml
+SHA1-Digest: RguJA5vYYrcm/fMvkgpkpE3JzzE=
+
+Name: intro/css/graphics/GettingStarted-Rest-48x48.png
+SHA1-Digest: EntQU2gNTBhMrwGoMsKCwTWWZ40=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.welcome/pom.pro
+ perties
+SHA1-Digest: k6+kZqrTkuiAC/tXjqlUzByWDnI=
+
+Name: intro/css/graphics/MoreInfo-Hover-48x48.png
+SHA1-Digest: m4Nor8ublE/LRtzbGZIGiOHEkEc=
+
+Name: intro/muleWelcome.xml
+SHA1-Digest: OJmxYHjAZ+gFG5BfarCGyRY/66Y=
+
+Name: intro/css/graphics/MoreInfo-Rest-48x48.png
+SHA1-Digest: fGA2RCI6i6lvM+E16I+ETK2T/j0=
+
+Name: plugin.xml
+SHA1-Digest: UzWlXP+AKPeGj70Ct6X/uVseuGk=
+
+Name: intro/css/graphics/NewProject-Rest-48x48.png
+SHA1-Digest: LioK3sVLwtePyinisvtfPaOk/OE=
+
+Name: intro/content/root.xhtml
+SHA1-Digest: UoEzcugyr91I9MwUDtOqwqK7Z98=
+
+Name: intro/css/muleWelcome.css
+SHA1-Digest: vvmjsVXjBWHSgcx5ivXbyiHhqPE=
+

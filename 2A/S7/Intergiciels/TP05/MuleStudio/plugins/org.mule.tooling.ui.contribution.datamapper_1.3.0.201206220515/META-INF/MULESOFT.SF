@@ -1,0 +1,34 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: wPztIHvqhjPNZhqkn4NQfjCe4nA=
+Created-By: 1.6.0_33 (Apple Inc.)
+SHA1-Digest-Manifest: OSCm1WLpLmvAbnxWrY/aO49EaPQ=
+
+Name: org/mule/tooling/ui/contribution/datamapper/Activator.class
+SHA1-Digest: 4rlOzsNmENqhjjiain2unspIs6g=
+
+Name: icons/small/datamapper-24x16.png
+SHA1-Digest: n08uS+TwyhyrU2JQelb+Em76Asc=
+
+Name: plugin.xml
+SHA1-Digest: MzKeWqTLPLCzOehE2FnlhMVaDPY=
+
+Name: icons/small/datamapper-16x16.png
+SHA1-Digest: ExhFAHRdt9j2XfDkd3KGI/0n450=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .datamapper/pom.xml
+SHA1-Digest: Bg1cRE8ebRh2hSg3BoKpZ0/U7lE=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .datamapper/pom.properties
+SHA1-Digest: jIRjRxBaFk4MNZGjllpXJo+jWXw=
+
+Name: datamapper.xml
+SHA1-Digest: QnvmKCE9uS8VJy2v0L1R5HWANAU=
+
+Name: icons/large/datamapper-48x32.png
+SHA1-Digest: TZ5ZZMm+uxDL8i9CyPyMlx/EW7s=
+
+Name: mule-module-data-mapper.zip
+SHA1-Digest: ai17TLb9vv0sFpLUh3/sVj+9S1o=
+

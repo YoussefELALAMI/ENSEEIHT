@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<namespace xmlns="http://www.mulesoft.org/schema/mule/tooling.attributes" xmlns:mule="http://www.mulesoft.org/schema/mule/core" prefix="magento" url="http://www.mulesoft.org/schema/mule/magento">
+  <global-cloud-connector extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" image="icons/large/magento-connector-48x32.png" localId="config" icon="icons/small/magento-connector-24x16.png" description="Global Magento configuration information." caption="Magento">
+    <attribute-category description="Magento configuration properties." caption="General">
+      <group caption="Generic" id="magentoGenericProperties">
+        <name required="true" description="Give a name to this configuration so it can be later referenced by config-ref." caption="Name" name="name"></name>
+      </group>
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The user name to access Magento Web Services." caption="Username" name="username"></string>
+        <password javaType="java.lang.String" required="true" description="The password to access Magento Web Services." caption="Password" name="password"></password>
+        <string javaType="java.lang.String" required="true" description="The address to access Magento Web Services." caption="Address" name="address"></string>
+      </group>
+    </attribute-category>
+  </global-cloud-connector>
+  <cloud-connector extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" image="icons/large/magento-connector-48x32.png" localId="magento-connector" icon="icons/small/magento-connector-24x16.png" description="Magento is a feature-rich eCommerce platform built on open-source technology that provides online merchants with
+great and control over the look, content and functionality of their eCommerce store." caption="Magento" aliasId="org.mule.tooling.ui.modules.core.pattern.magento">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="magentoConnectorGeneric">
+        <modeSwitch description="Operation." caption="Operation" name="Magento operations to execute">
+          <mode modeLabel="Add category product" modeId="http://www.mulesoft.org/schema/mule/magento/add-category-product"></mode>
+          <mode modeLabel="Add order comment" modeId="http://www.mulesoft.org/schema/mule/magento/add-order-comment"></mode>
+          <mode modeLabel="Add order invoice comment" modeId="http://www.mulesoft.org/schema/mule/magento/add-order-invoice-comment"></mode>
+          <mode modeLabel="Add order shipment comment" modeId="http://www.mulesoft.org/schema/mule/magento/add-order-shipment-comment"></mode>
+          <mode modeLabel="Add order shipment track" modeId="http://www.mulesoft.org/schema/mule/magento/add-order-shipment-track"></mode>
+          <mode modeLabel="Add product link" modeId="http://www.mulesoft.org/schema/mule/magento/add-product-link"></mode>
+          <mode modeLabel="Cancel order" modeId="http://www.mulesoft.org/schema/mule/magento/cancel-order"></mode>
+          <mode modeLabel="Cancel order invoice" modeId="http://www.mulesoft.org/schema/mule/magento/cancel-order-invoice"></mode>
+          <mode modeLabel="Capture order invoice" modeId="http://www.mulesoft.org/schema/mule/magento/capture-order-invoice"></mode>
+          <mode modeLabel="Create category" modeId="http://www.mulesoft.org/schema/mule/magento/create-category"></mode>
+          <mode modeLabel="Create customer" modeId="http://www.mulesoft.org/schema/mule/magento/create-customer"></mode>
+          <mode modeLabel="Create customer address" modeId="http://www.mulesoft.org/schema/mule/magento/create-customer-address"></mode>
+          <mode modeLabel="Create order invoice" modeId="http://www.mulesoft.org/schema/mule/magento/create-order-invoice"></mode>
+          <mode modeLabel="Create order shipment" modeId="http://www.mulesoft.org/schema/mule/magento/create-order-shipment"></mode>
+          <mode modeLabel="Create product" modeId="http://www.mulesoft.org/schema/mule/magento/create-product"></mode>
+          <mode modeLabel="Create product attribute media" modeId="http://www.mulesoft.org/schema/mule/magento/create-product-attribute-media"></mode>
+          <mode modeLabel="Delete category" modeId="http://www.mulesoft.org/schema/mule/magento/delete-category"></mode>
+          <mode modeLabel="Delete category product" modeId="http://www.mulesoft.org/schema/mule/magento/delete-category-product"></mode>
+          <mode modeLabel="Delete customer" modeId="http://www.mulesoft.org/schema/mule/magento/delete-customer"></mode>
+          <mode modeLabel="Delete customer address" modeId="http://www.mulesoft.org/schema/mule/magento/delete-customer-address"></mode>
+          <mode modeLabel="Delete order shipment track" modeId="http://www.mulesoft.org/schema/mule/magento/delete-order-shipment-track"></mode>
+          <mode modeLabel="Delete product" modeId="http://www.mulesoft.org/schema/mule/magento/delete-product"></mode>
+          <mode modeLabel="Delete product attribute media" modeId="http://www.mulesoft.org/schema/mule/magento/delete-product-attribute-media"></mode>
+          <mode modeLabel="Delete product link" modeId="http://www.mulesoft.org/schema/mule/magento/delete-product-link"></mode>
+          <mode modeLabel="Get catalog current store view" modeId="http://www.mulesoft.org/schema/mule/magento/get-catalog-current-store-view"></mode>
+          <mode modeLabel="Get category" modeId="http://www.mulesoft.org/schema/mule/magento/get-category"></mode>
+          <mode modeLabel="Get category tree" modeId="http://www.mulesoft.org/schema/mule/magento/get-category-tree"></mode>
+          <mode modeLabel="Get customer" modeId="http://www.mulesoft.org/schema/mule/magento/get-customer"></mode>
+          <mode modeLabel="Get customer address" modeId="http://www.mulesoft.org/schema/mule/magento/get-customer-address"></mode>
+          <mode modeLabel="Get order" modeId="http://www.mulesoft.org/schema/mule/magento/get-order"></mode>
+          <mode modeLabel="Get order invoice" modeId="http://www.mulesoft.org/schema/mule/magento/get-order-invoice"></mode>
+          <mode modeLabel="Get order shipment" modeId="http://www.mulesoft.org/schema/mule/magento/get-order-shipment"></mode>
+          <mode modeLabel="Get order shipment carriers" modeId="http://www.mulesoft.org/schema/mule/magento/get-order-shipment-carriers"></mode>
+          <mode modeLabel="Get product" modeId="http://www.mulesoft.org/schema/mule/magento/get-product"></mode>
+          <mode modeLabel="Get product attribute media" modeId="http://www.mulesoft.org/schema/mule/magento/get-product-attribute-media"></mode>
+          <mode modeLabel="Get product special price" modeId="http://www.mulesoft.org/schema/mule/magento/get-product-special-price"></mode>
+          <mode modeLabel="Hold order" modeId="http://www.mulesoft.org/schema/mule/magento/hold-order"></mode>
+          <mode modeLabel="List category attribute options" modeId="http://www.mulesoft.org/schema/mule/magento/list-category-attribute-options"></mode>
+          <mode modeLabel="List category attributes" modeId="http://www.mulesoft.org/schema/mule/magento/list-category-attributes"></mode>
+          <mode modeLabel="List category levels" modeId="http://www.mulesoft.org/schema/mule/magento/list-category-levels"></mode>
+          <mode modeLabel="List category products" modeId="http://www.mulesoft.org/schema/mule/magento/list-category-products"></mode>
+          <mode modeLabel="List customer addresses" modeId="http://www.mulesoft.org/schema/mule/magento/list-customer-addresses"></mode>
+          <mode modeLabel="List customer groups" modeId="http://www.mulesoft.org/schema/mule/magento/list-customer-groups"></mode>
+          <mode modeLabel="List customers" modeId="http://www.mulesoft.org/schema/mule/magento/list-customers"></mode>
+          <mode modeLabel="List directory countries" modeId="http://www.mulesoft.org/schema/mule/magento/list-directory-countries"></mode>
+          <mode modeLabel="List directory regions" modeId="http://www.mulesoft.org/schema/mule/magento/list-directory-regions"></mode>
+          <mode modeLabel="List inventory stock items" modeId="http://www.mulesoft.org/schema/mule/magento/list-inventory-stock-items"></mode>
+          <mode modeLabel="List orders" modeId="http://www.mulesoft.org/schema/mule/magento/list-orders"></mode>
+          <mode modeLabel="List orders invoices" modeId="http://www.mulesoft.org/schema/mule/magento/list-orders-invoices"></mode>
+          <mode modeLabel="List orders shipments" modeId="http://www.mulesoft.org/schema/mule/magento/list-orders-shipments"></mode>
+          <mode modeLabel="List product attribute media" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-attribute-media"></mode>
+          <mode modeLabel="List product attribute media types" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-attribute-media-types"></mode>
+          <mode modeLabel="List product attribute options" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-attribute-options"></mode>
+          <mode modeLabel="List product attribute sets" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-attribute-sets"></mode>
+          <mode modeLabel="List product attribute tier prices" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-attribute-tier-prices"></mode>
+          <mode modeLabel="List product attributes" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-attributes"></mode>
+          <mode modeLabel="List product link" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-link"></mode>
+          <mode modeLabel="List product link attributes" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-link-attributes"></mode>
+          <mode modeLabel="List product link types" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-link-types"></mode>
+          <mode modeLabel="List product types" modeId="http://www.mulesoft.org/schema/mule/magento/list-product-types"></mode>
+          <mode modeLabel="List products" modeId="http://www.mulesoft.org/schema/mule/magento/list-products"></mode>
+          <mode modeLabel="List stock items" modeId="http://www.mulesoft.org/schema/mule/magento/list-stock-items"></mode>
+          <mode modeLabel="Move category" modeId="http://www.mulesoft.org/schema/mule/magento/move-category"></mode>
+          <mode modeLabel="Unhold order" modeId="http://www.mulesoft.org/schema/mule/magento/unhold-order"></mode>
+          <mode modeLabel="Update category" modeId="http://www.mulesoft.org/schema/mule/magento/update-category"></mode>
+          <mode modeLabel="Update category attribute store view" modeId="http://www.mulesoft.org/schema/mule/magento/update-category-attribute-store-view"></mode>
+          <mode modeLabel="Update category product" modeId="http://www.mulesoft.org/schema/mule/magento/update-category-product"></mode>
+          <mode modeLabel="Update customer" modeId="http://www.mulesoft.org/schema/mule/magento/update-customer"></mode>
+          <mode modeLabel="Update customer address" modeId="http://www.mulesoft.org/schema/mule/magento/update-customer-address"></mode>
+          <mode modeLabel="Update inventory stock item" modeId="http://www.mulesoft.org/schema/mule/magento/update-inventory-stock-item"></mode>
+          <mode modeLabel="Update product" modeId="http://www.mulesoft.org/schema/mule/magento/update-product"></mode>
+          <mode modeLabel="Update product attribute media" modeId="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-media"></mode>
+          <mode modeLabel="Update product attribute tier price" modeId="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-tier-price"></mode>
+          <mode modeLabel="Update product link" modeId="http://www.mulesoft.org/schema/mule/magento/update-product-link"></mode>
+          <mode modeLabel="Update product special price" modeId="http://www.mulesoft.org/schema/mule/magento/update-product-special-price"></mode>
+          <mode modeLabel="Update stock item" modeId="http://www.mulesoft.org/schema/mule/magento/update-stock-item"></mode>
+          <mode modeLabel="Void order invoice" modeId="http://www.mulesoft.org/schema/mule/magento/void-order-invoice"></mode>
+        </modeSwitch>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector abstract="true" image="icons/large/magento-connector-48x32.png" localId="abstractMagentoConnectorGeneric" icon="icons/small/magento-connector-24x16.png" description="Interact with Magento." caption="Abstractmagentoconnectorgeneric">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractMagentoConnectorGeneric">
+        <globalRef requiredType="http://www.mulesoft.org/schema/mule/magento/config" required="true" description="Specify which configuration to use for this invocation." caption="Config Reference" name="config-ref"></globalRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="add-order-shipment-comment" icon="icons/small/magento-connector-24x16.png" caption="Add Order Shipment Comment">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The comment to add." caption="Comment" name="comment"></string>
+        <string javaType="java.lang.String" required="true" description="The shipment's increment id." caption="Shipment Id" name="shipmentId"></string>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If the comment must be sent in the email." caption="Include Comment In Email" name="includeCommentInEmail"></boolean>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If an email must be sent after shipment creation." caption="Send Email" name="sendEmail"></boolean>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="int" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="add-order-shipment-track" icon="icons/small/magento-connector-24x16.png" caption="Add Order Shipment Track">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The new track's carrier code." caption="Carrier Code" name="carrierCode"></string>
+        <string javaType="java.lang.String" required="true" description="The shipment id." caption="Shipment Id" name="shipmentId"></string>
+        <string javaType="java.lang.String" required="true" description="The new track's title." caption="Title" name="title"></string>
+        <string javaType="java.lang.String" required="true" description="The new track's id." caption="Track Id" name="trackId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="cancel-order" icon="icons/small/magento-connector-24x16.png" caption="Cancel Order">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The order to cancel." caption="Order Id" name="orderId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="create-order-shipment" icon="icons/small/magento-connector-24x16.png" caption="Create Order Shipment">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The order increment id." caption="Order Id" name="orderId"></string>
+        <string javaType="java.lang.String" required="false" description="An optional comment." caption="Comment" name="comment"></string>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If the comment must be sent in the email." caption="Include Comment In Email" name="includeCommentInEmail"></boolean>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If an email must be sent after shipment creation." caption="Send Email" name="sendEmail"></boolean>
+      </group>
+      <group caption="Item Ids and Quantities" id="item Ids and Quantities">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.Integer,java.lang.Double&gt;" description="A map containing an entry per each (orderItemId, quantity) pair." caption="Items Quantities" name="http://www.mulesoft.org/schema/mule/magento/create-order-shipment-items-quantities"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-order-shipment-items-quantities" xmlname="items-quantities" image="icons/large/magento-connector-48x32.png" localId="create-order-shipment-items-quantities" icon="icons/small/magento-connector-24x16.png" description="Items quantities." caption="Items Quantities">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Items quantities." caption="Items Quantities" name="http://www.mulesoft.org/schema/mule/magento/create-order-shipment-items-quantity"></childElement>
+  </nested>
+  <nested xmlname="items-quantity" image="icons/large/magento-connector-48x32.png" localId="create-order-shipment-items-quantity" icon="icons/small/magento-connector-24x16.png" description="Items quantities." caption="Items Quantities">
+    <integer step="1" min="0" description="Key." caption="Key" name="key"></integer>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-order" icon="icons/small/magento-connector-24x16.png" caption="Get Order">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The order whose properties to fetch." caption="Order Id" name="orderId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-order-invoice" icon="icons/small/magento-connector-24x16.png" caption="Get Order Invoice">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The target invoiceId." caption="Invoice Id" name="invoiceId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;org.mule.module.magento.api.order.model.Carrier&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-order-shipment-carriers" icon="icons/small/magento-connector-24x16.png" caption="Get Order Shipment Carriers">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The target order id." caption="Order Id" name="orderId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-order-shipment" icon="icons/small/magento-connector-24x16.png" caption="Get Order Shipment">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The id of the shipment." caption="Shipment Id" name="shipmentId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="hold-order" icon="icons/small/magento-connector-24x16.png" caption="Hold Order">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The order to put on hold state." caption="Order Id" name="orderId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-orders" icon="icons/small/magento-connector-24x16.png" caption="List Orders">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optional filtering expression - one or more comma-separated unary or binary predicates, one for each filter, in the form filterType(attributeName, value), for binary filters or filterType(attributeName), for unary filters, where filterType is istrue, isfalse or any of the Magento standard filters. Non-numeric values need to be escaped using simple quotes." caption="Filter" name="filter"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-orders-invoices" icon="icons/small/magento-connector-24x16.png" caption="List Orders Invoices">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optional filtering expression - one or more comma-separated unary or binary predicates, one for each filter, in the form filterType(attributeName, value), for binary filters or filterType(attributeName), for unary filters, where filterType is istrue, isfalse or any of the Magento standard filters. Non-numeric values need to be escaped using simple quotes." caption="Filter" name="filter"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-orders-shipments" icon="icons/small/magento-connector-24x16.png" caption="List Orders Shipments">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optional filtering expression - one or more comma-separated unary or binary predicates, one for each filter, in the form filterType(attributeName, value), for binary filters or filterType(attributeName), for unary filters, where filterType is istrue, isfalse or any of the Magento standard filters. Non-numeric values need to be escaped using simple quotes." caption="Filter" name="filter"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-order-shipment-track" icon="icons/small/magento-connector-24x16.png" caption="Delete Order Shipment Track">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The target shipment id." caption="Shipment Id" name="shipmentId"></string>
+        <string javaType="java.lang.String" required="true" description="The id of the track to delete." caption="Track Id" name="trackId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="add-order-comment" icon="icons/small/magento-connector-24x16.png" caption="Add Order Comment">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The comment." caption="Comment" name="comment"></string>
+        <string javaType="java.lang.String" required="true" description="The order id." caption="Order Id" name="orderId"></string>
+        <string javaType="java.lang.String" required="true" description="The comment status." caption="Status" name="status"></string>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If an email must be sent after shipment creation." caption="Send Email" name="sendEmail"></boolean>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="unhold-order" icon="icons/small/magento-connector-24x16.png" caption="Unhold Order">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The id of the order to remove from hold state." caption="Order Id" name="orderId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="create-order-invoice" icon="icons/small/magento-connector-24x16.png" caption="Create Order Invoice">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The id of the order." caption="Order Id" name="orderId"></string>
+        <string javaType="java.lang.String" required="false" description="An optional comment." caption="Comment" name="comment"></string>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If the comment must be sent in the email." caption="Include Comment In Email" name="includeCommentInEmail"></boolean>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If an email must be sent after shipment creation." caption="Send Email" name="sendEmail"></boolean>
+      </group>
+      <group caption="Item Ids and Quantities" id="item Ids and Quantities">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.Integer,java.lang.Double&gt;" description="A map containing an entry per each (orderItemId, quantity) pair." caption="Items Quantities" name="http://www.mulesoft.org/schema/mule/magento/create-order-invoice-items-quantities"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-order-invoice-items-quantities" xmlname="items-quantities" image="icons/large/magento-connector-48x32.png" localId="create-order-invoice-items-quantities" icon="icons/small/magento-connector-24x16.png" description="Items quantities." caption="Items Quantities">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="true" description="Items quantities." caption="Items Quantities" name="http://www.mulesoft.org/schema/mule/magento/create-order-invoice-items-quantity"></childElement>
+  </nested>
+  <nested xmlname="items-quantity" image="icons/large/magento-connector-48x32.png" localId="create-order-invoice-items-quantity" icon="icons/small/magento-connector-24x16.png" description="Items quantities." caption="Items Quantities">
+    <integer step="1" min="0" description="Key." caption="Key" name="key"></integer>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="add-order-invoice-comment" icon="icons/small/magento-connector-24x16.png" caption="Add Order Invoice Comment">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The comment to add." caption="Comment" name="comment"></string>
+        <string javaType="java.lang.String" required="true" description="The invoice id." caption="Invoice Id" name="invoiceId"></string>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If the comment must be sent in the email." caption="Include Comment In Email" name="includeCommentInEmail"></boolean>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If an email must be sent after shipment creation." caption="Send Email" name="sendEmail"></boolean>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="capture-order-invoice" icon="icons/small/magento-connector-24x16.png" caption="Capture Order Invoice">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The invoice to capture." caption="Invoice Id" name="invoiceId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="void-order-invoice" icon="icons/small/magento-connector-24x16.png" caption="Void Order Invoice">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The invoice id." caption="Invoice Id" name="invoiceId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="cancel-order-invoice" icon="icons/small/magento-connector-24x16.png" caption="Cancel Order Invoice">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The invoice id." caption="Invoice Id" name="invoiceId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="int" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="create-customer-address" icon="icons/small/magento-connector-24x16.png" caption="Create Customer Address">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The customer." caption="Customer Id" name="customerId"></integer>
+      </group>
+      <group caption="Address Attributes" id="address Attributes">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The address attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-customer-address-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-customer-address-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="create-customer-address-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-customer-address-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="create-customer-address-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="int" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="create-customer" icon="icons/small/magento-connector-24x16.png" caption="Create Customer">
+    <attribute-category description="General." caption="General">
+      <group caption="Customer Attributes" id="customer Attributes">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The attributes of the new customer." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-customer-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-customer-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="create-customer-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-customer-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="create-customer-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-customer" icon="icons/small/magento-connector-24x16.png" caption="Delete Customer">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The customer to delete." caption="Customer Id" name="customerId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-customer-address" icon="icons/small/magento-connector-24x16.png" caption="Delete Customer Address">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The address id to delete." caption="Address Id" name="addressId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-customer" icon="icons/small/magento-connector-24x16.png" caption="Get Customer">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The id of the customer to retrieve." caption="Customer Id" name="customerId"></integer>
+      </group>
+      <group caption="Attributes to Retrieve" id="attributes to Retrieve">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.List&lt;java.lang.String&gt;" description="The attributes to retrieve. Not empty." caption="Attribute Names" name="http://www.mulesoft.org/schema/mule/magento/get-customer-attribute-names"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/get-customer-attribute-names" xmlname="attribute-names" image="icons/large/magento-connector-48x32.png" localId="get-customer-attribute-names" icon="icons/small/magento-connector-24x16.png" description="Attribute names." caption="Attribute Names">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attribute names." caption="Attribute Names" name="http://www.mulesoft.org/schema/mule/magento/get-customer-attribute-name"></childElement>
+  </nested>
+  <nested xmlname="attribute-name" image="icons/large/magento-connector-48x32.png" localId="get-customer-attribute-name" icon="icons/small/magento-connector-24x16.png" description="Attribute names." caption="Attribute Names">
+    <text isToElement="true" description="The attributes to retrieve. Not empty." caption="Attribute Names" name="get-customer-attribute-name"></text>
+  </nested>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-customer-address" icon="icons/small/magento-connector-24x16.png" caption="Get Customer Address">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The id of the address." caption="Address Id" name="addressId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-customer-addresses" icon="icons/small/magento-connector-24x16.png" caption="List Customer Addresses">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The id of the customer." caption="Customer Id" name="customerId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-customer-groups" icon="icons/small/magento-connector-24x16.png" caption="List Customer Groups">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-customers" icon="icons/small/magento-connector-24x16.png" caption="List Customers">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optional filtering expression - one or more comma-separated unary or binary predicates, one for each filter, in the form filterType(attributeName, value), for binary filters or filterType(attributeName), for unary filters, where filterType is istrue, isfalse or any of the Magento standard filters. Non-numeric values need to be escaped using simple quotes." caption="Filter" name="filter"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-customer" icon="icons/small/magento-connector-24x16.png" caption="Update Customer">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The target customer to update." caption="Customer Id" name="customerId"></integer>
+      </group>
+      <group caption="Customer Attributes to Update" id="customer Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The attributes map." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-customer-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-customer-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-customer-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-customer-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-customer-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-customer-address" icon="icons/small/magento-connector-24x16.png" caption="Update Customer Address">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The customer address to update." caption="Address Id" name="addressId"></integer>
+      </group>
+      <group caption="Address Attributes to Update" id="address Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The address attributes to update." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-customer-address-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-customer-address-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-customer-address-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-customer-address-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-customer-address-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-stock-items" icon="icons/small/magento-connector-24x16.png" caption="List Stock Items">
+    <attribute-category description="General." caption="General">
+      <group caption="Product Ids or SKUs" id="product Ids or SKUs">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.List&lt;java.lang.String&gt;" description="A not empty list of product ids or skus whose attributes to list." caption="Product Id Or Skus" name="http://www.mulesoft.org/schema/mule/magento/list-stock-items-product-id-or-skus"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/list-stock-items-product-id-or-skus" xmlname="product-id-or-skus" image="icons/large/magento-connector-48x32.png" localId="list-stock-items-product-id-or-skus" icon="icons/small/magento-connector-24x16.png" description="Product id or skus." caption="Product Id Or Skus">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Product id or skus." caption="Product Id Or Skus" name="http://www.mulesoft.org/schema/mule/magento/list-stock-items-product-id-or-sku"></childElement>
+  </nested>
+  <nested xmlname="product-id-or-sku" image="icons/large/magento-connector-48x32.png" localId="list-stock-items-product-id-or-sku" icon="icons/small/magento-connector-24x16.png" description="Product id or skus." caption="Product Id Or Skus">
+    <text isToElement="true" description="A not empty list of product ids or skus whose attributes to list." caption="Product Id Or Skus" name="list-stock-items-product-id-or-sku"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-stock-item" icon="icons/small/magento-connector-24x16.png" caption="Update Stock Item">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The product id or sku of the product to update." caption="Product Id Or Sku" name="productIdOrSku"></string>
+      </group>
+      <group caption="Attributes to Update" id="attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The attributes to update." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-stock-item-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-stock-item-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-stock-item-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-stock-item-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-stock-item-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-directory-countries" icon="icons/small/magento-connector-24x16.png" caption="List Directory Countries">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-directory-regions" icon="icons/small/magento-connector-24x16.png" caption="List Directory Regions">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The country code, in ISO2 or ISO3 format." caption="Country Id" name="countryId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="add-product-link" icon="icons/small/magento-connector-24x16.png" caption="Add Product Link">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The product type." caption="Type" name="type"></string>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the source product. Use it instead of productIdOrSku in case you are sure the source product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The destination product id or sku." caption="Linked Product Id Or Sku" name="linkedProductIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the source product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the source product. Use it instead of productIdOrSku in case you are sure the source product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+      <group caption="Address Attributes to Update" id="address Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The link attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/add-product-link-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/add-product-link-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="add-product-link-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/add-product-link-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="add-product-link-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="create-product-attribute-media" icon="icons/small/magento-connector-24x16.png" caption="Create Product Attribute Media">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="false" description="The base name of the new remote image." caption="Base File Name" name="baseFileName"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+        <enum allowsCustom="true" javaType="org.mule.module.magento.api.catalog.model.MediaMimeType" required="true" supportsExpressions="true" description="The mimetype." caption="Mime Type" name="mimeType">
+          <option value="GIF"></option>
+          <option value="JPEG"></option>
+          <option value="PNG"></option>
+        </enum>
+      </group>
+      <group caption="Media Attributes" id="media Attributes">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The media attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-product-attribute-media-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-product-attribute-media-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="create-product-attribute-media-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-product-attribute-media-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="create-product-attribute-media-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-product-attribute-media" icon="icons/small/magento-connector-24x16.png" caption="Delete Product Attribute Media">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The remote media file to delete." caption="File Name" name="fileName"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-product-link" icon="icons/small/magento-connector-24x16.png" caption="Delete Product Link">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="Link type." caption="Type" name="type"></string>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the source product. Use it instead of productIdOrSku in case you are sure the source product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The linked product id or sku." caption="Linked Product Id Or Sku" name="linkedProductIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the source product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the source product. Use it instead of productIdOrSku in case you are sure the source product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-product-attribute-media" icon="icons/small/magento-connector-24x16.png" caption="Get Product Attribute Media">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The name of the file." caption="File Name" name="fileName"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="false" description="The store view id or code." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="int" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-catalog-current-store-view" icon="icons/small/magento-connector-24x16.png" caption="Get Catalog Current Store View">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-category-attribute-store-view" icon="icons/small/magento-connector-24x16.png" caption="Update Category Attribute Store View">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The id or code of the target store. Left unspecified for using current store the id or code of the store view to set as default for this session." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-category-attributes" icon="icons/small/magento-connector-24x16.png" caption="List Category Attributes">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-category-attribute-options" icon="icons/small/magento-connector-24x16.png" caption="List Category Attribute Options">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The target attribute whose options will be retrieved." caption="Attribute Id" name="attributeId"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-attribute-media" icon="icons/small/magento-connector-24x16.png" caption="List Product Attribute Media">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-attribute-media-types" icon="icons/small/magento-connector-24x16.png" caption="List Product Attribute Media Types">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The setId." caption="Set Id" name="setId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-attribute-options" icon="icons/small/magento-connector-24x16.png" caption="List Product Attribute Options">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The target attribute whose options will be listed." caption="Attribute Id" name="attributeId"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-attributes" icon="icons/small/magento-connector-24x16.png" caption="List Product Attributes">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The set id." caption="Set Id" name="setId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-attribute-sets" icon="icons/small/magento-connector-24x16.png" caption="List Product Attribute Sets">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-attribute-tier-prices" icon="icons/small/magento-connector-24x16.png" caption="List Product Attribute Tier Prices">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-link" icon="icons/small/magento-connector-24x16.png" caption="List Product Link">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The link type." caption="Type" name="type"></string>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-link-attributes" icon="icons/small/magento-connector-24x16.png" caption="List Product Link Attributes">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The product type." caption="Type" name="type"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.lang.String&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-link-types" icon="icons/small/magento-connector-24x16.png" caption="List Product Link Types">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-product-types" icon="icons/small/magento-connector-24x16.png" caption="List Product Types">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-product-attribute-media" icon="icons/small/magento-connector-24x16.png" caption="Update Product Attribute Media">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The name of the remote media file to update." caption="File Name" name="fileName"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+      <group caption="Media Attributes to Update" id="media Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The attributes to update." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-media-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-media-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-product-attribute-media-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-media-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-product-attribute-media-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-product-attribute-tier-price" icon="icons/small/magento-connector-24x16.png" caption="Update Product Attribute Tier Price">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+      <group caption="Tier Price Attributes to Update" id="tier Price Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The tier price to update." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-tier-price-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-tier-price-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-product-attribute-tier-price-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-attribute-tier-price-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-product-attribute-tier-price-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-product-link" icon="icons/small/magento-connector-24x16.png" caption="Update Product Link">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The link type." caption="Type" name="type"></string>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the source product. Use it instead of productIdOrSku in case you are sure the source product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The destination product id or sku." caption="Linked Product Id Or Sku" name="linkedProductIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the source product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the source product. Use it instead of productIdOrSku in case you are sure the source product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+      <group caption="Link Attributes to Update" id="link Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The link attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-link-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-product-link-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-product-link-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-link-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-product-link-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-category-products" icon="icons/small/magento-connector-24x16.png" caption="List Category Products">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The category." caption="Category Id" name="categoryId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="add-category-product" icon="icons/small/magento-connector-24x16.png" caption="Add Category Product">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The category where the given product will be added." caption="Category Id" name="categoryId"></integer>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The position of this product." caption="Position" name="position"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="int" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="create-category" icon="icons/small/magento-connector-24x16.png" caption="Create Category">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The parent category id." caption="Parent Id" name="parentId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+      <group caption="Category Attributes" id="category Attributes">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The new category attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-category-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-category-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="create-category-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-category-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="create-category-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-category" icon="icons/small/magento-connector-24x16.png" caption="Delete Category">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The category to delete." caption="Category Id" name="categoryId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-category" icon="icons/small/magento-connector-24x16.png" caption="Get Category">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The category whose attributes will be retrieved." caption="Category Id" name="categoryId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+      <group caption="Attribute Names to Retrieve" id="attribute Names to Retrieve">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.List&lt;java.lang.String&gt;" description="The category attributes that will be retrieved." caption="Attribute Names" name="http://www.mulesoft.org/schema/mule/magento/get-category-attribute-names"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/get-category-attribute-names" xmlname="attribute-names" image="icons/large/magento-connector-48x32.png" localId="get-category-attribute-names" icon="icons/small/magento-connector-24x16.png" description="Attribute names." caption="Attribute Names">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attribute names." caption="Attribute Names" name="http://www.mulesoft.org/schema/mule/magento/get-category-attribute-name"></childElement>
+  </nested>
+  <nested xmlname="attribute-name" image="icons/large/magento-connector-48x32.png" localId="get-category-attribute-name" icon="icons/small/magento-connector-24x16.png" description="Attribute names." caption="Attribute Names">
+    <text isToElement="true" description="The category attributes that will be retrieved." caption="Attribute Names" name="get-category-attribute-name"></text>
+  </nested>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-category-levels" icon="icons/small/magento-connector-24x16.png" caption="List Category Levels">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The parent category of the categories that will be listed." caption="Parent Category Id" name="parentCategoryId"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+        <string javaType="java.lang.String" required="false" description="The website." caption="Website" name="website"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="move-category" icon="icons/small/magento-connector-24x16.png" caption="Move Category">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The id of the category to be moved." caption="Category Id" name="categoryId"></integer>
+        <integer step="1" min="0" javaType="int" required="true" description="The new parent category id." caption="Parent Id" name="parentId"></integer>
+        <string javaType="java.lang.String" required="false" description="An optional category id for use as reference in the positioning of the moved category." caption="After Id" name="afterId"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-category-product" icon="icons/small/magento-connector-24x16.png" caption="Delete Category Product">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The category to delete." caption="Category Id" name="categoryId"></integer>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-category-tree" icon="icons/small/magento-connector-24x16.png" caption="Get Category Tree">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The parent id." caption="Parent Id" name="parentId"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-category" icon="icons/small/magento-connector-24x16.png" caption="Update Category">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The category to update." caption="Category Id" name="categoryId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+      <group caption="Category Attributes to Update" id="category Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The category new attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-category-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-category-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-category-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-category-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-category-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-category-product" icon="icons/small/magento-connector-24x16.png" caption="Update Category Product">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="The category id." caption="Category Id" name="categoryId"></integer>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="true" description="The category position for ordering the category inside its level." caption="Position" name="position"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-inventory-stock-items" icon="icons/small/magento-connector-24x16.png" caption="List Inventory Stock Items">
+    <attribute-category description="General." caption="General">
+      <group caption="Product Ids or SKUs" id="product Ids or SKUs">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.List&lt;java.lang.String&gt;" description="The list of product ids and/or skus whose attributes will be retrieved." caption="Product Id Or Skus" name="http://www.mulesoft.org/schema/mule/magento/list-inventory-stock-items-product-id-or-skus"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/list-inventory-stock-items-product-id-or-skus" xmlname="product-id-or-skus" image="icons/large/magento-connector-48x32.png" localId="list-inventory-stock-items-product-id-or-skus" icon="icons/small/magento-connector-24x16.png" description="Product id or skus." caption="Product Id Or Skus">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Product id or skus." caption="Product Id Or Skus" name="http://www.mulesoft.org/schema/mule/magento/list-inventory-stock-items-product-id-or-sku"></childElement>
+  </nested>
+  <nested xmlname="product-id-or-sku" image="icons/large/magento-connector-48x32.png" localId="list-inventory-stock-items-product-id-or-sku" icon="icons/small/magento-connector-24x16.png" description="Product id or skus." caption="Product Id Or Skus">
+    <text isToElement="true" description="The list of product ids and/or skus whose attributes will be retrieved." caption="Product Id Or Skus" name="list-inventory-stock-items-product-id-or-sku"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-inventory-stock-item" icon="icons/small/magento-connector-24x16.png" caption="Update Inventory Stock Item">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+      <group caption="Stock Item Attributes" id="stock Item Attributes">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The new attributes of the stock item." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-inventory-stock-item-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-inventory-stock-item-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-inventory-stock-item-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-inventory-stock-item-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-inventory-stock-item-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="int" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="create-product" icon="icons/small/magento-connector-24x16.png" caption="Create Product">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The new product's type." caption="Type" name="type"></string>
+        <integer step="1" min="0" javaType="int" required="true" description="The new product's set." caption="Set" name="set"></integer>
+        <string javaType="java.lang.String" required="true" description="The new product's sku." caption="Sku" name="sku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+      <group caption="Standard Product Attributes" id="standard Product Attributes">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The standard attributes of the new product." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-product-attributes"></childElement>
+      </group>
+      <group caption="Non-standard Product Attributes" id="non-standard Product Attributes">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The non standard attributes of the new product." caption="Additional Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-product-additional-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-product-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="create-product-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-product-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="create-product-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/create-product-additional-attributes" xmlname="additional-attributes" image="icons/large/magento-connector-48x32.png" localId="create-product-additional-attributes" icon="icons/small/magento-connector-24x16.png" description="Additional attributes." caption="Additional Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Additional attributes." caption="Additional Attributes" name="http://www.mulesoft.org/schema/mule/magento/create-product-additional-attribute"></childElement>
+  </nested>
+  <nested xmlname="additional-attribute" image="icons/large/magento-connector-48x32.png" localId="create-product-additional-attribute" icon="icons/small/magento-connector-24x16.png" description="Additional attributes." caption="Additional Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="delete-product" icon="icons/small/magento-connector-24x16.png" caption="Delete Product">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-product-special-price" icon="icons/small/magento-connector-24x16.png" caption="Get Product Special Price">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="get-product" icon="icons/small/magento-connector-24x16.png" caption="Get Product">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+      <group caption="Standard Product Attributes to Retrieve" id="standard Product Attributes to Retrieve">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.List&lt;java.lang.String&gt;" description="The list of standard attributes to be returned." caption="Attributes Names" name="http://www.mulesoft.org/schema/mule/magento/get-product-attributes-names"></childElement>
+      </group>
+      <group caption="Non-standard Product Attributes to Retrieve" id="non-standard Product Attributes to Retrieve">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.List&lt;java.lang.String&gt;" description="The list of non standard attributes to be returned in the additionalAttributes attribute." caption="Additional Attribute Names" name="http://www.mulesoft.org/schema/mule/magento/get-product-additional-attribute-names"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/get-product-attributes-names" xmlname="attributes-names" image="icons/large/magento-connector-48x32.png" localId="get-product-attributes-names" icon="icons/small/magento-connector-24x16.png" description="Attributes names." caption="Attributes Names">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Attributes names." caption="Attributes Names" name="http://www.mulesoft.org/schema/mule/magento/get-product-attributes-name"></childElement>
+  </nested>
+  <nested xmlname="attributes-name" image="icons/large/magento-connector-48x32.png" localId="get-product-attributes-name" icon="icons/small/magento-connector-24x16.png" description="Attributes names." caption="Attributes Names">
+    <text isToElement="true" description="The list of standard attributes to be returned." caption="Attributes Names" name="get-product-attributes-name"></text>
+  </nested>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/get-product-additional-attribute-names" xmlname="additional-attribute-names" image="icons/large/magento-connector-48x32.png" localId="get-product-additional-attribute-names" icon="icons/small/magento-connector-24x16.png" description="Additional attribute names." caption="Additional Attribute Names">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Additional attribute names." caption="Additional Attribute Names" name="http://www.mulesoft.org/schema/mule/magento/get-product-additional-attribute-name"></childElement>
+  </nested>
+  <nested xmlname="additional-attribute-name" image="icons/large/magento-connector-48x32.png" localId="get-product-additional-attribute-name" icon="icons/small/magento-connector-24x16.png" description="Additional attribute names." caption="Additional Attribute Names">
+    <text isToElement="true" description="The list of non standard attributes to be returned in the additionalAttributes attribute." caption="Additional Attribute Names" name="get-product-additional-attribute-name"></text>
+  </nested>
+  <cloud-connector returnType="java.util.List&lt;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&gt;" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="list-products" icon="icons/small/magento-connector-24x16.png" caption="List Products">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Optional filtering expression - one or more comma-separated unary or binary predicates, one for each filter, in the form filterType(attributeName, value), for binary filters or filterType(attributeName), for unary filters, where filterType is istrue, isfalse or any of the Magento standard filters. Non-numeric values need to be escaped using simple quotes." caption="Filter" name="filter"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-product-special-price" icon="icons/small/magento-connector-24x16.png" caption="Update Product Special Price">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="Optional start date of the special price period." caption="From Date" name="fromDate"></string>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="true" description="The special price to set." caption="Special Price" name="specialPrice"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+        <string javaType="java.lang.String" required="false" description="Optional end date of the special price period." caption="To Date" name="toDate"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/magento/abstractMagentoConnectorGeneric" abstract="true" image="icons/large/magento-connector-48x32.png" localId="update-product" icon="icons/small/magento-connector-24x16.png" caption="Update Product">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="The id of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product id." caption="Product Id" name="productId"></integer>
+        <string javaType="java.lang.String" required="false" description="The id or sku of the product." caption="Product Id Or Sku" name="productIdOrSku"></string>
+        <string javaType="java.lang.String" required="false" description="The sku of the product. Use it instead of productIdOrSku in case you are sure the product identifier is a product sku." caption="Product Sku" name="productSku"></string>
+        <string javaType="java.lang.String" required="false" description="The id or code of the target store. Left unspecified for using current store." caption="Store View Id Or Code" name="storeViewIdOrCode"></string>
+      </group>
+      <group caption="Standard Product Attributes to Update" id="standard Product Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The map of standard product attributes to update." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-attributes"></childElement>
+      </group>
+      <group caption="Non-standard Product Attributes to Update" id="non-standard Product Attributes to Update">
+        <childElement allowMultiple="false" inplace="true" javaType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" description="The map of non standard product attributes to update." caption="Additional Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-additional-attributes"></childElement>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-product-attributes" xmlname="attributes" image="icons/large/magento-connector-48x32.png" localId="update-product-attributes" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Attributes." caption="Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-attribute"></childElement>
+  </nested>
+  <nested xmlname="attribute" image="icons/large/magento-connector-48x32.png" localId="update-product-attribute" icon="icons/small/magento-connector-24x16.png" description="Attributes." caption="Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+  <nested specialValuePersistance="http://www.mulesoft.org/schema/mule/magento/update-product-additional-attributes" xmlname="additional-attributes" image="icons/large/magento-connector-48x32.png" localId="update-product-additional-attributes" icon="icons/small/magento-connector-24x16.png" description="Additional attributes." caption="Additional Attributes">
+    <radioBoolean span="1" transient="false" hiddenForUser="true" labelledWith="sObjects:" caption="From Message" name="fromMessage"></radioBoolean>
+    <string span="1" singeLineForExpressions="true" controlled="fromMessage" supportsExpressions="false" name="ref"></string>
+    <radioBoolean span="1" labelledWith=" " transient="false" hiddenForUser="true" caption="Create A List" name="createAList"></radioBoolean>
+    <childElement indentation="138" allowMultiple="true" controlled="createAList" required="false" description="Additional attributes." caption="Additional Attributes" name="http://www.mulesoft.org/schema/mule/magento/update-product-additional-attribute"></childElement>
+  </nested>
+  <nested xmlname="additional-attribute" image="icons/large/magento-connector-48x32.png" localId="update-product-additional-attribute" icon="icons/small/magento-connector-24x16.png" description="Additional attributes." caption="Additional Attributes">
+    <string description="Key." caption="Key" name="key"></string>
+    <text isToElement="true" description="Value." caption="Value" name="value"></text>
+  </nested>
+</namespace>

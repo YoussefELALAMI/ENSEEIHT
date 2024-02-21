@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.mule.tooling.server">
+      <server
+            enterpriseRuntime="false"
+            id="org.mule.servers.3.3.0.CE"
+            label="Mule Server 3.3.0 CE"
+            schemaLocationLookup="org.mule.tooling.server.SchemaLocationLookup"
+            sourcePath="mule/mule-sources-3.3.0-ce.zip"
+            version="3.3.0"
+            versionSuffix="">
+         <libraryFolder
+               includeInContainer="false"
+               label="Tooling Support"
+               path="mule/tooling/">
+         </libraryFolder>
+         <libraryFolder
+               includeInContainer="true"
+               label="Boot Libraries"
+               path="mule/boot/">
+         </libraryFolder>
+         <libraryFolder
+               includeInContainer="true"
+               label="Endorsed Libraries"
+               path="mule/endorsed/">
+         </libraryFolder>
+         <libraryFolder
+               includeInContainer="true"
+               label="Mule Core Libraries"
+               path="mule/mule/">
+         </libraryFolder>
+         <libraryFolder
+               includeInContainer="true"
+               label="Optional Libraries"
+               path="mule/opt/">
+         </libraryFolder>
+         <libraryFolder
+               includeInContainer="true"
+               label="User"
+               path="mule/user/">
+         </libraryFolder>
+         <example
+               description="Echo example included in Mule distribution."
+               label="Echo"
+               path="mule/examples/echo.zip">
+         </example>
+         <example
+               description="Processes XML orders, applies tiered discounts,and adds Twitter status update for order."
+               label="Order Discounter"
+               path="mule/examples/order-discounter.zip">
+         </example>
+         <example
+               description="Process XML orders, split into items and route for fufillment."
+               label="Order Fulfillment"
+               path="mule/examples/order-fulfillment.zip">
+         </example>
+         <example
+               description="Demo Mobile App"
+               label="Mobile App"
+               path="mule/examples/mobile-app.zip">
+         </example>
+         <example
+               description="This is a simple Mule Studio project that illustrates a Legacy System Modernization use case."
+               label="Legacy Modernization"
+               path="mule/examples/legacy-modernization.zip">
+         </example>
+         <example
+               description="An example showing the use of the Foreach element"
+               label="Foreach Example"
+               path="mule/examples/Foreach Example.zip">
+         </example>
+         <example
+               description="Hello Example"
+               label="Hello Example"
+               path="mule/examples/Hello Example.zip">
+         </example>
+         <example
+               description="Scripting Example"
+               label="Scripting Example"
+               path="mule/examples/Scripting Example.zip">
+         </example>
+         <example
+               description="Stock Quotes Example"
+               label="Stock Quotes"
+               path="mule/examples/Stock Quotes Example.zip">
+         </example>
+         <example
+               description="Flight Reservation Example"
+               label="Flight Reservation"
+               path="mule/examples/Flight Reservation Example.zip">
+         </example>
+      </server>
+   </extension>
+
+</plugin>

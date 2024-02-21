@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: 1gig+XQTDatC/tvQgZvREngg2Vs=
+Created-By: 1.6.0_33 (Apple Inc.)
+SHA1-Digest-Manifest: PRa/ycJtkTWl7j+W3M4on2nLY0I=
+
+Name: mule-module-sfdc-4.4.zip
+SHA1-Digest: Ovdk/yqJzrfl6t8z8UgcxNjZSWE=
+
+Name: icons/large/sfdc-endpoint-48x32.png
+SHA1-Digest: ZaQFXumJfgIR2F3+JjFBNXpKLG4=
+
+Name: icons/small/sfdc-connector-24x16.png
+SHA1-Digest: FTGwKk28ysALounCiE8oZjoyoxk=
+
+Name: salesforce.xml
+SHA1-Digest: miIC3C8jEJDjCFGjcwy1UHGrUSM=
+
+Name: icons/large/sfdc-transformer-48x32.png
+SHA1-Digest: 9IEBwLSOTBK1092P0p84H0qau9g=
+
+Name: icons/large/sfdc-connector-48x32.png
+SHA1-Digest: XHUUycaMZm/JahgmkUlg+LuO4zU=
+
+Name: plugin.xml
+SHA1-Digest: /bhw745DhgdFCwo2NxXWDtzcsbQ=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .sfdc/pom.properties
+SHA1-Digest: r8dsN+0LkMMiN5J4adXGpQrwwlw=
+
+Name: icons/small/sfdc-endpoint-24x16.png
+SHA1-Digest: wzLcsvols0/YrfumobDPwgQjOM0=
+
+Name: mule-module-sfdc-4.4.jar
+SHA1-Digest: TCygzMeFqbOHVZzjYU77G60W31c=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .sfdc/pom.xml
+SHA1-Digest: sSekQLS4WiWjKj6gJnw0dTT14A4=
+
+Name: icons/small/sfdc-transformer-24x16.png
+SHA1-Digest: HLYuAF8RjHe7AR5T++JMHIw7SK0=
+
+Name: org/mule/tooling/ui/contribution/sfdc/Activator.class
+SHA1-Digest: IEVCiNr61kSWj/pvkW6GFmW4Mzk=
+

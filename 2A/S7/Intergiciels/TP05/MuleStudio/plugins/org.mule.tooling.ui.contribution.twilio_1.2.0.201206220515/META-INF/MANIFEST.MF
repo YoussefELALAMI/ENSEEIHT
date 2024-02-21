@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Built-By: jorged
+Eclipse-BundleShape: dir
+Bundle-Name: Twilio Cloud Connector
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.mule.tooli
+ ng.core;bundle-version="1.0.0"
+Bundle-Vendor: Mulesoft Inc.
+Build-Jdk: 1.6.0_33
+Bundle-Version: 1.2.0.201206220515
+Bundle-Activator: org.mule.tooling.ui.contribution.twilio.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.mule.tooling.ui.contribution.twilio;singleton
+ :=true
+Archiver-Version: Plexus Archiver
+
+Name: mule-module-twilio-1.2.zip
+SHA1-Digest: CjBtSlDDtY40KASjfejWw5B2K6M=
+
+Name: icons/small/twilio-connector-24x16.png
+SHA1-Digest: MsKBW2xFCKzQI6ngRD6rgHfWf/Q=
+
+Name: icons/large/twilio-transformer-48x32.png
+SHA1-Digest: JS6EOmaeuacWQvJThx/SLk3WShg=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .twilio/pom.xml
+SHA1-Digest: 2QiVtge3BpmuO9Ok4sXNPFRTgVc=
+
+Name: icons/large/twilio-connector-48x32.png
+SHA1-Digest: VkXsdEKfqYcvJjnVBN/66EgukO4=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .twilio/pom.properties
+SHA1-Digest: BsRwUEvFVU+JHdVGkDW1mRo+h6g=
+
+Name: mule-module-twilio-1.2.jar
+SHA1-Digest: SlrKIXU8wVjZDAoBGWJa2NF5irw=
+
+Name: icons/small/twilio-transformer-24x16.png
+SHA1-Digest: GP1K/aZNJodzPe1urJ6aK1evbbI=
+
+Name: org/mule/tooling/ui/contribution/twilio/Activator.class
+SHA1-Digest: ikGG8pJVDbI5DIMqOcQQ69xqJ7I=
+
+Name: icons/small/twilio-endpoint-24x16.png
+SHA1-Digest: z5FK3nnLbeGW56iCKyz6EX8B87k=
+
+Name: icons/large/twilio-endpoint-48x32.png
+SHA1-Digest: OGUkQHH4ItMDuhjgi22Zl8TxDaA=
+
+Name: plugin.xml
+SHA1-Digest: M2mRcLXhtYVRY88WmU2aQzNSjIk=
+
+Name: twilio.xml
+SHA1-Digest: jQ+RMEBEqvoNP4asbyAYzry4ATs=
+

@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="/home/yelalami" version="11.0.20.1"/>
+    <libraryInfo home="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202" version="1.8.0_202">
+        <bootpath>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/resources.jar"/>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/rt.jar"/>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/sunrsasign.jar"/>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/jsse.jar"/>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/jce.jar"/>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/charsets.jar"/>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/jfr.jar"/>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/ext"/>
+            <entry path="/usr/java/packages/lib/ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202/jre/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
     <libraryInfo home="/usr/lib/jvm/java-11-openjdk-amd64" version="11.0.20.1"/>
 </libraryInfos>

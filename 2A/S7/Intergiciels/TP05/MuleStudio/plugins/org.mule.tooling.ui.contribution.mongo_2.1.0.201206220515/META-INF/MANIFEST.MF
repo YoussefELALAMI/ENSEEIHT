@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Built-By: jorged
+Eclipse-BundleShape: dir
+Bundle-Name: Mongo DB Cloud Connector
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.mule.tooli
+ ng.core;bundle-version="1.0.0"
+Bundle-Vendor: Mulesoft Inc.
+Build-Jdk: 1.6.0_33
+Bundle-Version: 2.1.0.201206220515
+Bundle-Activator: org.mule.tooling.ui.contribution.mongo.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.mule.tooling.ui.contribution.mongo;singleton:
+ =true
+Archiver-Version: Plexus Archiver
+
+Name: icons/small/mongo-endpoint-24x16.png
+SHA1-Digest: RvBmrpEcfAh5myMxruWADRrDffs=
+
+Name: org/mule/tooling/ui/contribution/mongo/Activator.class
+SHA1-Digest: DATquXNf69vClhRW56r7d5JD+/c=
+
+Name: icons/large/mongo-transformer-48x32.png
+SHA1-Digest: 6MNdIpS9Rvn6N4APIQGhDpYAI+g=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .mongo/pom.xml
+SHA1-Digest: Q0FXP5DSGWc6QMAClF4hKVtjI8g=
+
+Name: mule-module-mongo-2.1.zip
+SHA1-Digest: mgapDeqYp4WBOM7j2itj/N7654E=
+
+Name: mongo.xml
+SHA1-Digest: tX2CHLJEj7d7fwGehLcRE4bGBhU=
+
+Name: mule-module-mongo-2.1.jar
+SHA1-Digest: 5YdBFFu0rqKAaqTZQ7XgauGTfrQ=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .mongo/pom.properties
+SHA1-Digest: suf6x5MAFHwnSFSxtc56/7s49rQ=
+
+Name: icons/small/mongo-transformer-24x16.png
+SHA1-Digest: xCBawgwoB38mIRRfpqbqwqvE3Kc=
+
+Name: plugin.xml
+SHA1-Digest: 3VkH7k0PnFrmexKxoZLH8OMkDIk=
+
+Name: icons/large/mongo-endpoint-48x32.png
+SHA1-Digest: ct5g253V9lObbesEYUR8C6gFtPI=
+
+Name: icons/large/mongo-connector-48x32.png
+SHA1-Digest: 1VhN4dPONEwxS/3nDiOfYKdD31s=
+
+Name: icons/small/mongo-connector-24x16.png
+SHA1-Digest: rQkk6zQv8Ot5Y324BJKA9GSJnEU=
+
