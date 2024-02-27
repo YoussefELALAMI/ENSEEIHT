@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.mule.tooling.core.contribution">
+      <externalContribution
+            contributionJar="mule-module-cmis-1.6.jar"
+            contributionLibPathInMule="/plugins"
+            contributionLibs="mule-module-cmis-1.6.zip"
+            contributionNamespace="http://www.mulesoft.org/schema/mule/cmis"
+            contributionNamespaceFile="http://www.mulesoft.org/schema/mule/cmis/1.1/mule-cmis.xsd"
+            contributionNamespacePrefix="cmis"
+            contributionType="cloud-connector"
+            icon="icons/small/cmis-connector-24x16.png"
+            name="CMIS"
+            path="cmis.xml"
+            version="1.6">
+      </externalContribution>
+   </extension>
+
+</plugin>

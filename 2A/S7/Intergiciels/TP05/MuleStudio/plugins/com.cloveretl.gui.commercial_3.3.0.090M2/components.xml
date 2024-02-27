@@ -1,0 +1,526 @@
+<ETLComponentList>
+
+  <ETLComponent category="others" iconPath="icons/transformers/WebService" name="WebServiceClient" type="WEB_SERVICE_CLIENT">
+    <shortDescription>Call a web-service.</shortDescription>
+    <description>Send incoming data record to a web-service and the response is passed on output ports.</description>
+    <inputPorts>
+      <singlePort name="0" required="false" label="request"/>
+    </inputPorts>
+    <outputPorts>
+      <multiplePort required="false" label="response"/>
+    </outputPorts>
+    <properties>
+      <property category="basic" displayName="WSDL URL" modifiable="true" name="wsdlURL" nullable="true" required="true">
+        <singleType name="string"/>
+      </property>
+      <property category="basic" displayName="Operation name" modifiable="true" name="operationName" nullable="true" required="true">
+        <singleType name="wsOperationName"/>
+      </property>
+      <!--property category="basic" displayName="Requeste mapping" modifiable="true" name="requestMapping" nullable="true" required="!requestStructure" redundant="requestStructure">
+        <singleType name="multiline"/>
+      </property-->
+      <property category="basic" displayName="Request structure" modifiable="true" name="requestStructure" nullable="true" required="true">
+        <singleType name="wsRequestStructure"/>
+      </property>
+      <property category="basic" displayName="Response mapping" modifiable="true" name="responseMapping" nullable="true">
+        <singleType name="wsResponseMapping"/>
+      </property>
+      <property category="basic" displayName="Fault mapping" modifiable="true" name="faultMapping" nullable="true">
+        <singleType name="wsFaultMapping"/>
+      </property>
+      <property category="basic" displayName="Namespace Bindings" modifiable="true" name="namespaceBindings" nullable="true">
+        <singleType name="properties" />
+      </property>
+      <!--property category="basic" displayName="Validate" modifiable="true" name="validate" nullable="true" defaultHint="None">
+        <enumType>
+          <item displayValue="None" value="NONE"/>
+          <item displayValue="Input" value="INPUT"/>
+          <item displayValue="Output" value="OUTPUT"/>
+          <item displayValue="Both" value="BOTH"/>
+        </enumType>
+      </property-->
+      <property category="advanced" displayName="Username" modifiable="true" name="authUsername" nullable="true">
+        <singleType name="string"/>
+      </property>
+      <property category="advanced" displayName="Password" modifiable="true" name="authPassword" nullable="true">
+        <singleType name="string"/>
+      </property>
+      <property category="advanced" displayName="Auth Domain" modifiable="true" name="authDomain" nullable="true">
+        <singleType name="string"/>
+      </property>
+      <property category="advanced" displayName="Auth Realm" modifiable="true" name="authRealm" nullable="true">
+        <singleType name="string"/>
+      </property>
+      <property category="advanced" displayName="Timeout (ms)" modifiable="true" name="connectionTimeout" nullable="true" defaultHint="600000">
+        <singleType name="long"/>
+      </property>
+    </properties>
+  </ETLComponent>
+  
+  <ETLComponent category="readers" iconPath="icons/readers/ComplexDataReader" name="ComplexDataReader"  type="COMPLEX_DATA_READER" viewGridData="false">
+    <shortDescription>Reads non-homogeneous data.</shortDescription>
+    <description>Reads non-homogeneous data from files containing multiple metadata.</description>
+    <inputPorts>
+      <singlePort name="0" required="false" label="input"/>
+    </inputPorts>
+    <outputPorts>
+      <multiplePort required="true" />
+    </outputPorts>
+    <properties>
+      <property category="basic" displayName="File URL" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="file" fields="input" dictionary="input" selectionMode="file_only"/>
+      </property>
+      <property category="basic" displayName="Transform" modifiable="true" name="transformCode" nullable="true" redundant="transformURL|transformClass">
+        <singleType name="statefulTransform" />
+      </property>
+      <property category="basic" displayName="Charset" modifiable="true" name="charset" nullable="true" defaultHintProvider="charsetDecoder">
+        <singleType name="charset"/>
+      </property>
+      <property category="basic" displayName="Data policy" modifiable="true" name="dataPolicy" nullable="true" defaultHint="Strict">
+        <enumType>
+          <item displayValue="Strict" value="strict"/>
+          <item displayValue="Controlled" value="controlled"/>
+          <item displayValue="Lenient" value="lenient"/>
+        </enumType>
+      </property>
+      <property category="basic" displayName="Trim strings" modifiable="true" name="trim" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="basic" displayName="Quoted strings" modifiable="true" name="quotedStrings" nullable="true" defaultHintProvider="quotedStringsFromOutputPortHint">
+        <singleType name="bool"/>
+      </property>
+      <property category="basic" displayName="Quote character" modifiable="true" name="quoteCharacter" nullable="true" defaultHintProvider="quotedCharFromOutputPortHint">
+        <singleType name="readerQuoteChar"/>
+      </property>
+      <property category="advanced" displayName="Skip leading blanks" modifiable="true" name="skipLeadingBlanks" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Skip trailing blanks" modifiable="true" name="skipTrailingBlanks" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Max error count" modifiable="true" name="maxErrorCount" nullable="true" defaultHint="0">
+        <singleType name="int"/>
+      </property>
+      <property category="advanced" displayName="Treat multiple delimiters as one" modifiable="true" name="treatMultipleDelimitersAsOne" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Verbose" modifiable="true" name="verbose" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Selector code" modifiable="true" name="selectorCode" nullable="true" redundant="selectorURL|selectorClass">
+        <singleType name="multiline" />
+      </property>
+      <property category="advanced" displayName="Selector URL" modifiable="true" name="selectorURL" nullable="true" redundant="selectorClass|selectorCode">
+        <singleType name="file" />
+      </property>
+      <property category="advanced" displayName="Selector class" modifiable="true" name="selectorClass" nullable="true" redundant="selectorURL|selectorCode" defaultHint="custom code if available, prefix selector otherwise">
+        <singleType name="class" />
+      </property>
+      <property category="advanced" displayName="Transform URL" modifiable="true" name="transformURL" nullable="true" redundant="transformClass|transformCode">
+        <singleType name="file" />
+      </property>
+      <property category="advanced" displayName="Transform class" modifiable="true" name="transformClass" nullable="true" redundant="transformURL|transformCode">
+        <singleType name="class" />
+      </property>
+      <property category="advanced" displayName="Selector properties" modifiable="true" name="selectorProperties" nullable="true" defaultHint="Properties passed to user-defined processor/transform/selector">
+        <singleType name="statefulTransformSelectorProperties" />
+      </property>
+      <property category="advanced" displayName="State metadata" modifiable="true" name="stateMetadata" nullable="true">
+        <singleType name="statefulTransformMetadata" />
+      </property>
+    </properties>
+  </ETLComponent>
+  
+  <ETLComponent category="readers" iconPath="icons/readers/SpreadsheetDataReader" name="SpreadsheetDataReader" type="SPREADSHEET_READER" viewPlainData="false">
+    <shortDescription>Reads data from Excel files.</shortDescription>
+    <description>Reads specified sheets of Excel files, converts their contents to data records and sends them to connected output port. Mapping of sheet content to output metadata must be defined.</description>
+    <inputPorts>
+      <singlePort name="0" required="false" label="input" />
+    </inputPorts>
+    <outputPorts>
+      <singlePort name="0" required="true" label="output"/>
+      <singlePort name="1" label="logs"/>
+    </outputPorts>
+    <properties>
+      <property category="basic" displayName="File URL" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="file" fields="input" dictionary="input" selectionMode="file_only" />
+      </property>
+      <property category="basic" displayName="Sheet" modifiable="true" name="sheet" nullable="true" defaultHint="0">
+        <singleType name="spreadsheetSheetName" multiselect="true"/>
+      </property>
+      <property category="basic" displayName="Mapping" modifiable="true" name="mapping" redundant="mappingURL">
+        <singleType name="spreadsheetMapping"/>
+      </property>
+      <property category="basic" displayName="Mapping URL" modifiable="true" name="mappingURL" nullable="true" redundant="mapping">
+        <singleType name="file"/>
+      </property>
+      <property category="basic" displayName="Data policy" modifiable="true" name="dataPolicy" nullable="true" defaultHint="Strict">
+        <enumType>
+          <item displayValue="Strict" value="strict" />
+          <item displayValue="Controlled" value="controlled" />
+          <item displayValue="Lenient" value="lenient" />
+        </enumType>
+      </property>
+      <property category="advanced" displayName="Read mode" modifiable="true" name="attitude" nullable="true" defaultHint="Stream">
+        <enumType>
+          <item displayValue="In-memory" value="IN_MEMORY" />
+          <item displayValue="Stream" value="STREAM" />
+        </enumType>
+      </property>
+      <property category="advanced" displayName="Number of skipped records" modifiable="true" name="skipRecords" nullable="true">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Max number of records" modifiable="true" name="numRecords" nullable="true">
+        <singleType name="int" min="1" />
+      </property>
+      <property category="advanced" displayName="Number of skipped records per source" modifiable="true" name="skipSourceRecords" nullable="true" defaultHintProvider="skipSourceRecords">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Max number of records per source" modifiable="true" name="numSourceRecords" nullable="true">
+        <singleType name="int" min="1"/>
+      </property>
+      <property category="advanced" displayName="Number of skipped records per spreadsheet" modifiable="true" name="skipSheetRecords" nullable="true">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Max number of records per spreadsheet" modifiable="true" name="numSheetRecords" nullable="true">
+        <singleType name="int" min="1"/>
+      </property>
+      <property category="advanced" displayName="Max error count" modifiable="true" name="maxErrorCount" nullable="true" defaultHint="(unlimited)">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Incremental file" modifiable="true" name="incrementalFile" nullable="true" required="incrementalKey">
+        <singleType name="file" />
+      </property>
+      <property category="advanced" displayName="Incremental key" modifiable="true" name="incrementalKey" nullable="true" required="incrementalFile">
+        <singleType name="string" />
+      </property>
+      <property category="advanced" displayName="Encryption password" modifiable="true" name="password" nullable="true" required="false">
+            <singleType name="string"/>
+      </property>
+    </properties>
+  </ETLComponent>
+  
+  <ETLComponent category="writers" iconPath="icons/writers/SpreadsheetDataWriter" name="SpreadsheetDataWriter" type="SPREADSHEET_WRITER" viewPlainData="false" viewGridData="false">
+    <shortDescription>Writes data to Excel files.</shortDescription>
+    <description>Writes into specified sheets of Excel files. Mapping of input metadata to sheet content must be defined.</description>
+    <inputPorts>
+      <singlePort name="0" required="true" label="input" />
+    </inputPorts>
+    <outputPorts>
+      <singlePort name="0" required="false" label="output"/>
+    </outputPorts>
+    <properties>
+      <!-- basic properties -->
+      <property category="basic" displayName="File URL" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="file" fields="output" dictionary="output" selectionMode="file_only" mandatory_existing_file="false"/>
+      </property>
+      <property category="basic" displayName="Sheet" modifiable="true" name="sheet" nullable="true" defaultHint="Create new sheet">
+        <singleType name="spreadsheetSheetName" />
+      </property>
+      <property category="basic" displayName="Mapping" modifiable="true" name="mapping" redundant="mappingURL">
+        <singleType name="spreadsheetMapping"/>
+      </property>
+      <property category="basic" displayName="Mapping URL" modifiable="true" name="mappingURL" nullable="true" redundant="mapping">
+        <singleType name="file"/>
+      </property>
+      <property category="basic" displayName="Write mode" modifiable="true" name="writeMode" nullable="false" defaultValue="OVERWRITE_SHEET_IN_MEMORY">
+        <enumType>
+          <item displayValue="Overwrite in sheet (in-memory)" value="OVERWRITE_SHEET_IN_MEMORY"/>
+              <item displayValue="Insert into sheet (in-memory)" value="INSERT_INTO_SHEET_IN_MEMORY"/>
+              <item displayValue="Append to sheet (in-memory)" value="APPEND_TO_SHEET_IN_MEMORY"/>
+              <item displayValue="Create new file (streaming - XLSX only)" value="CREATE_FILE_IN_STREAM"/>
+              <item displayValue="Create new file (in-memory)" value="CREATE_FILE_IN_MEMORY"/>
+        </enumType>
+      </property>
+      <property category="basic" displayName="Actions on existing sheets" modifiable="true" name="existingSheetsActions" nullable="false" defaultValue="DO_NOTHING">
+        <enumType>
+          <item displayValue="Do nothing, keep existing sheets and data" value="DO_NOTHING"/>
+          <item displayValue="Clear target sheet(s)" value="CLEAR_SHEETS"/>
+          <item displayValue="Replace all existing sheets" value="REMOVE_SHEETS"/> 
+        </enumType>
+      </property>      
+      
+      <!--advanced properties -->
+      <property category="advanced" displayName="Template File URL" modifiable="true" name="templateFileURL" nullable="true" required="false">
+        <singleType name="file" fields="output" dictionary="output" selectionMode="file_only" />
+      </property>
+      <property category="advanced" displayName="Create directories" modifiable="true" name="makeDirs" nullable="true" defaultHint="false">
+        <singleType name="bool" />
+      </property>
+      <property category="advanced" displayName="Records per file" modifiable="true" name="numFileRecords" nullable="true">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Number of skipped records" modifiable="true" name="skipRecords" nullable="true">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Max number of records" modifiable="true" name="numRecords" nullable="true">
+        <singleType name="int" min="1" />
+      </property>
+      <property category="advanced" displayName="Partition key" modifiable="true" name="partitionKey" nullable="true" required="partition">
+        <singleType name="key" inputPortName="0" />
+      </property>
+      <property category="advanced" displayName="Partition lookup table" modifiable="true" name="partition" nullable="true" required="partitionOutFields">
+        <singleType name="lookupTableID" />
+      </property>
+      <property category="advanced" displayName="Partition file tag" modifiable="true" name="partitionFileTag" nullable="true" defaultHint="Number file tag">
+        <enumType>
+          <item displayValue="Number file tag" value="numberFileTag" />
+          <item displayValue="Key file tag" value="keyNameFileTag" />
+        </enumType>
+      </property>
+      <property category="advanced" displayName="Partition output fields" modifiable="true" name="partitionOutFields" nullable="true" required="partition">
+        <singleType name="key" lookupMatadataProp="partition" />
+      </property>
+      <property category="advanced" displayName="Partition unassigned file name" modifiable="true" name="partitionUnassignedFileName" nullable="true" redundant="!partition">
+        <singleType name="string" />
+      </property>
+      <property category="advanced" displayName="Type of formatter" modifiable="true" name="formatter" nullable="true" defaultHint="Auto">
+        <enumType>
+          <item displayValue="Auto" value="auto"/>
+          <item displayValue="XLS" value="XLS"/>
+          <item displayValue="XLSX" value="XLSX"/>
+        </enumType>
+      </property>
+    </properties>
+  </ETLComponent>
+    <ETLComponent category="readers" iconPath="icons/readers/JavaBeanReader" name="JavaBeanReader" type="BEAN_READER">
+    <shortDescription>Reads data from Java beans.</shortDescription>
+    <description>Reads data from Java beans, converts properties matched by XPath defined in mapping along with their direct children to data records and sends them into different connected output ports as defined by mapping.</description>
+    <inputPorts>
+    </inputPorts>
+    <outputPorts>
+      <multiplePort required="true" />
+    </outputPorts>
+    <properties>
+      <property category="basic" displayName="Dictionary Source" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="dictionaryKey" includeOutput="true" selectFile="false"/>
+      </property>
+      <property category="basic" displayName="Data policy" modifiable="true" name="dataPolicy" nullable="true" defaultHint="Strict">
+        <enumType>
+          <item displayValue="Strict" value="strict" />
+          <item displayValue="Controlled" value="controlled" />
+          <item displayValue="Lenient" value="lenient" />
+        </enumType>
+      </property>
+      <property category="basic" displayName="Mapping" modifiable="true" name="mapping" nullable="true" required="!mappingURL" redundant="mappingURL">
+        <singleType name="javaBeanReaderMapping" />
+      </property>
+      <property category="basic" displayName="Mapping URL" modifiable="true" name="mappingURL" nullable="true" required="!mapping" redundant="mapping">
+        <singleType name="file" />
+      </property>
+      <property category="basic" displayName="Implicit mapping" modifiable="true" name="implicitMapping" nullable="true" defaultHint="false">
+        <singleType name="bool" />
+      </property>
+    </properties>
+  </ETLComponent>
+  <ETLComponent category="writers" iconPath="icons/writers/JavaBeanWriter" name="JavaBeanWriter"  type="BEAN_WRITER">
+    <shortDescription>Writes data to Java objects.</shortDescription>
+    <description>Receives data through all connected input ports, converts data records to Java Bean properties based on defined mapping.</description>
+    <inputPorts>
+      <multiplePort required="false"/>
+    </inputPorts>
+    <outputPorts/>
+    <properties>
+      <property category="basic" displayName="Dictionary Target" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="dictionaryKey" includeOutput="true" selectFile="false"/>
+      </property>
+      <property category="basic" displayName="Bean structure" modifiable="true" name="schema" nullable="true" required="false" defaultHint="none">
+        <singleType name="objectIntrospector"/>
+      </property>
+      <property category="basic" displayName="Mapping" modifiable="true" name="mapping" required="!mappingURL" redundant="mappingURL">
+        <singleType name="beanWriterMapping"/>
+      </property>
+      <property category="basic" displayName="Mapping URL" modifiable="true" name="mappingURL" nullable="true" required="!mapping" redundant="mapping">
+        <singleType name="file"/>
+      </property>
+      <property category="advanced" displayName="Directory for temporary files" modifiable="true" name="tmpDir" nullable="true" defaultHintProvider="tmpDir">
+        <singleType name="file"/>
+      </property>
+      <property category="advanced" displayName="Cache size (e.g. '300MB','1GB')" modifiable="true" name="cacheSize" nullable="true" defaultHint="auto">
+        <singleType name="string" />
+      </property>
+      <property category="advanced" displayName="Sorted input" modifiable="true" name="sortedInput" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Sort keys" modifiable="true" name="sortKeys" nullable="true" required="false"  defaultHint="">
+        <singleType name="sortKey"/>
+      </property>
+      <!-- property category="advanced" displayName="Records per file" modifiable="true" name="recordsPerFile" nullable="true">
+        <singleType name="int" />
+      </property-->
+      <property category="advanced" displayName="Max number of records" modifiable="true" name="recordCount" nullable="true">
+        <singleType name="int" />
+      </property>
+      <!-- property category="advanced" displayName="Partition key" modifiable="true" name="partitionKey" nullable="true" required="partition">
+        <singleType name="key" xmlMapping="mapping" xmlMappingUrl="mappingURL"/>
+      </property-->
+      <!-- property category="advanced" displayName="Partition lookup table" modifiable="true" name="partition" nullable="true" required="partitionOutFields">
+        <singleType name="lookupTableID" />
+      </property-->
+      <!-- property category="advanced" displayName="Partition output fields" modifiable="true" name="partitionOutFields" nullable="true" required="partition">
+        <singleType name="key" lookupMatadataProp="partition" />
+      </property-->
+    </properties>
+  </ETLComponent>
+  <ETLComponent category="writers" iconPath="icons/writers/JavaMapWriter" name="JavaMapWriter"  type="MAP_WRITER">
+    <shortDescription>Writes data to Maps.</shortDescription>
+    <description>Receives data through all connected input ports, converts data records to Maps based on defined mapping and writes the resulting tree structure of elements to Maps.</description>
+    <inputPorts>
+      <multiplePort required="false"/>
+    </inputPorts>
+    <properties>
+      <property category="basic" displayName="Dictionary Target" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="dictionaryKey" includeOutput="true" selectFile="false"/>
+      </property>
+      <property category="basic" displayName="Mapping" modifiable="true" name="mapping" required="!mappingURL" redundant="mappingURL">
+        <singleType name="mapWriterMapping"/>
+      </property>
+      <property category="basic" displayName="Mapping URL" modifiable="true" name="mappingURL" nullable="true" required="!mapping" redundant="mapping">
+        <singleType name="file"/>
+      </property>
+      <property category="advanced" displayName="Create directories" modifiable="true" name="makeDirs" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Omit new lines wherever possible" modifiable="true" name="omitNewLines" nullable="true" defaultHint="false">
+	      <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Directory for temporary files" modifiable="true" name="tmpDir" nullable="true" defaultHintProvider="tmpDir">
+        <singleType name="file"/>
+      </property>
+      <property category="advanced" displayName="Cache size (e.g. '300MB','1GB')" modifiable="true" name="cacheSize" nullable="true" defaultHint="auto">
+        <singleType name="string" />
+      </property>
+      <property category="advanced" displayName="Sorted input" modifiable="true" name="sortedInput" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Sort keys" modifiable="true" name="sortKeys" nullable="true" required="false"  defaultHint="">
+        <singleType name="sortKey"/>
+      </property>
+      <!-- property category="advanced" displayName="Records per file" modifiable="true" name="recordsPerFile" nullable="true">
+        <singleType name="int" />
+      </property-->
+      <property category="advanced" displayName="Max number of records" modifiable="true" name="recordCount" nullable="true">
+        <singleType name="int" />
+      </property>
+      <!-- property category="advanced" displayName="Partition key" modifiable="true" name="partitionKey" nullable="true" required="partition">
+        <singleType name="key" xmlMapping="mapping" xmlMappingUrl="mappingURL"/>
+      </property-->
+      <!-- property category="advanced" displayName="Partition lookup table" modifiable="true" name="partition" nullable="true" required="partitionOutFields">
+        <singleType name="lookupTableID" />
+      </property-->
+      <!-- property category="advanced" displayName="Partition file tag" modifiable="true" name="partitionFileTag" nullable="true">
+        <enumType>
+          <item displayValue="Number file tag" value="numberFileTag" />
+          <item displayValue="Key file tag" value="keyNameFileTag" />
+        </enumType>
+      </property-->
+      <!-- property category="advanced" displayName="Partition output fields" modifiable="true" name="partitionOutFields" nullable="true" required="partition">
+        <singleType name="key" lookupMatadataProp="partition" />
+      </property-->
+      <!-- property category="advanced" displayName="Partition unassigned file name" modifiable="true" name="partitionUnassignedFileName" nullable="true" redundant="!partition">
+        <singleType name="string" />
+      </property-->
+    </properties>
+  </ETLComponent>
+  <ETLComponent category="readers" iconPath="icons/readers/JSONReader" name="JSONReader" type="JSON_READER">
+    <shortDescription>Reads data from JSON.</shortDescription>
+    <description>Reads data from JSON, converts properties matched by XPath defined in mapping along with their direct children to data records and sends them into different connected output ports as defined by mapping.</description>
+    <inputPorts>
+      <singlePort name="0" required="false" />
+    </inputPorts>
+    <outputPorts>
+      <multiplePort required="true" />
+    </outputPorts>
+    <properties>
+      <property category="basic" displayName="File URL" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="file" fields="input" dictionary="input" selectionMode="file_only" />
+      </property>
+      <property category="basic" displayName="Charset" modifiable="true" name="charset" nullable="true" defaultHint="Auto">
+        <singleType name="charset"/>
+      </property>
+      <property category="basic" displayName="Data policy" modifiable="true" name="dataPolicy" nullable="true" defaultHint="Strict">
+        <enumType>
+          <item displayValue="Strict" value="strict" />
+          <item displayValue="Controlled" value="controlled" />
+          <item displayValue="Lenient" value="lenient" />
+        </enumType>
+      </property>
+      <property category="basic" displayName="Mapping" modifiable="true" name="mapping" nullable="true" required="!mappingURL" redundant="mappingURL">
+        <singleType name="jsonReaderMapping" />
+      </property>
+      <property category="basic" displayName="Mapping URL" modifiable="true" name="mappingURL" nullable="true" required="!mapping" redundant="mapping">
+        <singleType name="file" />
+      </property>
+      <property category="basic" displayName="Implicit mapping" modifiable="true" name="implicitMapping" nullable="true" defaultHint="false">
+        <singleType name="bool" />
+      </property>
+    </properties>
+  </ETLComponent>
+  <ETLComponent category="writers" iconPath="icons/writers/JSONWriter" name="JSONWriter"  type="JSON_WRITER">
+    <shortDescription>Writes data to JSON files.</shortDescription>
+    <description>Receives data through all connected input ports, converts data records to JSON objects based on defined mapping and writes the resulting tree structure of elements to JSON files.</description>
+    <inputPorts>
+      <multiplePort required="false"/>
+    </inputPorts>
+    <outputPorts>
+      <singlePort name="0" required="false" />
+    </outputPorts>
+    <properties>
+      <property category="basic" displayName="File URL" modifiable="true" name="fileURL" nullable="true" required="true">
+        <singleType name="file" fields="output" dictionary="output" mandatory_existing_file="false"/>
+      </property>
+      <property category="basic" displayName="Charset" modifiable="true" name="charset" nullable="true" defaultHint="UTF-8">
+        <singleType name="charset"/>
+      </property>
+      <property category="basic" displayName="Mapping" modifiable="true" name="mapping" required="!mappingURL" redundant="mappingURL">
+        <singleType name="jsonWriterMapping"/>
+      </property>
+      <property category="basic" displayName="Mapping URL" modifiable="true" name="mappingURL" nullable="true" required="!mapping" redundant="mapping">
+        <singleType name="file"/>
+      </property>
+      <property category="advanced" displayName="Create directories" modifiable="true" name="makeDirs" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Omit new lines wherever possible" modifiable="true" name="omitNewLines" nullable="true" defaultHint="false">
+	      <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Directory for temporary files" modifiable="true" name="tmpDir" nullable="true" defaultHintProvider="tmpDir">
+        <singleType name="file"/>
+      </property>
+      <property category="advanced" displayName="Cache size (e.g. '300MB','1GB')" modifiable="true" name="cacheSize" nullable="true" defaultHint="auto">
+        <singleType name="string" />
+      </property>
+      <property category="advanced" displayName="Sorted input" modifiable="true" name="sortedInput" nullable="true" defaultHint="false">
+        <singleType name="bool"/>
+      </property>
+      <property category="advanced" displayName="Sort keys" modifiable="true" name="sortKeys" nullable="true" required="false"  defaultHint="">
+        <singleType name="sortKey"/>
+      </property>
+      <property category="advanced" displayName="Records per file" modifiable="true" name="recordsPerFile" nullable="true">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Max number of records" modifiable="true" name="recordCount" nullable="true">
+        <singleType name="int" />
+      </property>
+      <property category="advanced" displayName="Partition key" modifiable="true" name="partitionKey" nullable="true" required="partition">
+        <singleType name="key" xmlMapping="mapping" xmlMappingUrl="mappingURL"/>
+      </property>
+      <property category="advanced" displayName="Partition lookup table" modifiable="true" name="partition" nullable="true" required="partitionOutFields">
+        <singleType name="lookupTableID" />
+      </property>
+      <property category="advanced" displayName="Partition file tag" modifiable="true" name="partitionFileTag" nullable="true">
+        <enumType>
+          <item displayValue="Number file tag" value="numberFileTag" />
+          <item displayValue="Key file tag" value="keyNameFileTag" />
+        </enumType>
+      </property>
+      <property category="advanced" displayName="Partition output fields" modifiable="true" name="partitionOutFields" nullable="true" required="partition">
+        <singleType name="key" lookupMatadataProp="partition" />
+      </property>
+      <property category="advanced" displayName="Partition unassigned file name" modifiable="true" name="partitionUnassignedFileName" nullable="true" redundant="!partition">
+        <singleType name="string" />
+      </property>
+    </properties>
+  </ETLComponent>
+  
+</ETLComponentList>

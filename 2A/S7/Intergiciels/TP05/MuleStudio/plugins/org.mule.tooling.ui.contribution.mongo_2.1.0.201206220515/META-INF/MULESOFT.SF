@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: KVdC+tfnD79a2EbNYIcu7mK+50w=
+Created-By: 1.6.0_33 (Apple Inc.)
+SHA1-Digest-Manifest: 76wIccnJ97Yq1avX+Eaw35iUiH0=
+
+Name: icons/small/mongo-endpoint-24x16.png
+SHA1-Digest: cGa7SNDrQKoaYKyNUVrhaBRRadk=
+
+Name: org/mule/tooling/ui/contribution/mongo/Activator.class
+SHA1-Digest: w31PqBXT/8oSqW5dngR3J8y8l3g=
+
+Name: icons/large/mongo-transformer-48x32.png
+SHA1-Digest: Ys6ScN3D3oDLWgLcX8EI0hU9Zh8=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .mongo/pom.xml
+SHA1-Digest: lRb4RNYsmI7viXCfTmQlp5+V4Ic=
+
+Name: mule-module-mongo-2.1.zip
+SHA1-Digest: jQDKSokwDdmO0SFlpHOIbv1W/r4=
+
+Name: mongo.xml
+SHA1-Digest: RyJPItPZ17cDWiyZFqKMoKZ2d9A=
+
+Name: mule-module-mongo-2.1.jar
+SHA1-Digest: 28LqLhyIDn9j0JxdizQ1Da5ZTwc=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .mongo/pom.properties
+SHA1-Digest: 5Yv46kCTxIbl3plPgbMeJNMgZDg=
+
+Name: icons/small/mongo-transformer-24x16.png
+SHA1-Digest: 3/fIYdJDS6WmiZXP0NP7TZGSy58=
+
+Name: plugin.xml
+SHA1-Digest: AdTCRSkggoQ7NeiJLFwgvxQlRYg=
+
+Name: icons/large/mongo-endpoint-48x32.png
+SHA1-Digest: 60ss/X7VabWcsIMTLfYgHkEQqng=
+
+Name: icons/large/mongo-connector-48x32.png
+SHA1-Digest: iWd65AdGGJk9S5jSqNwwLWd34K4=
+
+Name: icons/small/mongo-connector-24x16.png
+SHA1-Digest: B9l62K1Th8snnIoWk/VMWcHne+Q=
+

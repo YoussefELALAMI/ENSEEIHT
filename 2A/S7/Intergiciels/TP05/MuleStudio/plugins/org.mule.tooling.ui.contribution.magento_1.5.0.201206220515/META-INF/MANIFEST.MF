@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Built-By: jorged
+Eclipse-BundleShape: dir
+Bundle-Name: Magento Cloud Connector
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.mule.tooli
+ ng.core;bundle-version="1.0.0"
+Bundle-Vendor: Mulesoft Inc.
+Build-Jdk: 1.6.0_33
+Bundle-Version: 1.5.0.201206220515
+Bundle-Activator: org.mule.tooling.ui.contribution.magento.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.mule.tooling.ui.contribution.magento;singleto
+ n:=true
+Archiver-Version: Plexus Archiver
+
+Name: icons/small/magento-endpoint-24x16.png
+SHA1-Digest: NL1eL8FGbpnYBGhehgXntMjlB4s=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .magento/pom.properties
+SHA1-Digest: VX009Np5OSglOVLqCkJF8zZle+8=
+
+Name: mule-module-magento-1.5.zip
+SHA1-Digest: Gus/o2VGbI1pN70Z37Ew89S441w=
+
+Name: icons/small/magento-transformer-24x16.png
+SHA1-Digest: lD2o1Gkh4EIIxdLFJ1l3ilfRo7U=
+
+Name: icons/small/magento-connector-24x16.png
+SHA1-Digest: 6a/escj47bj/xoxX04T4HWvZRSA=
+
+Name: org/mule/tooling/ui/contribution/magento/Activator.class
+SHA1-Digest: q4Po/FfoZ1Vjv2b/AG9BjoeuLeE=
+
+Name: icons/large/magento-transformer-48x32.png
+SHA1-Digest: ItraUkC9BuwO6766krQMXqc8dvE=
+
+Name: icons/large/magento-connector-48x32.png
+SHA1-Digest: gAFImSp6oLW7mBwFzVGSwpsIqjE=
+
+Name: magento.xml
+SHA1-Digest: wfBuV96GRlnUFTZo1EMN0VnxiqU=
+
+Name: plugin.xml
+SHA1-Digest: sQoigx/d8rRMY+f5utuPxOzU0fI=
+
+Name: mule-module-magento-1.5.jar
+SHA1-Digest: YllDTaag1r4GeafRdcUYaZy9D6E=
+
+Name: icons/large/magento-endpoint-48x32.png
+SHA1-Digest: BOJjeZV5XnR7WeK5e+9r0Jbn1sc=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .magento/pom.xml
+SHA1-Digest: QkfkTqq8jhf83vZIX3n5AkPJEg4=
+

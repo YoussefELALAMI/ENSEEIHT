@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.mule.tooling.core.contribution">
+      <externalContribution
+            contributionJar="mule-module-twilio-1.2.jar"
+            contributionLibPathInMule="/plugins"
+            contributionLibs="mule-module-twilio-1.2.zip"
+            contributionNamespace="http://www.mulesoft.org/schema/mule/twilio"
+            contributionNamespaceFile="http://www.mulesoft.org/schema/mule/twilio/1.0/mule-twilio.xsd"
+            contributionNamespacePrefix="twilio"
+            contributionType="cloud-connector"
+            icon="icons/small/twilio-connector-24x16.png"
+            name="Twilio"
+            path="twilio.xml"
+            version="1.2">
+      </externalContribution>
+   </extension>
+
+</plugin>

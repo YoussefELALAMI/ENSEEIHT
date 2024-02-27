@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: z9jO4uxtiYazegAGCVx7NrysX3s=
+Created-By: 1.6.0_33 (Apple Inc.)
+SHA1-Digest-Manifest: eZg+nOAriGBLhht3RxO1n5zduXE=
+
+Name: mule-module-twilio-1.2.zip
+SHA1-Digest: SPbnU9iqLY0mafOIk6ymI4QzAtc=
+
+Name: icons/small/twilio-connector-24x16.png
+SHA1-Digest: 46jmw12eQ70Hs/yi3ZnurjHAUB0=
+
+Name: icons/large/twilio-transformer-48x32.png
+SHA1-Digest: 4I77crwjTNJ8ti+lRx7obzqz38M=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .twilio/pom.xml
+SHA1-Digest: Wp7hGsbX4p6xvp4NBLsppCl4N+w=
+
+Name: icons/large/twilio-connector-48x32.png
+SHA1-Digest: FWmrA5t708pWfR/Fk7/5u/BOPRQ=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .twilio/pom.properties
+SHA1-Digest: h4GpTZu/tHXrj1exep7USd71dew=
+
+Name: mule-module-twilio-1.2.jar
+SHA1-Digest: 6CvOFTYhK4yx5saUU9FTErAvjNQ=
+
+Name: icons/small/twilio-transformer-24x16.png
+SHA1-Digest: b7Hj+CAVKV3QZs7b3wGwuNfpgS4=
+
+Name: org/mule/tooling/ui/contribution/twilio/Activator.class
+SHA1-Digest: IZBKtEJBvNYu/fmgCUXSLCHUqIw=
+
+Name: icons/small/twilio-endpoint-24x16.png
+SHA1-Digest: yD8HILlLtcu7opH0iPfDuSmk20A=
+
+Name: icons/large/twilio-endpoint-48x32.png
+SHA1-Digest: gG5dLgAuuqK4KteVQLfY17ww1uQ=
+
+Name: plugin.xml
+SHA1-Digest: CDp8OoGEOEch3YYaY18sHw5LN2w=
+
+Name: twilio.xml
+SHA1-Digest: 96rl2zRkospP8UrF/A5poLQuMvo=
+

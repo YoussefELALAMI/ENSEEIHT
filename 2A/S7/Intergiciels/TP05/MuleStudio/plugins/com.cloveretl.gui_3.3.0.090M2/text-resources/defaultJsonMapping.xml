@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- =========================== Context ================================ -->
+<!-- Context element sets the "current node" in the JSON tree             --> 
+<!-- for subsequent Mapping (or Context) operations.                      -->
+<!--                                                                      -->
+<!-- Parameters:                                                          -->
+<!--   xpath: position in the JSON tree                                   -->
+<!--   outPort: (optional) routes mapped data to specified output port    -->
+<!--                                                                      -->
+<!-- Valid "xpath" for root context:                                      -->
+<!--   xpath="/root/object"  if root of JSON structure is an object       -->
+<!--   xpath="/root/array"   if root of JSON structure is an array        -->
+  
+<Context xpath="/root/object" outPort="0">
+  
+  <!-- =========================== Mapping ================================ -->
+  <!-- Mapping elements extract data from single JSON name/value pair       -->
+  <!-- in the current node or its subtree.                                  --> 
+  <!--                                                                      -->
+  <!-- Parameters:                                                          -->
+  <!--   xpath: extract value of a name/value pair for a specified name     -->
+  <!--                                                                      -->
+  <Mapping cloverField="field1" xpath="name1"/>
+  <Mapping cloverField="field2" xpath="./path/to/nested/name/value/pair"/>
+ 
+    <!-- ======================== Nested Context ============================ -->
+    <!-- Context and mapping elements can be nested to extract data from      -->
+    <!-- arrays, subtrees or repeating JSON nodes.                            -->
+    <!--                                                                      -->
+    <Context xpath="//children" outPort="1">
+      <Mapping cloverField="parent" xpath="parent" />
+      <Mapping cloverField="title" xpath="title"/>
+    </Context>
+</Context>

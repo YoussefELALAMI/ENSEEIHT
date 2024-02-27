@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Built-By: jorged
+Eclipse-BundleShape: dir
+Bundle-Name: Salesforce Cloud Connector
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.mule.tooli
+ ng.core;bundle-version="1.0.0"
+Bundle-Vendor: Mulesoft Inc.
+Build-Jdk: 1.6.0_33
+Bundle-Version: 4.4.0.201206220515
+Bundle-Activator: org.mule.tooling.ui.contribution.sfdc.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.mule.tooling.ui.contribution.sfdc;singleton:=
+ true
+Archiver-Version: Plexus Archiver
+
+Name: mule-module-sfdc-4.4.zip
+SHA1-Digest: 2h2DL//1C+g+YLo4CjgVJ88B4IQ=
+
+Name: icons/large/sfdc-endpoint-48x32.png
+SHA1-Digest: PMCq6x9c5MJCB3yEYvpL5Iz4X3Q=
+
+Name: icons/small/sfdc-connector-24x16.png
+SHA1-Digest: alNOHyYZlfqlvU/REDhaZpPFzaI=
+
+Name: salesforce.xml
+SHA1-Digest: rdTUknSUB3G5Z3WkLrH/2RQh670=
+
+Name: icons/large/sfdc-transformer-48x32.png
+SHA1-Digest: n5PFj0Rva1dHhcKAUtNb+ej4jaM=
+
+Name: icons/large/sfdc-connector-48x32.png
+SHA1-Digest: 2YXcFIcVHmm96MbbH1aMaxczldU=
+
+Name: plugin.xml
+SHA1-Digest: gQ7Byuwnu+wGsPhSiAVWummiZwY=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .sfdc/pom.properties
+SHA1-Digest: PfNTNU6tAeX3aF/rg7VO8m/s0fI=
+
+Name: icons/small/sfdc-endpoint-24x16.png
+SHA1-Digest: QhwqTkzYVKrtZ9i1p8slAftGUFw=
+
+Name: mule-module-sfdc-4.4.jar
+SHA1-Digest: fGpMcYRD7JzZOKLIX7UmypzFQnk=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .sfdc/pom.xml
+SHA1-Digest: Fo5s1JiygxoQi+AksSdzupAJuds=
+
+Name: icons/small/sfdc-transformer-24x16.png
+SHA1-Digest: Iqb3rCE1wHqBEh1ZP/CPhFVLWCw=
+
+Name: org/mule/tooling/ui/contribution/sfdc/Activator.class
+SHA1-Digest: B2maR+FwFjv5qLwMkiU2q2LS9xU=
+

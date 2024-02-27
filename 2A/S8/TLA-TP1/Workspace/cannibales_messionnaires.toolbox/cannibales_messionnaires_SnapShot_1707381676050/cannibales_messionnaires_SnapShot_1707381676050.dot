@@ -1,0 +1,9 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-7427057651612298219 [label="/\\ barque = \"G\"\n/\\ riveD = {}\n/\\ riveG = {\"C1\", \"C2\", \"C3\", \"M1\", \"M2\", \"M3\"}",style = filled]
+{rank = same; -7427057651612298219;}
+}
+}

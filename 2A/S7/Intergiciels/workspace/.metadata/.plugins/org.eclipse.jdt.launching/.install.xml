@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
     <entry loc="/usr/lib/jvm/java-11-openjdk-amd64" stamp="1693595928875"/>
 </dirs>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dirs>
+    <entry loc="/mnt/n7fs/ens/tp_dh/jdk1.8.0_202" stamp="1544907196000"/>
+    <entry loc="/usr/lib/jvm/java-11-openjdk-amd64" stamp="1693601479159"/>
+</dirs>
+>>>>>>> edb0a6f2e2f7352de86b6e7df39540733ddc507a

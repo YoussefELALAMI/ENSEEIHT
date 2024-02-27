@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<namespace xmlns="http://www.mulesoft.org/schema/mule/tooling.attributes" xmlns:mule="http://www.mulesoft.org/schema/mule/core" prefix="twitter" url="http://www.mulesoft.org/schema/mule/twitter">
+  <global-cloud-connector extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" image="icons/large/twitter-connector-48x32.png" localId="config" icon="icons/small/twitter-connector-24x16.png" description="Global Twitter configuration information." caption="Twitter">
+    <attribute-category description="Twitter configuration properties." caption="General">
+      <group caption="Generic" id="twitterGenericProperties">
+        <name required="true" description="Give a name to this configuration so it can be later referenced by config-ref." caption="Name" name="name"></name>
+      </group>
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The access key provided by Twitter." caption="Access Key" name="accessKey"></string>
+        <string javaType="java.lang.String" required="false" description="The access secret provided by Twitter." caption="Access Secret" name="accessSecret"></string>
+        <string javaType="java.lang.String" required="true" description="The consumer key used by this application." caption="Consumer Key" name="consumerKey"></string>
+        <string javaType="java.lang.String" required="true" description="The consumer key secret by this application." caption="Consumer Secret" name="consumerSecret"></string>
+        <boolean defaultValue="true" javaType="boolean" required="false" supportsExpressions="true" description="Whether to use SSL in API calls to Twitter." caption="Use SSL" name="useSSL"></boolean>
+      </group>
+    </attribute-category>
+    <attribute-category description="Proxy." caption="Proxy">
+      <group caption="Proxy settings" id="proxy settings">
+        <string javaType="java.lang.String" required="false" description="Proxy host." caption="Proxy Host" name="proxyHost"></string>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Proxy port." caption="Proxy Port" name="proxyPort"></integer>
+        <string javaType="java.lang.String" required="false" description="Proxy username." caption="Proxy Username" name="proxyUsername"></string>
+        <password javaType="java.lang.String" required="false" description="Proxy password." caption="Proxy Password" name="proxyPassword"></password>
+      </group>
+    </attribute-category>
+  </global-cloud-connector>
+  <cloud-connector extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" image="icons/large/twitter-connector-48x32.png" localId="twitter-connector" icon="icons/small/twitter-connector-24x16.png" description="Twitter Integration" caption="Twitter" aliasId="org.mule.tooling.ui.modules.core.pattern.twitter">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="twitterConnectorGeneric">
+        <modeSwitch description="Operation." caption="Operation" name="Twitter operations to execute">
+          <mode modeLabel="Create place" modeId="http://www.mulesoft.org/schema/mule/twitter/create-place"></mode>
+          <mode modeLabel="Destroy status" modeId="http://www.mulesoft.org/schema/mule/twitter/destroy-status"></mode>
+          <mode modeLabel="Get available trends" modeId="http://www.mulesoft.org/schema/mule/twitter/get-available-trends"></mode>
+          <mode modeLabel="Get daily trends" modeId="http://www.mulesoft.org/schema/mule/twitter/get-daily-trends"></mode>
+          <mode modeLabel="Get geo details" modeId="http://www.mulesoft.org/schema/mule/twitter/get-geo-details"></mode>
+          <mode modeLabel="Get home timeline" modeId="http://www.mulesoft.org/schema/mule/twitter/get-home-timeline"></mode>
+          <mode modeLabel="Get location trends" modeId="http://www.mulesoft.org/schema/mule/twitter/get-location-trends"></mode>
+          <mode modeLabel="Get mentions" modeId="http://www.mulesoft.org/schema/mule/twitter/get-mentions"></mode>
+          <mode modeLabel="Get public timeline" modeId="http://www.mulesoft.org/schema/mule/twitter/get-public-timeline"></mode>
+          <mode modeLabel="Get retweeted by" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-by"></mode>
+          <mode modeLabel="Get retweeted by i ds" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-by-i-ds"></mode>
+          <mode modeLabel="Get retweeted by me" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-by-me"></mode>
+          <mode modeLabel="Get retweeted by user by screen name" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-by-user-by-screen-name"></mode>
+          <mode modeLabel="Get retweeted by user by user id" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-by-user-by-user-id"></mode>
+          <mode modeLabel="Get retweeted to me" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-to-me"></mode>
+          <mode modeLabel="Get retweeted to user by screen name" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-to-user-by-screen-name"></mode>
+          <mode modeLabel="Get retweeted to user by user id" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweeted-to-user-by-user-id"></mode>
+          <mode modeLabel="Get retweets" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweets"></mode>
+          <mode modeLabel="Get retweets of me" modeId="http://www.mulesoft.org/schema/mule/twitter/get-retweets-of-me"></mode>
+          <mode modeLabel="Get user timeline" modeId="http://www.mulesoft.org/schema/mule/twitter/get-user-timeline"></mode>
+          <mode modeLabel="Get user timeline by screen name" modeId="http://www.mulesoft.org/schema/mule/twitter/get-user-timeline-by-screen-name"></mode>
+          <mode modeLabel="Get user timeline by user id" modeId="http://www.mulesoft.org/schema/mule/twitter/get-user-timeline-by-user-id"></mode>
+          <mode modeLabel="Get weekly trends" modeId="http://www.mulesoft.org/schema/mule/twitter/get-weekly-trends"></mode>
+          <mode modeLabel="Request authorization" modeId="http://www.mulesoft.org/schema/mule/twitter/request-authorization"></mode>
+          <mode modeLabel="Retweet status" modeId="http://www.mulesoft.org/schema/mule/twitter/retweet-status"></mode>
+          <mode modeLabel="Reverse geo code" modeId="http://www.mulesoft.org/schema/mule/twitter/reverse-geo-code"></mode>
+          <mode modeLabel="Search" modeId="http://www.mulesoft.org/schema/mule/twitter/search"></mode>
+          <mode modeLabel="Search places" modeId="http://www.mulesoft.org/schema/mule/twitter/search-places"></mode>
+          <mode modeLabel="Send direct message by screen name" modeId="http://www.mulesoft.org/schema/mule/twitter/send-direct-message-by-screen-name"></mode>
+          <mode modeLabel="Send direct message by user id" modeId="http://www.mulesoft.org/schema/mule/twitter/send-direct-message-by-user-id"></mode>
+          <mode modeLabel="Set oauth verifier" modeId="http://www.mulesoft.org/schema/mule/twitter/set-oauth-verifier"></mode>
+          <mode modeLabel="Show status" modeId="http://www.mulesoft.org/schema/mule/twitter/show-status"></mode>
+          <mode modeLabel="Show user" modeId="http://www.mulesoft.org/schema/mule/twitter/show-user"></mode>
+          <mode modeLabel="Update status" modeId="http://www.mulesoft.org/schema/mule/twitter/update-status"></mode>
+        </modeSwitch>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector abstract="true" image="icons/large/twitter-connector-48x32.png" localId="abstractTwitterConnectorGeneric" icon="icons/small/twitter-connector-24x16.png" description="Interact with Twitter." caption="Abstracttwitterconnectorgeneric">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractTwitterConnectorGeneric">
+        <globalRef requiredType="http://www.mulesoft.org/schema/mule/twitter/config" required="true" description="Specify which configuration to use for this invocation." caption="Config Reference" name="config-ref"></globalRef>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.QueryResult" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="search" icon="icons/small/twitter-connector-24x16.png" caption="Search">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="Restricts tweets to the given language, given by an ISO 639-1 code." caption="Lang" name="lang"></string>
+        <string javaType="java.lang.String" required="false" description="Specify the language of the query you are sending (only ja is currently effective). This is intended for language-specific clients and the default should work in the majority of cases." caption="Locale" name="locale"></string>
+        <string javaType="java.lang.String" required="true" description="The search query." caption="Query" name="query"></string>
+        <integer step="1" min="0" javaType="java.lang.Long" required="false" description="If specified, returns tweets with status ids less than the given id." caption="Max Id" name="maxId"></integer>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="Sets the page number (starting at 1) to return, up to a max of roughly 1500 results." caption="Page" name="page"></integer>
+        <integer step="1" min="0" javaType="java.lang.Integer" required="false" description="Sets the number of tweets to return per page, up to a max of 100." caption="Rpp" name="rpp"></integer>
+        <string javaType="java.lang.String" required="false" description="If specified, returns tweets since the given date. Date should be formatted as YYYY-MM-DD." caption="Since" name="since"></string>
+        <integer step="1" min="0" javaType="java.lang.Long" required="false" description="Returns tweets with status ids greater than the given id." caption="Since Id" name="sinceId"></integer>
+        <string javaType="java.lang.String" required="false" description="A  containing the latitude and longitude separated by ','. Used to get the tweets by users located within a given radius of the given latitude/longitude, where the user's location is taken from their Twitter profile." caption="Geocode" name="geocode"></string>
+        <string javaType="java.lang.String" required="false" description="The radius to be used in the geocode -ONLY VALID IF A GEOCODE IS GIVEN-." caption="Radius" name="radius"></string>
+        <string javaType="java.lang.String" required="false" description="If specified, returns tweets included popular or real time or both in the responce. Both by default. Can be 'mixed', 'popular' or 'recent'." caption="Result Type" name="resultType"></string>
+        <string defaultValue="mi" javaType="java.lang.String" required="false" description="The unit of measurement of the given radius. Can be 'mi' or 'km'. Miles by default." caption="Unit" name="unit"></string>
+        <string javaType="java.lang.String" required="false" description="If specified, returns tweets with generated before the given date. Date should be formatted as YYYY-MM-DD." caption="Until" name="until"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-public-timeline" icon="icons/small/twitter-connector-24x16.png" caption="Get Public Timeline">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-home-timeline" icon="icons/small/twitter-connector-24x16.png" caption="Get Home Timeline">
+    <attribute-category description="General." caption="General">
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of records to retrieve. Must be less than or equal to 200." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-user-timeline-by-screen-name" icon="icons/small/twitter-connector-24x16.png" caption="Get User Timeline By Screen Name">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The screen name of the user for whom to return results for." caption="Screen Name" name="screenName"></string>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-user-timeline-by-user-id" icon="icons/small/twitter-connector-24x16.png" caption="Get User Timeline By User Id">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="Specifies the ID of the user for whom to return the user_timeline." caption="User Id" name="userId"></integer>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-user-timeline" icon="icons/small/twitter-connector-24x16.png" caption="Get User Timeline">
+    <attribute-category description="General." caption="General">
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-mentions" icon="icons/small/twitter-connector-24x16.png" caption="Get Mentions">
+    <attribute-category description="General." caption="General">
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-by-me" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted By Me">
+    <attribute-category description="General." caption="General">
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-to-me" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted To Me">
+    <attribute-category description="General." caption="General">
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweets-of-me" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweets Of Me">
+    <attribute-category description="General." caption="General">
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-to-user-by-screen-name" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted To User By Screen Name">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The user to view." caption="Screen Name" name="screenName"></string>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-to-user-by-user-id" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted To User By User Id">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The user to view." caption="User Id" name="userId"></integer>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-by-user-by-screen-name" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted By User By Screen Name">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The user to view." caption="Screen Name" name="screenName"></string>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-by-user-by-user-id" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted By User By User Id">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The user to view." caption="User Id" name="userId"></integer>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.Status" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="show-status" icon="icons/small/twitter-connector-24x16.png" caption="Show Status">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The numerical ID of the status you're trying to retrieve." caption="Id" name="id"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.User" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="show-user" icon="icons/small/twitter-connector-24x16.png" caption="Show User">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.Status" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="update-status" icon="icons/small/twitter-connector-24x16.png" caption="Update Status">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The text of your status update." caption="Status" name="status"></string>
+        <integer step="1" min="0" defaultValue="-1" javaType="long" required="false" description="The ID of an existing status that the update is in reply to." caption="In Reply To" name="inReplyTo"></integer>
+      </group>
+      <group caption="Coordinates" id="coordinates">
+        <string javaType="java.lang.Double" required="false" description="The latitude of the location this tweet refers to. This parameter will be ignored unless it is inside the range -90.0 to +90.0 (North is positive) inclusive." caption="Latitude" name="latitude"></string>
+        <string javaType="java.lang.Double" required="false" description="He longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if outside that range or if there not a corresponding lat parameter." caption="Longitude" name="longitude"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.Status" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="destroy-status" icon="icons/small/twitter-connector-24x16.png" caption="Destroy Status">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The ID of the status to destroy." caption="Status Id" name="statusId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.Status" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="retweet-status" icon="icons/small/twitter-connector-24x16.png" caption="Retweet Status">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The ID of the status to retweet." caption="Status Id" name="statusId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Status&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweets" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweets">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The numerical ID of the tweet you want the retweets of." caption="Status Id" name="statusId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.User&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-by" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted By">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The ID of the status you want to get retweeters of." caption="Status Id" name="statusId"></integer>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.IDs" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-retweeted-by-i-ds" icon="icons/small/twitter-connector-24x16.png" caption="Get Retweeted By I Ds">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The ID of the status you want to get retweeters of." caption="Status Id" name="statusId"></integer>
+      </group>
+      <group caption="Pagination" id="pagination">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="Specifies the page of results to retrieve." caption="Page" name="page"></integer>
+        <integer step="1" min="0" defaultValue="100" javaType="int" required="false" description="Specifies the number of tweets to try and retrieve, up to a maximum of 200. The value of count is best thought of as a limit to the number of tweets to return because suspended or deleted content is removed after the count has been applied." caption="Count" name="count"></integer>
+        <integer step="1" min="0" defaultValue="-1" javaType="int" required="false" description="Returns results with an ID greater than (that is, more recent than) the specified ID. There are limits to the number of Tweets which can be accessed through the API. If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available." caption="Since Id" name="sinceId"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="set-oauth-verifier" icon="icons/small/twitter-connector-24x16.png" caption="Set Oauth Verifier">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The OAuth verifier code from Twitter." caption="Oauth Verifier" name="oauthVerifier"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.lang.String" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="request-authorization" icon="icons/small/twitter-connector-24x16.png" caption="Request Authorization">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The url to be requested when the user authorizes this app." caption="Callback Url" name="callbackUrl"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Place&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="reverse-geo-code" icon="icons/small/twitter-connector-24x16.png" caption="Reverse Geo Code">
+    <attribute-category description="General." caption="General">
+      <group caption="Coordinates" id="coordinates">
+        <string javaType="java.lang.Double" required="false" description="Latitude coordinate. Mandatory if ip is not specified." caption="Latitude" name="latitude"></string>
+        <string javaType="java.lang.Double" required="false" description="Longitude coordinate." caption="Longitude" name="longitude"></string>
+      </group>
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The ip. Mandatory if coordinates are not specified." caption="Ip" name="ip"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Place&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="search-places" icon="icons/small/twitter-connector-24x16.png" caption="Search Places">
+    <attribute-category description="General." caption="General">
+      <group caption="Coordinates" id="coordinates">
+        <string javaType="java.lang.Double" required="false" description="Latitude coordinate. Mandatory if ip is not specified." caption="Latitude" name="latitude"></string>
+        <string javaType="java.lang.Double" required="false" description="Longitude coordinate." caption="Longitude" name="longitude"></string>
+      </group>
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="false" description="The ip. Mandatory if coordinates are not specified." caption="Ip" name="ip"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.Place" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-geo-details" icon="icons/small/twitter-connector-24x16.png" caption="Get Geo Details">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The ID of the location to query about." caption="Id" name="id"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.Place" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="create-place" icon="icons/small/twitter-connector-24x16.png" caption="Create Place">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The place_id within which the new place can be found. Try and be as close as possible with the containing place. For example, for a room in a building, set the contained_within as the building place_id." caption="Contained Within" name="containedWithin"></string>
+        <string javaType="java.lang.String" required="true" description="The name a place is known as." caption="Name" name="name"></string>
+        <string javaType="java.lang.String" required="true" description="The token found in the response from geo/similar_places." caption="Token" name="token"></string>
+        <string javaType="java.lang.String" required="false" description="Optional: This parameter searches for places which have this given street address. There are other well-known, and application specific attributes available. Custom attributes are also permitted. Learn more about Place Attributes." caption="Street Address" name="streetAddress"></string>
+      </group>
+      <group caption="Coordinates" id="coordinates">
+        <string javaType="java.lang.Double" required="true" description="The latitude the place is located at." caption="Latitude" name="latitude"></string>
+        <string javaType="java.lang.Double" required="true" description="The longitude the place is located at." caption="Longitude" name="longitude"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.ResponseList&lt;twitter4j.Location&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-available-trends" icon="icons/small/twitter-connector-24x16.png" caption="Get Available Trends">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.Double" required="false" description="The latitude." caption="Latitude" name="latitude"></string>
+        <string javaType="java.lang.Double" required="false" description="The longitude." caption="Longitude" name="longitude"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.Trends" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-location-trends" icon="icons/small/twitter-connector-24x16.png" caption="Get Location Trends">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" defaultValue="1" javaType="int" required="false" description="The WOEID of the location to be querying for." caption="Woeid" name="woeid"></integer>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;twitter4j.Trends&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-daily-trends" icon="icons/small/twitter-connector-24x16.png" caption="Get Daily Trends">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.util.Date" required="false" description="Starting date of daily trends. If no date is specified, current date is used." caption="Date" name="date"></string>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="Whether hashtags should be excluded." caption="Exclude Hash Tags" name="excludeHashTags"></boolean>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="java.util.List&lt;twitter4j.Trends&gt;" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="get-weekly-trends" icon="icons/small/twitter-connector-24x16.png" caption="Get Weekly Trends">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.util.Date" required="false" description="Starting date of daily trends. If no date is specified, current date is used." caption="Date" name="date"></string>
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="If all hashtags should be removed from the trends list." caption="Exclude Hash Tags" name="excludeHashTags"></boolean>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.DirectMessage" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="send-direct-message-by-screen-name" icon="icons/small/twitter-connector-24x16.png" caption="Send Direct Message By Screen Name">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <string javaType="java.lang.String" required="true" description="The text of your direct message." caption="Message" name="message"></string>
+        <string javaType="java.lang.String" required="true" description="The screen name of the user to whom send the direct message." caption="Screen Name" name="screenName"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="twitter4j.DirectMessage" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-connector-48x32.png" localId="send-direct-message-by-user-id" icon="icons/small/twitter-connector-24x16.png" caption="Send Direct Message By User Id">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="long" required="true" description="The user ID of the user to whom send the direct message." caption="User Id" name="userId"></integer>
+        <string javaType="java.lang.String" required="true" description="The text of your direct message." caption="Message" name="message"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <global-endpoint abstract="true" image="icons/large/twitter-endpoint-48x32.png" localId="abstractGlobalEndpoint" icon="icons/small/twitter-endpoint-24x16.png" description="" caption="">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractEndpointGeneric">
+        <name required="true" description="Endpoint name." caption="Name" name="name"></name>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+  <endpoint supportsOutbound="false" supportsInbound="true" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="false" image="icons/large/twitter-endpoint-48x32.png" localId="endpoint" icon="icons/small/twitter-endpoint-24x16.png" description="Twitter Integration" caption="Twitter (Streaming)">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="twitterConnectorGeneric">
+        <modeSwitch description="Operation." caption="Operation" name="Twitter operations to execute">
+          <mode modeLabel="Filtered stream" modeId="http://www.mulesoft.org/schema/mule/twitter/filtered-stream"></mode>
+          <mode modeLabel="Firehose stream" modeId="http://www.mulesoft.org/schema/mule/twitter/firehose-stream"></mode>
+          <mode modeLabel="Link stream" modeId="http://www.mulesoft.org/schema/mule/twitter/link-stream"></mode>
+          <mode modeLabel="Sample stream" modeId="http://www.mulesoft.org/schema/mule/twitter/sample-stream"></mode>
+          <mode modeLabel="Site stream" modeId="http://www.mulesoft.org/schema/mule/twitter/site-stream"></mode>
+          <mode modeLabel="User stream" modeId="http://www.mulesoft.org/schema/mule/twitter/user-stream"></mode>
+        </modeSwitch>
+      </group>
+    </attribute-category>
+  </endpoint>
+  <composite
+    elementToSkipCategory="org.mule.tooling.category.endpoints"
+    elementToSkipId="http://www.mulesoft.org/schema/mule/twitter/endpoint"
+    compositeElementId="http://www.mulesoft.org/schema/mule/twitter/twitter-connector">
+  </composite>
+  <global-endpoint extends="http://www.mulesoft.org/schema/mule/twitter/abstractGlobalEndpoint" image="icons/large/twitter-endpoint-48x32.png" localId="global-endpoint" icon="icons/small/twitter-endpoint-24x16.png" description="Global endpoint." caption="Twitter">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="twitterConnectorGeneric">
+        <modeSwitch description="Operation." caption="Operation" name="Twitter operations to execute">
+          <mode modeLabel="Filtered stream" modeId="http://www.mulesoft.org/schema/mule/twitter/filtered-stream"></mode>
+          <mode modeLabel="Firehose stream" modeId="http://www.mulesoft.org/schema/mule/twitter/firehose-stream"></mode>
+          <mode modeLabel="Link stream" modeId="http://www.mulesoft.org/schema/mule/twitter/link-stream"></mode>
+          <mode modeLabel="Sample stream" modeId="http://www.mulesoft.org/schema/mule/twitter/sample-stream"></mode>
+          <mode modeLabel="Site stream" modeId="http://www.mulesoft.org/schema/mule/twitter/site-stream"></mode>
+          <mode modeLabel="User stream" modeId="http://www.mulesoft.org/schema/mule/twitter/user-stream"></mode>
+        </modeSwitch>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+  <endpoint inboundLocalName="filtered-stream" supportsOutbound="false" supportsInbound="true" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-endpoint-48x32.png" localId="filtered-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves public statuses that match one or more filter predicates.
+
+At least a keyword or userId must be specified. Multiple parameters may be
+specified.
+
+Placing long parameters in the URL may cause the request to be rejected for excessive URL length.
+
+The default access level allows up to 200 track keywords and 400 follow userids.
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Filtered Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" defaultValue="0" javaType="int" required="false" description="The number of previous statuses to stream before transitioning to the live stream." caption="Count" name="count"></integer>
+      </group>
+      <group caption="User Ids to Follow" id="user Ids to Follow">
+        <string-list itemName="user-id" listName="user-ids" localName="filtered-stream-user-ids" javaType="java.util.List&lt;java.lang.Long&gt;" description="The user ids to follow." caption="User Ids"></string-list>
+      </group>
+      <group caption="Keywords to Track" id="keywords to Track">
+        <string-list itemName="keyword" listName="keywords" localName="filtered-stream-keywords" javaType="java.util.List&lt;java.lang.String&gt;" description="The keywords to track." caption="Keywords"></string-list>
+      </group>
+    </attribute-category>
+  </endpoint>
+  <global-endpoint extends="http://www.mulesoft.org/schema/mule/twitter/filtered-stream" abstract="true" image="icons/large/twitter-endpoint-48x32.png" doNotInherit="config-ref" localId="filtered-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves public statuses that match one or more filter predicates.
+
+At least a keyword or userId must be specified. Multiple parameters may be
+specified.
+
+Placing long parameters in the URL may cause the request to be rejected for excessive URL length.
+
+The default access level allows up to 200 track keywords and 400 follow userids.
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Filtered Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractEndpointGeneric">
+        <name required="true" description="Endpoint name." caption="Name" name="name"></name>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+  <endpoint inboundLocalName="sample-stream" supportsOutbound="false" supportsInbound="true" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-endpoint-48x32.png" localId="sample-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves a random sample of all public statuses. The sample
+size and quality varies depending on the account permissions
+
+The default access level provides a small proportion of the Firehose. The &quot;Gardenhose&quot;
+access level provides a proportion more suitable for data mining
+and research applications that desire a larger proportion to be
+statistically significant sample.
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Sample Stream">
+    <attribute-category description="General." caption="General"></attribute-category>
+  </endpoint>
+  <global-endpoint extends="http://www.mulesoft.org/schema/mule/twitter/sample-stream" abstract="true" image="icons/large/twitter-endpoint-48x32.png" doNotInherit="config-ref" localId="sample-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves a random sample of all public statuses. The sample
+size and quality varies depending on the account permissions
+
+The default access level provides a small proportion of the Firehose. The &quot;Gardenhose&quot;
+access level provides a proportion more suitable for data mining
+and research applications that desire a larger proportion to be
+statistically significant sample.
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Sample Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractEndpointGeneric">
+        <name required="true" description="Endpoint name." caption="Name" name="name"></name>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+  <endpoint inboundLocalName="firehose-stream" supportsOutbound="false" supportsInbound="true" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-endpoint-48x32.png" localId="firehose-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves all public statuses. This stream is not generally
+available - it requires special permissions and its usage is discouraged by
+Twitter
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Firehose Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="Indicates the number of previous statuses to consider for delivery before transitioning to live stream delivery." caption="Count" name="count"></integer>
+      </group>
+    </attribute-category>
+  </endpoint>
+  <global-endpoint extends="http://www.mulesoft.org/schema/mule/twitter/firehose-stream" abstract="true" image="icons/large/twitter-endpoint-48x32.png" doNotInherit="config-ref" localId="firehose-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves all public statuses. This stream is not generally
+available - it requires special permissions and its usage is discouraged by
+Twitter
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Firehose Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractEndpointGeneric">
+        <name required="true" description="Endpoint name." caption="Name" name="name"></name>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+  <endpoint inboundLocalName="link-stream" supportsOutbound="false" supportsInbound="true" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-endpoint-48x32.png" localId="link-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves all statuses containing 'http:' and 'https:'. Like
+Firehorse, its is not a generally available stream
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Link Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="General" id="general">
+        <integer step="1" min="0" javaType="int" required="true" description="Indicates the number of previous statuses to consider for delivery before transitioning to live stream delivery." caption="Count" name="count"></integer>
+      </group>
+    </attribute-category>
+  </endpoint>
+  <global-endpoint extends="http://www.mulesoft.org/schema/mule/twitter/link-stream" abstract="true" image="icons/large/twitter-endpoint-48x32.png" doNotInherit="config-ref" localId="link-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves all statuses containing 'http:' and 'https:'. Like
+Firehorse, its is not a generally available stream
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Link Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractEndpointGeneric">
+        <name required="true" description="Endpoint name." caption="Name" name="name"></name>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+  <endpoint inboundLocalName="user-stream" supportsOutbound="false" supportsInbound="true" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-endpoint-48x32.png" localId="user-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Retrieves the following user updates notifications:
+- New Statuses 
+- Block/Unblock events 
+- Follow events 
+- User profile updates 
+- Retweets 
+- List creation/deletion 
+- List member addition/remotion 
+- List subscription/unsubscription 
+- List updates 
+- Profile updates 
+
+Such notifications are represented as org.mule.twitter.UserEvent objects
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="User Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="Keywords to Track" id="keywords to Track">
+        <string-list itemName="keyword" listName="keywords" localName="user-stream-keywords" javaType="java.util.List&lt;java.lang.String&gt;" description="The keywords to track for new statuses." caption="Keywords"></string-list>
+      </group>
+    </attribute-category>
+  </endpoint>
+  <global-endpoint extends="http://www.mulesoft.org/schema/mule/twitter/user-stream" abstract="true" image="icons/large/twitter-endpoint-48x32.png" doNotInherit="config-ref" localId="user-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Retrieves the following user updates notifications:
+- New Statuses 
+- Block/Unblock events 
+- Follow events 
+- User profile updates 
+- Retweets 
+- List creation/deletion 
+- List member addition/remotion 
+- List subscription/unsubscription 
+- List updates 
+- Profile updates 
+
+Such notifications are represented as org.mule.twitter.UserEvent objects
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="User Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractEndpointGeneric">
+        <name required="true" description="Endpoint name." caption="Name" name="name"></name>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+  <endpoint inboundLocalName="site-stream" supportsOutbound="false" supportsInbound="true" extends="http://www.mulesoft.org/schema/mule/twitter/abstractTwitterConnectorGeneric" abstract="true" image="icons/large/twitter-endpoint-48x32.png" localId="site-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves statutes for a set of supplied user's ids.
+Site Streams are a beta service, so refer always to latest twitter documentation about them.
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Site Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="User Ids to Follow" id="user Ids to Follow">
+        <string-list itemName="user-id" listName="user-ids" localName="site-stream-user-ids" javaType="java.util.List&lt;java.lang.Long&gt;" description="Ids of users to include in the stream." caption="User Ids"></string-list>
+      </group>
+      <group caption="General" id="general">
+        <boolean defaultValue="false" javaType="boolean" required="false" supportsExpressions="true" description="WithFollowings whether to receive status updates from people following." caption="With Followings" name="withFollowings"></boolean>
+      </group>
+    </attribute-category>
+  </endpoint>
+  <global-endpoint extends="http://www.mulesoft.org/schema/mule/twitter/site-stream" abstract="true" image="icons/large/twitter-endpoint-48x32.png" doNotInherit="config-ref" localId="site-stream" icon="icons/small/twitter-endpoint-24x16.png" description="Asynchronously retrieves statutes for a set of supplied user's ids.
+Site Streams are a beta service, so refer always to latest twitter documentation about them.
+
+Only one Twitter stream can be consumed using the same credentials. As a consequence,
+only one twitter stream can be consumed per connector instance.
+." caption="Site Stream">
+    <attribute-category description="General." caption="General">
+      <group caption="Generic" id="abstractEndpointGeneric">
+        <name required="true" description="Endpoint name." caption="Name" name="name"></name>
+      </group>
+    </attribute-category>
+  </global-endpoint>
+</namespace>

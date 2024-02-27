@@ -13,9 +13,9 @@ pos    %x-y pos of the cities
 
 %%%%%%EXO 1 (modeliser et afficher le graphe) %%%%%
 A = D;
-%viz_adj(D,A,pos,cities);
+viz_adj(D,A,pos,cities);
 A(A>500) = 0;
-%viz_adj(D,A,pos,cities);
+viz_adj(D,A,pos,cities);
 for n = [2 3 10 12]
     P = graphPower(A,n);
     %viz_adj(D,P,pos,cities);

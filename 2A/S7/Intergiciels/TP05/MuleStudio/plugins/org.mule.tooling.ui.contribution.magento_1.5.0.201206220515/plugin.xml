@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.mule.tooling.core.contribution">
+      <externalContribution
+            contributionJar="mule-module-magento-1.5.jar"
+            contributionLibPathInMule="/plugins"
+            contributionLibs="mule-module-magento-1.5.zip"
+            contributionNamespace="http://www.mulesoft.org/schema/mule/magento"
+            contributionNamespaceFile="http://www.mulesoft.org/schema/mule/magento/1.1/mule-magento.xsd"
+            contributionNamespacePrefix="magento"
+            contributionType="cloud-connector"
+            icon="icons/small/magento-connector-24x16.png"
+            name="Magento"
+            path="magento.xml"
+            version="1.5">
+      </externalContribution>
+   </extension>
+
+</plugin>

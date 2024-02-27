@@ -1,0 +1,1938 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: 4UCeVzUxo1upspYmk9S/HsRI7v8=
+Created-By: 1.6.0_26 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: hLq7G1qUEBIphqd6wnfRmjYEVm0=
+
+Name: icons/readers/DBInputTable-64x64.png
+SHA1-Digest: QzF0w0aV5UI/viZ3fDcEMeBa7Mo=
+
+Name: docs/Howto make WS available in CloverGUI
+SHA1-Digest: chLjYLetU/fDfLUPMfS5xE7F8bs=
+
+Name: icons/delete_edit.gif
+SHA1-Digest: DVrNb4MAi6kLX8yeJH6hxwRlC7s=
+
+Name: icons/cluster/ClusterGather-32x32.png
+SHA1-Digest: 1+gWQW333DedFir+9RpaxP5teuo=
+
+Name: icons/readers/QuickBaseReader-64x64.png
+SHA1-Digest: NHHinITVxhXnFl2tB1nnLcdBYYo=
+
+Name: icons/writers/StructuredDataWriter-64x64.png
+SHA1-Digest: guKvqwCg9IHYVi4/yrXKiPG8EN4=
+
+Name: icons/completetask.gif
+SHA1-Digest: L1MtJW8ivO8FymBXBnDu8+ufrEs=
+
+Name: lib/plugins/org.jetel.ctlfunction/plugin.xml
+SHA1-Digest: C0+604klxLjj/PZBVrSXimOdCnY=
+
+Name: icons/eclipse_launcher.gif
+SHA1-Digest: +Gb4JKlCWZij337+/MXAiGPI12M=
+
+Name: icons/readers/JMSReader-32x32.png
+SHA1-Digest: HZsGBFhmOgKupbO6eqLA3b44jZg=
+
+Name: icons/readers/DBInputTable-16x16.png
+SHA1-Digest: 8hK/G3kwJtNtWE3Xqzo1MFmDrO4=
+
+Name: icons/add-library-16.png
+SHA1-Digest: y2RkxaIhD86+bzDVURyBOqRu48I=
+
+Name: icons/transformers/FastSort-32x32.png
+SHA1-Digest: 9CWSSbeOVM4WIFZMDtkrUS/MGm4=
+
+Name: lib/lib/org.eclipse.nebula.widgets.grid-1.0.0-SNAPSHOT.jar
+SHA1-Digest: u82gjet+zZSQyaVYc8RzEGpLDx0=
+
+Name: icons/readers/XMLXPathReader-64x64.png
+SHA1-Digest: WEASLMJaS1M7/DojVzowdzYeUGs=
+
+Name: icons/print-16.gif
+SHA1-Digest: feRDGbaiGLUqYah2DRSJDRyg1+w=
+
+Name: icons/transformers/Rollup-32x32.png
+SHA1-Digest: jtTwp/JUTzJW3mo4lLsUWQ7utmM=
+
+Name: icons/systemExecute32.png
+SHA1-Digest: hGNEbkskfE9cKPc1TAQ9T8iyo+Q=
+
+Name: icons/writers/JMSWriter-16x16.png
+SHA1-Digest: W0IeygJq88w3I93FLtyDnUzj1js=
+
+Name: icons/java_list_item_16.gif
+SHA1-Digest: pLlygG3qc24eQ2ul2GmNG9/Eevs=
+
+Name: icons/note16.png
+SHA1-Digest: t3lr6/f3HjmrVfHhqLC6rT6Nat0=
+
+Name: schema/lookupTable.exsd
+SHA1-Digest: uCnIckZKRRkRisu48lEoJXyj+S0=
+
+Name: icons/readers/FixedLengthDataReader-16x16.png
+SHA1-Digest: tJLLFFmdSwBiR9gVCarwZ95faTk=
+
+Name: lib/lib/jaxb-api-LICENSE.txt
+SHA1-Digest: i84RqPH/e2pb5Y3vBkdBTZ4Spfs=
+
+Name: icons/transformers/SimpleCopy-32x32.png
+SHA1-Digest: +cPSsRKr/z2d63ALqdfptiflQ1g=
+
+Name: icons/info.gif
+SHA1-Digest: ggMe6m5dcegyiDgIUsgw2A+GWrI=
+
+Name: icons/readers/DataGenerator-64x64.png
+SHA1-Digest: Tfo5c2tZ2YSdSlRsPQzrMZSWcmQ=
+
+Name: icons/filter32.png
+SHA1-Digest: cLwUhloWdVUAU9cw4r7xUX5DOrk=
+
+Name: icons/writers/XMLWriter-16x16.png
+SHA1-Digest: n0TuIPpJZk5zXKTPf9G0oKixI4U=
+
+Name: icons/metadata-16.png
+SHA1-Digest: 4snq1l7EZq7d0WlGqf/hcGRpRzc=
+
+Name: icons/transformers/Merge-16x16.png
+SHA1-Digest: AEj0946i/7umqyMnSfg1iAssp8k=
+
+Name: icons/lookup-external-16.png
+SHA1-Digest: DtbHjYKFCmhPXcO3rINUTMAQS+I=
+
+Name: lib/lib/cloveretl.engine.jar
+SHA1-Digest: Dw0i98hTsRu1uVFmyZ9rASw7+P4=
+
+Name: icons/joiners/MergeJoin-32x32.png
+SHA1-Digest: ueaITCG/sZ80NLFDkAicgmaa5E0=
+
+Name: text-resources/defaultJavaBeanMapping.xml
+SHA1-Digest: KxvOXPEsI9Xy7fqW2EbWko0lRjM=
+
+Name: icons/ctl/out_metadata.png
+SHA1-Digest: iGjSfdnYzrE5HDrvDRfcomHweBw=
+
+Name: icons/writers/CloverDataWriter-16x16.png
+SHA1-Digest: g3Nv0jmEm6zKnwJ2H8KzMBCNYSw=
+
+Name: icons/others/RunGraph-32x32.png
+SHA1-Digest: XF6Nmzwh1mqDj+V4IF0hvpAS2+0=
+
+Name: icons/misc/spinnerUp.png
+SHA1-Digest: XS5neg9m/C4wLPmKe8c9X24/ip0=
+
+Name: lib/plugins/org.jetel.ctlfunction/cloveretl.ctlfunction.jar
+SHA1-Digest: dCPAR9YQ1JrbTaKJ52y62/CpEtE=
+
+Name: icons/component-group-add-16.png
+SHA1-Digest: T1/I8j0cIoBI3eRqzhKLL19Weas=
+
+Name: lib/lib/commons-net-2.0.jar
+SHA1-Digest: 8uWPZ65hSrhev7x0ZupAtzRWWjw=
+
+Name: icons/transformers/MetaPivot-32x32.png
+SHA1-Digest: 7SyEPAVP2Y3vkMAH1KyEQtm6gOw=
+
+Name: lib/lib/ftp4j-LICENSE.txt
+SHA1-Digest: 6L7ZLuL/FA5Go4ksSYBkt/LERcU=
+
+Name: icons/misc/MappingAuto-16.png
+SHA1-Digest: v21HPlnDfBkTRl2SKPHZ8qEIaDo=
+
+Name: icons/error_co.gif
+SHA1-Digest: tK+VdsfSffCtpsZUgPIMBq3qFwE=
+
+Name: icons/remove-16.png
+SHA1-Digest: q/+biCxDltuX2xP+raISv6iamGQ=
+
+Name: icons/jdbc-driver-16.png
+SHA1-Digest: 0K5gn2N18HPPP7AqE3oqqkuAtQg=
+
+Name: icons/readers/LDAPReader-16x16.png
+SHA1-Digest: 93tv6jQ+3tHArqgkdwj5oohovSE=
+
+Name: icons/ribbon.png
+SHA1-Digest: /t/zkhUC5d7vsusLWo86roEIndg=
+
+Name: icons/exp_to_ctl.gif
+SHA1-Digest: RRXumdBP/Kk1WJMK/s15hO0VNqQ=
+
+Name: icons/others/DBExecute-32x32.png
+SHA1-Digest: u9qU8w43Y3u1rDN7fdmRqw6hGaA=
+
+Name: icons/normalizer32.png
+SHA1-Digest: bAfBNs6ZHdA+FxM/tcXBNqYYcxE=
+
+Name: icons/warning.gif
+SHA1-Digest: DO/z23RgkRDsDD9aL+PUkDxGSvk=
+
+Name: schema/license.exsd
+SHA1-Digest: gp6kRd/KeltOisSpxo8mcn/7ChM=
+
+Name: icons/dwriter16.gif
+SHA1-Digest: EAWRt2FTRX2WFFVfP94KGpvc6uM=
+
+Name: icons/ctl/CTL_check_wizard_page_five.gif
+SHA1-Digest: iWCKJjirlK/P/L+6bIsKPoTOq1E=
+
+Name: icons/misc/ExtFilter-OLD-32x32.png
+SHA1-Digest: T+a9Jtf3z1NpPv9txvseqGt+sKg=
+
+Name: lib/plugins/org.jetel.jdbc/lib/postgre/postgresql-8.3-603.jdbc3.
+ jar
+SHA1-Digest: e5nbol00Ge1smRtKfCA0mnYrkFg=
+
+Name: icons/readers/ComplexDataReader-32x32.png
+SHA1-Digest: KwV6g+ZnwDP5QxIwFIZpJztFleM=
+
+Name: text-resources/defaultXmlMapping.xml
+SHA1-Digest: XVi8a5Dj3TPxsceT1i1f2w350zU=
+
+Name: icons/cluster/ClusterPartitioner-64x64.png
+SHA1-Digest: rB5wBCICh1EcylBUCzL7gRRNfkA=
+
+Name: icons/xml_element.gif
+SHA1-Digest: +IQDkK8EYdLjaV8lK7ddKEMcPLk=
+
+Name: icons/dictDown.png
+SHA1-Digest: TMVbeAG1q/ojht1ZLbDgi62S29o=
+
+Name: lib/lib/log4j-1.2.15.jar
+SHA1-Digest: zh+hxhQyxZUCuTqWEDgHadZQ0WA=
+
+Name: icons/parameter-16.png
+SHA1-Digest: Nxxe1nZkZILa6AJFFzWfAEWJ8bs=
+
+Name: lib/plugins/org.jetel.engine/plugin.xml
+SHA1-Digest: DfOiW7P1Gxg2r+PrXHngDgxnLdI=
+
+Name: icons/add-driver-property-16.png
+SHA1-Digest: 4//GKCmNt8fAo/zpvXH1jSBlBqA=
+
+Name: icons/java_map_16.png
+SHA1-Digest: vjT/jc2sRL2bzEAgP8Sl21jxplo=
+
+Name: icons/writers/EmailSender-64x64.png
+SHA1-Digest: TNKVhhxcYtUa8QNk5ap6ULzgG+s=
+
+Name: icons/driver-libraries-16.png
+SHA1-Digest: 8JwzgKYwPZTWnQyPx5NJyrIWjVM=
+
+Name: icons/unlock-24.png
+SHA1-Digest: Vlu9b9eWgDVcCfKjTPpWjrDTjyI=
+
+Name: icons/transformers/ExtFilter-32x32.png
+SHA1-Digest: gBOmhMangL7u9cJbfNij2JGjALo=
+
+Name: icons/cluster/ClusterGather-16x16.png
+SHA1-Digest: lY+KGzIfFuCurk1VUxK/FdpCuyI=
+
+Name: icons/dwriter32.gif
+SHA1-Digest: LODEHzwrJfeGTxFLGA1hqOgtXJA=
+
+Name: icons/misc/univerzal-16x16.png
+SHA1-Digest: DtKYqBGjP+N9f7lNvLSQVrq8oW4=
+
+Name: icons/misc/univerzal-64x64.png
+SHA1-Digest: zUYuE+eZ5v0fJD7hjYCrvRM/s7w=
+
+Name: icons/writers/FixedLengthDataWriter-64x64.png
+SHA1-Digest: aDR1npDDiiCrikJKC7YcyKTvDYY=
+
+Name: icons/others/LookupTableReaderWriter-32x32.png
+SHA1-Digest: Gxb0UjMZ28ryxZDibE8Mv086djo=
+
+Name: lib/plugins/org.jetel.bulkloader/lib/infobright-core-3.0-remote.
+ jar
+SHA1-Digest: LzWf/Yhugxu0uKF2F/2yZXQQTtw=
+
+Name: icons/dbExecute32.png
+SHA1-Digest: Wan0uC33fGWlgTjT6AShEHf/E14=
+
+Name: icons/decrement.gif
+SHA1-Digest: T3SGm+8ipBxgFkPY9sBssCRIirw=
+
+Name: icons/incretarget.gif
+SHA1-Digest: pnOl8FVAkazNKOPyBKYXkWnQR6I=
+
+Name: icons/writers/LDAPWriter-64x64.png
+SHA1-Digest: 27JtNsjh7G58n107O9SfpNv58ts=
+
+Name: lib/plugins/org.jetel.component/lib/commons-httpclient-3.1.jar
+SHA1-Digest: iXoSWoy4GtAlBFgjDKBHPwB8Exc=
+
+Name: icons/lock-overlay-16.png
+SHA1-Digest: i1pKY0lhZRoZxgSMqAl8Msl9YzE=
+
+Name: icons/readers/XMLExtract-64x64.png
+SHA1-Digest: 6oR1IfTla4I2BbWeGz+6KGKZbRA=
+
+Name: icons/comp32.gif
+SHA1-Digest: I0rMAaox29OjzNAPs1lfmAlKXV4=
+
+Name: icons/question.png
+SHA1-Digest: NAqYCD8qMpMACkRiadmMuSLde7w=
+
+Name: icons/dataIntersection16.png
+SHA1-Digest: VOmr2VWYT+xB+hiQaoB2s+DLjt0=
+
+Name: lib/docs/licenses/LicenseLGPL.txt
+SHA1-Digest: AtL4FTXqsPDEwKNhym0qWn/E18g=
+
+Name: icons/dataWriter32.png
+SHA1-Digest: 8Ah1OOMbwhgiqNe79UMhbiBBKdY=
+
+Name: lib/plugins/org.jetel.bulkloader/lib/linux/myload
+SHA1-Digest: AIYsp+1M0kc6m98MU+S8eF3mg7g=
+
+Name: icons/others/SystemExecute-32x32.png
+SHA1-Digest: VnNlcwYvjNKQBna/4LbetsRDSNo=
+
+Name: icons/writers/FixedLengthDataWriter-32x32.png
+SHA1-Digest: ZjSWIjOVekgtFgROFqd5KeL1c3o=
+
+Name: plugin_customization.ini
+SHA1-Digest: LDQ9QP9XsDXLl/tykAxCE4LJccQ=
+
+Name: icons/increment.gif
+SHA1-Digest: +1LoAiFNhSW0GnQTer8QC5JjICw=
+
+Name: icons/connect16.gif
+SHA1-Digest: DrG3rE8QFnVEkDIXv1lc/u79juA=
+
+Name: icons/readers/XLSDataReader-64x64.png
+SHA1-Digest: U6r7qkNAZCHvTv8r1qjAvfqPJK4=
+
+Name: icons/reformat32.png
+SHA1-Digest: nC12OxRRw1o1qNGPDj1H5rDP5OM=
+
+Name: icons/writers/QuickBaseWriter-16x16.png
+SHA1-Digest: 6IurzA8fp1723FYpqz6Ml4ilPzI=
+
+Name: icons/readers/XMLXPathReader-16x16.png
+SHA1-Digest: IHKI3zfLMpj0qc3qqrvi1gR1s4s=
+
+Name: icons/trash16.png
+SHA1-Digest: JpOKbVS+NXdlJ5RL5y2+az4sCkQ=
+
+Name: icons/exp_to_java.gif
+SHA1-Digest: Nd7KeU6UAUxDCzGIjNIX/IQdbUU=
+
+Name: icons/others/HTTPConnector-64x64.png
+SHA1-Digest: bV3DnOMObXKOaZEU3J7iuT0H/uk=
+
+Name: plugin.properties
+SHA1-Digest: YTLnjfEjshAfxRZlxMIjeHpnmts=
+
+Name: icons/java_property_16.gif
+SHA1-Digest: xLP0EGhKZhbVXcLsHnNx+g47nQU=
+
+Name: icons/misc/selector-transition-16.png
+SHA1-Digest: 1cUYCcyEVg2ouwSEwziOgEK+rQY=
+
+Name: icons/dictionary-group-16.png
+SHA1-Digest: r+Xg9Z+RnMiBCnHSVdhw4sc/RV8=
+
+Name: icons/transformers/DataIntersection-64x64.png
+SHA1-Digest: NAAeTCmQH7L9Zou39z80/RmV7VY=
+
+Name: icons/workset.gif
+SHA1-Digest: rxmQ+gmJs9ibzcMl1Pj5o7Eh65s=
+
+Name: icons/join32.png
+SHA1-Digest: YJaVjqyaOkQArD/IpIRJvDSH9yY=
+
+Name: lib/plugins/org.jetel.component/lib/saxon8.jar
+SHA1-Digest: DKOrEPyiQOGvWS29SPDVOf/q1f8=
+
+Name: icons/joiners/HashJoin-32x32.png
+SHA1-Digest: pNqD4HCpG8YZCVpGqSZC7nD3SjY=
+
+Name: icons/dictionary-16.png
+SHA1-Digest: pAMnjKxBO18B77kRfkfr9gZkBWQ=
+
+Name: icons/fullDots.gif
+SHA1-Digest: 3zfRJDxRqgq76NE6GtZ7x0xy4vA=
+
+Name: schema/graphElementFactory.exsd
+SHA1-Digest: toGpHaNtwSgXVyywA7gol9ByWu4=
+
+Name: icons/writers/InformixDataWriter-64x64.png
+SHA1-Digest: YfprBbqml8RjsTEK5zh2MvtKq+s=
+
+Name: icons/runGraph16.png
+SHA1-Digest: CAES/2X17gwMZ+ZWnM3oNSSFSKc=
+
+Name: schema/urlResourcePanel.exsd
+SHA1-Digest: 9tkh+E7KkyWsndLsAp9d6nrh4GU=
+
+Name: icons/parameter-dir-16.png
+SHA1-Digest: /1ryS7SIKtBPOsHjbm6IIkLQc80=
+
+Name: icons/licenseImg.png
+SHA1-Digest: 0QLi5m/vVhWiu16awS4mJBJiR1M=
+
+Name: icons/transformers/Pivot-32x32.png
+SHA1-Digest: Clo5OQouaO8V/JW31nRgmgS66bQ=
+
+Name: lib/plugins/org.jetel.jdbc/lib/derby/derbyclient.jar
+SHA1-Digest: HnMKNmVNMjRb7q7jPRLIIpkYTrk=
+
+Name: icons/ctl/function.gif
+SHA1-Digest: +COEyq9sx619l2nZ39xJHGhS/S4=
+
+Name: lib/lib/openxml4j-1.0-beta.jar
+SHA1-Digest: FzTZnUUny8KFhR9LXiFhC5iGjro=
+
+Name: DefaultComponents.dtd
+SHA1-Digest: 8k+auz1zNvIN/mzLdgkLuDdtBlk=
+
+Name: icons/misc/ExtFilter-OLD-16x16.png
+SHA1-Digest: U8omOqxuCMbR/bThtsA6jHEkXW4=
+
+Name: icons/dreader16.gif
+SHA1-Digest: Bo7zxLcspP899CukQ6uakeIE7jI=
+
+Name: icons/misc/spinnerDown.png
+SHA1-Digest: 7apAK/cmBgTJFQfWZmtlrpsJFNQ=
+
+Name: icons/transformers/Reformat-16x16.png
+SHA1-Digest: 2ZoL2zdvJ/qLwor9PjAPLtqxeVU=
+
+Name: lib/lib/jsch-0.1.42.jar
+SHA1-Digest: 2ppjC1PXy7kbNgGq44LCWR61sBM=
+
+Name: icons/writers/XLSDataWriter-64x64.png
+SHA1-Digest: oT6JP9WHFYkps8dR61iQK+jOTTA=
+
+Name: icons/readers/QuickBaseReader-16x16.png
+SHA1-Digest: qhNEMLuVCtSNxW1y6D6GeRqs6RA=
+
+Name: icons/joiners/ApproximativeJoin-16x16.png
+SHA1-Digest: CBy/ot0rELbBaVGvCVCeO3SqP0w=
+
+Name: lib/lib/icu4j-unicode-LICENSE.txt
+SHA1-Digest: TejOYa/N1TNM9OXS+UWUvlAWshQ=
+
+Name: icons/java_list_16.gif
+SHA1-Digest: m7wn5N96kHcf5eT0rJk261j/pYo=
+
+Name: lib/bin/analyzeDB.bat
+SHA1-Digest: gsvUeBW0wnh8Py6Ko0ebit5yF7I=
+
+Name: icons/dedup16.png
+SHA1-Digest: 9J06B1jEWv2t/xvH7d9JSSpJHQw=
+
+Name: icons/scopy16.gif
+SHA1-Digest: 0aj/99EvNCEKoO6J3PUkUg7CaKk=
+
+Name: icons/decretarget.gif
+SHA1-Digest: TVxKttvduJ/NinEKzdtX+3cbD8Y=
+
+Name: icons/joiners/HashJoin-16x16.png
+SHA1-Digest: 1L8d6Afn9Iz8QhJ2UoolKUeEOdM=
+
+Name: icons/writers/InfobrightDataWriter-64x64.png
+SHA1-Digest: dFOsPisSE3VDIBwHMaZUIvV//r0=
+
+Name: icons/add-library-disabled-16.png
+SHA1-Digest: H+qz982CQsfeVFzErd7Z6wfwS64=
+
+Name: icons/cloveretl32.gif
+SHA1-Digest: yl1zy0yI/6JHx2gRK65tIOvp2fo=
+
+Name: lib/lib/commons-io-1.4.jar
+SHA1-Digest: blUYvSir3MHqB9S0lEQTYQRyMY8=
+
+Name: icons/transformers/DataIntersection-16x16.png
+SHA1-Digest: SOAbRDcHuRDGAymiFAcEgaIu/f0=
+
+Name: icons/others/SequenceChecker-16x16.png
+SHA1-Digest: Ghm2rxulSpursayvcJZgxS1LgKY=
+
+Name: icons/writers/CloverDataWriter-32x32.png
+SHA1-Digest: WHUJmslK7dI+sd1aNf/wbKd/gkQ=
+
+Name: icons/metadata-group-16.png
+SHA1-Digest: azt/9rSjTFv9LLdSHfucm3SnDBw=
+
+Name: icons/readers/DataGenerator-32x32.png
+SHA1-Digest: a83niDx3l9cC+H30iy0nRnmOgyg=
+
+Name: schema/graphStartup.exsd
+SHA1-Digest: NtPGdQeuYiqgoQuFPVdzcXkhunw=
+
+Name: icons/metadata.gif
+SHA1-Digest: pM3PkE18JCcFqKBg+XXouuaSWS4=
+
+Name: lib/plugins/org.jetel.jdbc/lib/jtds/LICENSE
+SHA1-Digest: EJa8mICost+wDvtrSwNP79qy4s0=
+
+Name: icons/writers/QuickBaseWriter-32x32.png
+SHA1-Digest: l8l4yB/+tfzX4hhrsj/k2Y2FBxo=
+
+Name: icons/normalizer16.png
+SHA1-Digest: /8SdV1EQqBMDWNV4Povs7rYY/bI=
+
+Name: icons/joiners/LookUpJoin-32x32.png
+SHA1-Digest: zAg8MiJyYeqRHzQdz7RkBEPhXlU=
+
+Name: lib/plugins/org.jetel.component/plugin.xml
+SHA1-Digest: 0k+XCbZIDmVARxXOGJR3A2gKF0w=
+
+Name: icons/driver-library-16.png
+SHA1-Digest: W1OAv+EPVZLVd5nfeVcmIvxl7kY=
+
+Name: icons/cloveretl.gif
+SHA1-Digest: rB0JIOxAnoArJ95En+EKNcQo0kM=
+
+Name: icons/open_in_tab.gif
+SHA1-Digest: YXsXQ9lrfDb6ADx+p7InBlkuCYE=
+
+Name: icons/readers/XMLExtract-16x16.png
+SHA1-Digest: JFGFPStcKySBVM/rL2NO+1ugEpQ=
+
+Name: icons/writers/LDAPWriter-32x32.png
+SHA1-Digest: 7RNBEanpWpHtA1BULimhRahvjpc=
+
+Name: icons/editor64.png
+SHA1-Digest: ZezQVDbOajtquUcoTI5TVzWieVw=
+
+Name: icons/writers/MSSQLDataWriter-32x32.png
+SHA1-Digest: e5KnZGMqPsJwxFaqR0sxy8TMSmE=
+
+Name: icons/javaExecute16.png
+SHA1-Digest: T6XZeukXq3bXaITr7pLs7biYtYw=
+
+Name: icons/navFirst.png
+SHA1-Digest: GKAve4EcxqALe4hMCLN5HfWbMiM=
+
+Name: icons/editButton.png
+SHA1-Digest: x1qwWmysIvaL196B+AbtXWXl7UA=
+
+Name: lib/plugins/org.jetel.bulkloader/lib/linux/myload64
+SHA1-Digest: 45DFFPGtqRpK9qJYrWoOXwiZnL8=
+
+Name: icons/readers/ParallelReader-32x32.png
+SHA1-Digest: Vl7dJ9GWHS9VGmvSAX9R1+xfv24=
+
+Name: docs/HISTORY.txt
+SHA1-Digest: 3Rl3PR/kw/7lUQ8VYTsyubVe2MA=
+
+Name: icons/readers/XLSDataReader-16x16.png
+SHA1-Digest: vzZZdfZnKSvKhFFoxWr917x7Hd4=
+
+Name: lib/docs/licenses/LicenseGPL.txt
+SHA1-Digest: 6Tw1Vq/grYs2K5V7ULQx7KY+JqE=
+
+Name: icons/transformers/SimpleGather-32x32.png
+SHA1-Digest: 5F5EgSoGvA4Ll2asrdhyXxQIDIs=
+
+Name: icons/connect32.gif
+SHA1-Digest: 8m3g0av6VQRz2E7xJebVgSDWprU=
+
+Name: icons/undo_edit.gif
+SHA1-Digest: fSFXQGdCTRWGpoQN3qurqG8FUjM=
+
+Name: icons/transformers/XSLTransformer-16x16.png
+SHA1-Digest: 1pW6jb3Qj5LvXRUMjO8KOeTmWQ0=
+
+Name: icons/join16.png
+SHA1-Digest: P/J+tPf/8OSjLhaU8J9iMEEB8wU=
+
+Name: icons/readers/DataGenerator-16x16.png
+SHA1-Digest: CEwAcb4yb5OwAFcVJrbINVUBCIo=
+
+Name: icons/writers/MSSQLDataWriter-64x64.png
+SHA1-Digest: KP9OPqzPJnDDM5sdNfNn9b2rBt0=
+
+Name: schema/notVisibleComponents.exsd
+SHA1-Digest: G5GbSBbR5D7zse4p+DDVMszViZA=
+
+Name: icons/writers/InfobrightDataWriter-32x32.png
+SHA1-Digest: UPu1koUq7tHOvxGhUwm/i9Dx9Ho=
+
+Name: icons/component_group_16.png
+SHA1-Digest: owr7IAr+qrScL8zqUeCFp+Smo7U=
+
+Name: icons/ctl/constant.gif
+SHA1-Digest: LsWN3nw+2efBkeNDz6FzzoSRHbY=
+
+Name: icons/sequence-16.png
+SHA1-Digest: XOJkUYUt/wZsiXESzdhIM1UU68A=
+
+Name: lib/lib/jaxb-impl-LICENSE.txt
+SHA1-Digest: 0UZhS74EN9RKjSqFYBM1LocaMSE=
+
+Name: icons/writers/Writer-UNI-32x32.png
+SHA1-Digest: 37zhTYTI6pJ227Lry85hX7bbDJk=
+
+Name: icons/transformers/Merge-64x64.png
+SHA1-Digest: 3VRYNCiL6e++OQJsaBSGySdYNjg=
+
+Name: lib/plugins/org.jetel.jdbc/lib/jtds/jtds-1.2.4.jar
+SHA1-Digest: JXdhYyxMqY2i5jHpwTKW0Hc9fco=
+
+Name: icons/writers/PostgreSQLDataWriter-32x32.png
+SHA1-Digest: JRGmEJ4VUiDHOLh+81uPIWNrr8U=
+
+Name: icons/transformers/SortWithinGroups-64x64.png
+SHA1-Digest: whqDYQjY4nwVhXME0PrOaiTnGZ0=
+
+Name: icons/comp16.gif
+SHA1-Digest: FRnZy8KkEq+nebgeRc1bv1HkRhY=
+
+Name: icons/writers/LDAPWriter-16x16.png
+SHA1-Digest: gM1j3LPYo2x4jNsTUNFk9Y2QhSU=
+
+Name: schema/component.exsd
+SHA1-Digest: 7LmN4NOz8a+eiMDr3uvKTKQLzNo=
+
+Name: lib/docs/HISTORY.txt
+SHA1-Digest: z/v2U4CpU7sFZX+OxV0TQEr13N4=
+
+Name: icons/xlsReader16.png
+SHA1-Digest: GrQnosQAaAI+CPwBHU1VHjs2HPg=
+
+Name: icons/transformers/DataSampler-16x16.png
+SHA1-Digest: JB8rEjV7ygn23yhHV9atQHMZLsw=
+
+Name: icons/editor16.png
+SHA1-Digest: Dz9mvxbPV00lbktC4A2/eZNZDv4=
+
+Name: icons/ctl/variable.gif
+SHA1-Digest: 91yLOxncikNoaZKYfTPDCwhLd5c=
+
+Name: lib/bin/clover.bat
+SHA1-Digest: l2sCrhVVcKdg0U+iZqO4f7OoXbE=
+
+Name: lib/plugins/org.jetel.bulkloader/cloveretl.bulkloader.jar
+SHA1-Digest: 8ifV+YoRi71brHT4r2SFWLKZLIA=
+
+Name: icons/merge16.png
+SHA1-Digest: PHN+5shpeYbIsnznhHuAbpMxWG0=
+
+Name: icons/writers/Writer-UNI-16x16.png
+SHA1-Digest: 7Ut71M3FayLHUAxfc68dAVrOIpY=
+
+Name: icons/writers/InformixDataWriter-32x32.png
+SHA1-Digest: ZPTg+F7AgQfX4PH5d/BcVT7XX+A=
+
+Name: icons/misc/MappingFormat-16.png
+SHA1-Digest: Zt1/6XxfpL0oVUVNV7vwhEo/TnI=
+
+Name: icons/transformers/KeyGenerator-32x32.png
+SHA1-Digest: ZPdY0q/QY+ZxmSMSeEUDd2R+nOg=
+
+Name: icons/cluster/ClusterPartitioner-32x32.png
+SHA1-Digest: gKeAX/NMGPWJuGnR1Zx1YjadEzI=
+
+Name: lib/plugins/org.jetel.bulkloader/lib/windows/myload.exe
+SHA1-Digest: qEoibeAsNZ4U6rJjgIAZAkWYw1w=
+
+Name: icons/others/CheckForeignKey-32x32.png
+SHA1-Digest: czLaLsMCaMjp5NEDqoYKyTSbeNw=
+
+Name: lib/lib/jxl.jar
+SHA1-Digest: 3WZn/4biG0SCShyQ5j8TV4yjhq0=
+
+Name: icons/xml_add_attribute.png
+SHA1-Digest: WShTaifQS9iXw7U7uxQyjedo5qc=
+
+Name: icons/joiners/LookUpJoin-16x16.png
+SHA1-Digest: QErUJkIkp3zY0AuFKgdTu2ulxjk=
+
+Name: icons/writers/DelimitedDataWriter-32x32.png
+SHA1-Digest: Nz0vohDvOo+iLs/TDcLjhMaLHRA=
+
+Name: icons/parent_dir.gif
+SHA1-Digest: 38TASF/8gCjLoys+EN9Dvm+At5c=
+
+Name: icons/others/SequenceChecker-32x32.png
+SHA1-Digest: uU83TZ7aKo+94K/hZLgxABGleuM=
+
+Name: icons/readers/LDAPReader-32x32.png
+SHA1-Digest: QjlF84iuCVb/ozjnZZQvDkd1fG0=
+
+Name: icons/partition32.png
+SHA1-Digest: /j3p8xC8hv3j1/9dDJC9k/O3Y80=
+
+Name: icons/writers/InfobrightDataWriter-16x16.png
+SHA1-Digest: JrBGUZramGlVrBvXSkdKO6x3lW4=
+
+Name: icons/launcherMainTab.gif
+SHA1-Digest: rcq/AHYvqtwRtD2dJSTcFDRaUqM=
+
+Name: about.properties
+SHA1-Digest: qF9FpMjw5C47a4snkfgrFYbIunY=
+
+Name: icons/writers/PostgreSQLDataWriter-16x16.png
+SHA1-Digest: 9AfS8UHpU15ycNcL8HFmm3G6JoA=
+
+Name: icons/connection-group-16.png
+SHA1-Digest: PpTjY1rWs94+EHt2h/67U+9mQPA=
+
+Name: icons/others/HTTPConnector-16x16.png
+SHA1-Digest: 46cAAJaQ8ii2IJF5UsUx6yMYLpo=
+
+Name: icons/xml_attribute.gif
+SHA1-Digest: l4fMbu0/nDqF50QmuPVhBSJWcoE=
+
+Name: icons/readers/UniversalDataReader-32x32.png
+SHA1-Digest: mPLBeqrdLXaOnsrGc4zjLO5mkig=
+
+Name: icons/writers/FixedLengthDataWriter-16x16.png
+SHA1-Digest: sOCyG/RZy1+wbcWCQZiCIfHlFHk=
+
+Name: lib/plugins/org.jetel.bulkloader/plugin.xml
+SHA1-Digest: 6FsXSRNkMNhbGSAiqTYUPlScSaQ=
+
+Name: icons/transformers/SimpleGather-64x64.png
+SHA1-Digest: 5ms+MJtallj/hdSmWfKLIN+RO0o=
+
+Name: icons/transformers/Concatenate-16x16.png
+SHA1-Digest: 2GaiLZsTYN0GdvxyGZAsa50OkSc=
+
+Name: lib/plugins/org.jetel.thirdparty/cloveretl.thirdparty.jar
+SHA1-Digest: UcSUACm/DtO2d9qb+WM8QZEPXso=
+
+Name: icons/xlsWriter16.png
+SHA1-Digest: TcyHBCxworeMXj0yF4dI6nzGqqg=
+
+Name: lib/lib/ftp4j-1.4.3.jar
+SHA1-Digest: s5TH4FjOmhvS3R9sGOiwykpmNGU=
+
+Name: icons/navRight.png
+SHA1-Digest: UdjwDeQY5X3jbZOGOO8LoeOMZes=
+
+Name: icons/driver-properties-16.png
+SHA1-Digest: 28HaiaH8X0r1uY2vGuNmHk6QD+I=
+
+Name: icons/writers/Writer-UNI-64x64.png
+SHA1-Digest: h9Zw2WAZtNb70Hb6JwWOxcTBnLQ=
+
+Name: icons/writers/DBOutputTable-16x16.png
+SHA1-Digest: 1h+jhl232+AfQ1IyZUVK4WfKAKQ=
+
+Name: icons/concatenate16.png
+SHA1-Digest: yidMafNd+ewfReie4Cs03DzSfmE=
+
+Name: text-resources/defaultJsonMapping.xml
+SHA1-Digest: J///F0GyjGASuOVjSV52xqeckVY=
+
+Name: icons/readers/XMLExtract-32x32.png
+SHA1-Digest: cpOkmfi5yGz/eqHnG4P8AA3UJEU=
+
+Name: icons/fullDot.gif
+SHA1-Digest: 4SQQAxk1prYLRgHUwuQBeDdowqY=
+
+Name: icons/transformers/ExtSort-32x32.png
+SHA1-Digest: s8LDWE0AqfwBSY748DMa1P4rCZc=
+
+Name: lib/lib/cloveretl.license.jar
+SHA1-Digest: E12/bix7zmuygrIdLpdQBfC1kKg=
+
+Name: icons/note-group-16.png
+SHA1-Digest: p/EuWRAMlQiCowBF/P54jqPMRGE=
+
+Name: icons/note32.png
+SHA1-Digest: b6LShqE4eSdOGXD+UUU6SWDV2GQ=
+
+Name: icons/activatedProduct.png
+SHA1-Digest: mDaylarfUU82zxHtt8qVxTGJofk=
+
+Name: icons/transformers/Denormalizer-32x32.png
+SHA1-Digest: uN5LGWZRA2n5cj9wcylv1AZpe74=
+
+Name: icons/misc/MappingNone-16.png
+SHA1-Digest: 0H26d8xuYTomdwaBl7bCFdgWW3M=
+
+Name: icons/xml_text.gif
+SHA1-Digest: 7s3oxnT73k0DUnyLB3Qa/An1Ggw=
+
+Name: icons/ctl/deprecated.gif
+SHA1-Digest: 5StAOx+jHIuj6NpMmtRGHWEJLEs=
+
+Name: icons/type_list.gif
+SHA1-Digest: 9Nc4nGAf3IXjgm2+7hJ3mur++Tc=
+
+Name: icons/sync.gif
+SHA1-Digest: LLtMiDaS7xPqb/scsSSBnDFNb4A=
+
+Name: icons/misc/normal-16.png
+SHA1-Digest: Lx34VwPvzTWatWdF5W4W4NAKNGc=
+
+Name: icons/misc/initial-16.png
+SHA1-Digest: gYHTWk2AE3X8PJ8p21Gu8KLIql0=
+
+Name: icons/others/JavaExecute-32x32.png
+SHA1-Digest: E+kRJdAmyudJgHM/D/KrMThiRBs=
+
+Name: lib/lib/poi-3.8-beta4-20110826.jar
+SHA1-Digest: 8ArQk7eN783XcW26xXaJaHveCrc=
+
+Name: lib/lib/icu4j-normalizer_transliterator-4.8.1.1.jar
+SHA1-Digest: DkJz3HXv7K+X/imLq1JmQ8Sg2Uk=
+
+Name: icons/dbOutputTable16.png
+SHA1-Digest: eecwuXArrR2lM4Flq6LbO7dYyYk=
+
+Name: icons/sort16.png
+SHA1-Digest: AH5xitasdokaXSYMQsc66e1u2ig=
+
+Name: lib/plugins/org.jetel.license.engine/cloveretl.license.engine.ja
+ r
+SHA1-Digest: cNLMG0Kav++tT+z4PVaqg7j6yuc=
+
+Name: icons/writers/MySQLDataWriter-32x32.png
+SHA1-Digest: gbvrezvttxkp8IcNyCFAq2eyx1o=
+
+Name: lib/plugins/org.jetel.jdbc/lib/sqlite/sqlite-jdbc-3.6.20.1.jar
+SHA1-Digest: o+B5Ty7U+E7hH2XX0Jg6r6VdUkk=
+
+Name: about.ini
+SHA1-Digest: mzd8ZesRE3v8cRx0MQrOS4FmIe8=
+
+Name: icons/saveAs.gif
+SHA1-Digest: RCWQSHbkwiIV0KDnspkEVLt46/w=
+
+Name: icons/ctl/function-add.gif
+SHA1-Digest: KT8dzSh0yRwNK4yFyDfy9tki9AA=
+
+Name: icons/transformers/Aggregate-16x16.png
+SHA1-Digest: bLePntv3PHTneQna3vaqOqH6PvI=
+
+Name: icons/readers/FixedLengthDataReader-64x64.png
+SHA1-Digest: bIm8p8Htjep+jBk06AcBIuZF4CQ=
+
+Name: icons/joiners/LookUpJoin-64x64.png
+SHA1-Digest: XF+BBVHeKHblP3G6qJJErU5NYSE=
+
+Name: schema/startup.exsd
+SHA1-Digest: VoN59bUkUIo3BTjCUKit5vuGgLE=
+
+Name: lib/lib/jms.jar
+SHA1-Digest: B05vWWIZAv74uS8+KHRLkCGUyLI=
+
+Name: icons/others/CheckForeignKey-16x16.png
+SHA1-Digest: 6BP5dCpHnckRMrHXDb8VO45ufac=
+
+Name: lib/docs/licenses/InfobrightLicense.txt
+SHA1-Digest: ZBgvELf21nvWQSVKbHkh1wjzmGU=
+
+Name: icons/lock-24.png
+SHA1-Digest: /dYx4BVkK3TK8kiU6bdEAWw/tV4=
+
+Name: icons/readers/CloverDataReader-16x16.png
+SHA1-Digest: pO6WCetwsOdgQK4jCNBZ1KEluOc=
+
+Name: cloveretl-license.jar
+SHA1-Digest: GNS6JYU/lqjEcoBSz9okcTIBNxM=
+
+Name: lib/plugins/org.jetel.lookup/plugin.xml
+SHA1-Digest: O1esEWPrQiDBFfJvZhP76xK2zrs=
+
+Name: icons/concatenate32.png
+SHA1-Digest: GpFiJRC8g6dAet87uJSMy9cXQMs=
+
+Name: icons/xml_add_sibling_element.png
+SHA1-Digest: L4th+nsX2zqSWSYv1yNLNcUCkio=
+
+Name: icons/readers/DBFDataReader-32x32.png
+SHA1-Digest: /uKYZ13PlVhI0W+c5NGvEJUba50=
+
+Name: icons/transformers/SortWithinGroups-32x32.png
+SHA1-Digest: YBoxwdVMlX4FWVDu0FLsCto3A0c=
+
+Name: lib/lib/commons-cli-1.1.jar
+SHA1-Digest: j1ZVWSehWHWLXZaLbbuIbVH2d+w=
+
+Name: icons/scopy32.gif
+SHA1-Digest: 0zK1xHjyHGM+WqDiQVAWD1GaNxM=
+
+Name: icons/transformers/DataSampler-64x64.png
+SHA1-Digest: RcxFW14TmYBLv0h+M9nM5FI1N28=
+
+Name: icons/reader16.png
+SHA1-Digest: 6XZZdmyskqkas/KF1a5uNgheScY=
+
+Name: icons/transformers/Denormalizer-16x16.png
+SHA1-Digest: sFiQ2B0JynbeaHEZWofeYl3g/Z0=
+
+Name: icons/browseDatabase.gif
+SHA1-Digest: GyD79nqxjCUPK5zlqUInxFDaTVc=
+
+Name: icons/dbInputTable16.png
+SHA1-Digest: ttPw/hiS1kmOShCkg2vw/sgCXYc=
+
+Name: icons/xml_add_child_element.png
+SHA1-Digest: ZwPUW0TGaSzxy6TM8fZtpr5j+Mw=
+
+Name: icons/today.png
+SHA1-Digest: dU3IWc7e+1RHHSf1J+wlCPONNk4=
+
+Name: icons/lookupTable.gif
+SHA1-Digest: khqBVCQIj36tqNOlDLgwEo5pUII=
+
+Name: icons/transformers/Denormalizer-64x64.png
+SHA1-Digest: U5oRauhoDBG0YZwob075/CsU5dQ=
+
+Name: lib/lib/jets3t-0.8.0.jar
+SHA1-Digest: keFbLcpHEKW9aDwczmR1po6O4k4=
+
+Name: icons/cut_edit.gif
+SHA1-Digest: RF9dmPqeaV84/KGJ2WVlIidkr+s=
+
+Name: icons/component-group-16.png
+SHA1-Digest: CbXAe3Xgi3CK0+eYIeEy8XCe9oA=
+
+Name: icons/writers/EmailSender-16x16.png
+SHA1-Digest: oMBwosKiW5gdX14JjxeVZdbO6do=
+
+Name: icons/trib-1-undefined.png
+SHA1-Digest: xsNklmdmAF5p02Z7IHVTi+kAOgU=
+
+Name: icons/readers/DBFDataReader-64x64.png
+SHA1-Digest: lbwXkmj2lQhn57Kr6muuOci/BqA=
+
+Name: lib/plugins/org.jetel.connection/plugin.xml
+SHA1-Digest: 49VQHUK/GjGvy6QI8GiOJY9bprk=
+
+Name: icons/valid_16.png
+SHA1-Digest: FTOZnMvg9+t5t1pePdEFXtcp8U4=
+
+Name: lib/plugins/org.jetel.component/cloveretl.component.jar
+SHA1-Digest: +8ynaMEEIS5lRbIu4QO2bWGHv6I=
+
+Name: icons/readers/MultiLevelReader-32x32.png
+SHA1-Digest: NKVzEk2Onx8KekM9HTWYv2JLzq8=
+
+Name: icons/dreader32.gif
+SHA1-Digest: r5ZdjNXu+49bObebg1iITogk3ss=
+
+Name: lib/bin/analyzeDB
+SHA1-Digest: npNnbwYsJsmJt266c9tc+m6ReOM=
+
+Name: icons/transformers/SimpleCopy-64x64.png
+SHA1-Digest: 5OmcuWNEVQ2aR6W+mQ1pXmmguI4=
+
+Name: icons/dataReader32.png
+SHA1-Digest: 5Th+sZhujEqQw7Te1oelsFqrwyo=
+
+Name: icons/activateProduct.png
+SHA1-Digest: Dh5yNN4nkF4j8l9NiuWejWqjHmI=
+
+Name: icons/writers/XMLWriter-64x64.png
+SHA1-Digest: MroEFBfHMNWVe+ADkEaGl21jcFk=
+
+Name: icons/xml_add_wildcard_attribute.png
+SHA1-Digest: U86PI8zKxqbGxKNyyPAszjp273k=
+
+Name: lib/bin/DBFAnalyzer
+SHA1-Digest: 5LhbdM7MPQoAPgCiggz2MOy3uIQ=
+
+Name: icons/xml_comment.gif
+SHA1-Digest: nBh1QyCjT8pz6nAE7edJ/hGHMnE=
+
+Name: icons/readers/ParallelReader-16x16.png
+SHA1-Digest: wfaIA5CJ8F1/J0lFPNxZIZRTqO4=
+
+Name: icons/file16.png
+SHA1-Digest: H7W7kI6t4wLJiwnR7Qhivr0JYmI=
+
+Name: icons/javaExecute32.png
+SHA1-Digest: CkDZEjs5Aurb9E10I6zpqvDMr3c=
+
+Name: icons/joiners/RelationalJoin-64x64.png
+SHA1-Digest: FPl7jAmEXKC4TPFwqNIyQsSxA54=
+
+Name: icons/writers/CloverDataWriter-64x64.png
+SHA1-Digest: 2Wrp651qHFmfHmN3t5vjJPQNX5Q=
+
+Name: icons/joiners/RelationalJoin-16x16.png
+SHA1-Digest: 1ZY4EZTBpBY4NQIMDhzbVgeTmu4=
+
+Name: icons/writers/OracleDataWriter-64x64.png
+SHA1-Digest: 2Ia32YnLQE+F7Mw1/u967Yx3k48=
+
+Name: lib/plugins/org.jetel.license.engine/lib/cloveretl.license.jar
+SHA1-Digest: zXACwtn21w6jTZ/dWMCAaLw9I7s=
+
+Name: icons/search_clover.gif
+SHA1-Digest: lABxo4Yy1S+We6g60a09yUeupyg=
+
+Name: icons/transformers/SortWithinGroups-16x16.png
+SHA1-Digest: JC5NbLiZ9fyVXpxDFyQ68mBDOXk=
+
+Name: icons/connection-16.png
+SHA1-Digest: BHs+/KC7NTAvw4vFULPxDQ2ZOtE=
+
+Name: icons/writers/JMSWriter-64x64.png
+SHA1-Digest: bvyNKzoselsTLzOsT2hNAaHxOP4=
+
+Name: icons/dbInputTable32.png
+SHA1-Digest: 52babI/I6OKNz62bnB2ulhMFo8M=
+
+Name: icons/transformers/Partition-64x64.png
+SHA1-Digest: 1jHxebCr/5xlf3r4drV+wGe+05g=
+
+Name: icons/editor32.png
+SHA1-Digest: WQG6qoq4TAc7YLPktIOA7hu0NK0=
+
+Name: icons/ctl/CTL_check_wizard_page_three.gif
+SHA1-Digest: QFJFM+Q06gh3TIyKmoCDhpoInJ4=
+
+Name: icons/java_map_entry_16.gif
+SHA1-Digest: w4pk+hewipfLPiICdXVxPmRi3a0=
+
+Name: icons/transformers/Pivot-16x16.png
+SHA1-Digest: GJPqi+9dN+24iGGmBHSItwKqHU0=
+
+Name: icons/readers/DelimitedDataReader-64x64.png
+SHA1-Digest: JPYgaUnS9Zw1soibjwp1N6KZA/E=
+
+Name: icons/readers/UniversalDataReader-16x16.png
+SHA1-Digest: 5rxTpx4tuXtj7giZ8F9X9TrHy1c=
+
+Name: icons/lock-16.png
+SHA1-Digest: zx2FCu1QFE46w0/Jpv/7mhVc90I=
+
+Name: lib/plugins/org.jetel.jdbc/lib/oracle/ojdbc6.jar
+SHA1-Digest: tESbt8qJGYzf780RXXvcoD5bTo4=
+
+Name: icons/aggregate32.png
+SHA1-Digest: 8dodsS/5NU190MlFlKIhc868LBw=
+
+Name: icons/others/SystemExecute-16x16.png
+SHA1-Digest: v+ffM8NS/X/9JHMb8lH5/ueaeFc=
+
+Name: lib/plugins/org.jetel.license.engine/plugin.xml
+SHA1-Digest: C0C8jP+oegZxTDUc4H4uzk9H9Vg=
+
+Name: icons/transformers/Partition-32x32.png
+SHA1-Digest: vXdOzc/qFx082mFeg0T3znZejAA=
+
+Name: icons/readers/XLSDataReader-32x32.png
+SHA1-Digest: LpL6fbEIEkEUXKr4zWpHRYhSlaY=
+
+Name: lib/lib/commons-logging-1.1.1.jar
+SHA1-Digest: Pn5qenFKuXbSWf3nBL8gMxm0lTk=
+
+Name: icons/emptyDots.gif
+SHA1-Digest: buz83D0ImNw5NR2AX4hz5RYC/fg=
+
+Name: icons/joiners/DBJoin-64x64.png
+SHA1-Digest: qiz8evRBp6wp/UbylaPjsAqaxgQ=
+
+Name: icons/transformers/Normalizer-64x64.png
+SHA1-Digest: 6H+dTe5h9ypBPbXJoiX8J2OJX58=
+
+Name: icons/writers/Trash-64x64.png
+SHA1-Digest: W8omYHKiFIhdsag2SKrMPW4Uu2g=
+
+Name: lib/docs/licenses/LicenseApache.txt
+SHA1-Digest: Jd+EeWyf2vcuxm+5d3C95Hh+s34=
+
+Name: icons/readers/CloverDataReader-64x64.png
+SHA1-Digest: fCpPQ69V7R2f3kiitujIK6zp2aY=
+
+Name: lib/plugins/org.jetel.connection/cloveretl.connection.jar
+SHA1-Digest: u/HoByWrJhSHA3engzoYuUqKdqk=
+
+Name: icons/readers/Reader-UNI-64x64.png
+SHA1-Digest: AEawSkcdSY6hJyvMJJijvd8acWY=
+
+Name: icons/denormalizer32.png
+SHA1-Digest: VnlDrcjpHGJa2wBnvXuD0Z77bwY=
+
+Name: icons/expandall.gif
+SHA1-Digest: 3JXK9CLWH7xosN95WoZwiZdIvV4=
+
+Name: icons/reader32.png
+SHA1-Digest: +NrN/Umq8t3ueWXrg1RtKPhXsSc=
+
+Name: icons/navFloor.png
+SHA1-Digest: tc6GBholo5Vy40finndBgZ/WTsI=
+
+Name: icons/readers/Reader-UNI-16x16.png
+SHA1-Digest: /8PhN5j3a43U3dyTz6ZEI1LBK+k=
+
+Name: icons/readers/ComplexDataReader-64x64.png
+SHA1-Digest: RlVxxS4cVt+knctIG/Sw2YA1IdU=
+
+Name: icons/error.gif
+SHA1-Digest: dpQz/4SpVaVVbdKp1ePHBgF1RJ0=
+
+Name: icons/group.gif
+SHA1-Digest: RA39fBAFO6L22BDO9y/4VGVvi8A=
+
+Name: icons/type_map.gif
+SHA1-Digest: WKd5JuFwW15jCoBlZbGrgq0v+10=
+
+Name: lib/lib/commons-io-LICENSE.txt
+SHA1-Digest: P6LjEH09WuZLEME8JO27i928M14=
+
+Name: icons/sort32.png
+SHA1-Digest: 2ngeY/daagltyJpN291a7ILoPdc=
+
+Name: icons/writers/PostgreSQLDataWriter-64x64.png
+SHA1-Digest: hHC/wGhiRIkXuKq6Vw7QQ73VKb0=
+
+Name: icons/transformers/EmailFilter-64x64.png
+SHA1-Digest: iOeQD1Qs57SGy6FjhuMvnADMwkQ=
+
+Name: icons/asterix.gif
+SHA1-Digest: HBHbSSZcUebNJfPGaowxgH9CWyU=
+
+Name: icons/debug.gif
+SHA1-Digest: I8JVpjAz+9tB/jqeay7p8Q8hChw=
+
+Name: icons/writers/DelimitedDataWriter-16x16.png
+SHA1-Digest: NDhQ5NcRNKWUynv1wOOHAzceSMs=
+
+Name: icons/trash32.png
+SHA1-Digest: anXoROVKK1/2BE0MrB5+OGZouCQ=
+
+Name: icons/readers/UniversalDataReader-64x64.png
+SHA1-Digest: 3XKSiL+dfsjTWO52UgP8VK34GNY=
+
+Name: icons/misc/MappingByOrder-16.png
+SHA1-Digest: JpG71tiKBxcYGB+Ks1x/KHcOlfE=
+
+Name: lib/plugins/org.jetel.tlfunction/cloveretl.tlfunction.jar
+SHA1-Digest: S8JXoslt2GfWbVC4JpaK4OvBfa8=
+
+Name: schema/runtime.exsd
+SHA1-Digest: +aVBGGZf9jYV2i4M33qBz36DAZE=
+
+Name: icons/others/DBExecute-16x16.png
+SHA1-Digest: OjusbxZW1DPLYEZLm91eGKAigNw=
+
+Name: about.html
+SHA1-Digest: 3Yop+HTIKfvGMbhrRbRObjWU/jo=
+
+Name: docs/How to create plugin with custom editor
+SHA1-Digest: Ixh3SmLAON+5DVh/2jQ51O8vByg=
+
+Name: icons/transformers/Aggregate-64x64.png
+SHA1-Digest: nnB99q5JMmm0pYHDkw2JFa0XV6I=
+
+Name: lib/plugins/org.jetel.jdbc/cloveretl.jdbc.jar
+SHA1-Digest: IAyxcUZlyhDNjguNZxIpoO7wU1M=
+
+Name: icons/exportapp_wiz-16.gif
+SHA1-Digest: zYb/EezGL9DyP+1beeJ/pkr+Dmo=
+
+Name: lib/lib/jaxb-api.jar
+SHA1-Digest: 8SO53qTXImpi0MlwZegqTUqlbLU=
+
+Name: icons/readers/DBInputTable-32x32.png
+SHA1-Digest: DTUNeSO54s7Q6eChEW52thPol2s=
+
+Name: icons/metadata-external-16.png
+SHA1-Digest: bvG9xdLXBXeJ3pV82bmnfgrtxKE=
+
+Name: icons/navUp.png
+SHA1-Digest: 4ejKDPn7KzP1CkjxDdpKNcF31eo=
+
+Name: lib/plugins/org.jetel.jdbc/lib/firebird/jaybird-full-2.1.6.jar
+SHA1-Digest: CSXen7ul2SZdqYa2qH2JKSvd2ns=
+
+Name: icons/filter16.png
+SHA1-Digest: SSUxzU6Qj/lIpMe6FJevGJ4mHuw=
+
+Name: lib/lib/commons-codec-1.4.jar
+SHA1-Digest: SObVpahbscAjxc0Yf9/Ko03obSE=
+
+Name: icons/others/RunGraph-64x64.png
+SHA1-Digest: SzlRGcJWkUT0YN+gb+Hz67sdx1c=
+
+Name: icons/writers/XMLWriter-32x32.png
+SHA1-Digest: EBqgUNJN3NymEvXoylFCmZ2Lb6w=
+
+Name: icons/writers/JMSWriter-32x32.png
+SHA1-Digest: J9jzdqOH/SA7Zth1peBVSzFLnhs=
+
+Name: icons/ctl/CTL_check_wizard_page_two.gif
+SHA1-Digest: +jEHpi+Gx9HoH5U2ZNghKMQSgVw=
+
+Name: icons/dbExecute16.png
+SHA1-Digest: NcVpGXtbCZvTrm5wOo3Ns3D6bNE=
+
+Name: lib/lib/jaxen-1.1.1.jar
+SHA1-Digest: v84lQmbuM4TwXxXoAB2wP9V/BAc=
+
+Name: icons/keyGenerator32.png
+SHA1-Digest: r5HZ9tZNZjEPbtUXFjKUjqXpIeM=
+
+Name: icons/misc/normal-transition-16.png
+SHA1-Digest: VWwKiGYW1ecSyXPQ2NGW4vNfPkw=
+
+Name: icons/writers/DBOutputTable-32x32.png
+SHA1-Digest: V44h60hKyfWZLCLEN9HvBItkJvE=
+
+Name: icons/writers/UniversalDataWriter-16x16.png
+SHA1-Digest: 46FFKXfUBcmVW8yRTLiXhBxOies=
+
+Name: icons/readers/MultiLevelReader-16x16.png
+SHA1-Digest: +ILB/BA6ehu7xrIeOdCLeLyWmck=
+
+Name: icons/readers/MultiLevelReader-64x64.png
+SHA1-Digest: HG0uJn8CDT7B9FvlBdoHp3IZ/s4=
+
+Name: icons/root_dir.gif
+SHA1-Digest: ao4L//vT+TAvvucU1eaP5hpY0dk=
+
+Name: icons/jms-16.png
+SHA1-Digest: qyMh4wXjPpmHh6kY1iBlNr5jjww=
+
+Name: icons/close_view-16.gif
+SHA1-Digest: QzOyAtuUJrkXW7MRej4ANsGA23Y=
+
+Name: lib/plugins/org.jetel.thirdparty/plugin.xml
+SHA1-Digest: m+UzUgUpyqo6foqhImBcYxpI6uE=
+
+Name: docs/MyComponentEditor.zip
+SHA1-Digest: Ihibq9QRrtqY188mvf6YPVubMRo=
+
+Name: icons/others/CheckForeignKey-64x64.png
+SHA1-Digest: MURZ8sUOiwtxlm9CSS3X5McbWIY=
+
+Name: icons/ctl/keyword.gif
+SHA1-Digest: y+Wmw1peIqnSeg8kBiyR5udAz/8=
+
+Name: lib/lib/XmlSchema-LICENSE.txt
+SHA1-Digest: dii8He54sgSODQiBzM3WEi7Xw80=
+
+Name: icons/xlsReader32.png
+SHA1-Digest: bpvaefkU+mi+FStI+ZnXqFldTCo=
+
+Name: icons/misc/final-16.png
+SHA1-Digest: lUMA7Ent3VHi3+WUr+eqLwkhmK8=
+
+Name: icons/text_edit.gif
+SHA1-Digest: M2q1seHT6xsfNoEHge0o7XdbDYM=
+
+Name: icons/transformers/XSLTransformer-32x32.png
+SHA1-Digest: rtgBdPaRqw5gA0RVALCGeEJRDBo=
+
+Name: icons/transformers/SpeedLimiter-32x32.png
+SHA1-Digest: TMom05ON/pJN65iCNMEilFOr6us=
+
+Name: icons/transformers/Concatenate-32x32.png
+SHA1-Digest: f6+UpD6cEZm8TgIWyI4ihOeEQjc=
+
+Name: icons/writers/OracleDataWriter-16x16.png
+SHA1-Digest: dBEG3KHw+ldZtrHFusIJVPK3Gaw=
+
+Name: icons/others/HTTPConnector-32x32.png
+SHA1-Digest: CtmfhpDL8jEHVqAycm4pcDmHvz0=
+
+Name: icons/overview.gif
+SHA1-Digest: NI5MZQ79TWebeTwq3/BtfBvIpEQ=
+
+Name: lib/lib/dom4j-1.6.1.jar
+SHA1-Digest: kuM6KCdiatHjJuKANBujHoVwvhU=
+
+Name: icons/transformers/ExtFilter-64x64.png
+SHA1-Digest: Lu6XsUq4g2DijSpfVZc8NnlrNQc=
+
+Name: icons/joiners/ApproximativeJoin-32x32.png
+SHA1-Digest: F54wM8Qh+4KsVv93WxoRy31K4Gk=
+
+Name: icons/dataIntersection32.png
+SHA1-Digest: YZ87SNyBnfdEB37eLk2/acQNxUs=
+
+Name: icons/transformers/SimpleGather-16x16.png
+SHA1-Digest: TsraMCqHLzXcRXzicBVGD/oMi2k=
+
+Name: icons/writers/Trash-16x16.png
+SHA1-Digest: Bu4lbipMDrmBedKs5n68IkWNPFI=
+
+Name: lib/bin/commonlib.bat
+SHA1-Digest: lEh6L9orxmB4a7F7ywJFSN3RJac=
+
+Name: icons/writers/XLSDataWriter-16x16.png
+SHA1-Digest: jtsAqvWEXjWNuEYCPnIg0dB+vpQ=
+
+Name: icons/transformers/Normalizer-16x16.png
+SHA1-Digest: 6g33A+uZdfYE5QLYVk5ed11TVc0=
+
+Name: icons/transformers/SpeedLimiter-16x16.png
+SHA1-Digest: pujhgWTzsun77EdnILKVoMg+0LA=
+
+Name: icons/dbOutputTable32.png
+SHA1-Digest: DaA051t7fiAxFzn2YwTazSrpM/8=
+
+Name: icons/transformers/Partition-16x16.png
+SHA1-Digest: hJUadDa/vF6jlmJrtnuTPzIHNEM=
+
+Name: icons/singlemulti.gif
+SHA1-Digest: a48OgwGGxFtnDa2A3Tc9QvlnbWE=
+
+Name: icons/transformers/DataSampler-32x32.png
+SHA1-Digest: hg6uBDmufVmBumoKA4CfTJrQNJw=
+
+Name: icons/approxJoin32.png
+SHA1-Digest: HmSVFuYAvNDiknaZvRptC+PU+78=
+
+Name: icons/outline.gif
+SHA1-Digest: UlKcfakcc9tI8PC01bxhCxugfnk=
+
+Name: icons/dedup32.png
+SHA1-Digest: ZT1RhVnaxd3n0ydYM3qMH4SvOeE=
+
+Name: icons/writers/StructuredDataWriter-32x32.png
+SHA1-Digest: WUo1mq/y+nj/HCc9UYJmtuOb9w4=
+
+Name: icons/others/LookupTableReaderWriter-16x16.png
+SHA1-Digest: PfeF2FxADVXwXC4oAkinrsPQV1g=
+
+Name: lib/lib/poi-ooxml-3.8-beta4-20110826.jar
+SHA1-Digest: T8scsC8rEsz3+cYDY/kKO7RXvPo=
+
+Name: icons/transformers/Dedup-64x64.png
+SHA1-Digest: wohcsMTONPLY4qQoK+zmAvMhu1k=
+
+Name: icons/transformers/Reformat-32x32.png
+SHA1-Digest: VYNVRVsSsWFMg0tgDsmXIMs3evY=
+
+Name: icons/dataReader16.png
+SHA1-Digest: mTpcU2mBehuGsfbbEuAegb+gVXI=
+
+Name: icons/readers/FixedLengthDataReader-32x32.png
+SHA1-Digest: z71ndgY+awl/9M3jrCI3dXPQd5w=
+
+Name: icons/simpleGather16.png
+SHA1-Digest: fPnbk3E2BunTshbAj9DcZUbWk5Q=
+
+Name: icons/transformers/KeyGenerator-64x64.png
+SHA1-Digest: G39lSybvOZu5MUBpLLgeiea2ef4=
+
+Name: lib/lib/jakarta-oro-2.0.8.jar
+SHA1-Digest: re1K1oarmll45Gk0zqt28ZMQB58=
+
+Name: icons/transformers/FastSort-64x64.png
+SHA1-Digest: KCA6JHagXJUblkqr0dC8KxBJAzw=
+
+Name: lib/bin/cloverserver
+SHA1-Digest: cUK1b0E3b5QaTZy3euSDf0bsrsI=
+
+Name: schema/dictionaryCommandLine.exsd
+SHA1-Digest: lQv9p8De0rbIXA1A4xiMD2Kmm0c=
+
+Name: icons/sequence-group-16.png
+SHA1-Digest: QZzQFGsARbH7ZEaYk11BQ1joUaY=
+
+Name: icons/new_dir1.png
+SHA1-Digest: iGuyK6ZgyBpKtkzOKf0RclY83Do=
+
+Name: icons/connection-external-16.png
+SHA1-Digest: 3LVMvHSpNMUv4hpEqqVa8Y7ZHbQ=
+
+Name: icons/writers/MSSQLDataWriter-16x16.png
+SHA1-Digest: bhThI0XWytpPsUZW0m7piSk40JE=
+
+Name: icons/restore.gif
+SHA1-Digest: eKfT9TRGcH+ob1AVJjlYbDgz1nY=
+
+Name: icons/todo.gif
+SHA1-Digest: GZOpAyzQg4N0jSk6fwT67u8uCPw=
+
+Name: icons/flatmetadata16.gif
+SHA1-Digest: DATyK5Kop8x5Pme+5MW4UWRL9cw=
+
+Name: lib/lib/LICENSE.txt
+SHA1-Digest: zBZiO3Wkrna/qeGlDM4TTg0S8nc=
+
+Name: icons/misc/MappingAutofilling-16.png
+SHA1-Digest: xvapgBS0fGtJ2KayyHyfrQjAt/4=
+
+Name: lib/docs/licenses/JavolutionLicense.txt
+SHA1-Digest: c8A0GYObpjIy05fdFBzcl3CyIko=
+
+Name: schema/editor.exsd
+SHA1-Digest: z7UoO8mLFSjTBwU+nBQ/nZfG1vw=
+
+Name: icons/writers/EmailSender-32x32.png
+SHA1-Digest: pXwKxaCGAYZzFZODDbdzSg3axtk=
+
+Name: lib/lib/httpclient-4.1.1.jar
+SHA1-Digest: c/8lLN8pFR5IBnQ25pQV2ksRRe8=
+
+Name: icons/keyGenerator16.png
+SHA1-Digest: gbkZnquqmUYTD6LwNwhCS38e8p0=
+
+Name: icons/joiners/DBJoin-16x16.png
+SHA1-Digest: ypLqoZ/ObBpohrmhLPdsceFKcVs=
+
+Name: schema/enginePlugin.exsd
+SHA1-Digest: Kpc/6sEM6x3eDi+Wp7HGfO6LNA4=
+
+Name: icons/writers/Trash-32x32.png
+SHA1-Digest: mp/2deQ7w0zqW28FQZENmKjDp9k=
+
+Name: icons/navTop.png
+SHA1-Digest: x/wHnTfAz1MD2C2EQoCACYZFhDo=
+
+Name: icons/emptyDot.gif
+SHA1-Digest: vSnCHmpvCJk7k2tSNmNww+EaTiM=
+
+Name: icons/writers/DB2DataWriter-32x32.png
+SHA1-Digest: xr+S9gtfgqhIh/5cYxTeUSaGuRg=
+
+Name: icons/navLeft.png
+SHA1-Digest: MwiwSznT+zdGn1e3avQHfv5/p80=
+
+Name: icons/others/LookupTableReaderWriter-64x64.png
+SHA1-Digest: LAwkGXGio1Vsdsco4ASlgGViDjA=
+
+Name: icons/readers/JMSReader-16x16.png
+SHA1-Digest: RNeGnXWL9X1yvF9Ydkkyv62M81c=
+
+Name: icons/simpleGather32.png
+SHA1-Digest: k0ww4WsTOD9/HEVSb2XJbR1WW5E=
+
+Name: icons/others/DBExecute-64x64.png
+SHA1-Digest: AYtij80gp8vr54vc+JyOFJEGjnQ=
+
+Name: icons/transformers/Merge-32x32.png
+SHA1-Digest: Vmcj7Fm0G/mvn9xOwH7x1bXLoCc=
+
+Name: icons/project-16.png
+SHA1-Digest: vnjWDiWk4QjV73fTT9LVwQ5nF6I=
+
+Name: icons/expiredProduct.png
+SHA1-Digest: Lq6Dxca9Y1e1TwwG6upJ+/Gf7ws=
+
+Name: icons/writers/MySQLDataWriter-16x16.png
+SHA1-Digest: Qrhonj592+2lylip68WAq0yW8fY=
+
+Name: icons/writers/XLSDataWriter-32x32.png
+SHA1-Digest: VXYntufcongzBOGSGQuB8c0ZSvg=
+
+Name: icons/ribbon24.png
+SHA1-Digest: tGruFIw1u2c+MvzM1T+dk3Cw7wo=
+
+Name: icons/readers/XMLXPathReader-32x32.png
+SHA1-Digest: 3VJ7oVHWrnYnpKfttKUGySKXKDo=
+
+Name: lib/plugins/org.jetel.sequence/plugin.xml
+SHA1-Digest: LW3kBnS9MNKO/drr1JD/g7VyEEs=
+
+Name: icons/transformers/MetaPivot-64x64.png
+SHA1-Digest: tgTBaRlt3f38Qv8KGGGwBSJWjiQ=
+
+Name: schema/customizationValidator.exsd
+SHA1-Digest: 9FqNU0WwfDms/gi9xp4uDeQaTs4=
+
+Name: icons/simpleCopy32.png
+SHA1-Digest: 2ls2gPmrzX/gzWsCBpKKjo6LGiI=
+
+Name: icons/transformers/EmailFilter-16x16.png
+SHA1-Digest: ysYS4add1aXQwQNdZxOYDnrN85g=
+
+Name: icons/joiners/RelationalJoin-32x32.png
+SHA1-Digest: VpGFaIb92omcxA1KXCDoOBabal8=
+
+Name: icons/transformers/FastSort-16x16.png
+SHA1-Digest: tB4b6dLUHbpuYibvwKMeYglvXpM=
+
+Name: icons/transformers/Pivot-64x64.png
+SHA1-Digest: 6/r3Q15g92atbhbULNfTI+QAzHg=
+
+Name: icons/maximize.gif
+SHA1-Digest: yU/uggdWG6DpEEa+jBm62z2v46E=
+
+Name: lib/docs/BUGS.txt
+SHA1-Digest: 1lhwL1EziaGh4s8sCjdzYuH0GH4=
+
+Name: lib/lib/icu4j-LICENSE.html
+SHA1-Digest: ygXFmIJ8gRGFtWlKM1lGQIHjSfI=
+
+Name: icons/navLast.png
+SHA1-Digest: ZsbWVqibyr87unV5+z8XVJ08Qbw=
+
+Name: schema/xmlPropertyEditor.exsd
+SHA1-Digest: YQ4D6COBHG2eOiWJWVndQlBE/5k=
+
+Name: icons/passThrough.gif
+SHA1-Digest: VHy1OsIJ/Qtrw58JngtQ/1yls5g=
+
+Name: lib/lib/poi-ooxml-schemas-3.8-beta4-20110826.jar
+SHA1-Digest: a1F0xJxR6eIE0pwa8YdMwBnkDu0=
+
+Name: icons/parameter-group-16.png
+SHA1-Digest: hlin7h4L9HgESxReMnuhurVx2EM=
+
+Name: icons/readers/ParallelReader-64x64.png
+SHA1-Digest: 50htlGOT4jGXlVWB4EFn30sMFDg=
+
+Name: schema/vmargs.exsd
+SHA1-Digest: XHaerEGOIVtMMaCSvWxz2VjYSHs=
+
+Name: icons/licenseImage.png
+SHA1-Digest: 5rJmhbFm/x3melnSZ4PIzNb+Imk=
+
+Name: schema/metadataExtract.exsd
+SHA1-Digest: gSsmeD7fW9YrXOI2NXDOBhNVDuY=
+
+Name: icons/misc/univerzal-32x32.png
+SHA1-Digest: 4r08T4yM6TVix/QUhGTwF/HjC6w=
+
+Name: icons/dataWriter16.png
+SHA1-Digest: +sgIxfK0nwFI1qSAqNfUUPZMevo=
+
+Name: icons/readers/DBFDataReader-16x16.png
+SHA1-Digest: 3WKL5Q5Ysc+dCf4XPD0R+6QBEOQ=
+
+Name: icons/transformers/Dedup-16x16.png
+SHA1-Digest: BR87oMs20nZf+3k9F8NWVWP5Vm0=
+
+Name: lib/docs/licenses/LicenseMPL.txt
+SHA1-Digest: sgiFPUKAgQvLnZC7TXbLJgpZ/fE=
+
+Name: icons/jms-external-16.png
+SHA1-Digest: ilDTSS+ztXFVTqrm3rs+FYezvUA=
+
+Name: icons/writers/QuickBaseWriter-64x64.png
+SHA1-Digest: BU29Kv1nkD1AnOyABia9+qFj/Fs=
+
+Name: icons/java_property_16.png
+SHA1-Digest: EsUd3GVHWoP/qROi5xwGsqX7Rac=
+
+Name: schema/graphElementDecorator.exsd
+SHA1-Digest: /AFKIfA9Tv/F1R4VSSlx7cLwa18=
+
+Name: icons/add_group.gif
+SHA1-Digest: yeNsm9rmlvN/RSEhJXZiK3g6jn8=
+
+Name: icons/joiners/MergeJoin-16x16.png
+SHA1-Digest: qoUevEWGnv8eV2BVMl5g0SpFrDE=
+
+Name: icons/writers/MySQLDataWriter-64x64.png
+SHA1-Digest: BsACBAoQAdWd2aGJB/S5xOroe8g=
+
+Name: icons/merge32.png
+SHA1-Digest: sOyX1ib2L8iYGAJnp5rup0sDWKE=
+
+Name: icons/ctl/in_field.gif
+SHA1-Digest: t3ukp9oboiPkMpuPgQqViOZmp0c=
+
+Name: icons/simpleCopy16.png
+SHA1-Digest: YZcxbB3cGT2emwx7apRr13IWywk=
+
+Name: icons/trib-2-checked.png
+SHA1-Digest: XlmUCkIl2YE1MYBEl6GNstYIvpw=
+
+Name: icons/readers/QuickBaseReader-32x32.png
+SHA1-Digest: 0lGAAUwlYOmqlFeIhwq3BvM2jpo=
+
+Name: icons/writers/InformixDataWriter-16x16.png
+SHA1-Digest: qtDW8SKl9ENK46QGqhvWOGdD/AE=
+
+Name: icons/removeAll.gif
+SHA1-Digest: TkDmJtwnjLfta019Qbx5lwGO5TE=
+
+Name: icons/writers/StructuredDataWriter-16x16.png
+SHA1-Digest: KqEj3c3cK7c1P6UBkni9IyOW4Y0=
+
+Name: lib/lib/XmlSchema-1.4.7.jar
+SHA1-Digest: D2xe/c7EdE/010l76kndh3hA7MY=
+
+Name: icons/readers/Reader-UNI-32x32.png
+SHA1-Digest: iuFweqHAYdN0EwdVBmER4h/JeDU=
+
+Name: icons/writers/DB2DataWriter-64x64.png
+SHA1-Digest: jhigL7mTjkSySBnsnwXUpQP935I=
+
+Name: icons/transformers/Reformat-64x64.png
+SHA1-Digest: P+9olnGOfxqzetbghTk7PGc+39E=
+
+Name: icons/paste_edit.gif
+SHA1-Digest: WcBQGrGEmtBlWqxP5TVEgJAZSXU=
+
+Name: lib/lib/tar.jar
+SHA1-Digest: HaEhMyeOscf63TaWqIzJrUGEiuE=
+
+Name: icons/add-driver-property-disabled-16.png
+SHA1-Digest: GOGGHvYNxoAlsDydWT4rvU36Mck=
+
+Name: icons/folderw16.png
+SHA1-Digest: C3flZPkMQzHaRnF5kGVcORIN8vE=
+
+Name: icons/systemExecute16.png
+SHA1-Digest: MztRLjbJeDTY2tJHnyEjiS+JwP8=
+
+Name: icons/transformers/EmailFilter-32x32.png
+SHA1-Digest: ztfRJErn3U+QpUN+Cqk0vf9U/vU=
+
+Name: lib/plugins/org.jetel.tlfunction/plugin.xml
+SHA1-Digest: oxY8YvL+MU9CIpj2Wp/EZ+lwoYg=
+
+Name: lib/readme.txt
+SHA1-Digest: 1JM3X0nmThrP8KRIonqobc9as1E=
+
+Name: icons/transformers/Concatenate-64x64.png
+SHA1-Digest: SCbhw1lN5CtGTkCROxs1OCR3Vd0=
+
+Name: icons/others/JavaExecute-64x64.png
+SHA1-Digest: bfDvPrPc0upcaXAtsN27uAfjwe8=
+
+Name: icons/help_contents.gif
+SHA1-Digest: zBCduB/LYeA7fIpVd9P7VZVZlHM=
+
+Name: lib/lib/jaxb-impl.jar
+SHA1-Digest: P82E25+dWeix7f+O7/9U/bX3cmQ=
+
+Name: icons/readers/EmailReader-16x16.png
+SHA1-Digest: cMC5D5JVCKk7fBf9oIGGOaLbYzo=
+
+Name: icons/unlock-16.png
+SHA1-Digest: e0SvbipRv0wW3HbUqfRJUfpVSUs=
+
+Name: icons/reformat16.png
+SHA1-Digest: wmWINBpelskt5wpeIeCaRYRzew0=
+
+Name: icons/transformers/Normalizer-32x32.png
+SHA1-Digest: 4s5kgcdPnkVwGtuZ8d+zxHav/Hg=
+
+Name: icons/readers/DelimitedDataReader-32x32.png
+SHA1-Digest: CE5gJYvuPhyfCQiC25bnr9wUPDo=
+
+Name: icons/xml_template_ref.png
+SHA1-Digest: Wpjoic3XTpnJxfrdJy6+H3zD0s0=
+
+Name: lib/bin/clover
+SHA1-Digest: x9bkZMNnrGScdfoRg1PWXJPqL50=
+
+Name: icons/transformers/MetaPivot-16x16.png
+SHA1-Digest: ERpysdxVjqjocngmF/gccOE68c8=
+
+Name: icons/transformers/Aggregate-32x32.png
+SHA1-Digest: fjg6TtOTVmAIvwldHhziKabRT0Y=
+
+Name: cloveretl-gui.jar
+SHA1-Digest: /FYF0eNuYFm/MGLwQlirht+Ji0E=
+
+Name: icons/unknown_element_16.png
+SHA1-Digest: fAgfui0WlKYjknOHJi9JjOCtzdE=
+
+Name: lib/plugins/org.jetel.sequence/cloveretl.sequence.jar
+SHA1-Digest: 13fDGgjPII4SIHmvrZZ82BPx26w=
+
+Name: lib/cloveretl-commons.jar
+SHA1-Digest: LMQifbjnfteJUgf8VWmZ3FzZSSs=
+
+Name: icons/navDown.png
+SHA1-Digest: 9gtvPwPdjoUtvZtrzkNYzCmACjc=
+
+Name: schema/defaultHintProvider.exsd
+SHA1-Digest: L5HhGonmTk33N48ngG/Ij9pRtKA=
+
+Name: icons/misc/ExtFilter-OLD-64x64.png
+SHA1-Digest: MyFafV5bBnIWyv5Z8gjs13lb2oA=
+
+Name: icons/gear.gif
+SHA1-Digest: toUqDhzNlWEtSkJuyeY6MZyB9FE=
+
+Name: lib/lib/javolution.jar
+SHA1-Digest: h60D/ZDvn3JIw4Ht6EgaEg/0Zxs=
+
+Name: icons/cluster/ClusterPartitioner-16x16.png
+SHA1-Digest: MCAC2IMR9lxXS57N1B/m/dh63FY=
+
+Name: icons/readers/EmailReader-64x64.png
+SHA1-Digest: YRPQWg2V0HJd0S9gkShFvwLPO9s=
+
+Name: icons/writers/DB2DataWriter-16x16.png
+SHA1-Digest: 4YEE8aXqE2MMvSKJQmgLWUBKDMk=
+
+Name: lib/plugins/org.jetel.lookup/cloveretl.lookup.jar
+SHA1-Digest: 6PqsJXJfjtVO0U2Xs4Rv64sV5XQ=
+
+Name: icons/ctl/in_metadata.png
+SHA1-Digest: e0onHzirUp0VrlOP3gX11svaCp4=
+
+Name: icons/ribbon_grey.png
+SHA1-Digest: HQVQzWVdigIhMf4zD79tP2tHyHU=
+
+Name: icons/jdbc-driver-add-16.png
+SHA1-Digest: w1jXBCNeQgEeqVzt/24ciSaJ3GU=
+
+Name: lib/plugins/org.jetel.ctlfunction/lib/json.jar
+SHA1-Digest: LESin3kRCSj2y1/G+UVPHlOmgFs=
+
+Name: lib/lib/xmlbeans-2.3.0.jar
+SHA1-Digest: nAvS5EVEsV5X95x8Y7fDHS1DVGw=
+
+Name: icons/xml_add_child_wildcard_element.png
+SHA1-Digest: UpM7u37Bxz1a5fV0hNOdk0F55rg=
+
+Name: plugin.xml
+SHA1-Digest: bpCT25h9+b18fyOdVdBkV/DQobQ=
+
+Name: icons/importdir_wiz.gif
+SHA1-Digest: rjjF6aBcXSqQMIDUEzDIP0KMU94=
+
+Name: icons/trib-3-unchecked.png
+SHA1-Digest: 5K58TnZ4POSlmcj6O3YxYgsAEh0=
+
+Name: icons/transformers/XSLTransformer-64x64.png
+SHA1-Digest: lbid7cir7oamMbb+1OGKxgOr/rQ=
+
+Name: icons/transformers/Rollup-64x64.png
+SHA1-Digest: iIlogyyJrJW0gNclOL1GPwCW4Xs=
+
+Name: lib/plugins/org.jetel.jdbc/plugin.xml
+SHA1-Digest: 6XzqkzB46OneDK0wASgpY/NvsNY=
+
+Name: icons/validate.gif
+SHA1-Digest: +ceBX+0Bqz1qNb4e7UDsFZPxkIc=
+
+Name: icons/transformers/DataIntersection-32x32.png
+SHA1-Digest: 9WDoCOZCOvjrwuYJG2AWtDR/kc8=
+
+Name: icons/parameter-file-16.png
+SHA1-Digest: mKJoK2thuvfojcJh1g9vIhT0uAI=
+
+Name: lib/plugins/org.jetel.component/lib/jdbm-2.2.jar
+SHA1-Digest: ZKAIQ0BK8CeAYqVSnksHADYjtfo=
+
+Name: schema/resourceURL.exsd
+SHA1-Digest: by6WEaE3uPNh5/4CiN2Cm0hwiMw=
+
+Name: icons/writers/DelimitedDataWriter-64x64.png
+SHA1-Digest: uDAn9XtAQUK+HZGN13AzQW+u7wM=
+
+Name: icons/filew16.png
+SHA1-Digest: fGjesU0CUulOlse91pmtFPrEGOQ=
+
+Name: icons/joiners/ApproximativeJoin-64x64.png
+SHA1-Digest: khtaU/LDnFqwuydxn0GJ6N39R2U=
+
+Name: lib/bin/commonlib
+SHA1-Digest: i2CZ+yIBDXFpAhPdvkrDwCsd0to=
+
+Name: icons/remove-disabled-16.png
+SHA1-Digest: oRxuKZdTptp8a0OAlxtYl0bkUyY=
+
+Name: lib/plugins/org.jetel.bulkloader/lib/linux/load
+SHA1-Digest: TkIv8gI9+5m+bfwo3Zv3OvYfceI=
+
+Name: icons/transformers/ExtSort-16x16.png
+SHA1-Digest: cWljAfrzHmFlq5h0zjxJuZanOLo=
+
+Name: icons/transformers/SimpleCopy-16x16.png
+SHA1-Digest: +YWKkERV4hilhNsdbiXCxT3NwOw=
+
+Name: schema/cloverBranding.exsd
+SHA1-Digest: QC53LRLl/pvpsaMxPODO0VC4Qfg=
+
+Name: icons/cluster/ClusterGather-64x64.png
+SHA1-Digest: O90+E4vSA99ccDAGZ+BNhiXWbG0=
+
+Name: icons/joiners/HashJoin-64x64.png
+SHA1-Digest: 22ZLHMZ5QSMQ82zG6V8sccN9aNQ=
+
+Name: icons/misc/MappingExplicit-16.png
+SHA1-Digest: ngRZELJhphO7tPWqi8yp80xw6Zs=
+
+Name: lib/docs/licenses/JSchLicense.txt
+SHA1-Digest: f43aomNCK20T5+duqIsM4vttuEQ=
+
+Name: schema/connection.exsd
+SHA1-Digest: Ao3bN+/hl+ikLhrJuHZ39C7SjF0=
+
+Name: icons/others/SystemExecute-64x64.png
+SHA1-Digest: yw8rZF5QWpoZvxZo9FxplCE7P/g=
+
+Name: icons/transformers/ExtSort-64x64.png
+SHA1-Digest: UWCk8KemH3iMwgRG/ixs02Qg84M=
+
+Name: icons/transformers/ExtFilter-16x16.png
+SHA1-Digest: +I9fh+wC9Oi+2KHAYBweHHb4hEg=
+
+Name: icons/sequence-external-16.png
+SHA1-Digest: zK/aq3VwuUdUG9x4QGXgiJP/v3o=
+
+Name: icons/others/JavaExecute-16x16.png
+SHA1-Digest: JVLNCYcIiT/yKsHaorY5agmxgG8=
+
+Name: icons/addField.gif
+SHA1-Digest: XaXZKzf2Kn410x7uZEglK1Y/I4I=
+
+Name: icons/writers/OracleDataWriter-32x32.png
+SHA1-Digest: htua78q63fzWpQR5x+d6zf6qne4=
+
+Name: icons/fieldDown.png
+SHA1-Digest: scsAmRBTfs6qv3wXihcpcgMpLno=
+
+Name: icons/gear16.gif
+SHA1-Digest: pGLf//MF+faqg/ClxSMSvlFiqBA=
+
+Name: lib/lib/commons-httpclient-3.1.jar
+SHA1-Digest: MYgxLkCsNBtZOBOIECZQKc9SgwI=
+
+Name: icons/aggragate32.png
+SHA1-Digest: l6ig3bCUufD7Q1jM7B7t1ut7QA0=
+
+Name: icons/ctl/out_field.gif
+SHA1-Digest: GEYevToQoBz8uxGXDEMglMZTkS8=
+
+Name: icons/lookup-group-16.png
+SHA1-Digest: EgTs6GCWeljg455XujHcUBm/4jE=
+
+Name: icons/joiners/DBJoin-32x32.png
+SHA1-Digest: WmSwGY3rDYHPh7rjXVmSY5YRwAY=
+
+Name: icons/writers/DBOutputTable-64x64.png
+SHA1-Digest: mGSyj7YjQ2LXY4CWPQxrTkU0BUk=
+
+Name: icons/approxJoin16.png
+SHA1-Digest: Eo2E29AFPa94KTRzCefHLgMLFRM=
+
+Name: icons/transformers/KeyGenerator-16x16.png
+SHA1-Digest: T06CpDUzQjfGP5Bk29jKymOWGM0=
+
+Name: lib/lib/truezip-6.8.1.jar
+SHA1-Digest: dJqSDxeWwxa2uNEI4KdRLrrsbwg=
+
+Name: icons/misc/initial-final-16.png
+SHA1-Digest: ZXAHBJdJ7sFtsBJyrqWfA7ctITE=
+
+Name: icons/ctl/ctl_source.gif
+SHA1-Digest: rqB1aL5a/0zeJhuprMoiiKxG7qw=
+
+Name: icons/writers/UniversalDataWriter-64x64.png
+SHA1-Digest: arOJxsAXm8f3i+l4QaqLsgoP5/0=
+
+Name: icons/redo_edit.gif
+SHA1-Digest: t3Le/3UVTDaSZq8O56EwTsx3/4Y=
+
+Name: icons/readers/LDAPReader-64x64.png
+SHA1-Digest: 2gYlPM3cZwsx+Zq2MWGfQ6u1ydM=
+
+Name: lib/plugins/org.jetel.jdbc/lib/mysql/mysql-connector-java-5.1.15
+ -bin.jar
+SHA1-Digest: NoLI1lJv4J/AaxUr1LCcXStbRc8=
+
+Name: icons/lookup-16.png
+SHA1-Digest: 9FNN+bmN1BT7hpQtnPWYUiEx9Ek=
+
+Name: icons/misc/MappingByName-16.png
+SHA1-Digest: 8Nu142YDV7k5ohvJCaPoEG6PtS4=
+
+Name: icons/runGraph32.png
+SHA1-Digest: dC5vGp95vxeLdLoeXHqDtKkOJVM=
+
+Name: icons/java_bean_16.gif
+SHA1-Digest: HdFGLAad4uwMPb3GA1FsNoXRZ+I=
+
+Name: icons/denormalizer16.png
+SHA1-Digest: +qx0sUx00z0hlrrkiPAH+JgIgf8=
+
+Name: icons/others/SequenceChecker-64x64.png
+SHA1-Digest: U6Fj8ct5blLg6NSUK5TzkKb4B0I=
+
+Name: icons/att_req_obj.gif
+SHA1-Digest: DZB1qh6008yN+urP0dcs40etpZg=
+
+Name: icons/removeField.gif
+SHA1-Digest: uECd0yRaj5Z+52sMQWEjY3cf5DU=
+
+Name: icons/warning_co.gif
+SHA1-Digest: 1uarHqRTw5AVwml67p7ZEY4RPuA=
+
+Name: icons/xlsWriter32.png
+SHA1-Digest: 9la2DBHxVdEOyddcjtPsaZbhOEs=
+
+Name: icons/addNewLicense.png
+SHA1-Digest: jEdOqF/nHD94MHd3Cdr0EaQNX0s=
+
+Name: icons/transformers/Dedup-32x32.png
+SHA1-Digest: Poc7mQra1dpFfmfAGcV8KH1jB6k=
+
+Name: icons/copy_edit.gif
+SHA1-Digest: +lcXdCeBFdFwipsPCZVH0kORInk=
+
+Name: icons/readers/CloverDataReader-32x32.png
+SHA1-Digest: S07rvnn3D+LXajsFgX29B2CywL8=
+
+Name: icons/lock-unknown-16.png
+SHA1-Digest: HCHvsubgWCrTEJbOXnm+RVjLtDk=
+
+Name: docs/New features in CloverETL GUI v. 1.5.odt
+SHA1-Digest: Rmjhrl5ogjHCxvUcyGMYRUNoMGo=
+
+Name: icons/writers/UniversalDataWriter-32x32.png
+SHA1-Digest: ZYLnQYFGq0QYu7ed2kW1BlcOD+g=
+
+Name: icons/compcat.gif
+SHA1-Digest: gAaKvJ4vRmGbtquSOi8gIwoqVX0=
+
+Name: icons/readers/JMSReader-64x64.png
+SHA1-Digest: csR6x+7CUStJHkOxqSFysHZc5Ds=
+
+Name: about.mappings
+SHA1-Digest: GoVf3lUvI7WZAg9CA+3JZvsluQY=
+
+Name: icons/collapseall.gif
+SHA1-Digest: DItURZvdz74p33RVXZuO44fpf1E=
+
+Name: icons/readers/ComplexDataReader-16x16.png
+SHA1-Digest: UwOIISuI+L2GpF0KyvqNtNn00Jk=
+
+Name: icons/partition16.png
+SHA1-Digest: CcRY6tZ34+vQjmOIo8aeCrB/4kI=
+
+Name: icons/readers/EmailReader-32x32.png
+SHA1-Digest: yR4RKwBkqqJn6Ok55qCcg6fia58=
+
+Name: icons/aggregate16.png
+SHA1-Digest: +WU7+ekrKj9JipE9q5cV/dMhKbQ=
+
+Name: icons/readers/DelimitedDataReader-16x16.png
+SHA1-Digest: VhVgC+/Gll9Rw2KyveAFnAh+3Cc=
+
+Name: icons/xml_template.png
+SHA1-Digest: b2Q+0FvMF7DHVYQt7NqYT9+rYis=
+
+Name: lib/lib/annotations.jar
+SHA1-Digest: dCh1Ai2kXVdn3YiWKCu9KtaEXe8=
+
+Name: lib/bin/DBFAnalyzer.bat
+SHA1-Digest: UjhzidmRsKjbRnGu/UCHxW7fIEQ=
+
+Name: lib/lib/httpcore-4.1.1.jar
+SHA1-Digest: 0Ax/a8OC8G8RwfFf8nYXZuYcnCo=
+
+Name: icons/joiners/MergeJoin-64x64.png
+SHA1-Digest: Ljwb7RCbAQLZP4qHdOe3M83a5QM=
+
+Name: icons/others/RunGraph-16x16.png
+SHA1-Digest: skecs19DAAmE825eIla3rQtR2zM=
+
+Name: lib/lib/sardine.jar
+SHA1-Digest: zy+T90OPSKwdOGax2yLiExrmaWw=
+
+Name: icons/transformers/SpeedLimiter-64x64.png
+SHA1-Digest: PLxw0Qrv1c+8aIwENQQl6OHmYvs=
+
+Name: lib/plugins/org.jetel.bulkloader/lib/load2-1.70.tar.gz
+SHA1-Digest: GTi3WC7pQw85VlkXwtnfThVur8E=
+
+Name: icons/transformers/Rollup-16x16.png
+SHA1-Digest: v2RYTGq6YSvIqsIo1Dl5cWOiFJY=
+
+Name: icons/folder16.png
+SHA1-Digest: Yn6IbYMUQHUZa1P0sDNh8amGilk=
+
+Name: lib/lib/joda-time-1.6.jar
+SHA1-Digest: iehsHsfVG7hKXk0PcWH0dsY1SWQ=
+
+Name: lib/bin/cloverserver.bat
+SHA1-Digest: 7OOIF57q9xm1KrfZ4lGsGqnHyPo=
+
+Name: schema/licensedownload.exsd
+SHA1-Digest: DjqVcasvAEnqp9PwcAew8WqQZcI=
+

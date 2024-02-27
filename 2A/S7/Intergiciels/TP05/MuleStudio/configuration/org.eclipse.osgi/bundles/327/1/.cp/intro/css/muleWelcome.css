@@ -1,0 +1,16 @@
+
+a#orgmuletoolingwelcome-introLink img { width:48px; height: 48px; background-image : url(graphics/sample.gif); background-position:right top; }
+a#orgmuletoolingwelcome-introLink:hover img { width:48px; height: 48px; background-image : url(graphics/sample_hov.gif); background-position:right top; }
+
+a#orgmuletoolingwelcome-gettingstarted img { width:48px; height: 48px; background-image : url(graphics/GettingStarted-Rest-32x32.png); background-position:right top; }
+a#orgmuletoolingwelcome-gettingstarted:hover img { width:48px; height: 48px; background-image : url(graphics/GettingStarted-Hover-32x32.png); background-position:right top; }
+
+a#orgmuletoolingwelcome-learnmore img { width:48px; height: 48px; background-image : url(graphics/MoreInfo-Rest-32x32.png); background-position:right top; }
+a#orgmuletoolingwelcome-learnmore:hover img { width:48px; height: 48px; background-image : url(graphics/MoreInfo-Hover-32x32.png); background-position:right top; }
+
+a#orgmuletoolingwelcome-template img { width:48px; height: 48px; background-image : url(graphics/NewProjectTemplate-Rest-32x32.png); background-position:right top; }
+a#orgmuletoolingwelcome-template:hover img { width:48px; height: 48px; background-image : url(graphics/NewProjectTemplate-Hover-32x32.png); background-position:right top; }
+
+a#orgmuletoolingwelcome-newproject img { width:48px; height: 48px; background-image : url(graphics/NewProject-Rest-32x32.png); background-position:right top; }
+a#orgmuletoolingwelcome-newproject:hover img { width:48px; height: 48px; background-image : url(graphics/NewProject-Hover-32x32.png); background-position:right top; }
+

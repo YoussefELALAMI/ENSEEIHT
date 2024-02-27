@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="orgmuletoolingwelcome-introExtension" style="css/muleWelcome.css" name="" path="firststeps/@">
+		<group style-id="content-group" id="orgmuletoolingwelcome-introLink-group">
+		    <link label="New Mule Project" url="http://org.eclipse.ui.intro/runAction?pluginId=org.mule.tooling.ui&amp;class=org.mule.tooling.ui.project.OpenMuleNewProjectWizardAction" id="orgmuletoolingwelcome-newproject" style-id="content-link">
+          		<text>Opens the new Mule project wizard</text>
+       		</link>
+		    <link label="New Mule Project based on a template" url="http://org.eclipse.ui.intro/runAction?pluginId=org.mule.tooling.ui&amp;class=org.mule.tooling.ui.project.OpenMuleNewExampleWizardAction" id="orgmuletoolingwelcome-template" style-id="content-link">
+          		<text>Creates a new Mule project based on an existing template</text>
+       		</link>       		
+			<link label="Getting started with Mule Studio" url="http://org.eclipse.ui.intro/openBrowser?url= http://www.mulesoft.org/documentation/display/MULE3STUDIO/Getting+Started+with+Mule+Studio" id="orgmuletoolingwelcome-gettingstarted" style-id="content-link">
+          		<text>Provides guidance on your first steps with Mule Studio</text>
+       		</link>       		
+			<link label="Learn more about Mule Studio" url="http://org.eclipse.ui.intro/openBrowser?url=http://www.mulesoft.org/documentation/display/MULE3STUDIO/Mule+Studio+Table+of+Contents" id="orgmuletoolingwelcome-learnmore" style-id="content-link">
+          		<text>Gives you more information about Mule Studio</text>
+       		</link>
+			<link label="Go to Mule Studio" url="http://org.eclipse.ui.intro/close" id="orgmuletoolingwelcome-gettingStarted" style-id="content-link">
+          		<text>Closes this screen for you to start using Mule Studio</text>
+       		</link>
+		</group>
+  	</extensionContent>
+</introContent>

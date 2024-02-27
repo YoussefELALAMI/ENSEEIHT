@@ -1,0 +1,838 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,mule/mule/mule-core-3.3.0.jar,mule/mule/mule-modul
+ e-launcher-3.3.0.jar
+Built-By: jorged
+Eclipse-BundleShape: dir
+Bundle-Name: Mule Studio ESB Server 3.3.0 CE
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.mule.tooli
+ ng.core;bundle-version="1.0.0",org.dom4j;bundle-version="1.6.1"
+Bundle-Vendor: MuleSoft Inc.
+Build-Jdk: 1.6.0_33
+Bundle-Version: 1.3.0.201206220515
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.mule.tooling.server.Activator
+Bundle-SymbolicName: org.mule.tooling.server.3.3.0;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: mule/endorsed/xml-apis-1.3.04.jar
+SHA1-Digest: kLIV9I/kJ3bIx/bjUJ7FToT9Ze8=
+
+Name: mule/user/js-1.6R5.jar
+SHA1-Digest: CPL0JhptDICCcKhK0X7Zp+eSkyg=
+
+Name: mule/opt/jasper-el-6.0.29.jar
+SHA1-Digest: R/2be2ZzuDkgtawyeaYBatpaZ4k=
+
+Name: mule/mule-sources-3.3.0-ce.zip
+SHA1-Digest: 7gSa59UO/B0pCcBfDIkL2fpyLRA=
+
+Name: mule/opt/cometd-server-6.1.26.jar
+SHA1-Digest: zaltEyoGNpcQjIeQzT7XHSvCVFw=
+
+Name: mule/opt/cxf-rt-core-2.5.1.jar
+SHA1-Digest: JBiNYNblEKCWjTJGxXxp8hgdZV4=
+
+Name: mule/opt/cxf-wstx-msv-validation-2.5.1.jar
+SHA1-Digest: 4GU2aHFkL5QAEYWXF2iIIkLQ2eI=
+
+Name: mule/opt/axiom-impl-1.2.5.jar
+SHA1-Digest: mXLdPFP7PceLQ3CBFOh4kZ2Mn2A=
+
+Name: mule/opt/tomcat-apr-5.5.23.jar
+SHA1-Digest: wssbyqOOmgWsAPXBEiXe3OvXLuY=
+
+Name: mule/opt/opensaml-2.5.1-1.jar
+SHA1-Digest: lzbcvoUt2jziY6nG4zV5zVryA+U=
+
+Name: mule/opt/abdera-core-0.4.0-incubating.jar
+SHA1-Digest: XCIxJ3ni1yJbwIYjZ+1t/0yblS4=
+
+Name: mule/user/mule-tests-functional-3.3.0.jar
+SHA1-Digest: t0Eai1Vi9bb6KHyrMSUNW9wSC0c=
+
+Name: mule/opt/ibeans-support-1.2.jar
+SHA1-Digest: NqEv2nx0Ze3hTAAXn0Xg3zSH6Nk=
+
+Name: mule/opt/geronimo-ejb_2.1_spec-1.1-osgi.jar
+SHA1-Digest: pV92IhzraqA6OiWB4YHeentIpjc=
+
+Name: mule/opt/jcifs-1.3.3.jar
+SHA1-Digest: HBDzT7mJd2ngX/VoCSG99FC8nt8=
+
+Name: mule/mule/mule-module-rss-3.3.0.jar
+SHA1-Digest: TLt2Njsg6uj7BD16pW5xxa4Q9B8=
+
+Name: mule/opt/drools-core-5.0.1.jar
+SHA1-Digest: yGAusDQ7bIRcbaFUBrvXDGNDKpQ=
+
+Name: mule/user/jython-2.2.1.jar
+SHA1-Digest: 3P44i3uwAYIGtH1IGpcKWs/2k3Y=
+
+Name: mule/opt/smack-3.1.0.jar
+SHA1-Digest: kWoP4I2ECgjJUPSftZuWHhTWc7g=
+
+Name: mule/opt/cxf-rt-transports-local-2.5.1.jar
+SHA1-Digest: FGgLZxd4QTCxj/zy+PqCuLPsfcc=
+
+Name: mule/opt/jersey-json-1.6.jar
+SHA1-Digest: 5siOo4bi+yEJb5sAX1hc5I4Y6Rc=
+
+Name: mule/opt/commons-dbutils-1.2.jar
+SHA1-Digest: 2SbV/rF9NlVGQYbtJQO82os+zkA=
+
+Name: mule/opt/jersey-server-1.6.jar
+SHA1-Digest: qczHfRgrarw2tuh7ZzNjHDswQl0=
+
+Name: mule/opt/smackx-3.1.0.jar
+SHA1-Digest: uhNlx+Xzz392QbNUZ3s/VKbqWhU=
+
+Name: mule/mule/mule-module-spring-config-3.3.0.jar
+SHA1-Digest: 7FRVp6nrzSD0W+ApyisLXdqIG1A=
+
+Name: mule/boot/mule-module-boot-3.3.0.jar
+SHA1-Digest: ToaObKX37royCSvI96JfnRyrQio=
+
+Name: mule/opt/jsr250-api-1.0.jar
+SHA1-Digest: IGPV4dYRiNW6v8eo2Iq94Qn4Bj0=
+
+Name: mule/opt/abdera-server-0.4.0-incubating.jar
+SHA1-Digest: IVrMKpqG/P8FA9cTWwZvmoadQoQ=
+
+Name: mule/endorsed/xercesImpl-2.9.1.jar
+SHA1-Digest: e8fknd/k+18ZPtN+zJbBIpLIzrY=
+
+Name: mule/opt/cxf-common-utilities-2.5.1.jar
+SHA1-Digest: a6+bh3YgaTlTWDFRMUOCP867deI=
+
+Name: mule/mule/mule-transport-jetty-3.3.0.jar
+SHA1-Digest: o8kND4ZXKjIqX6g5ThHiGFpDPj8=
+
+Name: mule/opt/relaxngDatatype-20020414.jar
+SHA1-Digest: 3nlSzs0Ftl4OQ3DMk/wDA1F17vU=
+
+Name: mule/opt/mx4j-jmx-2.1.1-osgi.jar
+SHA1-Digest: Qb+NZ8GKQNDZIq1fBQpYaJp5cyg=
+
+Name: mule/boot/log4j-1.2.16.jar
+SHA1-Digest: eZmmO/zLx8JHqa6hDYPUJyvUksY=
+
+Name: mule/mule/mule-core-3.3.0.jar
+SHA1-Digest: DOWWYcSU9V2QDWoOnw0Cz9rs9mg=
+
+Name: mule/opt/xmlschema-core-2.0.1.jar
+SHA1-Digest: 6fgCYxeUvZ+K2QxCNLUEQN+9sh4=
+
+Name: mule/opt/stax-api-1.0-2.jar
+SHA1-Digest: 1jN7DeiyXlPoG5IjUvvqn59Xugs=
+
+Name: mule/opt/dom4j-1.6.1-osgi.jar
+SHA1-Digest: B8slCqw9eHvZw0v+almaoDPbVnc=
+
+Name: mule/opt/xapool-1.5.0-osgi.jar
+SHA1-Digest: nBbHBKzMxNxk6NNA5QE9mLWrX4Q=
+
+Name: mule/examples/echo.zip
+SHA1-Digest: GeyaLV7uQVMFhTIfiT6RwiAjixc=
+
+Name: mule/opt/xstream-1.4.2.jar
+SHA1-Digest: l+UBPzkUh8zk3msO683iFUnpGHI=
+
+Name: mule/opt/spring-asm-3.1.1.RELEASE.jar
+SHA1-Digest: CHF62JR/ytpcVdqJ60dL8FPDDlc=
+
+Name: mule/mule/mule-transport-xmpp-3.3.0.jar
+SHA1-Digest: 1DP+sxYBglMVYZfW8CjMQoXZ82U=
+
+Name: mule/opt/rome-0.9.jar
+SHA1-Digest: 3uJwXdAeeaWpahciX1oa4wRwuxg=
+
+Name: mule/opt/geronimo-j2ee-connector_1.5_spec-1.1-osgi.jar
+SHA1-Digest: 38ENJ5qHIVCrqR0JedfZhF1OrHY=
+
+Name: mule/opt/aspectjrt-1.5.4.jar
+SHA1-Digest: nl6ahPnG4/P0dFrIM9MNvAjW4RQ=
+
+Name: mule/opt/cxf-api-2.5.1.jar
+SHA1-Digest: +5CZQ9CB8MGhOLMMKFRphAQjD/M=
+
+Name: mule/tooling/tooling-support-3.3.0.jar
+SHA1-Digest: Xjb3uylOWZyxgB5tQBBd/VguaGI=
+
+Name: mule/opt/xmltooling-1.3.2-1.jar
+SHA1-Digest: ZEbprH6QZn1og6xYPEAmAd7HXjQ=
+
+Name: mule/opt/scribe-1.0.3.jar
+SHA1-Digest: WszKCFrJG06HWZeqTeHxgp8mqrU=
+
+Name: mule/opt/cxf-rt-frontend-simple-2.5.1.jar
+SHA1-Digest: hg4uqj6GLeyFG2PyY5Le2U6/gI4=
+
+Name: mule/opt/abdera-spring-0.4.0-incubating.jar
+SHA1-Digest: dZ1YJXvuhvcfvtRZjxy1/7mdmKU=
+
+Name: mule/opt/geronimo-j2ee-management_1.0_spec-1.1-osgi.jar
+SHA1-Digest: GSsVJPOYd/nROR7iarM4lve1KoE=
+
+Name: mule/mule/mule-module-launcher-3.3.0.jar
+SHA1-Digest: cZXtePJzLyyfB/wQH0Kb++/x++Q=
+
+Name: mule/opt/jaxb-impl-2.1.9-osgi.jar
+SHA1-Digest: 1hJl5rmC2bPTQGOKPbVsD4E+SdU=
+
+Name: mule/opt/jibx-schema-1.2.3.jar
+SHA1-Digest: 9PJb7SGz/hf69B8xqluxljlSqKA=
+
+Name: mule/opt/jetty-6.1.26.jar
+SHA1-Digest: L1RuKJ/d1bH6sdQZn7tunvQ+5LA=
+
+Name: mule/mule/mule-module-cxf-3.3.0.jar
+SHA1-Digest: tevj+wSN9sAF59KTH/ngFqALujc=
+
+Name: mule/endorsed/xml-serializer-2.7.1.jar
+SHA1-Digest: yOHx57+HEoA3WzkndjQOWCISbmo=
+
+Name: mule/user/jruby-complete-1.0.jar
+SHA1-Digest: SH53/t8xNvplWRcxHG1oOECF2Lk=
+
+Name: mule/opt/bcprov-ext-jdk16-1.46.jar
+SHA1-Digest: +LcV6kty+fxnBi6fHAVpFNQLcoo=
+
+Name: mule/opt/commons-net-2.0.jar
+SHA1-Digest: H3WIev5YfffCQ18vbTGZ8FoyTI0=
+
+Name: mule/opt/antlr-3.1.1.jar
+SHA1-Digest: YFwfwCjXMhhm24+d4zZiEiGozUY=
+
+Name: mule/opt/hamcrest-core-1.1.jar
+SHA1-Digest: hgNAViJQZ40aNEkHrHV1TiWc2xQ=
+
+Name: mule/opt/jackson-core-asl-1.8.0.jar
+SHA1-Digest: YuiS2AQioTeIvyw2c6H831FUjv8=
+
+Name: mule/opt/cxf-rt-management-2.5.1.jar
+SHA1-Digest: 4Az9/j9ow/+M7mtT6ZRArg1m358=
+
+Name: mule/opt/jasper-6.0.29.jar
+SHA1-Digest: CSZ/pjHXYPCF4w0CEtY0ivcchuM=
+
+Name: mule/opt/spring-context-support-3.1.1.RELEASE.jar
+SHA1-Digest: /F3p/q0eVAVCmNN7GW+c1kztGb8=
+
+Name: mule/opt/cxf-rt-ws-rm-2.5.1.jar
+SHA1-Digest: T2G9LF5e/x8Ns4jcojiOmTWzOjU=
+
+Name: mule/opt/bcprov-jdk16-1.46.jar
+SHA1-Digest: zgkXkJQ1mVNcu03o7ehFNbDBJgw=
+
+Name: mule/boot/mule-module-logging-3.3.0.jar
+SHA1-Digest: URbsyov1sNcDBigIVo37OIGUIdc=
+
+Name: mule/opt/ant-1.7.0.jar
+SHA1-Digest: l0avGkheUM8Y3LIySJAyqEcGcGY=
+
+Name: mule/user/jython-engine-1.1-jdk14.jar
+SHA1-Digest: Csyv0cT8vLvJ7bVWy4oNKve5ilk=
+
+Name: mule/mule/mule-module-drools-3.3.0.jar
+SHA1-Digest: tLnLhbhFDOJBAwTYi2N9VxLzYt4=
+
+Name: mule/opt/geronimo-jms_1.1_spec-1.1-osgi.jar
+SHA1-Digest: DHqRLHxq3xvGuoJrXqTveQ/4Tnc=
+
+Name: mule/opt/saxon-dom-8.9.0.4-osgi.jar
+SHA1-Digest: 9Has8API61f5JH6EIm5H0lcuBI4=
+
+Name: mule/opt/spring-security-web-3.1.0.RELEASE.jar
+SHA1-Digest: Gh3bCyeY7GEQ+vi8otGDyYiL99E=
+
+Name: mule/opt/spring-tx-3.1.1.RELEASE.jar
+SHA1-Digest: QFXJUC3SC2MkwnTHPL5En+w6QWs=
+
+Name: mule/opt/saxon-8.9.0.4-osgi.jar
+SHA1-Digest: Y90sxf/IaVa3djotg6I5AdfWMrU=
+
+Name: mule/mule/mule-transport-http-3.3.0.jar
+SHA1-Digest: EwfjaO4NMYUC+aUi9LTZd0Q8u8Q=
+
+Name: mule/opt/cxf-rt-frontend-jaxws-2.5.1.jar
+SHA1-Digest: vzQG07DSgkAbEpwOB+TlCzsvZFY=
+
+Name: org/mule/tooling/server/Activator.class
+SHA1-Digest: h3c61YdhsGqgEXnzCPmbXc4vsng=
+
+Name: mule/mule/mule-transport-stdio-3.3.0.jar
+SHA1-Digest: 9FmZE8SFDYpRgHahhiqkoU7xnHI=
+
+Name: mule/mule/mule-module-spring-extras-3.3.0.jar
+SHA1-Digest: N0Fn5vlCBhk6dn8FBv3GUcBr+g4=
+
+Name: mule/opt/jbossjta-4.15.0.Final.jar
+SHA1-Digest: 4/6iZ+TxvaYHZWrJ62vse04inhs=
+
+Name: mule/mule/mule-module-json-3.3.0.jar
+SHA1-Digest: FVXgCNuW7SHPMKc/Mh5VliDbb8E=
+
+Name: mule/opt/jersey-client-1.6.jar
+SHA1-Digest: 5gX5A0xb3xFdMRABtgsWJ/FsUj4=
+
+Name: mule/opt/spring-security-core-3.1.0.RELEASE.jar
+SHA1-Digest: jMfjGiVew85qQveXR7l9FKo/iw8=
+
+Name: mule/mule/mule-transport-tcp-3.3.0.jar
+SHA1-Digest: Ra3yGZ1HoSa4Qd9X3vKQfFNoLM8=
+
+Name: mule/mule/mule-transport-jdbc-3.3.0.jar
+SHA1-Digest: B427HNHrkZy0+LnaZMkkG/49hko=
+
+Name: mule/opt/annotations-api-6.0.29.jar
+SHA1-Digest: wbtHpc86CfysVBF2VAQwUCBgkIw=
+
+Name: org/mule/tooling/server/application/ApplicationDeployer$Applicat
+ ionDeployerArguments.class
+SHA1-Digest: bn1YCQMsCpdET4HgPiw++e65szQ=
+
+Name: mule/opt/javassist-3.7.ga.jar
+SHA1-Digest: bScaZ6HYcYv7IlrOWiXxwJQnyfg=
+
+Name: mule/mule/mule-module-atom-3.3.0.jar
+SHA1-Digest: In6kWSd4LXXRDoOa0LbDAgWSTII=
+
+Name: mule/opt/jackson-jaxrs-1.8.0.jar
+SHA1-Digest: JJRiGSHSBRa1BShydlPjSPVNFYE=
+
+Name: mule/opt/ognl-2.7.3-osgi.jar
+SHA1-Digest: TY+1V9DsChe1O5L0Eo4TgpVjso0=
+
+Name: mule/opt/commons-codec-1.3-osgi.jar
+SHA1-Digest: BgnKOQh3H1i4qTDwUIBgCYH2Aa0=
+
+Name: mule/opt/mail-1.4.3.jar
+SHA1-Digest: gVS/jWZubbFUxUjcMajVEsJz9e4=
+
+Name: mule/opt/livetribe-jsr223-2.0.5.jar
+SHA1-Digest: hmZfgjXI4b0dPIEathbk11OCJfM=
+
+Name: mule/mule/mule-transport-sftp-3.3.0.jar
+SHA1-Digest: 2wTMXd0jDd1AOfoCUT2xajwelZM=
+
+Name: mule/opt/mx4j-tools-2.1.1-osgi.jar
+SHA1-Digest: FJW0bYrHyJW3io173wLXcveaXt8=
+
+Name: mule/opt/cxf-tools-common-2.5.1.jar
+SHA1-Digest: BgyM9V17ogbMMoErFtHBbPeXot8=
+
+Name: mule/mule/mule-transport-rmi-3.3.0.jar
+SHA1-Digest: 9pfuJwTm7TNI5VXUQaItckEmCFA=
+
+Name: mule/mule/mule-module-pgp-3.3.0.jar
+SHA1-Digest: B6wrLoEifDwY7YQdM3wYJzyvQVk=
+
+Name: mule/opt/commons-io-1.4.jar
+SHA1-Digest: qHYtB+ds/eI5Ulel2ke6fB29Pc4=
+
+Name: mule/mule/mule-module-scripting-3.3.0.jar
+SHA1-Digest: 0D37J51oGEddfl31HkCvbjYRLec=
+
+Name: mule/opt/juel-impl-2.2.1.jar
+SHA1-Digest: fDOnZ5FTOOqdueAgUquiyHKru0s=
+
+Name: mule/opt/spring-expression-3.1.1.RELEASE.jar
+SHA1-Digest: FIbXeH7E/42oy/h1LTDkyAhBKz8=
+
+Name: mule/mule/mule-module-sxc-3.3.0.jar
+SHA1-Digest: 2gy0GiYvEuc5U23u3IFQ5CSS8kk=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.server.3.3.0/po
+ m.xml
+SHA1-Digest: ebSIax2prQnMbSXmhe2abDffeHk=
+
+Name: mule/mule/mule-transport-vm-3.3.0.jar
+SHA1-Digest: kNjz2BoPMKytJ9N2unsRFeSTCFM=
+
+Name: mule/opt/geronimo-jta_1.1_spec-1.1.1.jar
+SHA1-Digest: qrqzFluOqTa5Ngq79EhFnA0EpaQ=
+
+Name: mule/opt/cxf-rt-databinding-jibx-2.5.1.jar
+SHA1-Digest: K4Te9O2k5gJCE7xl6hYkTjICE3o=
+
+Name: mule/opt/jetty-util5-6.1.26.jar
+SHA1-Digest: booBWPsRunyz7JBv0v82xg8ur9s=
+
+Name: mule/opt/jetty-util-6.1.26.jar
+SHA1-Digest: 5WQv4DmYFOFofVWjhiqlo0FyJqk=
+
+Name: mule/user/xmlunit-1.1.jar
+SHA1-Digest: ga7wMXsek4uB/xFAIDfzszIEqhY=
+
+Name: mule/mule/mule-transport-quartz-3.3.0.jar
+SHA1-Digest: lUb80nQzfscHiL4DivC1kvdYZt0=
+
+Name: mule/opt/drools-compiler-5.0.1.jar
+SHA1-Digest: UHt4m1ZD4444sxFHCyHIQsz9b5U=
+
+Name: mule/opt/stax-utils-20080702-osgi.jar
+SHA1-Digest: 20aSLgk/I1hrNB7bKtYv1Nd7nu8=
+
+Name: mule/opt/mx4j-remote-2.1.1-osgi.jar
+SHA1-Digest: UBwYKSqI49ETjZICQYmSKjjzegw=
+
+Name: mule/opt/jackson-mapper-asl-1.8.0.jar
+SHA1-Digest: ETUimHv6IEtSMCJdczgUBcknobY=
+
+Name: mule/opt/wsdl4j-1.6.2.jar
+SHA1-Digest: 3sFmn7aAG3Mo4BrXL8nhC2nqBsE=
+
+Name: mule/opt/jbpm-api-4.4.jar
+SHA1-Digest: ZN8r+qVh8rA7iDiJf5KbJSnDiGs=
+
+Name: mule/opt/xpp3_min-1.1.3.4.O-osgi.jar
+SHA1-Digest: 6pwPtFouGMGBMGmrD3xMbKptsQY=
+
+Name: mule/user/js-engine-1.1-jdk14.jar
+SHA1-Digest: UuIPqBvvLKOGgaeBeLWEke2d9BQ=
+
+Name: mule/opt/mx4j-impl-2.1.1-osgi.jar
+SHA1-Digest: 3Nt0C16lx7YQC0BSsksP+6Tau6A=
+
+Name: mule/mule/mule-module-spring-security-3.3.0.jar
+SHA1-Digest: 5tXJSoCoNIvsHnwqL5IdcpedDHA=
+
+Name: mule/opt/asm-tree-3.1.jar
+SHA1-Digest: yaXUM03fGU6kkvIhB9RRGaXFMi8=
+
+Name: mule/examples/order-fulfillment.zip
+SHA1-Digest: moawnpVz1Bp4Ye51LZceTZYXdR8=
+
+Name: mule/examples/mobile-app.zip
+SHA1-Digest: VYx++0hSM1IIgCpEVjebBlLiUHA=
+
+Name: mule/opt/jsr181-api-1.0-MR1.jar
+SHA1-Digest: nxD6Xm6vKt8TYFA8zPgH5ClR9F4=
+
+Name: mule/opt/hibernate-jpa-2.0-api-1.0.0.Final.jar
+SHA1-Digest: Zyit0sYPZiHDp3unH+b2t5jRTuA=
+
+Name: mule/opt/saxon-xqj-8.9.0.4.jar
+SHA1-Digest: c6/QQaGjnYmjt5cZ64q3Zp0EvmQ=
+
+Name: mule/opt/servlet-api-2.5-20081211.jar
+SHA1-Digest: Ir/3ADfh5vp+ZBMUlIlVLuIGRwI=
+
+Name: mule/examples/Flight Reservation Example.zip
+SHA1-Digest: 5jcFFMEOx+rduBiC8FAL0zPW3do=
+
+Name: mule/opt/sxc-runtime-0.7.3-osgi.jar
+SHA1-Digest: D9ULgJ6GL7dNa4XA1gXj8lQRpNQ=
+
+Name: mule/opt/ant-launcher-1.7.0.jar
+SHA1-Digest: 5+MHiSEeB0qnDvPq6lm9WyKn+no=
+
+Name: mule/opt/cxf-rt-databinding-jaxb-2.5.1.jar
+SHA1-Digest: vC3RxxWgkRQiMhB+5y5GIZZLoqE=
+
+Name: mule/opt/jbpm-pvm-4.4.jar
+SHA1-Digest: eCv7o0Sv7Z7vpkHDbHLt+DREvns=
+
+Name: mule/opt/spring-beans-3.1.1.RELEASE.jar
+SHA1-Digest: g9DlrcmHFHg/D7fYpel+9M8I2kk=
+
+Name: mule/user/jruby-engine-1.1-jdk14.jar
+SHA1-Digest: wWNeA2w6rVVmLJpbMyx0bwDUAy8=
+
+Name: mule/opt/oro-2.0.8-osgi.jar
+SHA1-Digest: oKVfZbuNYANWiDZC+x94lJGoY/E=
+
+Name: mule/mule/mule-module-management-3.3.0.jar
+SHA1-Digest: vZr0LvK+9DTbQT+pGxaNtllMGmk=
+
+Name: mule/mule/mule-transport-udp-3.3.0.jar
+SHA1-Digest: KuPUxH7plZvRmXYqubt64OwZOUA=
+
+Name: mule/opt/sxc-core-0.7.3-osgi.jar
+SHA1-Digest: KF5CB7bOBtQdFTiY2ubpRjfpRSc=
+
+Name: mule/mule/mule-module-builders-3.3.0.jar
+SHA1-Digest: wGOGTWn7I2pByZdXTocmKxHsihE=
+
+Name: mule/opt/commons-jxpath-1.3-osgi.jar
+SHA1-Digest: Q0lD2DRxnn4H7/whjhD2Nt9QM2U=
+
+Name: mule/opt/jibx-extras-1.2.3.jar
+SHA1-Digest: ZmJGKUIaMCwAdQOG+zLJrNdHzD4=
+
+Name: mule/opt/wss4j-1.6.3.jar
+SHA1-Digest: Tf7uebUWXWmHjGW7Q9PPumxQ2yQ=
+
+Name: mule/opt/quartz-all-1.6.6.jar
+SHA1-Digest: FfLBtcg/tVriH/oAnfgj8pPk1L8=
+
+Name: mule/mule/mule-module-client-3.3.0.jar
+SHA1-Digest: Xi39vmP/j+5ESH16r0ohMUTqxwM=
+
+Name: mule/opt/cxf-rt-bindings-soap-2.5.1.jar
+SHA1-Digest: KoTnAi3kyLKnSnNLM3DuJNAATB0=
+
+Name: mule/opt/neethi-3.0.1.jar
+SHA1-Digest: nkqdPrq1NyC8y6+sx0legBpiVsY=
+
+Name: mule/opt/jetty-annotations-6.1.26.jar
+SHA1-Digest: wjbOl2+x+ZnQszfm8TXLW8I07RY=
+
+Name: mule/opt/el-api-6.0.29.jar
+SHA1-Digest: 9JkHRpgngQa8lnuArJQR5OK0/Ek=
+
+Name: mule/opt/commons-collections-3.2.1.jar
+SHA1-Digest: dh6kBbmzfO1XPS3w0eOk4Pntxmg=
+
+Name: mule/opt/jsch-0.1.44-1.jar
+SHA1-Digest: LprgjeWnG9Dg07olWFmBgb+nHU4=
+
+Name: mule/opt/sxc-xpath-0.7.3-osgi.jar
+SHA1-Digest: QOp0BkLdKh8HdDgNVDVO+0JDezI=
+
+Name: mule/opt/saaj-api-1.3-osgi.jar
+SHA1-Digest: Qb0hDQD4fJ5FHBjkAR//BBg4CHw=
+
+Name: mule/opt/cglib-nodep-2.2.jar
+SHA1-Digest: Wa/terZefsZYXVvGBVbDy9IDUys=
+
+Name: mule/opt/cxf-rt-databinding-aegis-2.5.1.jar
+SHA1-Digest: TWC08lMz1DTvp3LSvdeQDjFGcsg=
+
+Name: mule/opt/spring-jdbc-3.1.1.RELEASE.jar
+SHA1-Digest: 70uAUtaRUvBgWUNBdKLfzNaiMgc=
+
+Name: mule/opt/cxf-rt-ws-security-2.5.1.jar
+SHA1-Digest: wIRNBQSaxm70BSGxDnwZ4uH9K+U=
+
+Name: mule/mule/mule-transport-email-3.3.0.jar
+SHA1-Digest: TunJSH+5tybmHMJFUhX8UmTkEfE=
+
+Name: mule/opt/joda-time-1.6.jar
+SHA1-Digest: WhhQTjTFy+klnW/QEjzPbxYRWkE=
+
+Name: mule/opt/jetty-plus-6.1.26.jar
+SHA1-Digest: DqKa4iwimkeH9y/aNR6VhgOYdBw=
+
+Name: mule/opt/bcmail-jdk16-1.46.jar
+SHA1-Digest: CKkjO/1q046jLfXm/5EDW2UFhLk=
+
+Name: mule/opt/jaxb-api-2.1-osgi.jar
+SHA1-Digest: utMPExEoWhlHMsvsoeBauHdcB4A=
+
+Name: mule/opt/geronimo-annotation_1.0_spec-1.1.1.jar
+SHA1-Digest: R8qnmTifadKXuGv5BSPUMVmcN5Y=
+
+Name: mule/opt/jersey-core-1.6.jar
+SHA1-Digest: CoguYiDl54EIgEJ7RZC1Bk8g12o=
+
+Name: mule/opt/mockito-all-1.9.0.jar
+SHA1-Digest: 0Thj+9fAvDKEXJ2KJh0DthvygZQ=
+
+Name: mule/opt/abdera-parser-0.4.0-incubating.jar
+SHA1-Digest: /zpT16cjxo0YUHzpinMy0UdB6dk=
+
+Name: mule/mule/mule-transport-servlet-3.3.0.jar
+SHA1-Digest: MIQcPS8nI2pobCQtvrujsZSfdOc=
+
+Name: mule/mule/mule-transport-jms-3.3.0.jar
+SHA1-Digest: 4YrN21xz+t+ljhByBLIzKSs+3V0=
+
+Name: mule/mule/mule-module-annotations-3.3.0.jar
+SHA1-Digest: 4EJd9i1gu3rx14/lQYQG7Q+iomk=
+
+Name: mule/opt/cometd-api-1.1.1.jar
+SHA1-Digest: 28bI+UYKJKANftK2WPxGsZ35IOs=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.server.3.3.0/po
+ m.properties
+SHA1-Digest: ow3gZdV5u8cMyRMo6KvX8ifFm8U=
+
+Name: mule/opt/bcpg-jdk16-1.46.jar
+SHA1-Digest: OMJVf/zI8qDUMmzLhhFphphndck=
+
+Name: mule/mule/mule-module-ognl-3.3.0.jar
+SHA1-Digest: pKCNJFaCitA7hIPcMfnUdw2cruQ=
+
+Name: mule/opt/ibeans-annotation-api-1.2.jar
+SHA1-Digest: ltZamfSAYC3yVoNaPQY/X2gI3Es=
+
+Name: mule/opt/jbpm-log-4.4.jar
+SHA1-Digest: VscL0wSC2ah6cBiNhhvkaeI7A4s=
+
+Name: mule/opt/staxon-0.7.0.jar
+SHA1-Digest: cdm9tqJEFTpVQAQa/4ytnPW6ZrE=
+
+Name: mule/boot/commons-cli-1.2.jar
+SHA1-Digest: K/lreqi2EcF30ylFKvHckz4UUBw=
+
+Name: mule/examples/Stock Quotes Example.zip
+SHA1-Digest: DY5DjXR6vtP//09QuFFkSSC3Cyc=
+
+Name: mule/opt/xml-resolver-1.2-osgi.jar
+SHA1-Digest: GnwOubK57VVzfObsiO9H5cb/Jqg=
+
+Name: mule/mule/mule-transport-file-3.3.0.jar
+SHA1-Digest: lNkbQIraeyNHU/jxvFmmF4CzYAY=
+
+Name: mule/opt/jbpm-jpdl-4.4.jar
+SHA1-Digest: Lec9BreUmeXVfllxu/FNEvLDsaM=
+
+Name: mule/opt/cxf-rt-bindings-xml-2.5.1.jar
+SHA1-Digest: vrkFIuJwPRoHxgSjqcWlt0VSDWM=
+
+Name: mule/mule/mule-module-ibeans-3.3.0.jar
+SHA1-Digest: mmtJm4xyHi1Ms4Lf0ZlQYCht7Uw=
+
+Name: mule/opt/geronimo-stax-api_1.0_spec-1.0.1.jar
+SHA1-Digest: HBcQk6i0OqVQxgUKxEGr5xPrtPI=
+
+Name: mule/opt/jaxen-1.1.1-osgi.jar
+SHA1-Digest: Tgk2etmCF1W6aZWPF9N5B35anMM=
+
+Name: plugin.xml
+SHA1-Digest: sOCYoSIsgZdLppYqNJ+twFGoEbs=
+
+Name: mule/opt/xmlsec-1.4.0-osgi.jar
+SHA1-Digest: 2hfv0Zdwi0HX69WA8PtusLx7AvA=
+
+Name: mule/mule/mule-tools-anttasks-3.3.0.jar
+SHA1-Digest: pcHlSmYNqXOO44A94QNIx35koZM=
+
+Name: mule/opt/asm-commons-3.1.jar
+SHA1-Digest: G2B/v+eInG/f8bfBZDmt4KYIaaw=
+
+Name: mule/opt/juli-6.0.29.jar
+SHA1-Digest: ZykY8cs8R0i/V5Wqr/QTwMquVZ4=
+
+Name: mule/opt/openws-1.4.2-1.jar
+SHA1-Digest: yDX9UhRjLtS++8oj3ULgYugM64U=
+
+Name: org/mule/tooling/server/SchemaLocationLookup.class
+SHA1-Digest: jUkh3Yy7ukheNJEEFx4pkaTKYis=
+
+Name: mule/mule/mule-transport-ssl-3.3.0.jar
+SHA1-Digest: ee++NlcOs9+LSlqmKn2nv/Ay3Zw=
+
+Name: mule/opt/jboss-logging-3.0.0.Beta5.jar
+SHA1-Digest: CH3pBdbxSo6G4e8aVTx0mZXDj9Q=
+
+Name: images/server.png
+SHA1-Digest: CIaDsB3RGHB95TNNqyJb8y9OYDQ=
+
+Name: mule/opt/asm-3.1-osgi.jar
+SHA1-Digest: o24IhlYmi3dAaLA6bAMfhY4BQBI=
+
+Name: mule/opt/xsdlib-2010.1.jar
+SHA1-Digest: Gvjq4i8DAF+dL1T2ltlGHf7u5ts=
+
+Name: mule/opt/commons-beanutils-1.8.0.jar
+SHA1-Digest: DGUdUQPGScErINU3MWQ+X//OtTY=
+
+Name: mule/opt/spring-aop-3.1.1.RELEASE.jar
+SHA1-Digest: PIYFjNrqMN815LlRphXgnrB9pYk=
+
+Name: mule/opt/commons-lang-2.4.jar
+SHA1-Digest: FjE+AqeTQ1AJ8eRY+kr12Hn2+xE=
+
+Name: mule/opt/cxf-rt-transports-common-2.5.1.jar
+SHA1-Digest: 6Uhv3Ipg31/cpFkOQAYA0PFEAq0=
+
+Name: mule/mule/mule-module-bpm-3.3.0.jar
+SHA1-Digest: +HHWB7+WjujS4x3134tIKAnkPoQ=
+
+Name: mule/opt/aopalliance-1.0.jar
+SHA1-Digest: AjW6i0iVEoBawTqPnqd6HKXr4+g=
+
+Name: mule/mule/mule-pattern-core-3.3.0.jar
+SHA1-Digest: pUDJNbSWOikegAi/1sv7qG/x8WU=
+
+Name: mule/opt/stax2-api-3.0.2.jar
+SHA1-Digest: 9QeRwcFjyclBD53Hj+Azl5WdCME=
+
+Name: mule/opt/spring-web-3.1.1.RELEASE.jar
+SHA1-Digest: exi7q5QRnorjIuhZnAZ8T0s3AfY=
+
+Name: mule/endorsed/xalan-2.7.1.jar
+SHA1-Digest: dfHYPOJ7q18p//A0/HSqn3Jm8io=
+
+Name: mule/opt/spring-security-crypto-3.1.0.RELEASE.jar
+SHA1-Digest: BdANnJrIBnwyO1F8H+OoGYS8/B0=
+
+Name: mule/opt/tomcat-util-5.5.23.jar
+SHA1-Digest: EkniWuuxU1i+3dI9TLCdeTx1wz0=
+
+Name: mule/opt/spring-jms-3.1.1.RELEASE.jar
+SHA1-Digest: IENb6ji3riYEJTCrDMung74GKx4=
+
+Name: mule/opt/drools-api-5.0.1.jar
+SHA1-Digest: elNupAeN69bLY7yXRYQY/orKI80=
+
+Name: mule/mule/mule-module-xml-3.3.0.jar
+SHA1-Digest: ksKobcFszmZl7i1ksLsUk14ieCo=
+
+Name: mule/opt/xmlpull-1.1.3.1.jar
+SHA1-Digest: K44jDSq2ROTsqpTbfN7bxAyAXfo=
+
+Name: images/server2.png
+SHA1-Digest: vw3O8Z7ASRFe7qniPtSGoxLsc3Q=
+
+Name: mule/opt/hibernate-commons-annotations-3.2.0.Final.jar
+SHA1-Digest: zpkGEUSPwoZUaeO2jS/nawUOPE8=
+
+Name: mule/mule/mule-module-jbossts-3.3.0.jar
+SHA1-Digest: EqV0ZN7yS4jPREBY9xXfz+Djd4o=
+
+Name: mule/opt/jgrapht-jdk1.5-0.7.3.jar
+SHA1-Digest: VNwrGxewA7b9YiEZRstJrNx9A2Q=
+
+Name: mule/opt/jibx-run-1.2.3.jar
+SHA1-Digest: T5iOkCdO7Tbhj2Bkz6LlF/+gS+I=
+
+Name: about.ini
+SHA1-Digest: 3DQwasa/vWYMh7onNfVPlC3MuM0=
+
+Name: mule/opt/spring-context-3.1.1.RELEASE.jar
+SHA1-Digest: 7LB4SgcSwb+8HCAY7u9ndoYTAOQ=
+
+Name: mule/opt/jasper-jdt-6.0.29.jar
+SHA1-Digest: URwufk7I1pEtsK2/YwUi9EhCTgc=
+
+Name: mule/opt/jaxws-api-2.2.1.jar
+SHA1-Digest: SbStrRona9nBVvPPSVQjgeg0gJs=
+
+Name: mule/opt/jsp-api-6.0.29.jar
+SHA1-Digest: qYlZ1X47yMzxU87r0W+tOPkUjHI=
+
+Name: mule/user/junit-4.9.jar
+SHA1-Digest: EBNifjmTMZhwhjoCADQARxdQWBU=
+
+Name: mule/opt/abdera-i18n-0.4.0-incubating.jar
+SHA1-Digest: Z2eCWylvxphWvylyLy2tGrecsrM=
+
+Name: mule/mule/mule-module-jersey-3.3.0.jar
+SHA1-Digest: ZNGx4IxK/duosqb5ikjaMGZmA34=
+
+Name: mule/opt/jaxb-xjc-2.1.9-osgi.jar
+SHA1-Digest: AU5mcM8emAz1dY9/AYUCe7PP+No=
+
+Name: mule/opt/axiom-api-1.2.5.jar
+SHA1-Digest: OXtU4M2VBKUiKWEk1WGO7vgqiEI=
+
+Name: log4j.properties
+SHA1-Digest: acTGd+uuWIdGUnqLQ8NQa1gaA6M=
+
+Name: mule/opt/commons-httpclient-3.1-osgi.jar
+SHA1-Digest: 5PVAvDsemkfCLAzujVGCjW9QOrQ=
+
+Name: mule/mule/mule-core-3.3.0-tests.jar
+SHA1-Digest: zr9S4EK0rSIv6dzi+yV9D/Q+ARI=
+
+Name: mule/boot/mule-module-reboot-3.3.0.jar
+SHA1-Digest: Hy2WNzn9nRqN6s/OpZKcqVJRajk=
+
+Name: mule/examples/order-discounter.zip
+SHA1-Digest: BwlM+S71FkuLnBVZp5faHgM2O8M=
+
+Name: mule/opt/jackson-xc-1.7.1.jar
+SHA1-Digest: XrYBikZDmuI6+jaZAFJ3yioPe0c=
+
+Name: mule/examples/Scripting Example.zip
+SHA1-Digest: +qnm5MiTaKuz7LSR6An5XzAuch8=
+
+Name: mule/mule/mule-transport-ajax-3.3.0.jar
+SHA1-Digest: lSTVFx3/EuQfDujM0O62nzigSHA=
+
+Name: mule/opt/msv-core-2011.1.jar
+SHA1-Digest: TxWzbY6PjnkrQVqXtDC9L1O1v1c=
+
+Name: mule/opt/spring-security-config-3.1.0.RELEASE.jar
+SHA1-Digest: /13RgvyMyeb3BIjv2818/n5Iz70=
+
+Name: org/mule/tooling/server/application/ApplicationDeployer.class
+SHA1-Digest: 97Q4KQEXhKIa0IB/1uz/6Vjxh6A=
+
+Name: mule/opt/abdera-client-0.4.0-incubating.jar
+SHA1-Digest: nTHzjbvLle/YH0NsNqSKOCnEwok=
+
+Name: mule/opt/jdom-1.1.1.jar
+SHA1-Digest: mYby20TH0YOoYectMAPuofz+epk=
+
+Name: mule/examples/Hello Example.zip
+SHA1-Digest: uukWeqqX0cflm6mu1bGf9S8zcSM=
+
+Name: mule/opt/isorelax-20030108.jar
+SHA1-Digest: shhZw1K9lZ6iLQay/oyTsuJFMbk=
+
+Name: mule/mule/mule-module-jbpm-3.3.0.jar
+SHA1-Digest: KRFA2/jf1kTgQlRVz/7cQrO5qU0=
+
+Name: mule/opt/bctsp-jdk16-1.46.jar
+SHA1-Digest: H0QM7eZfsi1AlUAbkJpfMLGRQt4=
+
+Name: mule/opt/mvel2-2.0.19.jar
+SHA1-Digest: 1/Pv0A8gL3NL24uR/Y3+KytU5Co=
+
+Name: mule/boot/wrapper-3.2.3.jar
+SHA1-Digest: hndVaZVkxIPijANRW5vAe+3E/lI=
+
+Name: mule/mule/mule-transport-multicast-3.3.0.jar
+SHA1-Digest: hFBOHsEYCqTf6C6WxJFXniksRys=
+
+Name: mule/opt/spring-core-3.1.1.RELEASE.jar
+SHA1-Digest: QZ6SM8jVX2SgxSS7lMO6h+UefZU=
+
+Name: mule/mule/mule-module-tomcat-3.3.0.jar
+SHA1-Digest: ZQM5IDKZ3T7y4pWNxFkWPMaW5BQ=
+
+Name: mule/mule/mule-transport-ejb-3.3.0.jar
+SHA1-Digest: XOqUdRpyJxbNudVI6jBFBQgVrFA=
+
+Name: mule/opt/jug-2.0.0-asl.jar
+SHA1-Digest: rfEfduUfBX6daQPdmpFhYmIDhsk=
+
+Name: mule/mule/mule-module-jaas-3.3.0.jar
+SHA1-Digest: u791rHh/dp7FZt9/5rXDpV9u5Ng=
+
+Name: mule/opt/commons-pool-1.5.3.jar
+SHA1-Digest: etRA1jxu6l558XN+JkgQx2JY0EI=
+
+Name: mule/opt/activation-1.1-osgi.jar
+SHA1-Digest: XhQbT1tExZj8zRQlUVBaYRbfMV4=
+
+Name: mule/opt/cxf-rt-transports-http-2.5.1.jar
+SHA1-Digest: wUCKBysLWgaLXvuJ0KnP9L9VJ5Y=
+
+Name: mule/opt/woodstox-core-asl-4.0.8.jar
+SHA1-Digest: q3mhWjVqbzC8HHssorWwZ6eCbwE=
+
+Name: mule/examples/legacy-modernization.zip
+SHA1-Digest: Jh0pCyfYOnWqBgOrghn1/hvJHwY=
+
+Name: mule/examples/Foreach Example.zip
+SHA1-Digest: Ed7wx5abC5lK2n6SzccRpmE7lUM=
+
+Name: mule/opt/cxf-rt-ws-addr-2.5.1.jar
+SHA1-Digest: hOago7HSP0yu7t3UlOcX6wtO4cI=
+
+Name: mule/opt/saaj-impl-1.3-osgi.jar
+SHA1-Digest: zu0MQtgrr3l/UBVb3wynIwcGaTg=
+
+Name: mule/opt/hibernate-core-3.6.0.Final.jar
+SHA1-Digest: 2PVQlsgXnCT+onlXEXHY5alpL+g=
+
+Name: mule/opt/xpp3-1.1.3.4.O.jar
+SHA1-Digest: HBZSYu2sHB5PCmfBZDxLdHYYcDQ=
+
+Name: mule/opt/groovy-all-1.8.6.jar
+SHA1-Digest: lqJr+m5a6i48Rt9EoZ3pOirNI2Y=
+
+Name: mule/opt/juel-engine-2.1.0.jar
+SHA1-Digest: HDh61yxWPn6esB5jSJVNL2kMEJ8=
+
+Name: mule/mule/mule-transport-ftp-3.3.0.jar
+SHA1-Digest: GwOhI/7b/eu1kxKjJYEkkDV7KOw=
+

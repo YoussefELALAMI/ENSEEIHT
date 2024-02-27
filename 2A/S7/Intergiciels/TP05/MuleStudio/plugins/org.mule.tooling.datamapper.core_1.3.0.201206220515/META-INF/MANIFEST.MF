@@ -1,0 +1,3146 @@
+Manifest-Version: 1.0.0
+Export-Package: com.mulesoft.mule.datamapper,com.mulesoft.mule.datamap
+ per.api,com.mulesoft.mule.datamapper.api.exception,com.mulesoft.mule.
+ datamapper.clover,com.mulesoft.mule.datamapper.clover.api,com.mulesof
+ t.mule.datamapper.clover.impl,com.mulesoft.mule.datamapper.clover.imp
+ l.graphfactory,com.mulesoft.mule.datamapper.clover.impl.graphprovider
+ ,com.mulesoft.mule.datamapper.config,com.mulesoft.mule.datamapper.con
+ fig.spring,com.mulesoft.mule.datamapper.impl,com.mulesoft.mule.datama
+ pper.ui,com.mulesoft.mule.datamapper.ui.actions,com.mulesoft.mule.dat
+ amapper.ui.editor,com.mulesoft.mule.datamapper.ui.editor.association,
+ com.mulesoft.mule.datamapper.ui.editor.association.actions,com.muleso
+ ft.mule.datamapper.ui.editor.association.commands,com.mulesoft.mule.d
+ atamapper.ui.editor.association.listeners,com.mulesoft.mule.datamappe
+ r.ui.editor.lookup,com.mulesoft.mule.datamapper.ui.editor.lookup.comm
+ ands,com.mulesoft.mule.datamapper.ui.editor.metadata,com.mulesoft.mul
+ e.datamapper.ui.editor.metadata.commands,com.mulesoft.mule.datamapper
+ .ui.editor.metadata.model,com.mulesoft.mule.datamapper.ui.editor.meta
+ data.service,com.mulesoft.mule.datamapper.ui.editor.metadata.service.
+ impl,com.mulesoft.mule.datamapper.ui.editor.properties,com.mulesoft.m
+ ule.datamapper.ui.editor.properties.commands,com.mulesoft.mule.datama
+ pper.ui.editor.rule,com.mulesoft.mule.datamapper.ui.editor.transform,
+ com.mulesoft.mule.datamapper.ui.editor.treeeditor,com.mulesoft.mule.d
+ atamapper.ui.editor.treeeditor.commands,com.mulesoft.mule.datamapper.
+ ui.graph,com.mulesoft.mule.datamapper.ui.graph.impl,com.mulesoft.mule
+ .datamapper.ui.graph.service,com.mulesoft.mule.datamapper.ui.graph.se
+ rvice.impl,com.mulesoft.mule.datamapper.ui.preview,com.mulesoft.mule.
+ datamapper.ui.preview.json,com.mulesoft.mule.datamapper.ui.preview.xm
+ l,com.mulesoft.mule.datamapper.ui.utils,com.mulesoft.mule.datamapper.
+ ui.view,com.mulesoft.mule.datamapper.ui.widget,com.mulesoft.mule.data
+ mapper.ui.wizard,com.mulesoft.mule.datamapper.util
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,lib/mule-module-data-mapper.jar,lib/XmlSchema.jar,
+ lib/gson.jar,lib/poi.jar,lib/poi-ooxml.jar,lib/commons-beanutils.jar
+Built-By: jorged
+Eclipse-BundleShape: dir
+Bundle-Name: Data Mapper
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources;bundle-version="3.6.0",org.eclipse.ui.navigator,org.ecli
+ pse.jface;bundle-version="3.6.0",org.eclipse.jdt.core;bundle-version=
+ "3.6.1",com.cloveretl.gui;bundle-version="0.0.0",com.cloveretl.gui.co
+ mmercial;bundle-version="0.0.0",org.mule.tooling.ui;bundle-version="1
+ .0.0",org.mule.tooling.messageflow;bundle-version="1.0.0",org.mule.to
+ oling.utils.epl;bundle-version="1.0.0",org.eclipse.jface.text,org.ecl
+ ipse.ui.editors,org.mule.tooling.model;bundle-version="1.2.0",org.mul
+ e.tooling.core
+Bundle-Vendor: MuleSoft Inc.
+Bundle-Version: 1.3.0.201206220515
+Build-Jdk: 1.6.0_33
+Bundle-Activator: com.mulesoft.mule.datamapper.ui.Activator
+Bundle-ManifestVersion: 2
+Import-Package: groovy.lang,org.apache.commons.io,org.eclipse.jdt.ui,o
+ rg.eclipse.ui,org.eclipse.ui.dialogs,org.eclipse.ui.forms.editor,org.
+ eclipse.ui.ide,org.mule.tooling.core,org.mule.tooling.core.model,org.
+ mule.tooling.core.module,org.mule.tooling.core.utils,org.mule.tooling
+ .ui.modules.core.metadata
+Bundle-SymbolicName: org.mule.tooling.datamapper.core;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/INewDataMapper
+ FlowHandler.class
+SHA1-Digest: D1sPjHwByJ7+yy3JB1vAFIUjn5s=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewDataB
+ aseLookupPresenter$3.class
+SHA1-Digest: lZCeaYfVbYIsVCJMISNFJZSOd0Q=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/UnWrapInt
+ oCollectionAction.class
+SHA1-Digest: VPJSyLPQi3mNG/7MkEvm2f4f00Y=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ ContextMenuProvider$1.class
+SHA1-Digest: W6gvmC+0oXHZE3Xovw70IOYHwYo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IFieldMetadadaAssig
+ nedListener.class
+SHA1-Digest: BvAnc0ieH/fLqefNx5hWux7lEKs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$5.class
+SHA1-Digest: WeFigyxElFslBPCA6czL1Pt5s48=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/Chang
+ ePrintHeadersCommand.class
+SHA1-Digest: V4xMToZ5ljC5tv1N/LLfImEp2r0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/GraphBuilderException.clas
+ s
+SHA1-Digest: Uloig9UTyikSUR3GPrrHwoCOvQM=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/TreeReaderMap
+ pingFactory$1.class
+SHA1-Digest: TkhuYJxcmgJxF9eUruJWv1lVUTI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ILookupField.class
+SHA1-Digest: Ju39XZdJSiIaHqu2rvLTcXf1ewc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider.class
+SHA1-Digest: uoM8PB1t4DlFaWHAk9+b2ocmnvU=
+
+Name: lib/poi-ooxml.jar
+SHA1-Digest: +x78ClcFo8ZG2EeKtXeYFR7ACLA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/BeanInfo.class
+SHA1-Digest: z0NTcEtRKonoY7gErUmini+jmZE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/SetFiel
+ dIndexCommand.class
+SHA1-Digest: Pr+dx//mtzfS6MO9x21ITpHMj9o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/listeners/Sou
+ rceTreeNodeInfoMessageLogger.class
+SHA1-Digest: 6ptFYuNihjCjEJ+vO0J/PmGJJ/c=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider.class
+SHA1-Digest: A09fovWLZ3WabBsGZRCr2TglZ4Y=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 13.class
+SHA1-Digest: 3t9EALT2rC0V50rozWNJt1/VXpQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IMappingFormat
+ Aware.class
+SHA1-Digest: 5iFjAK4BrpcW4QqxlhbT87aBPac=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ FieldRefactorService$3.class
+SHA1-Digest: vOIDHFx8AOnzKgyKmg6X4KRPRuY=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/GraphBuilderImpl.clas
+ s
+SHA1-Digest: n1d88vfndGCNzEbxFM7OvjoOjp0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/Clear
+ AssignmentAction.class
+SHA1-Digest: 0YPFOh7OWdWFg2q2e5wcqpcrOBA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/EditUser
+ DefinedLookupPresenter.class
+SHA1-Digest: SKEabzCYRbTf+EV2zlz+DX+u3yU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/ClassChooserCo
+ mposite$1.class
+SHA1-Digest: GnmTZWu980PT+2FkZ8qeDT25+Rc=
+
+Name: com/mulesoft/mule/datamapper/ui/actions/SaveAction$1.class
+SHA1-Digest: 0hOFb4QmloY3LKDHBlerzZjIDmU=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel.class
+SHA1-Digest: 2BbBgOvsVQFrV7df2XY2cireu4M=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataEditor$3
+ .class
+SHA1-Digest: 2UyBItUBxcMPDKUVIcwzo7IIQ4g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/MappingArrowS
+ tyleProvider.class
+SHA1-Digest: ximQrCB9KOXco0RjNlT1uS2ttzM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListLabelPr
+ ovider.class
+SHA1-Digest: flfEJpGxZip8W+HmbVR4qBtYL/s=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/MetadataAssoc
+ iationLabelProvider.class
+SHA1-Digest: FdQWo+fsC/+sZ7lEd50o0/WHNKk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$3.class
+SHA1-Digest: 9mb+nqVcS8Z9wiBtVhpa21TM+hs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/MetadataRuleEditorDi
+ alog$4.class
+SHA1-Digest: 7Sa7HhxVCg9H+/xh4fZ/nY+7poM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$2.class
+SHA1-Digest: LRPuFs4rPbj1S0drwLVnPmUDMZc=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/InputArgumentAccessor
+ Decorator.class
+SHA1-Digest: XxEFj4WLq61O8Zn/ba80FkQq8Ow=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperWizard$2.class
+SHA1-Digest: dQHob7JtyCijYMJCHIP/N/E0uPU=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperWizard.class
+SHA1-Digest: /jaP98v3ARd0Tv6PA7Dt8iCLeaM=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ResourceTreeViewer.class
+SHA1-Digest: kv8dgj6HGB1Ovk9lho7utIyLsZM=
+
+Name: icons/clear-16x16.gif
+SHA1-Digest: +t8/f2vNMeMGz3NcpdPCXlgSjzQ=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/LookupType.class
+SHA1-Digest: ypIlTBZC6ileUyLuUSEzPJmySH0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/action/Remov
+ eElementAction.class
+SHA1-Digest: TQCuUPxRQ7GjyRCyatvzqjWPa+g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MappingFormatSup
+ ports.class
+SHA1-Digest: L0qYGKJTHDMoFk34bSnjhT5XtNE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$2.class
+SHA1-Digest: Z20er+fgaTS7CVaQgco/mE68LtA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/XlsInfo.class
+SHA1-Digest: q18llKFb8pkmESonGTR0ExIRjpw=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.datamapper.core
+ /pom.properties
+SHA1-Digest: xxBlBnwa6VIlQnod2i2OyTZRBGs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/RemoveMetadataGraph
+ Event.class
+SHA1-Digest: L8+FHbAz17Vxx3yBdh/toLcJNtY=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/Writer.class
+SHA1-Digest: sIdkxTXg1wBdzorh9LwbZG9J8hw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/TreeWriterMap
+ pingProducer$ParentKeyReference.class
+SHA1-Digest: 1CDDe9w4rC9fNWmldbpNO5ljILE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ FieldRefactorService$1.class
+SHA1-Digest: OOT+yr0mUyGXl9xL0EfbYg//o8M=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IDataMapperFlowChangeListe
+ ner.class
+SHA1-Digest: qVUJwNdefIf2ndgUayZYZLbKlW4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupPresen
+ ter$LookupKeyContentProvider.class
+SHA1-Digest: Nfq6fqXK68xMWlT/5JAmRUANAvA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$16.class
+SHA1-Digest: UgYaW6TBotLicbj+51gacd5JDhw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/AddTreeMetadataF
+ ieldPresenter.class
+SHA1-Digest: cJIC5i6XWKpE5y5j1KHrBS3kaB4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$7.class
+SHA1-Digest: 1xm/2hIV3SdJHvv8HDKZ4wLA2QI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/DataBaseLookupEdit
+ or$1.class
+SHA1-Digest: NkXKBhHPHUzqLPAhL18vb+DsFH8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$3.class
+SHA1-Digest: CJvOLkzxsRos6ye24l2VLRMl1dY=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/BeanMetadataPropertiesPan
+ el.class
+SHA1-Digest: gvsWztv40FZ4YCUBMcov4Eb13Uw=
+
+Name: icons/checkboxselected.gif
+SHA1-Digest: Ka6cTIH6PVjzjBFO5FbyHku+EDU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IBeanInfo.clas
+ s
+SHA1-Digest: 8+8LsaT7Ckwbm76WJCI28AcVPJo=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IXMLWriterInfo.class
+SHA1-Digest: O7zM2f/n0H5bRCxKVCFamJYdMbA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$6.class
+SHA1-Digest: eEGVl2zAfdCh8EfAO4YHcKnuU7o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/FieldMappingPr
+ opertiesEditor$2.class
+SHA1-Digest: rDng//K0Hloa8bDEpKrwER/ltBk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/IEnab
+ ledAware.class
+SHA1-Digest: zz/xQGmphXg4lKCyCQFjCxywWzE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$8.class
+SHA1-Digest: 5RNl3UJeJWAVmFvrEpPJUzCnUag=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/Regen
+ erateMetadataCommand.class
+SHA1-Digest: 4SiaahivomRzDVDoU8jVzmE/HoY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/commands/Chan
+ geMappingCommand.class
+SHA1-Digest: j6ow8tsHD2M3WywlfIFMm46l/aQ=
+
+Name: org/mulesoft/mule/metadata/TypeDefinitionHelper$2.class
+SHA1-Digest: kXg78aYOCvLeoTPQQOnUeGqEzfA=
+
+Name: org/mulesoft/mule/metadata/Type$4.class
+SHA1-Digest: ffRFg62vBxx7HSruYl8StTfb7A8=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/JSONMetadataPropertiesPan
+ el.class
+SHA1-Digest: l4oCDmo82SjeVI4XMEso6Pt4+Bk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/OutputMappingF
+ ormatRepository.class
+SHA1-Digest: gpKBHxFxlt7AYxveCsbFSe9JaMg=
+
+Name: com/mulesoft/mule/datamapper/ui/event/IEventHandler.class
+SHA1-Digest: AeSFfx/2GVojtC75ftUDPVZ9bX4=
+
+Name: icons/3_blue_dots.gif
+SHA1-Digest: Ub0k4RgWQ57BlLxDXQopo4rAAO0=
+
+Name: icons/hide-unrelated-elements-16x16-1.png
+SHA1-Digest: ZI9s2e5dq6H5l8rONQAbaajae14=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/AddInputArgumentComman
+ d.class
+SHA1-Digest: VHgqjiRk2N5u+trddXqL4ZAsTVI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperValidator.class
+SHA1-Digest: 24tMOexdY5rOLWiQ0usjMyuMhGE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/IDataMapperEditor.class
+SHA1-Digest: uXTmrLu7r1IoMj1+mRXuzYx2xOQ=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/NodeInfoFactory.class
+SHA1-Digest: DNNLTFPEVM3Y0YQ7n9/kQaIivzg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 10.class
+SHA1-Digest: nprVqap3oVjs6SNKjIXCdDvpH+M=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XMLMetadataPropertiesPane
+ l$2.class
+SHA1-Digest: bGGlw+k3IYr5iGevYsSlJOWkWcU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/NodeInfoFactory$2.cla
+ ss
+SHA1-Digest: Tg/vO9s5ngQCXjet//lx4oJA1z4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/MappingCodeChangedE
+ vent.class
+SHA1-Digest: bXqWXfDsIOpImU1U9bc7ASmP9as=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/DefaultDataMapperFlowChang
+ eListener.class
+SHA1-Digest: EZfV5KaPlrTwZLcdNFeVX6Dk58k=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/XLSX2CSV.class
+SHA1-Digest: /ZaH6v8cAldY3pBrtgWMM/vmW+E=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowFileContentJob.class
+SHA1-Digest: I9IIxS4gjQWyAGncWypmuQnSnms=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/XMLPropertiesE
+ ditor$1.class
+SHA1-Digest: 18VbYXCUTpDtixRDq+sXOoxbdGI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/AddTreeMe
+ tadataFieldAction.class
+SHA1-Digest: t/vVAvktNm3M7lgYjN6Uqb1T4b8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/listeners/Ref
+ reshTreeAssociationListener.class
+SHA1-Digest: a4eM4JaWZq/BPiGGmgFoSUN8pHg=
+
+Name: org/mulesoft/mule/metadata/Type$3.class
+SHA1-Digest: EAOoACX3WMWzOr9dTlEhbZRH7SQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/ChangeM
+ etadataDataStructureCommand.class
+SHA1-Digest: Iz4tZIDFoinOzoySpXXYkYavt34=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/listeners/Tre
+ eAssociationDropListener.class
+SHA1-Digest: 9uRuve9HZdKeGB4AWkuYDcgtWj8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IEncodingModel
+ .class
+SHA1-Digest: 1lwwWpmUxQjdF+kDr3pGX9yf3Dk=
+
+Name: com/mulesoft/mule/datamapper/ui/IDialogEditorPresenter.class
+SHA1-Digest: g8MCguznnuflCTYDBGqzYphbISE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/SimpleLookupLabelP
+ rovider.class
+SHA1-Digest: /t4ne1cfiq7mdAJI77ZF53XOv3k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IAddMetadataFieldLi
+ stener.class
+SHA1-Digest: EIwsJgwQ8L5xeOFZFblAiWxbk/8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/commands/EditM
+ etadataRuleCommand.class
+SHA1-Digest: HcG3EKXvNNXwHvq21NvoEVfy0Eg=
+
+Name: org/mulesoft/mule/metadata/Type$2.class
+SHA1-Digest: m+XS+JfbBACO/R0FLDW4u8pUguw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/RemoveRuleAc
+ tion$1.class
+SHA1-Digest: zpoNWRlplERq+HfsI+RBMhofT+Y=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$4.class
+SHA1-Digest: L5VxzEnzblxyVVLQyoskGAuJw7Y=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/DropdownAction$1.class
+SHA1-Digest: Azj2SNSwdmhDHxWpRyJ/7fDUbxk=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/TreeMetadataUtils$2.class
+SHA1-Digest: yxgQvrx2invnFKleUHowl0BcSIQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/LookupTableTreeN
+ odeBuilder.class
+SHA1-Digest: u0l0SLVKs/SXcwBj7kQp17q0SlM=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/BeanMetadataPropertiesPan
+ el$1.class
+SHA1-Digest: 4JoJfGX0DWVq3HoGp7M67yJbPEE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/AddRuleActio
+ n$2$1.class
+SHA1-Digest: Ca1+2FHoh4TxItUh79kD5oaL/pI=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 10.class
+SHA1-Digest: hIwa3GvLT0Hqvhz0sGrxXkdHo4w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Typ
+ eMatch.class
+SHA1-Digest: VbgWNTrwNjj2FagLN0g3HWfjvyc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/DataBaseLookupEdit
+ or.class
+SHA1-Digest: lMxvHuVqb9iCfexteSypwFyCxyw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/TreeMetadataPatt
+ ernFilter.class
+SHA1-Digest: skgLLCoAzcLpWBpQfHjImIXDyj4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/EditRuleActi
+ on.class
+SHA1-Digest: 1rcZV6TTCVmde8+3pJ1IXxAf3aM=
+
+Name: icons/beans_titleArea.gif
+SHA1-Digest: 06y5bMD2VT7yd9j1/AfA8q7Sm5k=
+
+Name: org/mulesoft/mule/metadata/TypeDefinitionHelper$SchemaObjectResu
+ lt.class
+SHA1-Digest: CLAoROyHcfmeJEOFnPVWigaabEA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AssociationEd
+ itorDialog$2.class
+SHA1-Digest: adlggW+3MlyMT5PBwPYE0YeNcZ4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/LookupTableAdaptor.cl
+ ass
+SHA1-Digest: spEd570HYPhz3WghvVm5nplITYc=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/CIdentifierVerifyListener
+ .class
+SHA1-Digest: JByGqxZWwi3S5smCpHCzzRAf6nc=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/IArrowSelectionListener.c
+ lass
+SHA1-Digest: eFpmVUDcb25efhbodKvNfbANtMs=
+
+Name: lib/XmlSchema.jar
+SHA1-Digest: pmerIx1jMxBduG7+SpZyT1CRPh8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/MetadataRuleEditorDi
+ alog$2.class
+SHA1-Digest: rm6ujDF+J7cA+J7mMFN5hECnsW8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ HighlightUsedFieldsService$4.class
+SHA1-Digest: rd8TCQpeqHq5goZrzxxRpHz0o/8=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/InputArgumentEditorPre
+ senter$1.class
+SHA1-Digest: FRlYeoRhmJS+dNz3cW/hkpID7Fc=
+
+Name: icons/new-datamapper-16x16.png
+SHA1-Digest: yGKDwCacf+2W+XtKIdBCRhEcPKQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Fla
+ tFileAnalyzer.class
+SHA1-Digest: w6uc88pVLWpl8esqtqGytJBrYwg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/transform/HierarchicalFie
+ ldTE.class
+SHA1-Digest: BpJo0TeK/FfU4GbP2CMc8izCHpc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ ContextMenuProvider$1$1.class
+SHA1-Digest: wM/X+EFaM2pOC49Sk/q8cuRS8kY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/AddFiel
+ dCommand.class
+SHA1-Digest: WsOOncj8OI/lNTihFok6xwTC2No=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XMLSchemaGeneratorDialog.
+ class
+SHA1-Digest: sHVz4HksF3qZTVhTWriZMAT18s8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IXMLInfo.class
+SHA1-Digest: SdAaqflbV6UjpxRqMHBcMaU7f3g=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/LoggerUtils.class
+SHA1-Digest: K0TaPFCkhAiZRrbdtfjnyekYZro=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/JSONProperties
+ Editor$1.class
+SHA1-Digest: lFH5CQo5Rr1sn8Nc9zCXpnbbv94=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/AddRuleActio
+ n.class
+SHA1-Digest: PZWD+plorQ3g2lcasHp9LjVUp3Y=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MappingFormat$6.class
+SHA1-Digest: AuN6RcGfxJ5bkuk58S5AQM5qd20=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/NewTreeMetadataF
+ ieldEditor.class
+SHA1-Digest: 4QnsQYIrKzijCVFKkFXUjCugQzE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/JSONWriterInfo.class
+SHA1-Digest: s+usUbbtm3Bgbp1MXrDcSlBuDd4=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/JSONMetadataPropertiesPan
+ el$1.class
+SHA1-Digest: DQfBSfDVxdQC3aMkVEcpKyz5ukU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/InputArgumentElement.
+ class
+SHA1-Digest: JSZGJi/qHq68eWMNZDJgZJxr0N8=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$6.class
+SHA1-Digest: /Ma6phvhEtrXADpc0GZozJ/Vlao=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IEncodingComponentProvider
+ .class
+SHA1-Digest: Afsw421KVG0ONH/9kCTf5JRQ4m0=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/MapMetadataPropertiesPane
+ l$1.class
+SHA1-Digest: 6TnBlo39DxdhjMn4kqyWO1G9KOs=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 8.class
+SHA1-Digest: ztLujB8nPu7A3uWV+Z7opxQ//ps=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/TreeMetadataMa
+ ppingEditor$1.class
+SHA1-Digest: qqjYA57mAQkC5OjAybnZHbyVE2o=
+
+Name: icons/map.gif
+SHA1-Digest: hL3KxXNgwSlaK8v/VAptQyNblic=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/AssociationEditorHelper$2
+ .class
+SHA1-Digest: jV9gNToodjBt0uZZeATIRAO6WnI=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/RunGraphJob$Launch.class
+SHA1-Digest: L9AimNVsGVx2041/8+lYB5oNFBU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/NameLabelPro
+ vider.class
+SHA1-Digest: obSKNCBq914WWcq/w1ULd0lMqvQ=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/DataMapperComponentUtils.c
+ lass
+SHA1-Digest: kvcAiUnwDdACrQ9hPHsxJV6QAQU=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite$1.class
+SHA1-Digest: mH2Z57zY3NovdkN1Zoh4d7yoBAY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/EditTre
+ eMetadataFieldCommand.class
+SHA1-Digest: NAy6AkogkHoSvJ8/qOSIkPdgUp4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IDataMapperCompiler.class
+SHA1-Digest: MJT4cMgQ0lREB+7Yp81tllHtfcc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IMapInfoAware.
+ class
+SHA1-Digest: T72VP73ej/Pa40ntc2lyvemQ/RI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 6.class
+SHA1-Digest: ORXpz+o7NMSghyr8fdZhdDHJk7o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/BeanProperties
+ Editor.class
+SHA1-Digest: 0HCae4EfzW+N8Ju7azCVv/WHhDQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ HighlightUsedFieldsService$2.class
+SHA1-Digest: PmwOUiLJIq4OIjxxb7exCm6e8SU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AssociationEd
+ itorDialog$3.class
+SHA1-Digest: q+bvg4x5lheSC0uki5PBk5bYk7I=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/ITreeMetadataFormatProper
+ tiesPanel.class
+SHA1-Digest: bSYsiSmwdTmVGD+S7zfT0VyYXq4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperValidator$1.cla
+ ss
+SHA1-Digest: CdYRAI56jsabZh5IglMtplh6vVk=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/IBeanWriterInfo.class
+SHA1-Digest: abmQsUUEVXSsifAQPBcbI8Dn2BQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/BasicPropertie
+ sEditor.class
+SHA1-Digest: Gf6GU71YdgIvCnrEBrjtvKxAZoc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor.class
+SHA1-Digest: th45GRemou+RRArkpePj2aIjN/E=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Typ
+ eRanks.class
+SHA1-Digest: LcbQ3+VASVzuKWHBXADmAS2vnEM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/Chang
+ eDelimiterCommand.class
+SHA1-Digest: h0GdlWPM5QopT/x0qUJ3WtM+xlY=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/MapMetadataPropertiesPane
+ l$2.class
+SHA1-Digest: b1yEaBVzwso46A9stgfmaAedWCY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/LookupTableAs
+ signment.class
+SHA1-Digest: FFTPjxXjBtIq5yn1JOB/Z74nS6w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IInputArgumentListe
+ ner.class
+SHA1-Digest: m7/n019upK0rPsLtX1FhNB4HgiA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/model/TreeModelU
+ tils$1.class
+SHA1-Digest: I/w2aeoM/c5Tii2BaB/NFGiOWz4=
+
+Name: icons/map_element.gif
+SHA1-Digest: r5GOnNYOBVJQ8Bak4cTGas/Ok0I=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/MoveMetad
+ ataFieldDownAction.class
+SHA1-Digest: AHUBGiBHNWzCBquvqLqeO8m0eKU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/AddMetadataFieldEve
+ nt.class
+SHA1-Digest: s/J61h8L64+PU5xo237lO1GtycU=
+
+Name: com/mulesoft/mule/datamapper/ui/IActionHandler.class
+SHA1-Digest: osY2D5cpbELug702epK5odqwKUQ=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/CSVInfo.class
+SHA1-Digest: IgbEiWyUbCWxhOyuz0Z6Fh03dt4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/Metadata
+ Producer.class
+SHA1-Digest: 7z+wB6RcPm146DPTdlnnu6+SbF4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupPresen
+ ter.class
+SHA1-Digest: 8pLU6iDh4xiFbHbNZsyZBhvs0dY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewCSVLo
+ okupPresenter$LookupTableChangeListener.class
+SHA1-Digest: /g5nQyzdZsBSuOYo9/CX2t2S+qU=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$9$1.class
+SHA1-Digest: ENnmW5MUnCWh5TjZi0n+L76W/fo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ ContextMenuProvider.class
+SHA1-Digest: yfnUn2tLeyBpLBd4zUdYH7UAALE=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/TreeMetadataUtils.class
+SHA1-Digest: q1H3rlJlVlrgmPHPG+husAzdbFc=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$7.class
+SHA1-Digest: /DpeYO8QbU5P39P5RnN0eyBWwf4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IUserDefinedLookupTable.cl
+ ass
+SHA1-Digest: 9t5eqpOACcGmYk9XP8rUk7SM1Qo=
+
+Name: icons/green-tick-12x12.png
+SHA1-Digest: 17Nz6xhR1yshm4cuuz2jRr85Dsw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MetadataFactory.class
+SHA1-Digest: /pGDIiN1kA9Ts5VKzGxoSU+n5ic=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite$2.class
+SHA1-Digest: VPcI09GLXgz2VdQ51bNE2sXFbnc=
+
+Name: about.ini
+SHA1-Digest: VAqzqNJri1iBdDh+E5VQIyzXSrE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Uni
+ queNames.class
+SHA1-Digest: WPrUT9roXrdKihQ6y17T43126zQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/RemoveF
+ ieldsCommand.class
+SHA1-Digest: 9cQmmwazJCXYcCUN1Tl79vUWSSc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataTreeNode
+ .class
+SHA1-Digest: QFsZ2nqGiqf0GopQrit6He4NMgo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 9.class
+SHA1-Digest: Nap1Mdpdo5yifa+pDIo3eICCkws=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/MapMetadataE
+ ditor.class
+SHA1-Digest: uLncPD1pKoEo0Ga4vmfIfB5Ot2g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/AssociationEditorHelper$1
+ .class
+SHA1-Digest: VCnxnXrgXI7Sw9AfJ0oxo9GG8r4=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/InfoMessage.class
+SHA1-Digest: agGMm6tV36F76MFiuPgJnANN8VM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/action/AddEl
+ ementAction.class
+SHA1-Digest: znqCshwew2zJW6Tkh2GxOIoFpWo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataLabelPro
+ vider.class
+SHA1-Digest: AVwBkok0F4bIIGZQtmcnyAF6qkw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IOpenDataMapperFlow
+ Listener.class
+SHA1-Digest: SXLWHsmQokpuQWpV5WwmpHJehBI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/MappingArrowU
+ pdaterService.class
+SHA1-Digest: TGQvq/HqzYTgTQ8ox9uH4lFNMh8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IMetadataRule.class
+SHA1-Digest: p/cXd69BqFbuOpefnu9noCjUjA8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/XMLNodeInfo.class
+SHA1-Digest: GXYfwgcm333Jk/JXt4JSSxC8vDM=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowXmlTreeJob$1.class
+SHA1-Digest: vts/Jr0pP0OSbeOLG71tPsbnAGs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/CSVPropertiesE
+ ditor.class
+SHA1-Digest: eMp8/gO83DBzTFHb2Jy5+yVsZcY=
+
+Name: com/mulesoft/mule/datamapper/ui/actions/UndoAction.class
+SHA1-Digest: xg4W9qGWHu6ViH+9iFxv7f+26ms=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/FieldAssignableType.class
+SHA1-Digest: VV3uXxsV44xz+zYsY8+xSUsv3C0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/CSVPropertiesE
+ ditor$2.class
+SHA1-Digest: 82YJ6vK2wNTIk5E1fFLXLE/8y2g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/PropertiesEdit
+ or.class
+SHA1-Digest: C7BIqPvXWZNfvaRZ9MQX7pIY1Rc=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IJSONReaderInfo.class
+SHA1-Digest: fq8M968OjAPSBzGlKkh51a5rZJY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$4.class
+SHA1-Digest: qsIa0ME9Pho7tfeygxvVXyw1LIw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MappingFormatSup
+ ports$3.class
+SHA1-Digest: yfDUvPiJqd6ouZyQqntWxcsoE6Y=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewDataB
+ aseLookupPresenter$4.class
+SHA1-Digest: 5AqlUriob/9BkBivHpR+QCWcqls=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$4.
+ class
+SHA1-Digest: 2ql7Xt5OcWl8qmZqHFGjRZbuH2o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ FieldRefactorService.class
+SHA1-Digest: 0uRR7F+K1YXx7MiECg4WjKnA6rY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/EditMetadataFieldEv
+ ent.class
+SHA1-Digest: BDxkQuftFt1HBR+hkGnw0sMvbC8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MetadataType.class
+SHA1-Digest: 1S4nV2ofHdhcl3uCSKxxno2hyD0=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XlsMetadataPropertiesPane
+ l.class
+SHA1-Digest: 5NxZjV86eH1dl7TVfnoe3HG3B3M=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupEditor
+ .class
+SHA1-Digest: bTw4Em1ucx4EuqUTO14Hbf78TK0=
+
+Name: lib/commons-beanutils.jar
+SHA1-Digest: aG7zQQvPSrjOf9C4megyqrpfrPc=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewInputArgumentDial
+ ogPresenter$ArgumentContentProvider.class
+SHA1-Digest: McqCpyZWTvhWZOfD+UwdaEVtpXk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/RemoveMetadataField
+ Event.class
+SHA1-Digest: qZ/79WXrsudarkbhPEVns9yqJII=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/IXPathExpressi
+ onEvaluator.class
+SHA1-Digest: v1/o0x04SBqGRozBTvxr6MKUuVk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/RemoveInputArgument
+ Event.class
+SHA1-Digest: 4CSciUxxxvNh6E9di0690QE1KXc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/ClassChooserCo
+ mposite.class
+SHA1-Digest: eF7AL29Ft9zQOHnDEhshKtJXFbs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataEditor.c
+ lass
+SHA1-Digest: RSvbKlNgfy7sVi4VimnJXm5JkL8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Rec
+ ordMetadataProducerImpl.class
+SHA1-Digest: VdC8NYPhiniw5xNRCxJ4lJK+hcw=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite$4.class
+SHA1-Digest: diE+bIgZLTE/gLWCL91fqselT+I=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite$5.class
+SHA1-Digest: Q8/Fg0UNPG2sSM20P3fH/plkw4U=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/EditMetadataRuleEve
+ nt.class
+SHA1-Digest: OZoTAYJInU1G2mMx1xMh7UFWacQ=
+
+Name: org/mulesoft/mule/metadata/Type$1.class
+SHA1-Digest: EvhHXW6XG41yxxDCWheUMZKcYHE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/MetadataAssociation
+ SelectedEvent.class
+SHA1-Digest: BPmQmaYcUkuAL7mGPOA8WmPB6Eg=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperPropertiesPage$
+ 1.class
+SHA1-Digest: rur/U6zIGhosiFsr0hSpcSLTilM=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/TreeMetadataUtils$Metadata
+ PositionComparator.class
+SHA1-Digest: EKtIxmgFOx/4lJ0kxtde+2b+1pc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/AssociationEditorHelper$3
+ .class
+SHA1-Digest: Cs1SZRLoQONlXFHUkGyMTrZXro4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ICSVReaderInfo.class
+SHA1-Digest: s1EUalQIElRpUW26Ln6Pg1yY3hY=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/SetTextFilePathCommand.c
+ lass
+SHA1-Digest: Swn6ulxPWJ/u3K2nfgJLKHP10Vw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/INodeInfoPropertyChangeLis
+ tener.class
+SHA1-Digest: 9YPM5dYRIL4TvduyJayIopzKcFQ=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowXlsTextJob$1.class
+SHA1-Digest: XZxOqiBQvAr2C0/GYWxu8+hEXQg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IDataBaseLookupTable.class
+SHA1-Digest: 7wOIVacjMbTZLbPWvsNt4V7JpiI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/IBeanReaderInfo.class
+SHA1-Digest: jd5H04Ifv1GxMbGgCl78CNdlW0I=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/TypeLabelPro
+ vider.class
+SHA1-Digest: 9J4d56P8V5We5+vaMQ0uur54Pr0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/EditA
+ ssociationAction.class
+SHA1-Digest: FHznBluR7xyTmqW+Bqhvr/GD0rY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/TypeEditingS
+ upport$TypeWithCardinality.class
+SHA1-Digest: szrl73wz5yv6FrkCBLFoRWV3xWs=
+
+Name: icons/xml-16x16.png
+SHA1-Digest: s/UXVCbrc8+Mn96cJRSwEXsUaWU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/ILookupTableAdaptor.c
+ lass
+SHA1-Digest: MNzUnCmLZ9pvdlcrkmeH3kudhFQ=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/DataMapperFlowImpl$As
+ sociationChangeListenerDispatcher.class
+SHA1-Digest: 1zQKWMXwY9GzsrzbstFVzpeDwWY=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IJSONWriterInfo.class
+SHA1-Digest: h20q0tjndMomSCfqA2s9WQQAFZw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/actions/EditLookup
+ TableAction.class
+SHA1-Digest: w+edqFPNIEUOihNifGm71yhXLbs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/Delet
+ eAssociationAction.class
+SHA1-Digest: 03k0NMK5llF9zOJF1Mx3oM11esw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/IMapReaderInfo.class
+SHA1-Digest: 4nbVYdi8mBSc42xp+X0IuoK9Pl8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IRemoveMetadataFiel
+ dListener.class
+SHA1-Digest: o3FRezB2uHYASmw3JJZMoOOfyMg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/TreeMappingPr
+ oducerImpl.class
+SHA1-Digest: KOTaNucFxp8RcBdjW/A2th4ZyUA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/DataStructure.class
+SHA1-Digest: lFryRDTpnSYQcgOfLNU+9F/82uI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$1.class
+SHA1-Digest: YsL4bK4mTG/eTRLoJsgycU5y3hk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AssociationVa
+ lidator.class
+SHA1-Digest: UfD62vHJWhKJzrpri+fGwo7e6WY=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite$3.class
+SHA1-Digest: wMTMOPbq5qwGQdxlq0wwGmcMJ/0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/XMLWriterInfo.class
+SHA1-Digest: rhgohKhTc0w0MXcF874wSP6lx10=
+
+Name: icons/datamapper-48x32.png
+SHA1-Digest: zgXhQe36/335ng+qraU7yDp1Yf8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/AddInputArgumentEve
+ nt.class
+SHA1-Digest: IiNk7FGE41sPWZpO46a2zqnr5nQ=
+
+Name: icons/attribute_key-16x16.png
+SHA1-Digest: eMw1KgnqkX6WNwQzURvMEr4oYdM=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$3.
+ class
+SHA1-Digest: Ekl4d/tf5Lm+hnZz3l5gvD5melE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/commands/Chang
+ eNameToMetadataAssociationCommand.class
+SHA1-Digest: orLGpmIz5/fqYrl1Q1KwEgvvnME=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataLabelPro
+ vider$2.class
+SHA1-Digest: B1vEyWE0i8EeKu/xeVpw46yfA88=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/InputArgumentHandlerA
+ dapter.class
+SHA1-Digest: JpKJrtJ3PwFyA2r0WtNa0WueSn0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewCSVLo
+ okupPresenter.class
+SHA1-Digest: eiEa+ScdxiuURE5PRCVB7u1ZZIQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$12.class
+SHA1-Digest: xOYUa1I3k3dUZz0jPaCOFpB4ZgM=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowFileContentJob$1.cla
+ ss
+SHA1-Digest: 0SjZKF1oehNsfgh08Ufk/JSj6j8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/AddTree
+ MetadataFieldCommand.class
+SHA1-Digest: ogwNUHj4qP6UelmGDJtGZG56u2c=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/RemoveInputArgumentAct
+ ion.class
+SHA1-Digest: 4QqkkNU69y+UZ9jKYJmThkmOUnc=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/GraphLauncher.clas
+ s
+SHA1-Digest: ysz1DZujmHsRRttqprsX3sTpL50=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ HighlightUsedFieldsService$3.class
+SHA1-Digest: HHl0RFiA0IYtrZ3oBisK6U6I2qo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/MetadataRuleEditorDi
+ alog$5.class
+SHA1-Digest: LOX5cl8O2025lkWU1jRohufIuFI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/MapPropertiesE
+ ditor.class
+SHA1-Digest: mExC5CD9h2ZDrAoUYcgCnTG0T7k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aFieldRefactorService$2.class
+SHA1-Digest: BPWnUuLk7E+P10r2ALsa3yLkJKg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/XPathChildExpr
+ essionEvaluator.class
+SHA1-Digest: J+yCxvdV27JePw5cjK+0G9tsCiA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/InputArgumentLoaded
+ Event.class
+SHA1-Digest: 8Xf2ljV4skwdlIa4e4ND9h1blpU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/NameEditingS
+ upport.class
+SHA1-Digest: FUnSqfdGRYF3lbm8qv1DITv6+48=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/MetadataAssociationAd
+ aptor.class
+SHA1-Digest: 84z/diAcL0a2FeJPugd/zqUEkrc=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/CSVWriterInfo.class
+SHA1-Digest: FGe+/tvJNyfyC26vDnjcS2QoFaY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/AbstractProper
+ tiesEditor$1.class
+SHA1-Digest: KuMl9QSIKPv1VsBG8CytXopJFZY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/ISavedDataMapperFlo
+ wListener.class
+SHA1-Digest: oOgV9cRoyhfdKNvoNd/tn59H29o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/CSVPropertiesE
+ ditor$1.class
+SHA1-Digest: 6tIYxfVzIzlla/8Pa4y0lQr4bqI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IXlsInfo.class
+SHA1-Digest: ZD5hOnkwT+670zCEO//+5oMi+74=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/INodeInfo.class
+SHA1-Digest: KsPG6k1OqxJaJoxQZqqhJcYb0Rw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ HighlightUsedFieldsService.class
+SHA1-Digest: 5w6hg+Gpz9LfqoIu0CpaxyMSSq4=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$5.class
+SHA1-Digest: y0mJ5Equ63lWf7LQTajXHn/qOcw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/MapMetadataE
+ ditor$1.class
+SHA1-Digest: dWoFykE1pZh/XA2CunAO8DOmwFE=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/DropdownAction$2.class
+SHA1-Digest: 6qeokrKxdrOSak8ox4s2Wk1wgbU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditorActionBar
+ .class
+SHA1-Digest: B3RA9HGb8wtEMJ3vrskwkNP8sE4=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage.
+ class
+SHA1-Digest: PRQbF9bNkVXORNXGp5H+yF6oZ2g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/ctl/FunctionListPresenter
+ $1.class
+SHA1-Digest: wSjGabO5YCq3ttiu+8Q5rcGkdJQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IAddGraphMetadataLi
+ stener.class
+SHA1-Digest: ttx23tg8OpDbAYLD5Au7LVDjf5o=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/NodeInfoFactory$1.cla
+ ss
+SHA1-Digest: Pexu0QG0tRjxScKHxQNrR/3guRY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/RemoveLookupTableEv
+ ent.class
+SHA1-Digest: /Pl7Cq8R5b6f80v+vT+RZ0V1vuE=
+
+Name: org/mulesoft/mule/metadata/TypeDefinitionHelper$MappingFormatHol
+ der.class
+SHA1-Digest: NDlnBgHD/GWKv5bU9FD4YCr0FHI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/EditData
+ BaseLookupPresenter.class
+SHA1-Digest: 7iN9ZpcN4t6UI3To1MR6+8p4lx0=
+
+Name: icons/excel-16x16.png
+SHA1-Digest: mSrdvwI6KHqyCH+YhgGPfvMJh5A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/XPathParentExp
+ ressionEvaluator.class
+SHA1-Digest: S+ycFIbNkX1MUfE20H11zahcqYg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ILookupTableChangeListener
+ .class
+SHA1-Digest: isTcELOodcUxJcTVA1Tld+LnuiA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/commands/AddMe
+ tadataAssociationCommand.class
+SHA1-Digest: 2jdgtmBazSk8WLy9M+Bdg9Q3UhE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/TreeMetadataFiel
+ dEditor.class
+SHA1-Digest: EqH37yIfxiuiP0+FsB6fu2MUvbE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/OpenAssociationAdva
+ ncedEditorEvent.class
+SHA1-Digest: Tc23y/hI2nGVrPyabtH7cKy4pGU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$15.class
+SHA1-Digest: gNM/NH4DazjmmsRqk3lFp6vGMsg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$SaveGrap
+ hJob$1.class
+SHA1-Digest: mm6LF3mNjkJZ4oxENi0Wh6/Dsxw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/PropertiesEdit
+ orVisitor$PropertiesEditorConfiguration.class
+SHA1-Digest: bT+d9DfSaR4n/lOFCuaVIh71Z9o=
+
+Name: icons/attribute_element.gif
+SHA1-Digest: Yxzn8q71DSdpLMg/tI9nlER3Gio=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/OverlayImageIcon.class
+SHA1-Digest: emA/CxqBd7PnrTkUPbjYpRHBwCU=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowJsonTreeJob$1.class
+SHA1-Digest: /QK6zYOmhXSdsmsm7RexqE1WkGE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewDataB
+ aseLookupPresenter$2.class
+SHA1-Digest: SmabHldDOBUlTIyN8palKkkkRDo=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/IEditorDialogPanelMessage
+ Logger.class
+SHA1-Digest: veJDiPGZPOMelI2DT8xkM98Arug=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite$ArrowItem.
+ class
+SHA1-Digest: mFDXCGMJv0eWte0idQP0nF7K9E4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IEditMetadataRuleLi
+ stener.class
+SHA1-Digest: Uyh8Zer2A9je09WpDYqFWs/nITY=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/CloverDataMapperFlowF
+ actory.class
+SHA1-Digest: NKgK+A8JmlaPvlYDjtyReTc/ykg=
+
+Name: com/mulesoft/mule/datamapper/ui/Presenter.class
+SHA1-Digest: 9PQZ3vizUGB07zobOOEj1E6o8Do=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupPresen
+ ter$LookupKeyCellModifier.class
+SHA1-Digest: VcyQXGM3AmFnk+u5rQh6YIKs+C8=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 9.class
+SHA1-Digest: k8y29ReWE0d+hi7DYq8aM3O8jOk=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/DefaultMetadataAssociation
+ ChangeListener.class
+SHA1-Digest: WPsfFqPUay3qkpkOtUAa9O8KCds=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/FieldMappingPr
+ opertiesEditor$4.class
+SHA1-Digest: A+jh8dCyYKa2VXBjCkknc8UiS64=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 6.class
+SHA1-Digest: N0Kt8uyrsOn5mdusFal1Ovd0LsI=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ShowHideCompositeAction.c
+ lass
+SHA1-Digest: ASokm1+GhSqH0peiVKo1Iga+Dow=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/ctl/FunctionTreeNodeBuild
+ er.class
+SHA1-Digest: bsY0kKHPhXIm2YEj8VB2wE3K0es=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$2.
+ class
+SHA1-Digest: tdupWnY4nbR68tZJo29OSGsMBxQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/RemoveLoo
+ kupCommand.class
+SHA1-Digest: l3y2JMAYTCpQo/VwOhEQpsJ04kk=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowXlsSpreadsheetJob$1.
+ class
+SHA1-Digest: t1wumB/IhTsq7dg8P3LcHaO/J+E=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/TreeMetadataUtils$GraphMet
+ adataAccessor.class
+SHA1-Digest: FFQV5D+OcKE40lCrp8k0T7ss5Fc=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperWizard$1.class
+SHA1-Digest: FcBja9G/0Htshfy1VZNwLpsE/j0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IJSONInfo.class
+SHA1-Digest: WlnVrP/7ONVIFFicvle4pkBCOnY=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/WidgetUtils.class
+SHA1-Digest: 2VRWedxyNatQYe55dWmebtuw0j4=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$3.class
+SHA1-Digest: 1yYRt0CKyWQv3JIHFd+h60VZAig=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/commands/Chang
+ eXPathConditionOfMetadataAssociationCommand.class
+SHA1-Digest: 1GGxkhQ1JdwPC2jBgccdzK1iXPI=
+
+Name: icons/elementlist-16x16.png
+SHA1-Digest: AKiuj9aBToHQ0TL8qzI2iLO68jQ=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/LookupUsage.class
+SHA1-Digest: 9ve3NYwRHIgdqtyFkF6alDT7fA0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/Chang
+ eRowsToIgnoreCommand.class
+SHA1-Digest: wxkz2O6E9IKS/lPLBQXW6gMj5nE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 11.class
+SHA1-Digest: 0D9WmIVTFBnd3snO964/kD36xec=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aContextMenuProvider$1.class
+SHA1-Digest: APRnLb1swJIW6JZYPpnLQFlsvuI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/IMetadataRuleChangedE
+ ventDispatcher.class
+SHA1-Digest: /5VhLOP4MwH9BzilMsGqnfA6t9A=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ICSVInfo.class
+SHA1-Digest: S9IcRWy5/2Y5tQgeE0AQbxnHLPE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/BeanInfo$BeanReaderIn
+ fo.class
+SHA1-Digest: rspSW9QZ0PR7RZcuYAdz9xn/pmQ=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/ZipUtils.class
+SHA1-Digest: arO9CsDZYkpZcYNu48pGyL1M0M8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/model/FieldMetad
+ ataList.class
+SHA1-Digest: 3tPzJxLk5cXgRZ/nWTs3MmvawqQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/EditGraphMetadataFi
+ eldEvent.class
+SHA1-Digest: 5hhYgePOb4yMYokuBwc5mvgym+w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/PropertiesEdit
+ orVisitor$IPropertiesEditorConfiguration.class
+SHA1-Digest: aRutKTRXQUq7ijVm2AELnwJqPRE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/actions/RemoveLook
+ upTableAction.class
+SHA1-Digest: tFSSNNPG4GeO6sHvNcb2/dHuRlc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/Regen
+ erateMetadataCommand$1.class
+SHA1-Digest: ZG+PJff6W4DVpsgnsN3qC1CNfZc=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$MuleListener
+ .class
+SHA1-Digest: V6yJro7DzAY9DofXUqZofa4qGeY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/transform/HierarchicalFie
+ ldTELink.class
+SHA1-Digest: QAOiVhN3JWpcPSIpvKLFR2YFkI8=
+
+Name: icons/csv-16x16.png
+SHA1-Digest: lfU+nsxg0bPS1REDiAaes+z6PaU=
+
+Name: com/mulesoft/mule/datamapper/ui/actions/RedoAction$1.class
+SHA1-Digest: GpY1akbPUKNdStDVU+WG1hhja6Y=
+
+Name: lib/commons-io.jar
+SHA1-Digest: /VH5BmafSaT/0GZQZmw7gUemEG4=
+
+Name: icons/expand-all.gif
+SHA1-Digest: zmqc+8QBHjJIGLX4zx/tXmrcz/4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewUserD
+ efinedLookupPresenter$1.class
+SHA1-Digest: yVr/3mnqp79isM4KSaLx90Dsbz8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/TreeMetadataMa
+ ppingEditor.class
+SHA1-Digest: GM1r4FZVpgLijfVM45Bj63XsY4A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/MetadataRuleSelecte
+ dEvent.class
+SHA1-Digest: TqbnIzbR1l/c2YLqoDDGEkzO8Q8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IJSONInfoAware
+ .class
+SHA1-Digest: CScrLPIQj5grFolfd+MDNe3+PsU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListContent
+ Provider.class
+SHA1-Digest: DFEYO8oH3Px2aVrfC2rbUFQFhHI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IInputArgumentsAccessor.cl
+ ass
+SHA1-Digest: F82Y/W9lOkY5Rym9NLx+gGF+ABM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$3.class
+SHA1-Digest: Tfo7Zab9XxvjOesxnT0F/vUfzPY=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/XLSX2CSV$MyXSSFSheetHand
+ ler.class
+SHA1-Digest: WQVJ43NhTsBbdJ3AMQC904PR3tM=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/LookupTableFactoryImp
+ l.class
+SHA1-Digest: rA20ChhVGhPaTpWLhKpOfRuhIIs=
+
+Name: icons/function_16x16.png
+SHA1-Digest: qZ0+BLvLxwGnOgpSd21vorA2dbM=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/ProjectClassPathProvider.c
+ lass
+SHA1-Digest: inaMIl6GYgUpu0dezEEEtynT56M=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/IMetadataFieldLi
+ stener.class
+SHA1-Digest: 2nXiA7ABIQh0m1I8Pb5j3X46evM=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$2.class
+SHA1-Digest: 31/7bv8SQygl17Xwgv8TWigcBZM=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/EditInputArgumentActio
+ n.class
+SHA1-Digest: o6FkJDwlfGOfAJQyEU1jyxVcqPI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$4$1.clas
+ s
+SHA1-Digest: Nht0qUhOAd/C7ad4klaQfYjzKiY=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/IMapInfo.class
+SHA1-Digest: oOKWdt2k44Srg/HEGwjP/pRtaOc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/UndoEditorActionDelegate.
+ class
+SHA1-Digest: I7xYgN8Mk61D8Y5H5fP/0TVQPTo=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/IMapWriterInfo.class
+SHA1-Digest: b37++FN4jRow9dkJpw+Ogu86mNQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/XMLPropertiesE
+ ditor.class
+SHA1-Digest: egQezQhNRsF4VzdTYWXz/8LD0YE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/UserDefinedLookupTabl
+ eAdaptor.class
+SHA1-Digest: MIc7c0+kqtL7b9IcQTytKXn8peo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/UserDefinedLookupE
+ ditor.class
+SHA1-Digest: y7oN5HlA4JG2oI2uQe5yZILMX1k=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$3$1.class
+SHA1-Digest: Nyq+BlKM868B61C4kw+ZfkNzeT0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/AssociationEditorHelper.c
+ lass
+SHA1-Digest: t+TEw1BAcyZ9dJkXj079Es5I+S8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/ClosedDataMapperFlo
+ wEvent.class
+SHA1-Digest: uG7vudKJ+HPAvbqP1SFoHtpGbuw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Del
+ imitedFlatFileHeuristics.class
+SHA1-Digest: CgwLB5Wxwn7Wl2wFzx1UQ4VCWSc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/MetadataRuleEditorDi
+ alog$1.class
+SHA1-Digest: tLfYl/Uyw7LNUqpRmZZbbIMweP8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/DelimiterPolicy.class
+SHA1-Digest: gjx4qGWm0n7hjSPZmXqWwYs5Qhs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/SimpleLookupConten
+ tProvider.class
+SHA1-Digest: wEamvQp5//uuT3RjuFMM4mpzU1w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/EditTreeM
+ etadataFieldAction.class
+SHA1-Digest: jurqJfo1hOFb3WEJq/upiLEHzX4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/listeners/Tar
+ getTreeNodeInfoMessageLogger$1.class
+SHA1-Digest: TcY4NRH3Tr6ni2c7yvYnZ/shlO0=
+
+Name: icons/class-16x16.gif
+SHA1-Digest: tZ7orkb17ACtO47YWZM27mwrcpA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/TreeReaderMap
+ pingFactory.class
+SHA1-Digest: JVVytP5yoa0cO4y76oBeVIFakUo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$1.class
+SHA1-Digest: Wqh80QyMEkrj4iM7jRciwsYy8vw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/MetadataGene
+ rator.class
+SHA1-Digest: aaN319uwWeJJN7nh3OrGHqvuKUE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MappingFormat$1.class
+SHA1-Digest: lK8ySTbIOw4UrURIU7zvcBPYnFE=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/LabelTreeNodeLabelProvide
+ r.class
+SHA1-Digest: juYh1729xlQ7Gkf2CY6KCPnisPE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/LookupTableField
+ Decorator.class
+SHA1-Digest: AUWRKizMXuNRuFD5WaHiFVCCZCM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/AddLookup
+ Command.class
+SHA1-Digest: M7fqgJ7HkjteRNeq6vE4abhw040=
+
+Name: icons/info.png
+SHA1-Digest: ZWOJTh4e1DvVYR3spS0pcCuD2kw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditorPart$2.cl
+ ass
+SHA1-Digest: X3r3NH8HvnJlIer2dL31Ff3PKFg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ FieldRefactorService$2.class
+SHA1-Digest: gGcF2IFE9jBltpxd80j+U6wHUas=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$OpenGrap
+ hJob$2.class
+SHA1-Digest: MJj9s+av+9ZbfoDqoSRSOuDswUc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewUserD
+ efinedLookupPresenter.class
+SHA1-Digest: D6cdCfj+Xlnl82OoIjJoLBTrd2w=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/LabelTreeNode.class
+SHA1-Digest: ZZ4LCPGSUjH4aQaGRz+xSWnq6gw=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/MapMetadataPropertiesPane
+ l.class
+SHA1-Digest: xhuyNYDYdnBw7sB+OPU33Fg1ovw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IMapReadInfoAw
+ are.class
+SHA1-Digest: QjXChGzuH+ObQs0GZVydU4+VgI0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IMetadataAssociation.class
+SHA1-Digest: XuxfpNaHLvjzyLDmW8Wz5Mg5VEo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$OpenGrap
+ hJob.class
+SHA1-Digest: +DooYNX5D9JcwLgwNaWxBBTEfio=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/FindN
+ otAssignedGraphMetadataAction.class
+SHA1-Digest: BVoJcc18MUfemcZA0sVEueyrmnI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MappingFormat$4.class
+SHA1-Digest: B08PdIrStkwehbqO8mOZiUOcxpU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MappingFormatSup
+ ports$1.class
+SHA1-Digest: iJYmFXoZLkEqp4cDAF6/Qunfn6M=
+
+Name: icons/argument-16x16.png
+SHA1-Digest: IgjdFdtGOSKdSninWSW8JCLeWjo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$6.class
+SHA1-Digest: m1/AmzH1F8DmB6t/cncEHOvqI0Q=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowXlsSpreadsheetJob.cl
+ ass
+SHA1-Digest: 10hxkOwHtClolJIB/mU1kRMT0uc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/DataMapperEventType
+ s.class
+SHA1-Digest: HH0VlF+5K9A2OYK3ufl48GLIY/I=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewInputArgumentDial
+ ogPresenter$ArgumentLabelProvider.class
+SHA1-Digest: 6l9KxO6cabo/Nyi1uQX6hOpQZAw=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/RemoveInputArgumentCom
+ mand.class
+SHA1-Digest: agLYILKBfMQv9rxe0MURHta7pms=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/model/TreeModelU
+ tils$InitializeSchemaOperation.class
+SHA1-Digest: QXv+Kbd8dKXpB692HJ6L7ywUHq0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/FindN
+ otAssignedGraphMetadataAction$1.class
+SHA1-Digest: Azp/aBvDW+PQqEICipYjId7k7E4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/UserDefinedLookupE
+ ditor$2.class
+SHA1-Digest: psPTd9D+1hoWtbYsbAntb5gvm+4=
+
+Name: com/mulesoft/mule/datamapper/ui/event/IEvent.class
+SHA1-Digest: /7UPQAkibTACKet7wmwRpawp75Q=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 5.class
+SHA1-Digest: Z46enFl/Pz2CHBd5Qqcr1S5ruik=
+
+Name: icons/text_node.gif
+SHA1-Digest: Hxfmh9ukoIcOaNnlkMJvlaPC6jw=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperPropertiesPage.
+ class
+SHA1-Digest: FAJUVxiDi3CywfxD/hwMAXXar2w=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IMappingFormatVisitor.clas
+ s
+SHA1-Digest: ZFQ69iz66MrZChyLT8K177TxSWo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ ContextMenuProvider$2.class
+SHA1-Digest: WT23shmgnYdX5zrLA7oSSrnP170=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/LookupTablesAcce
+ ssor.class
+SHA1-Digest: xUUWGbw07+K//tjsBb6nMVew2LU=
+
+Name: icons/attribute_list-16x16.gif
+SHA1-Digest: IfXMBLm/qkliALMFCoGR1nTrnUU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataLabelPro
+ vider$1.class
+SHA1-Digest: gEcf+3XcvDJuPGkFi8RAV8SH6/A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/PropertiesEdit
+ orVisitor.class
+SHA1-Digest: fjeyRE859OUEpbOmftDBe2yQpUE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/DataBaseLookupAdaptor
+ .class
+SHA1-Digest: Q8o2g7LfiFFCuJnCEeUx4jrVKQI=
+
+Name: com/mulesoft/mule/datamapper/ui/Activator.class
+SHA1-Digest: wFLdwkoJaX2IgYSswsW+WfX4BKc=
+
+Name: icons/feature.png
+SHA1-Digest: 4dgk9jpKILl69rSpZSR1RQElO98=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/UIUtils.class
+SHA1-Digest: /S8DAEqzDp2hsG3PPXP0FbqTcq4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ILookupTableFactory.class
+SHA1-Digest: 9aJ/Aib0WH86T3HNUPUdKvrxEio=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/DataMapperFlowImpl.cl
+ ass
+SHA1-Digest: flIWrZlUlYNTmFxz4jNS40y82ts=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/ChangeDBL
+ ookupCommand.class
+SHA1-Digest: 1IUnbJnUajq1vGyzXIc/+qY0w0w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewDataB
+ aseLookupPresenter.class
+SHA1-Digest: zYKfh0ZL4MQY+Fzw4n9t5cCBIME=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 4.class
+SHA1-Digest: Rlq0tnsDJHJPX4rR3YNa4ZAO4no=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/DataMapperImages.class
+SHA1-Digest: 9JR/Lu2BI8ze11d/ZVMjirdZvHE=
+
+Name: com/mulesoft/mule/datamapper/ui/event/EventType.class
+SHA1-Digest: Cj6LMapi6VhNbDO9IRbMlZGstLQ=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/CSVMetatadataPropertiesPa
+ nel$1.class
+SHA1-Digest: GVDX7V2vdLb2RvHXaTTc+zsRlaI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType.cl
+ ass
+SHA1-Digest: InybW1LBLSVfpFORLLfBaXTBm3g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/UserDefinedLookupE
+ ditor$3.class
+SHA1-Digest: 1N2R7bu6Y9QMHsHgA/U+DRKbQOI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ICSVLookupTable.class
+SHA1-Digest: ligZ58zwKFoQAvQc7vMq+3t0fEo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataEditor$4
+ .class
+SHA1-Digest: x1x4SxmxPJoXBzS2ph9vmgvK0Dw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/MetadataAccessor.clas
+ s
+SHA1-Digest: QW2FT0Ac1ax8qqeEhDuj0fHQmKo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/AddAs
+ sociationAction.class
+SHA1-Digest: pDsEev4Rt6io6YOXpP4UgJEoccs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/AddLookupTableEvent
+ .class
+SHA1-Digest: d7hS9VAWlHZK5duIoOzA+cVZU0o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IMappingCodeChanged
+ Listener.class
+SHA1-Digest: gNEZOU7f4CrfS/4iMHuenxg8Wrs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/listeners/Tre
+ eAssociationDragSource.class
+SHA1-Digest: a+7ogOGC8pT+dtxX98ZgIQYDRn8=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$6.class
+SHA1-Digest: B9Q5/2FuXHTaVd9ITyFBb9YI2Og=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$8.class
+SHA1-Digest: 7RSOKnY8/Iu7h/j1TCMzZftPVto=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupPresen
+ ter$1.class
+SHA1-Digest: CDx/gh1EovoJKJiDulkc9hfxiAo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/PropertiesEdit
+ or$PropertiesPane.class
+SHA1-Digest: 0FE4I9+vNAZiPgDCdHIuUHPzoRs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/TargetMetadataEleme
+ ntSelectedEvent.class
+SHA1-Digest: gco8B7l31b46pDbVijJwM8sdbpk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/OutputMetadataLa
+ belProvider.class
+SHA1-Digest: RDVWin5Z/msTaDJsjV/bYiNmN2A=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/json/JsonNode.class
+SHA1-Digest: aFqJzsTfBhShb1ZGhL4G89b0hkY=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$5$1.class
+SHA1-Digest: yzQoVHYtrYkQkD0I11zoXHIMQXc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 2.class
+SHA1-Digest: rnqgqurZLBbuZA/VifL32UHXWpI=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/CSVMetatadataPropertiesPa
+ nel.class
+SHA1-Digest: uW3g0b0Y57ikBNEW2FxeT97u4AU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/ctl/FunctionListComposite
+ .class
+SHA1-Digest: TWug89PwyRizfvS9sE026IG8U00=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/MappingArrowC
+ ontentProvider.class
+SHA1-Digest: 0o3EhcTOolVlWd6GqcRPJr7cml0=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/bean/JavaBeanLabelProvid
+ er.class
+SHA1-Digest: CIivds+nrPx7JJOTkVLLdm9xQXY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/NewSimpleMetadat
+ aFieldEditor.class
+SHA1-Digest: 25nXDnJXME41ejhFMRx79gc1RyY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/RemoveT
+ reeFieldsCommand.class
+SHA1-Digest: EhBRjaFE4/l/HGR9jiWUzwM3BH4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$8.class
+SHA1-Digest: RuQtYaKEQ6QKOImZo9fYgMBSxWc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/model/XPath.clas
+ s
+SHA1-Digest: ZedFNLhXWT9SzPxa91mg/Zf8KXY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/XPathContentPr
+ oposalProvider.class
+SHA1-Digest: FPVq898ofqDb/UYhBHjW2jASJ0Q=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/HeaderDe
+ tectionPolicy.class
+SHA1-Digest: ILlrRzP0VHz9+bFbXL+I5ZXNHr0=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/xml/DomTreeLabelProvider
+ .class
+SHA1-Digest: qEHWhrIfYYNjCIY87YFQ4Gkz8sk=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/TreeWriterMap
+ pingProducer$GraphMetadataAndVisibility.class
+SHA1-Digest: g2j2g6w+TFR3wHnyhZziyr+Y4Mc=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.datamapper.core
+ /pom.xml
+SHA1-Digest: f1KmqAoyAs2+G4+Xby2vxXPFfos=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/AddInputArgumentAction
+ $1.class
+SHA1-Digest: sp1+JGw3qxh9EMoyIwuRqrSN6vI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputArgument
+ Assignment.class
+SHA1-Digest: pGsrIKP2gYnIbC3HlNBSEcMLBS0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/CSVReaderInfo.class
+SHA1-Digest: fA2HJiQR2Nkq7I46mjnDDgZkefU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IMetadataAssociationChange
+ Listener.class
+SHA1-Digest: aq8S7iA89DJrC1gCiuW4KDeMFSk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/ValidatedDataMapper
+ FlowEvent.class
+SHA1-Digest: LhL6URqB8IbNtcnWAefHfcBphG4=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XlsMetadataPropertiesPane
+ l$2.class
+SHA1-Digest: Ctni/3Q6k9+8CCQFnotSaCuqUdM=
+
+Name: icons/element-16x16.gif
+SHA1-Digest: t1zyhfhA8/k4kshIVdHnKbDJI4A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IRemoveLookupTableL
+ istener.class
+SHA1-Digest: PcYN/A/ajm/4xZhV7BU/8RV5U14=
+
+Name: icons/edit.gif
+SHA1-Digest: kzw8BMTGd9q7XInpj3tqf5FkLjg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/MetadataStructureAwarePor
+ tLabelProvider.class
+SHA1-Digest: sTHxA5daGERrOLwvtOcEai9co80=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/SearchBoxViewe
+ rFilter.class
+SHA1-Digest: 5mPwPzkexo8yefNrbnUKZ7yK+FM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/AddTree
+ GraphMetadataCommand.class
+SHA1-Digest: uXBpwyCNDlTfebWqS37TiRlNw38=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/WrapIntoC
+ ollectionAction.class
+SHA1-Digest: 8vAsMsxuntPHZDWff4uj+jVxYRk=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$5.
+ class
+SHA1-Digest: /0k3JO4mjNhY6lEFOQ6UUHoDzQg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/EditLookupTableEven
+ t.class
+SHA1-Digest: PR50ZvKzyAtOxv5TDgDA1baHE8s=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/IArrowData.class
+SHA1-Digest: DLux4L499OQiedB4fq3P2DeAj68=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/model/Elemen
+ t.class
+SHA1-Digest: JVKl/NbpMeaB5/4GE6GskGzNq8k=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IUserDefinedLookupTableCha
+ ngeListener.class
+SHA1-Digest: 2zCWsuwxCM0DUo/qHn/Euc71WVo=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/IArrowContentProvider.cla
+ ss
+SHA1-Digest: 625Y4sqy5nptLwMyQe4T75rc3eA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 3.class
+SHA1-Digest: BMz1yNwZm0EMVxbK9o9S/w76UO0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IMetadataFactory.class
+SHA1-Digest: VAyqAmVhrVdmJnH93dtRQUkrcdA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/CSVPropertiesE
+ ditor$5.class
+SHA1-Digest: 1QAHgktldVdAz/uMUruh44QR3oE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/LookupFieldAdaptor.cl
+ ass
+SHA1-Digest: xgYvvFfq1qri6ARTMXSPabHQP2A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/CSVPropertiesE
+ ditor$6.class
+SHA1-Digest: vHleyZi1fwYQ0ZHgtTWy+iQgwC4=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite.class
+SHA1-Digest: KC2VNWNBlbdMJpN0Y0xiXyr75VU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupPresen
+ ter$2.class
+SHA1-Digest: gZzHssxo9q9T03VpCWVab8eobvA=
+
+Name: org/mulesoft/mule/metadata/Type$6.class
+SHA1-Digest: wJd+g4HSSW8KftSBcnJA7pNOQJ4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IInputArgumentHandler.clas
+ s
+SHA1-Digest: QrG4TjqVJd4Nsomb8vU1Fdhj5w0=
+
+Name: icons/datasource.png
+SHA1-Digest: TPcFJMX+sojQaFzT9MikeiOk4ik=
+
+Name: org/mulesoft/mule/metadata/Type$7.class
+SHA1-Digest: Wgu05z2KtR6cF0oAs4eGwQ+aLBE=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XMLMetadataPropertiesPane
+ l$3.class
+SHA1-Digest: uRYw/6BSVgItHTcx57aooejAV/I=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ICSVWriterInfo.class
+SHA1-Digest: JB6S6SGDG0R/E2Nihu+kIf8bn7I=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/XPathRuleTreeNod
+ eBuilder.class
+SHA1-Digest: Zaxm8e5c2sT+iU79rizucNT5U5Y=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewDataB
+ aseLookupPresenter$5.class
+SHA1-Digest: 2L4lBcbqGqC7ql+PVSGAX/C9olQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aContextMenuProvider.class
+SHA1-Digest: uqFiQW4jNDx4DOeQQX7f9lis9Cw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IRemoveGraphMetadat
+ aListener.class
+SHA1-Digest: O5Y5Xfsy2Vxo0NcbrUd/c7oTCQc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewUserD
+ efinedLookupPresenter$3.class
+SHA1-Digest: NZkk0oa3+RAHZ9FgJD2Ky8W6KDs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Jso
+ nSchemaGenerator.class
+SHA1-Digest: 04IY95Me+7vl0WpCZOkBQ86pk18=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/IXPathAwareA
+ ction.class
+SHA1-Digest: GexNVJcUbPqQLfJnvbnkDZBB61w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/ctl/FunctionListPresenter
+ .class
+SHA1-Digest: tSVvEZ/6gqdlb+eJY+hZ7gqTOuw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/Encoding.class
+SHA1-Digest: zcxXmc+8NmaTzRAC9cJDqcE8I5Q=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$1.class
+SHA1-Digest: v9jZL17zMcFcz51CVrMbqBpthbQ=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/InputArgumentEditorPre
+ senter.class
+SHA1-Digest: hSWIIhCrMNKSo6f/xwEHaZuTZDk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/connection/DBMetadataExtr
+ actorWizard$1.class
+SHA1-Digest: rkdSRo8y8Q6zbcZYq3JFnT6dTwg=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XlsMetadataPropertiesPane
+ l$1.class
+SHA1-Digest: FQ+j0UWAal5mpOFvc9HlkAXHEJc=
+
+Name: org/mulesoft/mule/metadata/TypeDefinition$1.class
+SHA1-Digest: gCrwy0BWGLm0yRUzQ8+327RdxQU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor.
+ class
+SHA1-Digest: vRT808XV/VbuCbeZKcKEm31gKoU=
+
+Name: com/mulesoft/mule/messageflow/decorator/SetConfigCommand.class
+SHA1-Digest: D0A8jwUIOnuzreFf6PcmyVVHTFw=
+
+Name: com/mulesoft/mule/datamapper/ui/event/EventRegistrationHandler.c
+ lass
+SHA1-Digest: AOwDs5/0kBIBox6c00vC2pOxTb4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$4.class
+SHA1-Digest: dD9LO92gxeiyDxx/0go4Vi8F3Es=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IOpenAssociationAdv
+ ancedEditorListener.class
+SHA1-Digest: YTfYiYFHSPM8+3f6cQnCG3oxdzo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$11.class
+SHA1-Digest: p0tgmEcIzO/TFYIN/lXWOFATeMk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IEditedGraphMetadat
+ aListener.class
+SHA1-Digest: R2Ik6RYm3XDA++3tjSTEKVBOOf8=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewInputArgumentDial
+ ogPresenter$ArgumentCellModifier.class
+SHA1-Digest: jU5+gwnU6iZAKIKFtfl0leetZsA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/MetadataStructureAwareFie
+ ldTEFactory.class
+SHA1-Digest: KX28zxx2j+cJ3qlTQJxBBnyumfM=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/Reader.class
+SHA1-Digest: Q8MfgUqAJflECRbbokjkgacV5sM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$7.class
+SHA1-Digest: cvHBy5hD2az7ziZJI9/fCnE4Pyo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IEditLookupTableLis
+ tener.class
+SHA1-Digest: +sUb4o3T5Z4cptViBK+teNN4mIk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataEditor$1
+ .class
+SHA1-Digest: yE//zbQJS2DaZBeiaaNwxKeqWs8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$6.class
+SHA1-Digest: 0m8NowtHgQesHuOmjq9nu/JPw+0=
+
+Name: org/mulesoft/mule/metadata/TypeDefinition.class
+SHA1-Digest: tD4pIwYdXlRPNtq8xT1867jwAZo=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperPropertiesPage$
+ 2.class
+SHA1-Digest: MuFLfSYLp9pdhnSwN6lbTlyJIIQ=
+
+Name: com/mulesoft/mule/datamapper/ui/actions/SaveAction.class
+SHA1-Digest: VE41Yo+Ia1kLWHi1tcocaFgM58k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IXlsMetadataAw
+ are.class
+SHA1-Digest: zDhSe9Yx2MwEqWxdmh+1e4t/I18=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/ChangeTyp
+ eLookupFieldCommand.class
+SHA1-Digest: I3P+7bU8HdCjk8+VYfIiGpXaV/A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/MetadataAssoc
+ iationContentProvider.class
+SHA1-Digest: zUIDaR84+yPw9H7G4ib45SheVuA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MappingFormat$5.class
+SHA1-Digest: Cm/J3qqdUhneb3PQX+rx2P7syi8=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/TreeMetadataUtils$1.class
+SHA1-Digest: uA8p/3e/0R3+EdwtZIJDETf7bUA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AssociationEd
+ itorDialog$5.class
+SHA1-Digest: qcV18bd1lFO7a1snf6naUoKnvdc=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/DataMapperResourceUtils.cl
+ ass
+SHA1-Digest: NiQIxho6T9jXP9DLli9y/CCNRsQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewCSVLo
+ okupPresenter$2.class
+SHA1-Digest: lkIoSBnQalScr0Ca0MPEEju/wZk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/ChangeKey
+ LookupFieldCommand.class
+SHA1-Digest: LNLG5YrePJwgCYW/NkdoyCGX+4M=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/XLSX2CSV$xssfDataType.cl
+ ass
+SHA1-Digest: HFMg2ggoc5QITlcuW5URgM1LzQc=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$1.class
+SHA1-Digest: IxkqY3BpcmhyqHB5u1Pql8GSZ3Q=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/EditTreeMetadata
+ FieldPresenter$1.class
+SHA1-Digest: tc8DrvJQm14DnHU8BK43Yce9HEY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AssociationEd
+ itorDialog.class
+SHA1-Digest: 50z190fYOi2wWUAvJXdw/dwGei8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/XlsReaderInfo.class
+SHA1-Digest: XdF6dO0ejCdMpYimuYUeyBNbf58=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/InputMappingFo
+ rmatRepository.class
+SHA1-Digest: f0ulaZ8i+cSKmjN3m3KZkv70QPI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/listeners/Tar
+ getTreeNodeInfoMessageLogger.class
+SHA1-Digest: Kax6ldk+g8Fihu8vbPHMDX4N6Iw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AssociationEd
+ itorDialog$4.class
+SHA1-Digest: C11RHjARRZkV6O5xlNP6YG0Iudc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/actions/AddDBLooku
+ pTableAction.class
+SHA1-Digest: +SkllC4kqMO1QNw0tEwlK9QISzc=
+
+Name: icons/blue_dot.png
+SHA1-Digest: j+0xvVOROaSiC351OlfhP6OTnRs=
+
+Name: com/mulesoft/mule/datamapper/ui/utils/RunGraphJob.class
+SHA1-Digest: Lk/NYtXE89IbPz6AzeuCtyRGkUM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$SourceTargetNodeSelectionListener.class
+SHA1-Digest: 5EqIyt2W2ktLfHsQ7Hh2J++kW1I=
+
+Name: org/mulesoft/mule/metadata/Type$8.class
+SHA1-Digest: DTAgINTxRpQBJ3BR4+N0u+jSM7M=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IOpenAdvancedAssign
+ mentListener.class
+SHA1-Digest: iKSGtEfWhh18TF0xWOXeVxlIwEc=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/EditorDialogPanel.class
+SHA1-Digest: fE34/NIt6ps6lfLV+KPWFY2PQec=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$9.class
+SHA1-Digest: Z56OOjgvmesI1z7Um04I2ZB5Pqc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/InputMetadataLab
+ elProvider.class
+SHA1-Digest: aUNj+weblK3t0GyhDTaY+YRJ5Bs=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IPreviewDataAccessor.class
+SHA1-Digest: TywFqTpKFMUKZzosbki2cfCWXcg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/TreeMappingProduce
+ r.class
+SHA1-Digest: 9QXObfBxN5c3ooUJi6WCfs/xOJ4=
+
+Name: com/mulesoft/mule/datamapper/ui/event/EventBus.class
+SHA1-Digest: 0Dq2nQs7JPHFQEhILGto4ZEaEqU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/XPathTreeRead
+ erMappingProducer.class
+SHA1-Digest: fD1Dhbyp+pZrMkMUjzGIl03qIkE=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ MetadataFactoryAccessor.class
+SHA1-Digest: xEPl2iulnRfF5R8A0Nuq8DvMnsI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IMetadataAcces
+ sorAware.class
+SHA1-Digest: 8HCcWF0XckkyaOqvITKRdI2XXbE=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$9.class
+SHA1-Digest: 9JzG7U0KgGkwx+tEq5yl/N8jP6A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$OpenGrap
+ hJob$1.class
+SHA1-Digest: TkXTaKPVtL8/Cz2jwERPW86epmM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/ArgumentTreeNode
+ Builder.class
+SHA1-Digest: eq2x4JW6ob+bAYGDgCat3f0S0aM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/ChangeNam
+ eLookupFieldCommand.class
+SHA1-Digest: YKRAy/c07epB9KQDC1tDeUIBVmA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 4.class
+SHA1-Digest: W4ONYGu4XpVHFTGfA3cj3mTkWnY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataEditor$5
+ .class
+SHA1-Digest: WU1pM/rjo0G5J3SyH+dHFeh2Tc4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/CSVPropertiesE
+ ditor$4.class
+SHA1-Digest: g3wYSFwob/oGO++sDUxXpIesVnY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/AddRuleActio
+ n$1.class
+SHA1-Digest: gz34pDl9Ym8Xs6IN7vc2QYRT4LE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ HighlightUsedFieldsService$1.class
+SHA1-Digest: ZNOx0mz0BCExUiy586pfFIgdRWQ=
+
+Name: components.xml
+SHA1-Digest: 0OYn2IF5U1+NvS7zPDKFReAkgGE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/GraphAdvice.class
+SHA1-Digest: FnDySpf0BTl8rITGSZGI3YP5U5k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/commands/AddMe
+ tadataRuleCommand.class
+SHA1-Digest: qPPoBAuvsn72gweaALLRPMStoJA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aContextMenuProvider$2.class
+SHA1-Digest: LO5tSY/tGJGyOI7yYTQokRDr6uA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IBeanAccessorA
+ ware.class
+SHA1-Digest: aAeGJrDKCPWJ6R7fzLYQS7LC7pE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 5.class
+SHA1-Digest: knrTKV2BU7UavFB35y6wG381HLg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ISimpleLookupTable.class
+SHA1-Digest: yQSFh4jKMvtmNDSqPcUDM2M7njw=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/DefaultArrowData.class
+SHA1-Digest: pljO6pT+cfEiLvNAkNNCRnfyjAU=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/IDataMapperFlowAccessor.c
+ lass
+SHA1-Digest: BHiMLhznKzR+VefYYMqMCAPDPUw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$11.class
+SHA1-Digest: uSmXdfqi0ylhJCLr+yMBsztzAVc=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/JSONReaderInfo.class
+SHA1-Digest: BiC1EOyrAsBzYrnUVttz1glxbao=
+
+Name: icons/xpath-16x16.png
+SHA1-Digest: wB5jv6j8RkIijOx+MKOXaz0E7m8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/AddRuleActio
+ n$2.class
+SHA1-Digest: IBZJ2icQUXBWvUk/NW/PPiIvYMw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataTreeNode
+ Builder.class
+SHA1-Digest: biYRwksNiLjiOHGdlCx62BhKqT0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/PreviewDataAccessorAd
+ apter.class
+SHA1-Digest: MyvzrPo/T91hdlPuhQ8RiEiPDLc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/MappingArrowU
+ pdaterService$1.class
+SHA1-Digest: fgjGls11JPgVl26CCrmiDmNS7/o=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/json/JsonNodeFactory.cla
+ ss
+SHA1-Digest: cuzKB0CLT/tsV7mgdjheyqRCx8Q=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aContextMenuProvider$1$1.class
+SHA1-Digest: kxDbjeCSEKnZ26rayiteOKzFm5c=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/DefaultNodeInfo.class
+SHA1-Digest: Y1jFeu3MdUXBKBSRWVigjwef4mk=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewInputArgumentDial
+ ogPresenter.class
+SHA1-Digest: GGsj7ja+gEJBjxQtDuhZ6KGujw4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$12.class
+SHA1-Digest: ZeJqqXUuHMZPXU8JXsrkNVfaWls=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupPresen
+ ter$LookupKeyLabelProvider.class
+SHA1-Digest: E3LRugVZMNzBK7Sz7PXCALd4fhg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/FieldAssignme
+ nt.class
+SHA1-Digest: OzdVTuqXztCXjQalAoqCAlEFL+8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/MappingSerial
+ izingVisitor.class
+SHA1-Digest: uXPoEbijwaTBgGdSYmZgJr2XdhM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/map/TypeEditingS
+ upport.class
+SHA1-Digest: xwsgJOMLFDiLHXVLYTsUBOPa1/A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/JSONProperties
+ Editor.class
+SHA1-Digest: IQBQIkNTwrHDr/W8jwZLaH7FgdI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$6.
+ class
+SHA1-Digest: MML6c5Z1xiFY5LA+KEjCxeNda7o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IAssociationSelecti
+ onListener.class
+SHA1-Digest: xC+ffZq3hUX9aMDaRiYSUKTvb7g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Del
+ imitedFlatFileHeuristics$1.class
+SHA1-Digest: To5SYN3jSOMJCDoGd6j//zZkAf8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/MetadataRuleAdaptor.c
+ lass
+SHA1-Digest: pCgTLc7935//U5KbY7Ku/tPaf8M=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/TreeMetadataFilt
+ er.class
+SHA1-Digest: lS+TyUeN7aS2dAGY0bAmHXqx4fs=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IXlsReaderInfo.class
+SHA1-Digest: gZIf3wUHfnpmRe7NJhjQbHxeWLw=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperPropertiesPage$
+ 3.class
+SHA1-Digest: JX7IqcIooqvyEnhCbEmp5bLrJLU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/AbstractProper
+ tiesEditor.class
+SHA1-Digest: WD6knyPmsaK1JIjIVrIwhV/RAZo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$1.class
+SHA1-Digest: 12VJzy52PVzgwIEUKI1RBIJblpU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IMetadataAccessor.class
+SHA1-Digest: GgLq4qrgVt9FHZV4cLYCvINyb18=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/IPatternEditorPartAccesso
+ r.class
+SHA1-Digest: yh9P4H4H5yg5LJ6Qxoik19/q44c=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 3.class
+SHA1-Digest: 7XMDCZVxBCjqTWxVLgd0j7KCdCI=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView.class
+SHA1-Digest: kEu6MwPTfxlvRtQuWZjAQUwLRcI=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/IMetadataFactoryAccessor.
+ class
+SHA1-Digest: DpkOytxyjmlhTixwOzm+mMplNxw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperMarkers.class
+SHA1-Digest: 7Xp1f9VyliCXuBxguAi4RRfwsLs=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewInputArgumentEdit
+ or.class
+SHA1-Digest: h7cr77VP5NYtmve+NhTGDiCYUO4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/AddTreeMetadataF
+ ieldPresenter$3.class
+SHA1-Digest: lVTt3yv6eH3xQd29SIJ/88Y8YcU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupKeyAssignmen
+ t.class
+SHA1-Digest: XRwG55sRc99j0AtdSvE21hqYKZg=
+
+Name: org/mulesoft/mule/metadata/Type$5.class
+SHA1-Digest: OMeJfU75EGtUm+TmBTXWdrJK3ik=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$7.class
+SHA1-Digest: ou9g7SiQHFSo0sOCaqZuy1bIUJg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$8.
+ class
+SHA1-Digest: P1T00lPpv7pqarvwwkLYO2IWdrA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/MappingCodeSynchroniz
+ er.class
+SHA1-Digest: Hm2y+6JIO7XRxlbbvct7U+cXRfg=
+
+Name: icons/enum-16x16.gif
+SHA1-Digest: 6uxGXTmxdnAIWcIv6J8JjL3Qclc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/AddMetadataGraphEve
+ nt.class
+SHA1-Digest: FY627C3fY+UqOF9aozPtkSy93wA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IRuleSelectionListe
+ ner.class
+SHA1-Digest: 5vlXsq9WrVa3KxuduU+qakCiMQM=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/XMLReaderInfo.class
+SHA1-Digest: p1Mss7iUyC8R2Z2TGdcKK5sl5WQ=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$7.
+ class
+SHA1-Digest: ukwjSaXDLy0VDlbeoHk9tY/5YFg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/NewDi
+ ctionaryEntryCommand.class
+SHA1-Digest: 0yq5e8uZKY92QbxWYyi5dlSBbVM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/EditRuleActi
+ on$1.class
+SHA1-Digest: vvMgpLA2AjyOqq30sswTOWdVeJc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewDataB
+ aseLookupPresenter$1.class
+SHA1-Digest: Gl7xe7jvOm+YTcbrnckxPMVXOhs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/IXPathContextP
+ rovider.class
+SHA1-Digest: 3sAOvDCoJIIosi/vjblQWbKZ708=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$9.class
+SHA1-Digest: l64Q50Z+0P39q6xrpdNKwK8znX0=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/bean/SimpleTypes.class
+SHA1-Digest: V1pAMyondyunxZRA/gjO/XICdrA=
+
+Name: lib/gson.jar
+SHA1-Digest: LmbaFYUfn1tQeSKPhWwvCQupjDg=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 11.class
+SHA1-Digest: B8fKzM8GfdQU7rfHdatvEx94a/4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/CSVLookupTableAdaptor
+ .class
+SHA1-Digest: aF5qLt5Vb+hQthcYqzsCfSaO/jY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/AddLookup
+ FieldCommand.class
+SHA1-Digest: WmNDf2d167rd5JsSCqwIoPj/PF0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/commands/Chan
+ geMetadataAssociationOutputCommand.class
+SHA1-Digest: lYUJRsQnU21/te9N3l+0fnZpCfM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/commands/Remov
+ eMetadataRuleCommand.class
+SHA1-Digest: oI40rwiiME++TYHLj0MQx9D4uo8=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/MetadataXPathElement.
+ class
+SHA1-Digest: LBiSj4ef3KweEfH48/iS+AoQf5Q=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/NodeInfo.class
+SHA1-Digest: HYaYoASrx0IB0gs3vTTQINgKZR8=
+
+Name: com/mulesoft/mule/datamapper/ui/event/EventBus$EventHandlerHolde
+ r.class
+SHA1-Digest: AdFQa/oD8XXL450o991mcWrsErw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$4.class
+SHA1-Digest: lS4+R1KtZ0amap8+nTtKAHkC7AU=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/SetMockedInputArgumentsC
+ ommand.class
+SHA1-Digest: jMWMPK4Y3apTqCUubyEQKtT3dsw=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/xml/DomTreeContentProvid
+ er.class
+SHA1-Digest: 41wBs7XTDQsC8bLlRYzODmRAKn0=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/AddInputArgumentAction
+ .class
+SHA1-Digest: dB9C4TTHBvyO2cO4AtjPf4rGoBA=
+
+Name: icons/lookup_table-16x16.png
+SHA1-Digest: TSsRNuCmxJKl7S5OBbKfgvDWmEM=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/IMuleProjectAccessor.clas
+ s
+SHA1-Digest: o9a51E/fNdtrFlS7xRhR9vgB0rI=
+
+Name: icons/datamapper-16x16.png
+SHA1-Digest: 03ELRq63ZY1NQJxRMLjN7QzZkmo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/NewTreeMetadataF
+ ieldEditor$2.class
+SHA1-Digest: JlSrVpujJnOs0LLZUYKXgQM1MJw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/RemoveTre
+ eMetadataFieldAction.class
+SHA1-Digest: u5hy5CDhE8I4nxflpDtZxWRM09c=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IRemoveInputArgumen
+ tListener.class
+SHA1-Digest: VstOIsYD1XgzsJ4OPpRTzTU54ZI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewCSVLo
+ okupPresenter$1.class
+SHA1-Digest: /wf/pll6k1NXjFW2HtIIrMFr7mw=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XMLMetadataPropertiesPane
+ l$4.class
+SHA1-Digest: BzfyLjcp7WKJsCRzqqfYUJgWRJU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/SourceMetadataEleme
+ ntSelectedEvent.class
+SHA1-Digest: 1TFSTVeBKnsJYF8gtmET2mmLS5w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IClosedDataMapperFl
+ owListener.class
+SHA1-Digest: jnqq3HLSrz8GmAjzxaUWuF0Hu6I=
+
+Name: lib/mule-module-data-mapper.jar
+SHA1-Digest: LQIJ1yif6shfkxls0qfpQWpomwM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/actions/AddCSVLook
+ upTableAction.class
+SHA1-Digest: MTHMEa5D6gLSkEa0b2v5FsCwrb0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/Chang
+ eEncodingCommand.class
+SHA1-Digest: KtFKLUu5jaPrDBt1kKG2+9h9EkA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/FindN
+ otAssignedGraphMetadataAction$2.class
+SHA1-Digest: QUHrm0NW67pOzcaAJtt74azIbBA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$13.class
+SHA1-Digest: 2uvFCX6DejmLh9Xgz1FbTkvFRs0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MappingFormat.class
+SHA1-Digest: 3HFY1JJ0Qtwq3ILdpKmeq0f6nXg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/MetadataRuleEditorDi
+ alog$3.class
+SHA1-Digest: LWqEMzFCva97dShiCQni0W3P/LA=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/IPageShowListener.class
+SHA1-Digest: 3THMz9CMQr+yZZPtKOAEXP220Pg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/DataBaseLookupEdit
+ or$3.class
+SHA1-Digest: t+4NaouZcZmZEK1YIOEuoEn0dBE=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 2.class
+SHA1-Digest: PQG9hJJVpfkJFr5NHmxSJ7RM/Z8=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$2.class
+SHA1-Digest: v+T3i0nGjU9jwr3pqVWJo25a1O8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/connection/DBMetadataExtr
+ actorWizard.class
+SHA1-Digest: zNFIHBgNk5oHywPDCSDOOnykFWE=
+
+Name: icons/bean-16x16.png
+SHA1-Digest: MWNFiSnoLJI0xX4sWtAlVyhrWOE=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/MapWriterInfo.class
+SHA1-Digest: mtq9hntxVfxgBSHtdOMuuKvLhMM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataContentP
+ rovider.class
+SHA1-Digest: geoo/s4KN03il5ZTyw8UfObDCSw=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XMLMetadataPropertiesPane
+ l$1.class
+SHA1-Digest: T50VIPp2vYkn2YU9A9rJDt7dWtk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$2.class
+SHA1-Digest: BviVKuhtBkqfrUD58HiqVqC/qPo=
+
+Name: com/mulesoft/mule/datamapper/ui/IUserMessageLogger.class
+SHA1-Digest: A3zI4EgldZ3afejFqzb/NG62hx8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/actions/AddUserDef
+ inedLookupTableAction.class
+SHA1-Digest: 4xGIs2p68ccpRViHlXOsEvApNZM=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 1.class
+SHA1-Digest: xJAfxX9iBIEhGtHG8WBC2GRFdFM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/CSVPropertiesE
+ ditor$3.class
+SHA1-Digest: A+1N5LdNLWvP+qpQ2u5R/jcLw8k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Exc
+ elMetadataGenerator.class
+SHA1-Digest: P6fRBxFqM9f4H5Sz5iUSQWYAAns=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/XlsWriterInfo.class
+SHA1-Digest: bZk/OaU6685MzPkGU0qDrUPte8Q=
+
+Name: com/mulesoft/mule/datamapper/ui/view/DataMapperView$4.class
+SHA1-Digest: rBHw7mPaPJCWOpEKKk4uxV+F4AY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/ChangeCSV
+ LookupCommand.class
+SHA1-Digest: ymNhjisOW365+ePig8g9mJP5fXU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ILookupTable.class
+SHA1-Digest: xZFG5Q1gTJietnK7Nsg43nKPLZo=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/TreeWriterMap
+ pingProducer$ParentReferences.class
+SHA1-Digest: 2clrwbXDWP6zALUrBLj20rfK+HM=
+
+Name: org/mulesoft/mule/metadata/TypeDefinitionHelper.class
+SHA1-Digest: s/g8tEBoX7aph23TweLjvjczhhc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$9.class
+SHA1-Digest: oJgWQzsOjzTfEkuhNpq9vlQt/FU=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$3.class
+SHA1-Digest: XD+hogWZwJBj7veJlDeIreO/62o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aFieldRefactorService.class
+SHA1-Digest: 760DfVK7a5gXB0Z3Fi+KRCMObIA=
+
+Name: com/mulesoft/mule/datamapper/ui/ClassLoaderProvider.class
+SHA1-Digest: 53ndPmSpomjDJ5O1+tOaC7C6j2k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IEditMetadataFieldL
+ istener.class
+SHA1-Digest: 3V+Vd0zV1qQ0eIIRuAVkzn59aCI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$10.class
+SHA1-Digest: Gv1wpKHIhrLZRP5pwlKSnpHFXM8=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowXmlTreeJob.class
+SHA1-Digest: Gn0CJA7l0WCDpQh1kucZbd8iPLw=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/MapMetadataPropertiesPane
+ l$3.class
+SHA1-Digest: Y3zf2F4wpM3rxNvvVbT+O0MPMjM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/commands/Remov
+ eMetadataAssociationCommand.class
+SHA1-Digest: axGrMCXhry0ydSqlrCx23XPhINc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataFieldLab
+ elProvider.class
+SHA1-Digest: A8Tx31+DGDtk9b2gJYWzLXjkypo=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XMLMetadataPropertiesPane
+ l$5.class
+SHA1-Digest: bBD8s4/xqQNCXbVBSl7D84r5qnA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/ITreeMetadataElemen
+ tSelectedListener.class
+SHA1-Digest: pgrwxGGLxvN3AsO2jYz8Z3pWW5U=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/DefaultPropert
+ iesEditor.class
+SHA1-Digest: +RX9MjsY8lShRkMbO2CQSwgJiQc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/TreeMetadataMa
+ ppingEditor$2.class
+SHA1-Digest: hdcBHc9ArovnoCYJ7FEUU40F0ks=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ListMetadataFieldType.clas
+ s
+SHA1-Digest: laItuGDEVwrIsgewRmrADymXD0M=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ResourceFilteredTree.clas
+ s
+SHA1-Digest: 8OPWhY2GD+7LAjMVgGdnkQl5RTE=
+
+Name: icons/attribute-16x16.png
+SHA1-Digest: PPX/FByq++qHP1gBRLNNO9mwlT4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewUserD
+ efinedLookupPresenter$LookupTableChangeListener.class
+SHA1-Digest: +Nb3PfKx/cw6yPSOQj9+kQJySC8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/EditTreeMetadata
+ FieldPresenter$3.class
+SHA1-Digest: 7q7uV2+Uu0lTZOFiYcRs+YDhm2Y=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/InputArgumentEditor.cl
+ ass
+SHA1-Digest: HVjDjw/awWo4ny/SR17V8pIy0rA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IMetadataFieldType.class
+SHA1-Digest: r1TdXDSBX2o/cDv0zH9ayz3bSMA=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MappingFormat$3.class
+SHA1-Digest: PcjZ039BmQqdNVFzzjuYJkJ+wbw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$14.class
+SHA1-Digest: bGF8QbeHhg1VzA/WFaagu9vTqgY=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/MapMetadataPropertiesPane
+ l$MetadataDialog.class
+SHA1-Digest: 7iRnLu2+jUxGT3NO+erO80nx+As=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IXMLReaderInfo.class
+SHA1-Digest: ybLzrarWx0LKlbxGpFLnMVZSNGE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/actions/RemoveRuleAc
+ tion.class
+SHA1-Digest: sFkUX45UOf1EvsG8aYnJzIMqMzU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupEditor
+ $3.class
+SHA1-Digest: o9jjy7yPvxTSKEaVYIGlS7vDSL0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$10.class
+SHA1-Digest: ulTyhLg9REDVcABbz56WM80u+4Y=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$5.class
+SHA1-Digest: kXvnXYynUK73maUwqHYyNPipUto=
+
+Name: icons/show-unrelated-elements-16x16-1.png
+SHA1-Digest: BL5ahMBLf8/7kUAkopDZZpVOIeo=
+
+Name: icons/datamapper-noconfiguration-128x128.png
+SHA1-Digest: y0Z/VWNrVQF2xZ+C08D4UladKCs=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/ArrowComposite$MouseArrow
+ Listener.class
+SHA1-Digest: K00mMPggWXENyPf4kNT55VHpoB0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/NewTreeMetadataF
+ ieldEditor$1.class
+SHA1-Digest: 7Qayyr6rsrlXQ8tqugyZHkLnaJw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IGraphBuilder.class
+SHA1-Digest: yxore2ekP57luxsrYeKsfTqn6Z4=
+
+Name: com/mulesoft/mule/datamapper/ui/actions/UndoAction$1.class
+SHA1-Digest: AqWjDe9LgIahMCikPDLrkYQM1G4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ICSVInfo$IDelimiterPolicy.
+ class
+SHA1-Digest: W5b8g2avhsS8w5ICbn4Cfn1gj2U=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/json/JsonTreeLabelProvid
+ er.class
+SHA1-Digest: yC2C83pB0Aa3tXQxAX7zF42kj9w=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/commands/Chan
+ geMetadataAssociationInputCommand.class
+SHA1-Digest: dFx1O2XxnbseuEuwe43ZO+L8Ygo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$4.class
+SHA1-Digest: RUlIPHPlfXkUM/0Hhu35OCuVpUI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/FieldMetadataAssign
+ edEvent.class
+SHA1-Digest: LLa8YUvigyd8EyGpYeraIMrtQ+Q=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/RuleAssignmen
+ t.class
+SHA1-Digest: v3z08QqN6NIeukThUKBOFv6cFI4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor.class
+SHA1-Digest: G/xp8qxkeWyGBWcbWWiB9dWbacI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AbstractAssig
+ nment.class
+SHA1-Digest: m7JvIa3ju9DcSXqdcLav61Pe6N4=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/DropdownAction.class
+SHA1-Digest: ARU6LMZXOZ7MAp+jrJmJ013wFzs=
+
+Name: icons/show-all-arrows-16x16-1.png
+SHA1-Digest: aLUPo62M8i1HhJsSavM10Wv+Hzs=
+
+Name: lib/poi.jar
+SHA1-Digest: WBrKmWVU12DAKygawfnvt4XeVL4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/MetadataRuleEditorDi
+ alog.class
+SHA1-Digest: +Kg0wrCpflryyaEN8UmXa8PCFM0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/EditTreeMetadata
+ FieldPresenter$2.class
+SHA1-Digest: 1FmzRt0Vyr0FVxBc2CSv54pnTGE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$5.class
+SHA1-Digest: Y6yJgsKbNkaUV/5HktMq4CzQ4mE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/EditTreeMetadata
+ FieldPresenter.class
+SHA1-Digest: JH9LXR48w/6SNztrQo9T5ir6XP8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$5.class
+SHA1-Digest: +ERE5rxr/ynyjaGAEkccy0GjcSA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/commands/RemoveT
+ reeGraphMetadataCommand.class
+SHA1-Digest: KkYV4Xq3ZrgI7iA9cM5t91ZeiAo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/TreeAssociati
+ onEditor$13.class
+SHA1-Digest: OBeqxEY8JcQXqBMDxLNxuR8T+Ls=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IAddInputArgumentLi
+ stener.class
+SHA1-Digest: HKug1qWm7DneZsiOT88IjZVFgpk=
+
+Name: com/mulesoft/mule/messageflow/decorator/DataMapperComponentDecor
+ ator.class
+SHA1-Digest: AmLZ0Y9R+3HrqJlA3iV6BO97zBc=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/DataMapperWizard$3.class
+SHA1-Digest: mUuBpAdgOklEG9NbVRk3SFS1aXM=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Fla
+ tteningSchemaMetadataGenerator.class
+SHA1-Digest: LoGvhvl4om5+2fgJ1Qf6GU74vn0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/TreeMetadataMa
+ ppingEditor$3.class
+SHA1-Digest: a5i7BJPwF9dikSXJYSU5JYD9Bo4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/XlsPropertiesE
+ ditor.class
+SHA1-Digest: jYOsQbH89ilLCPjQlzgpEBwikKg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IGraphLayout.class
+SHA1-Digest: 8QNV3S6AR04TOk8IY7/8qm8M2Wg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/impl/Del
+ imitedFlatFileHeuristics$PossibleDelimiterData.class
+SHA1-Digest: kwgqD4q9esqwPua+hR8k+ZVj0Qc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$3.class
+SHA1-Digest: 1YzagfMllEvpEn0slQ7c+p0/T9I=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/MapReaderInfo.class
+SHA1-Digest: 1FXnJo0tjfx43MdOrX7QdMVvDbY=
+
+Name: com/mulesoft/mule/datamapper/ui/ISelectionProvider.class
+SHA1-Digest: oH/JwbrtI74vy0ECJprTyqPq6V0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/listener/OpenA
+ ssociationAdvancedEditorListener.class
+SHA1-Digest: 7FHZF8mo2h2a5AJxcKOW6WRhG3c=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditorPart$1.cl
+ ass
+SHA1-Digest: WJTbIyVJNc5/FqkxfDmyTe9mvz0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataFieldCel
+ lModifier.class
+SHA1-Digest: if/w6GJi/YYWkkNHUzYG5dlq4cQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 7.class
+SHA1-Digest: bDf9GUbPbW5sk7L57lLLkMuUvxY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/model/TreeModelU
+ tils.class
+SHA1-Digest: 8pJEqk2WTBQBUNmEikcOF/pf62A=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/IXMLInfoAware.
+ class
+SHA1-Digest: Js1zY6yYYfL4Xr6pBi9yUegadtc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/connection/DBConnectionWi
+ zard.class
+SHA1-Digest: Q256uGrgj0+e8ETVD4bnE08ozak=
+
+Name: org/mulesoft/mule/metadata/TypeDefinitionHelper$SchemaObjectHold
+ er.class
+SHA1-Digest: FG3KFzr6iG4P9EKCbR0wdEGXa2M=
+
+Name: icons/json-16x16.png
+SHA1-Digest: /sZsBwb3cOfmwgAunxIqfBZeeoQ=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/bean/JavaBeanContentProv
+ ider.class
+SHA1-Digest: jGs7bVICxpLlNUaNr0kVpum27vE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/UserDefinedLookupE
+ ditor$1.class
+SHA1-Digest: YtvXbH2/a7AcKsWlVl1xyLd+q8I=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ ContextMenuProvider$3.class
+SHA1-Digest: 0ibhn8QvIwn52phg0YDRDjdl9Wk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/UserDefinedLookupE
+ ditor$4.class
+SHA1-Digest: QZGxFDo0ia5zMol0QeHOGbjvaYg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IXlsWriterInfo.class
+SHA1-Digest: nbWaZkppNbA8A6VYOA/jLpxd2JY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/AddTreeMetadataF
+ ieldPresenter$1.class
+SHA1-Digest: vfpbS7hQNhhY4+kCQi0AWhCdTgE=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowJsonTreeJob.class
+SHA1-Digest: asVroM5671+Zk69x/htaYjTEPj8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/AddTreeMetadataF
+ ieldPresenter$2.class
+SHA1-Digest: LzYMsfbZwXsc9gMeCxlHlYRC7mc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/OpenAdvancedAssignm
+ entEditorEvent.class
+SHA1-Digest: ZALnNsWq+00Fx2xP2XODVLJYey0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/RemoveTre
+ eGraphMetadataAction.class
+SHA1-Digest: 3LZPqnvBCnxCmPOlHQ0AOQpvvms=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$7.class
+SHA1-Digest: WMC0KO+1qRcNXGNrOJFNugxHCP4=
+
+Name: icons/field.gif
+SHA1-Digest: 0mnjb9VnRH6s8+79en39co0v0sY=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/DefaultUserDefinedLookupTa
+ bleChangeListener.class
+SHA1-Digest: /Uaxa6BOd5mSXNNOBkwJMGFhmxU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IValidateAware.class
+SHA1-Digest: vXWNKQWs7ShQB2xSpEGLzBqHmCg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/ICSVInfoAware.
+ class
+SHA1-Digest: 3b4E+G+RcRTsCG9L4UHLUnscKVo=
+
+Name: icons/map-16x16.png
+SHA1-Digest: iagaAbb41BFF94V0V4aYOnthE6A=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/SimpleMetadataFieldType$1.
+ class
+SHA1-Digest: tYQuJHN1dxTw3D5FZBzkRsk0ESw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 8.class
+SHA1-Digest: AyBpvlyMxaVVii/3adeEvSdYcxc=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/IMetadataFormatProperties
+ Panel.class
+SHA1-Digest: creCw8b9G59P63wbIxcwEUQ+/Xc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewUserD
+ efinedLookupPresenter$2.class
+SHA1-Digest: WcHOG3v+tAxEjGjw005m0uyBtnE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 12.class
+SHA1-Digest: BlqeQfNxuiq7pVFT4n7U+1M4Q40=
+
+Name: org/mulesoft/mule/metadata/ITypeVisitor.class
+SHA1-Digest: pFgj2wxHnAhfwbU+fyzROHTWHQQ=
+
+Name: org/mulesoft/mule/metadata/Type.class
+SHA1-Digest: Dvji8vkb/rBOihZYGHryQymzFds=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IValidatedDataMappe
+ rFlowListener.class
+SHA1-Digest: sYrDIxdjqPgK8gKFWJCrB8rtZc4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/FieldMappingPr
+ opertiesEditor.class
+SHA1-Digest: Uddl9rko9NUC4bBBUhDLdyQbOok=
+
+Name: org/mulesoft/mule/metadata/TypeDefinitionHelper$1.class
+SHA1-Digest: b/+8PZ+KzAVIbWWLYIwGm61KvEw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/OpenDataMapperFlowE
+ vent.class
+SHA1-Digest: EoPqV4oXkYIxelFWJA7aowbup6Y=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/bean/NamedObject.class
+SHA1-Digest: blYyWOC0Y2AGfoYSIchzIvuuoio=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/ShowXlsTextJob.class
+SHA1-Digest: dA2S+4WmCeJlaiOSruQidX80GUY=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aFieldRefactorService$1.class
+SHA1-Digest: lL3SfMoRwXJzsOD/F9Py/KEwXWY=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/EditArgumentEditorPres
+ enter.class
+SHA1-Digest: T/l39/uBkk+AWGxyE9De1IQ2Pto=
+
+Name: icons/checkboxcleared.gif
+SHA1-Digest: VTkpSjZcroZuvSbxIu8jegoPCj8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupsListEditor$
+ 1.class
+SHA1-Digest: ncm4BrdBl8fYGFPjHVVmSM9VFhY=
+
+Name: com/mulesoft/mule/datamapper/ui/ErrorMessage.class
+SHA1-Digest: gEQX6arW7jJ7IAUsYkRtEP8frxE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/Enabl
+ eDisableAction.class
+SHA1-Digest: IGzFKauhFS0ctfLfgj9mVC5vDQ8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/EncodingView.c
+ lass
+SHA1-Digest: ijRjcHLAKf5npXifQxYmnu9CIdc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$2.class
+SHA1-Digest: J3RCypSE3uxG3XtUAFZ4IONgERY=
+
+Name: plugin.xml
+SHA1-Digest: 55lhwarp5SBSfTQKm+lB1L8xTOE=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewPanel$5.class
+SHA1-Digest: cHO9kcQBOwHrdcsY3+wa0yuKAXU=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/InputOutputSelectionPage$
+ 7.class
+SHA1-Digest: 0u+e24mVT5tB784yc03x2mftTCI=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/Type.class
+SHA1-Digest: kNHia/uAtDlRkViel3ZIloqJP+U=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/AssociationEd
+ itorDialog$1.class
+SHA1-Digest: J1hSZYLaDOcKLyZggu2n1EJGWyc=
+
+Name: com/mulesoft/mule/datamapper/ui/arguments/EditArgumentEditorPres
+ enter$1.class
+SHA1-Digest: aCiCGhSn0OMdgNu41ZcnYHyTmQ0=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/SingleGraphLa
+ uncher.class
+SHA1-Digest: bZokWKpVode3NR2WAziVPBsH+V4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/service/impl/TreeWriterMap
+ pingProducer.class
+SHA1-Digest: CXzCOvHqglra3dYdpyEA6a5m2XU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/BeanInfo$BeanWriterIn
+ fo.class
+SHA1-Digest: MDPQLM4BjTPg5YbPUURqB2l5qvo=
+
+Name: com/mulesoft/mule/datamapper/ui/actions/RedoAction.class
+SHA1-Digest: rZps0VriGO/7BrkDMVO+s8mqmsI=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/FieldMappingPr
+ opertiesEditor$1.class
+SHA1-Digest: JrfHB0yXURkW3dpma6Su9PMtGZw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/ValidationMessage.class
+SHA1-Digest: KPsNDKOqhf9xSfKyszLT5tXS63k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupEditor
+ $2.class
+SHA1-Digest: wxvs9GrFUMZ0TZV5yPcOZ4V8nmw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/LookupFieldCellMod
+ ifier.class
+SHA1-Digest: N+kw1EBACQpe6EiRXJJsx0AXzQk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$6.class
+SHA1-Digest: gUIuluvowGNMLX/j5Un/TYFYwEg=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/SavedDataMapperFlow
+ Event.class
+SHA1-Digest: bzkuaA8KiXVeA4l9OW6pTB0Bl0I=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/MoveMetad
+ ataFieldUpAction.class
+SHA1-Digest: To0uRftdI+Lr0hGvRYGvPQWJn9s=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/properties/commands/Chang
+ eDatasourceCommand.class
+SHA1-Digest: L8h+huFESLzRuIPBEHON49FKS5g=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/DataBaseLookupEdit
+ or$2.class
+SHA1-Digest: KBJDkr3ccpzuaiV7Cl+zJ+cJlyA=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/XMLMetadataPropertiesPane
+ l.class
+SHA1-Digest: 6PjUUahb/OnNu1Y1gQznRA0w6hg=
+
+Name: org/mulesoft/mule/metadata/TypeDefinitionLoader.class
+SHA1-Digest: iBj+QzyJ3kjXTV49OLiZZusbuDk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/AssignLookupEditor
+ $1.class
+SHA1-Digest: Ajx8EIzLr8Y4BjBaWC0e0cCzx+A=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MetadataFieldTypeFactory.c
+ lass
+SHA1-Digest: 1AJw/ZOxVAwLq4DTFlSM+aDGItA=
+
+Name: com/mulesoft/mule/datamapper/ui/preview/PreviewInputArgumentEdit
+ or$1.class
+SHA1-Digest: tol8nleMAbxzKDlmWLA/2g3L8Xg=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/GraphLayoutImpl.class
+SHA1-Digest: uOXjHrZgQCg9LmUQ+EGon9WChEA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewUserD
+ efinedLookupPresenter$4.class
+SHA1-Digest: lB7vgTjgNhYN4/0085rjTVFGcqs=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/event/IAddLookupTableList
+ ener.class
+SHA1-Digest: 5EWCn2jPes4M02goBEoBGFxpt4A=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/DataMapperCompilerImp
+ l.class
+SHA1-Digest: sIMw7KQapf+88JyuW4ccYnvduQA=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/IEditorDialogPanelMessage
+ LoggerAware.class
+SHA1-Digest: Uxg3tM0WZwMIlDKvk8IZZ5bvB+o=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/action/AddFlatMe
+ tadataFieldAction.class
+SHA1-Digest: D0i4e8IeDFoeTXcJtWTd/lRWKLc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/EditCSVL
+ ookupPresenter.class
+SHA1-Digest: HvNoAmc8ot+q2tjLZ3GBwdXtNME=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/OutputMetadat
+ aTreeNodeProvider$10.class
+SHA1-Digest: jOFiz4jBJ9dJ2uN7fkz9TSAYb04=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/actions/Clear
+ AssignmentAction$1.class
+SHA1-Digest: TN3JPbnMpquoq6kkRoqdCShf2nQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/treeeditor/FieldMappingPr
+ opertiesEditor$3.class
+SHA1-Digest: K1eiNlKuwTbEP0ZsNy934HBeOH4=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/IDataMapperFlow.class
+SHA1-Digest: CNww2Rzayc+abpvPUdw51a8UoVI=
+
+Name: com/mulesoft/mule/datamapper/ui/widget/IArrowStyleProvider.class
+SHA1-Digest: VXgYPP4uO5utFeQBt1jboq2SypQ=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/presenter/NewDataB
+ aseLookupPresenter$6.class
+SHA1-Digest: xinfca1sWIbp17ymIFXDc8AYCkA=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/rule/MetadataRuleEditorDi
+ alog$6.class
+SHA1-Digest: +QOsL/gGAp1krPFgjpgu6rsZmI8=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$1.class
+SHA1-Digest: R8a4kJjQHyKvO0eARQABhp6P0A4=
+
+Name: com/mulesoft/mule/datamapper/ui/wizard/CSVMetatadataPropertiesPa
+ nel$2.class
+SHA1-Digest: 8Txd+urS+OjGroa6sg7l4aJBUv4=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/ChangeUse
+ rDefinedLookupCommand.class
+SHA1-Digest: /VOuUA2s9cPCQWXKBWzLCHM46I0=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/CSVLookupEditor.cl
+ ass
+SHA1-Digest: NPVXr0gFOmWkFwO7XJGY9v2NkiU=
+
+Name: icons/run_exec.png
+SHA1-Digest: 2STMlJQWulm40h4UY/munCIIF+k=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/InputMetadata
+ TreeNodeProvider$8.class
+SHA1-Digest: doi7rTbF2IgRbu8FzBuUEkjWPsU=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditor$SaveGrap
+ hJob.class
+SHA1-Digest: ifGXLruWecqowOb5z02oWunHxNk=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/service/FlatFile
+ Metadata.class
+SHA1-Digest: Uk+JXKqqrvlxbWTpHuichHT31ms=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MappingFormatSup
+ ports$2.class
+SHA1-Digest: LurxWKLtOT+w30HJbG5yJodbUWw=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/metadata/MetadataEditor$2
+ .class
+SHA1-Digest: ahgV/m2QRa+VWCu1gVYJRo/ZQmE=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/association/MappingArrowU
+ pdaterService$2.class
+SHA1-Digest: aLCTer00RLHu1jajrQqGyh0FGKc=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/MetadataStructureAwarePor
+ tContentProvider.class
+SHA1-Digest: iCEjNzxKEgzHG5BiIXirZC15Szw=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/impl/ILookupFieldChangedDi
+ spatcher.class
+SHA1-Digest: ebdWeEjhI1hpg+ZvqCHgz+yRIoo=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/lookup/commands/RemoveLoo
+ kupFieldCommand.class
+SHA1-Digest: RTexRbUBK0QDu5HCo9e+g2Va9pU=
+
+Name: com/mulesoft/mule/datamapper/ui/graph/MappingFormat$2.class
+SHA1-Digest: lvT96KVYsTFo2l76R4N4BFhm92Q=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperEditorPart.clas
+ s
+SHA1-Digest: 9zTAUyh7HrkQ/gLt3bw5tmoEhik=
+
+Name: com/mulesoft/mule/datamapper/ui/editor/DataMapperValidator$2.cla
+ ss
+SHA1-Digest: 8KiTQbC+qgQRShKBINVcOm1VbiE=
+

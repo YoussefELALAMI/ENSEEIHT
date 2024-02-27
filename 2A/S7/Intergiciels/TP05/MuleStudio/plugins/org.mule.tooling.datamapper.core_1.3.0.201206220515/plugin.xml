@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension
+      id="wizard"
+      name="Data Mapping"
+      point="org.eclipse.ui.newWizards">
+   
+   <wizard
+   		 canFinishEarly="false"
+         name="Mapping Flow"
+         hasPages="true"
+         icon="icons/new-datamapper-16x16.png"
+         category="org.mule.tooling.ui.muleWizards"
+         class="com.mulesoft.mule.datamapper.ui.wizard.DataMapperWizard"
+         id="org.mule.tooling.datamapper.mappingFlowWizard"
+         project="false">
+      <description>
+      	Create Data Mapping Flow
+      </description>
+   </wizard>
+</extension>
+ <extension
+         id="datamapperError"
+         name="Data mapper Error"
+         point="org.eclipse.core.resources.markers">
+      <persistent
+            value="true">
+      </persistent>
+      
+       <super
+            type="org.eclipse.core.resources.problemmarker">
+      </super>
+    
+   </extension>
+
+ <extension
+         point="org.eclipse.ui.navigator.navigatorContent">
+      <commonWizard
+            type="new"
+            wizardId="org.mule.tooling.datamapper.mappingFlowWizard">
+         <enablement></enablement>
+      </commonWizard>
+   </extension>
+ 
+   <extension
+         point="com.cloveretl.gui.component">
+      <component
+            file="components.xml"
+            id="data-mapper-gui.muleComponents">
+      </component>
+   </extension>
+   <extension
+         point="com.cloveretl.gui.enginePlugin">
+      <enginePlugin
+            classLoaderProvider="com.mulesoft.mule.datamapper.ui.ClassLoaderProvider"
+            directory="lib"
+            id="data-mapper-gui.mulePlugin">
+      </enginePlugin>
+   </extension>
+   <!--extension point="com.cloveretl.gui.notVisibleComponents">
+      <notVisibleComponent type="DATA_GENERATOR"/>
+      <notVisibleComponent type="CLOVER_READER"/>
+      <notVisibleComponent type="DBF_DATA_READER"/>
+      <notVisibleComponent type="DB_INPUT_TABLE"/>
+      <notVisibleComponent type="JMS_READER"/>
+      <notVisibleComponent type="LDAP_READER"/>
+      <notVisibleComponent type="MULTI_LEVEL_READER"/>
+      <notVisibleComponent type="PARALLEL_READER"/>
+      <notVisibleComponent type="XML_XPATH_READER"/>
+      <notVisibleComponent type="CLOVER_WRITER"/>
+      <notVisibleComponent type="DB2_DATA_WRITER"/>
+      <notVisibleComponent type="DB_OUTPUT_TABLE"/>
+      <notVisibleComponent type="EMAIL_SENDER"/>
+      <notVisibleComponent type="EMAIL_READER"/>
+      <notVisibleComponent type="INFOBRIGHT_DATA_WRITER"/>
+      <notVisibleComponent type="INFORMIX_DATA_WRITER"/>
+      <notVisibleComponent type="JMS_WRITER"/>
+      <notVisibleComponent type="LDAP_WRITER"/>
+      <notVisibleComponent type="MS_SQL_DATA_WRITER"/>
+      <notVisibleComponent type="MYSQL_DATA_WRITER"/>
+      <notVisibleComponent type="ORACLE_DATA_WRITER"/>
+      <notVisibleComponent type="POSTGRESQL_DATA_WRITER"/>
+      <notVisibleComponent type="DATA_INTERSECTION"/>
+      <notVisibleComponent type="DENORMALIZER"/>
+      <notVisibleComponent type="PIVOT"/>
+      <notVisibleComponent type="EMAIL_FILTER"/>
+      <notVisibleComponent type="DATA_SAMPLER"/>
+      <notVisibleComponent type="FAST_SORT"/>
+      <notVisibleComponent type="NORMALIZER"/>
+      <notVisibleComponent type="META_PIVOT"/>
+      <notVisibleComponent type="ROLLUP"/>
+      <notVisibleComponent type="CLUSTER_GATHER"/>
+      <notVisibleComponent type="CLUSTER_PARTITIONER"/>
+      <notVisibleComponent type="CHECK_FOREIGN_KEY"/>
+      <notVisibleComponent type="DB_EXECUTE"/>
+      <notVisibleComponent type="HTTP_CONNECTOR"/>
+      <notVisibleComponent type="JAVA_EXECUTE"/>
+      <notVisibleComponent type="RUN_GRAPH"/>
+      <notVisibleComponent type="SEQUENCE_CHECKER"/>
+      <notVisibleComponent type="SPEED_LIMITER"/>
+      <notVisibleComponent type="SYS_EXECUTE"/>
+      <notVisibleComponent type="DELIMITED_DATA_READER"/>
+      <notVisibleComponent type="DELIMITED_DATA_WRITER"/>
+      <notVisibleComponent type="FILTER"/>
+      <notVisibleComponent type="FIXLEN_DATA_READER"/>
+      <notVisibleComponent type="FIXLEN_DATA_WRITER"/>
+      <notVisibleComponent type="HASH_JOIN"/>
+      <notVisibleComponent type="KEY_GEN"/>
+      <notVisibleComponent type="MERGE_JOIN"/>
+      <notVisibleComponent type="SORT"/>
+      <notVisibleComponent type="XML_WRITER"/>
+      <notVisibleComponent type="ADDRESS_DOCTOR_I5"/>
+      <notVisibleComponent type="WEB_SERVICE_CLIENT"/>
+      <notVisibleComponent type="COMPLEX_DATA_READER"/>
+      <notVisibleComponent type="DOMINO_READER"/>
+      <notVisibleComponent type="DOMINO_WRITER"/>
+      <notVisibleComponent type="QUICKBASE_RECORD_READER"/>
+      <notVisibleComponent type="QUICKBASE_QUERY_READER"/>
+      <notVisibleComponent type="QUICKBASE_RECORD_WRITER"/>
+      <notVisibleComponent type="QUICKBASE_IMPORT_CSV"/>
+   </extension-->
+   <extension
+         point="com.cloveretl.gui.cloverBranding">
+      <ctlCompatibilityCheck
+            enabled="false">
+      </ctlCompatibilityCheck>
+      <deprecatedItems
+            visible="false">
+      </deprecatedItems>
+      <designerProductName
+            name="Mule studio">
+      </designerProductName>
+      <shortProductName
+            name="Mule">
+      </shortProductName>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="org.mule.tooling.ui.views"
+            class="com.mulesoft.mule.datamapper.ui.view.DataMapperView"
+            icon="icons/datamapper-16x16.png"
+            id="org.mule.tooling.datamapper.ui.view.dataMapperView"
+            name="Data Mapping "
+            restorable="true">
+      </view>
+      <category
+            id="org.mule.tooling.ui.views"
+            name="Mulesoft">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.mulesoft.mule.datamapper.ui.editor.DataMapperEditorPart"
+            contributorClass="com.mulesoft.mule.datamapper.ui.editor.DataMapperEditorActionBar"
+            default="true"
+            extensions="grf"
+            icon="icons/datamapper-16x16.png"
+            id="org.mule.tooling.datamapper.DataMapperEditor"
+            name="Data-Mapper Editor">
+         <contentTypeBinding
+               contentTypeId="org.mule.tooling.datamapper.DataMapperContentType">
+         </contentTypeBinding>
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type
+        file-extensions="grf"
+        id="org.mule.tooling.datamapper.DataMapperContentType"
+        name="Data Mapper Graph Content Type"
+        priority="high">
+			<describer class="org.eclipse.core.runtime.content.XMLRootElementContentDescriber2"/>
+		</content-type>
+		</extension>
+   <extension
+         point="org.eclipse.ui.activities">
+         <activity
+               id="org.mule.tooling.datamapper.core.DisableCloverContributions"
+               name="DisableCloverContributions">
+               <enabledWhen>
+               <with
+                     variable="true">
+                     <equals
+                           value="false">
+                     </equals>
+               </with>
+               </enabledWhen>
+         </activity>
+         <activityPatternBinding
+               activityId="org.mule.tooling.datamapper.core.DisableCloverContributions"
+               pattern="com\.cloveretl\.gui.*/.*">
+         </activityPatternBinding>
+   </extension>
+
+</plugin>

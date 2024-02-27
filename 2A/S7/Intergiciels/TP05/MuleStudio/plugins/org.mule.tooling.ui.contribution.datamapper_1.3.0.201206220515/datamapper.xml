@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<namespace xmlns="http://www.mulesoft.org/schema/mule/tooling.attributes" prefix="data-mapper" 
+					url="http://www.mulesoft.org/schema/mule/ee/data-mapper">
+ 	<global localId="config" 
+			category="org.mule.tooling.globalCategory.conponentConfigurations"
+			description="Global DataMapper configuration information."
+			caption="DataMapper"
+			image="icons/large/datamapper-48x32.png" icon="icons/small/datamapper-24x16.png"   >
+	      <attribute-category description="DataMapper configuration properties." caption="Mapping Flow">
+	        <group caption="Generic" id="data-mapperGenericProperties">
+	          <name required="false" description="Give a name to this configuration so it can be later referenced by config-ref." caption="Name" name="name" ></name>
+	          <string required="true" description="Mapping Flow file name." caption="Mapping Flow File Name" name="transformationGraphPath"></string>
+	        </group>
+	      </attribute-category>
+    </global>
+    
+    <component extends="http://www.mulesoft.org/schema/mule/ee/data-mapper/abstractData-mapperConnectorGeneric" image="icons/large/datamapper-48x32.png" localId="data-mapper-connector"
+     icon="icons/small/datamapper-24x16.png" description="DataMapper component allows Mule to transform a mule message." caption="DataMapper" aliasId="org.mule.tooling.ui.modules.core.pattern.data-mapper">
+      <attribute-category caption="General" description="General properties">
+        <group caption="Generic" id="data-mapperConnectorGeneric">
+          <modeSwitch description="Operation" caption="Operation" name="Operation">         
+            <mode modeLabel="Transform" modeId="http://www.mulesoft.org/schema/mule/ee/data-mapper/transform"></mode>
+          </modeSwitch>
+        </group>
+      </attribute-category>
+    </component>
+    
+    <component abstract="true" image="icons/large/datamapper-48x32.png" localId="abstractData-mapperConnectorGeneric" icon="icons/small/datamapper-24x16.png" description="Interact with DataMapper." caption="Abstractdata-mapperconnectorgeneric">
+      <attribute-category description="General properties." caption="General">
+        <group caption="Generic" id="abstractData-mapperConnectorGeneric">
+          <globalRef requiredType="http://www.mulesoft.org/schema/mule/ee/data-mapper/config" description="Specify which configuration to use for this invocation." caption="Mapping Flow Ref." name="config-ref"></globalRef>
+        </group>
+      </attribute-category>
+    </component>
+    
+    <nested image="icons/large/datamapper-48x32.png" localId="input-arguments" icon="icons/small/datamapper-24x16.png" description="Aditional arguments." caption="Aditional Arguments">
+      <childElement allowMultiple="true" description="Input arguments." caption="Input Arguments" name="http://www.mulesoft.org/schema/mule/ee/data-mapper/input-argument"></childElement>
+    </nested>
+    <nested image="icons/large/datamapper-48x32.png" localId="input-argument" icon="icons/small/datamapper-24x16.png" description="Aditional arguments." caption="Aditional Arguments">
+      <string description="Key." caption="Key" name="key"></string>
+      <text isToElement="true" description="Value." caption="Value" name="value"></text>
+    </nested>
+    
+    <component extends="http://www.mulesoft.org/schema/mule/ee/data-mapper/abstractData-mapperConnectorGeneric" abstract="true" image="icons/large/datamapper-48x32.png" localId="transform" icon="icons/small/datamapper-24x16.png" caption="Transform">
+      <attribute-category caption="General" description="General properties">
+        <group caption="Input" id="input payload">
+       	 	<string defaultValue="#[payload]" required="false" description="The DataMapper input." caption="Input" name="input-ref"></string>
+       </group>
+        <group caption="Arguments" id="inputarguments">
+          <childElement allowMultiple="false" inplace="true" description="Aditional Arguments." caption="Aditional Arguments" name="http://www.mulesoft.org/schema/mule/ee/data-mapper/input-arguments"></childElement>
+        </group>
+      </attribute-category>
+    </component>
+
+</namespace>

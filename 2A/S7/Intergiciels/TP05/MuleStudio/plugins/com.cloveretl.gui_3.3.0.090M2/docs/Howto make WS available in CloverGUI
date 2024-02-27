@@ -1,0 +1,43 @@
+Howto make available WebService in CloverETL Designer
+
+This document shows how to create a Clover transformation with a web service connector.
+Clover doesn't contain any special WS support. However, CloverETL Designer as a part of eclipse workbench can take 
+advantage of plenty list of available plugins. In this context we will need just Web Tools Platform extension
+to simple Eclipse IDE for Java Developers (see in prerequisites list). For testing purpose we have to have
+an application container, for instance the Apache Tomcat.
+
+Prerequisites:
+- Eclipse IDE for Java Developers (http://www.eclipse.org/downloads/)
+- Web Tools Platform (http://download.eclipse.org/webtools/updates/)
+- Apache Tomcat (http://tomcat.apache.org/) just for testing
+- CloverETL Designer (www.cloveretl.com)
+
+Step-by-step tutorial:
+
+1) Creating a Java Web Service Client - simple howto is available at
+http://wiki.eclipse.org/Creating_a_Java_Web_Service_Client
+If you don't have available any suitable web service for testing, continue with steps 1a-1c and prepare
+your own WS.
+
+1a) Installing Apache Tomcat Server - simple howto is available at 
+http://www.eclipse.org/webtools/jst/components/ws/1.5/tutorials/InstallTomcat/InstallTomcat.html
+
+1b) Creating a Web project - simple howto is available at
+http://www.eclipse.org/webtools/jst/components/ws/1.5/tutorials/CreateWebProject/CreateWebProject.html
+
+1c) Creating a Top-Down Java Web Service Skeleton from a WSDL Document - simple howto is available at
+http://wiki.eclipse.org/Creating_a_Top-Down_Java_Web_Service_Skeleton_from_a_WSDL_Document
+
+2) All generated classes has to be on classpath of running clover engine. Also all referenced libraries
+has to be add into java build path. Both can be done direct in Eclipse workbench at 
+[CloverProject]/Properties/Java Build Path/Libraries/{Add Jars...} or {Add class folder...}
+
+3) One of the genererated classes should have name suffix "*Proxy". This class is access point to web service
+implementation. Following source code example shows a WS method invocation: 
+
+	String wsEndpoint = "http://localhost:8080/WebServiceProject/services/MyWebService";
+	MyWebServiceProxy myWSProxy = new MyWebServiceProxy(wsEndpoint);
+	String resultMessage = myWSProxy.webServiceMethod(param1, param2);
+
+This piece of code could be used anywhere inside a clover transformation, where you can use a low level java code.
+For instance a transformation specified in a Reformat component.

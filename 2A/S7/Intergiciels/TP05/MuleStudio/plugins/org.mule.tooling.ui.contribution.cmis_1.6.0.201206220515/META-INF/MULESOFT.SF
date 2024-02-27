@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: 7SDLIiG89MNq7tLSrTXlYyx05xA=
+Created-By: 1.6.0_33 (Apple Inc.)
+SHA1-Digest-Manifest: GZzfxqyEyqhRORj4NI+P4jVjAx8=
+
+Name: icons/small/cmis-endpoint-24x16.png
+SHA1-Digest: 0qlppe/ZAVoiCspcwrgC3H01gfk=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .cmis/pom.properties
+SHA1-Digest: YG7GWAlxemrZw+HYj1wi8Qn6s/8=
+
+Name: mule-module-cmis-1.6.jar
+SHA1-Digest: WtcLmUCKphH0tN/7ubw8b7JuEEs=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .cmis/pom.xml
+SHA1-Digest: qegsHkqsfkQabvx6XqZeqnkQuQM=
+
+Name: icons/small/cmis-transformer-24x16.png
+SHA1-Digest: Y/Fn9vQ3aD8+wyoGIELhP/gTMv4=
+
+Name: icons/large/cmis-transformer-48x32.png
+SHA1-Digest: h4+SgEsdi8IdSfsHy9gRRPfi7uA=
+
+Name: icons/large/cmis-connector-48x32.png
+SHA1-Digest: NdQddBVDHaJDesXzNo8PmkZ6vbs=
+
+Name: cmis.xml
+SHA1-Digest: Vj1ZStR1aW8v0QdRCsSg2+sHqII=
+
+Name: org/mule/tooling/ui/contribution/cmis/Activator.class
+SHA1-Digest: UtyABV5hpNecbESEdmIF3S53DeU=
+
+Name: icons/small/cmis-connector-24x16.png
+SHA1-Digest: h/fR09Xz23BqC+riG9re0SJX1Jw=
+
+Name: plugin.xml
+SHA1-Digest: Z8VR/g67+p8CyhYPBY7YngQhPtc=
+
+Name: icons/large/cmis-endpoint-48x32.png
+SHA1-Digest: jd4Ey/caRUuH1HlHXkmfXDXLpfQ=
+
+Name: mule-module-cmis-1.6.zip
+SHA1-Digest: dKbVWY6128+xbzwmwJEfH+EaLfU=
+

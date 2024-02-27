@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: fbPg4zmlEnd2C/1jaWzcdxDTdWI=
+Created-By: 1.6.0_33 (Apple Inc.)
+SHA1-Digest-Manifest: OKZsJEAJkzKRFtL1dK3eMx4uyPA=
+
+Name: icons/small/magento-endpoint-24x16.png
+SHA1-Digest: dEJlNeRJ8lAEcnx/enw2wrukXnM=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .magento/pom.properties
+SHA1-Digest: xN28kNf1QARRJ6o9aft5541Y/GQ=
+
+Name: mule-module-magento-1.5.zip
+SHA1-Digest: z3Als0ZBVPvlxbnN5l3kjkygs9E=
+
+Name: icons/small/magento-transformer-24x16.png
+SHA1-Digest: Eq7nED1t3ONOy9tfRg17ZZS4fGg=
+
+Name: icons/small/magento-connector-24x16.png
+SHA1-Digest: 7eoMnWtchjRS6OlnmzyTPW5148M=
+
+Name: org/mule/tooling/ui/contribution/magento/Activator.class
+SHA1-Digest: 4e9SY+WuNKvU1BVVN3AvOvhiWAY=
+
+Name: icons/large/magento-transformer-48x32.png
+SHA1-Digest: oUSCZI69Q2QcTQQ/V91C79Wjya0=
+
+Name: icons/large/magento-connector-48x32.png
+SHA1-Digest: YNjB1z12G6ZVChXC/Lowc+E5jaM=
+
+Name: magento.xml
+SHA1-Digest: Jy0unFOA7rDlN2bQJ3w+OHF226w=
+
+Name: plugin.xml
+SHA1-Digest: /1s2yejpo8ZL7J5guxB3zjejYtU=
+
+Name: mule-module-magento-1.5.jar
+SHA1-Digest: 6w9kJBnSUrnI7Tq0OJkYxAtk4I0=
+
+Name: icons/large/magento-endpoint-48x32.png
+SHA1-Digest: UCmwlinln+r/cSc6XOZ7DQ76VaA=
+
+Name: META-INF/maven/org.mule.tooling/org.mule.tooling.ui.contribution
+ .magento/pom.xml
+SHA1-Digest: XzUY9KXJVOm0gaexJcyNs8egbt8=
+

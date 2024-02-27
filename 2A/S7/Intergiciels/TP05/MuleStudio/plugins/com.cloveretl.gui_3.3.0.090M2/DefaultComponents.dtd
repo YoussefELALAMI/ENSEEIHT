@@ -1,0 +1,83 @@
+<!ELEMENT ETLComponentList (ETLComponent*)>
+ 
+<!ELEMENT ETLComponent (shortDescription, description, inputPorts?, outputPorts?, properties)>
+<!ATTLIST ETLComponent
+        category (readers | writers | transformers | others | deprecated | joiners) #REQUIRED
+        className NMTOKEN #REQUIRED
+        iconPath CDATA #IMPLIED
+        name CDATA #REQUIRED
+        smallIconPath CDATA #IMPLIED
+        type NMTOKEN #REQUIRED
+        passThrough (true|false) #IMPLIED
+        defaultVisibility (true|false) #IMPLIED
+        >
+ 
+<!ELEMENT shortDescription (#PCDATA)>
+
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT inputPorts ((singlePort*,multiplePort?)|multiplePort)>
+
+<!ELEMENT outputPorts (singlePort*|multiplePort)>
+
+<!ELEMENT properties (property*)>
+
+<!ELEMENT singlePort EMPTY>
+<!ATTLIST singlePort
+        name NMTOKEN #REQUIRED
+        required (true|false) #IMPLIED
+        label CDATA #IMPLIED
+        >
+ 
+<!ELEMENT multiplePort EMPTY>
+<!ATTLIST multiplePort
+        required (true|false) #IMPLIED
+        label NMTOKEN #IMPLIED
+        >
+ 
+<!ELEMENT property (singleType | enumType | keyType)>
+<!ATTLIST property
+        category (clover|basic|advanced|deprecated) #REQUIRED
+        displayName CDATA #REQUIRED
+        modifiable (true | false) #REQUIRED
+        name NMTOKEN #REQUIRED
+        nullable (true | false) #IMPLIED
+        defaultValue CDATA #IMPLIED
+        required CDATA #IMPLIED
+        redundant CDATA #IMPLIED
+        defaultHint CDATA #IMPLIED
+        >
+ 
+<!ELEMENT singleType EMPTY>
+<!ATTLIST singleType
+        name NMTOKEN #REQUIRED
+        inputPortName NMTOKEN #IMPLIED
+        type NMTOKEN #IMPLIED
+        outputPortName NMTOKEN #IMPLIED
+        mappingType NMTOKEN #IMPLIED
+        master NMTOKEN #IMPLIED
+        title CDATA #IMPLIED
+        leftLabel CDATA #IMPLIED
+        rightLabel CDATA #IMPLIED
+        labels CDATA #IMPLIED
+        keyType NMTOKEN #IMPLIED
+        size NMTOKEN #IMPLIED
+        min NMTOKEN #IMPLIED
+        max NMTOKEN #IMPLIED
+        fields NMTOKEN #IMPLIED
+        dictionary NMTOKEN #IMPLIED
+        single_url NMTOKEN #IMPLIED 
+        >
+ 
+<!ELEMENT enumType (item+)>
+ 
+<!ELEMENT keyType EMPTY>
+<!ATTLIST keyType
+        inputPortName NMTOKEN #REQUIRED
+        >
+ 
+<!ELEMENT item EMPTY>
+<!ATTLIST item
+        value NMTOKEN #REQUIRED
+        displayValue NMTOKENS #REQUIRED
+        >
