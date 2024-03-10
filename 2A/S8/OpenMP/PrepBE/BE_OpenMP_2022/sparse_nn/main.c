@@ -76,31 +76,45 @@ void sequential_nn(layer *layers, int n, int L){
 
 void parallel_nn_loops(layer *layers, int n, int L){
   int i, j, k, l, s;
-  
+
+#pragma omp parallel private(l,s,i,j)
+{
   for(l=0; l<L-1; l++){
     /* printf("layer %2d  m:%2d\n",l,layers[l].m); */
+     #pragma omp for
     for(s=0; s<layers[l].m; s++){
       i = layers[l].syn[s].i;
       j = layers[l].syn[s].j;
       /* printf("layer %2d  i:%2d  j:%2d\n",l,i,j); */
       layers[l+1].neu[j].nv += update(layers[l].neu[i].nv, layers[l].syn[s].sv);
     }
+   
   }
+}
+  
 }
 
 
 
 void parallel_nn_tasks(layer *layers, int n, int L){
   int i, j, k, l, s;
-  
-  for(l=0; l<L-1; l++){
+#pragma omp parallel private(l,s,i,j)
+{
+  #pragma omp single
+  {
+    for(l=0; l<L-1; l++){
     /* printf("layer %2d  m:%2d\n",l,layers[l].m); */
     for(s=0; s<layers[l].m; s++){
       i = layers[l].syn[s].i;
       j = layers[l].syn[s].j;
       /* printf("layer %2d  i:%2d  j:%2d\n",l,i,j); */
+      #pragma omp task depend(in:layers[l].neu[i].nv) depend(out:layers[l+1].neu[j].nv)
       layers[l+1].neu[j].nv += update(layers[l].neu[i].nv, layers[l].syn[s].sv);
     }
   }
+  }
+  
+}
+  
 }
 
