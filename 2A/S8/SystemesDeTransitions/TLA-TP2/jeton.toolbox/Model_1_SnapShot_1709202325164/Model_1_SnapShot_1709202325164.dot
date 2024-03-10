@@ -1,0 +1,35 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-6652006042179742375 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)",style = filled]
+-1064249377459655559 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> FALSE @@ 1 :> TRUE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)",style = filled]
+5237012298340711541 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> TRUE @@ 3 :> FALSE @@ 4 :> FALSE)",style = filled]
+209540786776533426 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> TRUE @@ 4 :> FALSE)",style = filled]
+1267308571010429885 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> TRUE)",style = filled]
+-6652006042179742375 -> -5913126273045367130 [label="",color="2",fontcolor="2"];
+-5913126273045367130 [label="/\\ etat = (0 :> \"H\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)"];
+-6652006042179742375 -> -1064249377459655559 [label="",color="3",fontcolor="3"];
+-6652006042179742375 -> 2009058773782263857 [label="",color="2",fontcolor="2"];
+2009058773782263857 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"H\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)"];
+-6652006042179742375 -> -1966901013324597906 [label="",color="2",fontcolor="2"];
+-1966901013324597906 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"H\" @@ 3 :> \"T\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)"];
+-6652006042179742375 -> 4854833909933643374 [label="",color="2",fontcolor="2"];
+4854833909933643374 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"H\" @@ 4 :> \"T\")\n/\\ jeton = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)"];
+-6652006042179742375 -> 1374641081169878281 [label="",color="2",fontcolor="2"];
+1374641081169878281 [label="/\\ etat = (0 :> \"T\" @@ 1 :> \"T\" @@ 2 :> \"T\" @@ 3 :> \"T\" @@ 4 :> \"H\")\n/\\ jeton = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)"];
+-6652006042179742375 -> -6652006042179742375 [style="dashed"];
+-6652006042179742375 -> -5913126273045367130 [label="",color="2",fontcolor="2"];
+-6652006042179742375 -> -1064249377459655559 [label="",color="3",fontcolor="3"];
+-6652006042179742375 -> 2009058773782263857 [label="",color="2",fontcolor="2"];
+-6652006042179742375 -> -1966901013324597906 [label="",color="2",fontcolor="2"];
+-6652006042179742375 -> 4854833909933643374 [label="",color="2",fontcolor="2"];
+-6652006042179742375 -> 1374641081169878281 [label="",color="2",fontcolor="2"];
+{rank = same; -1064249377459655559;209540786776533426;-6652006042179742375;1267308571010429885;5237012298340711541;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+bouger [label="bouger",fillcolor=3]
+demander [label="demander",fillcolor=2]
+}}
