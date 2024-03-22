@@ -17,11 +17,13 @@ Eating == "E"
 
 VARIABLES
   etat,
-  jeton
+  jeton,
+  canal
 
 TypeInvariant ==
    [] (/\ etat \in [ Processus -> {Hungry,Thinking,Eating} ]
-       /\ jeton \in [ Processus -> BOOLEAN ])
+       /\ jeton \in [ Processus -> BOOLEAN ]
+       /\ canal \in [ Processus ->  BOOLEAN ])
 
 ExclMutuelle == [] (\A i,j \in Processus : etat[i] = Eating /\ etat[j] = Eating => i=j)
 

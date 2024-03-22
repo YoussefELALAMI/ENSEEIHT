@@ -1,0 +1,769 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 53 and seed -4943261908319989331 with 2 workers on 4 cores with 1182MB heap and 2657MB offheap memory [pid: 811291] (Linux 5.4.0-89-generic amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /home/yelalami/Bureau/SystemesDeTransitions/TLA-TP5/vchan.toolbox/Model_1/MC.tla
+Parsing file /home/yelalami/Bureau/SystemesDeTransitions/TLA-TP5/vchan.toolbox/Model_1/vchan.tla
+Parsing file /mnt/n7fs/tla/toolbox-1.7.2/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /mnt/n7fs/tla/toolbox-1.7.2/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /mnt/n7fs/tla/toolbox-1.7.2/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /mnt/n7fs/tla/toolbox-1.7.2/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module vchan
+Semantic processing of module TLC
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2024-03-20 11:44:31)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2284:3 @!@!@
+Declaring state or action constraints during liveness checking is dangerous: Please read section 14.3.5 on page 247 of Specifying Systems (https://lamport.azurewebsites.net/tla/book.html) and optionally the discussion at https://discuss.tlapl.us/msg00994.html for more details.
+@!@!@ENDMSG 2284 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 8 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2024-03-20 11:44:32.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(19) at 2024-03-20 11:44:33: 9 144 states generated, 3 064 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking 8 branches of temporal properties for the complete state space with 24512 total distinct states at (2024-03-20 11:44:33)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2116:1 @!@!@
+Temporal properties were violated.
+
+@!@!@ENDMSG 2116 @!@!@
+@!@!@STARTMSG 2264:1 @!@!@
+The following behavior constitutes a counter-example:
+
+@!@!@ENDMSG 2264 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ msg = <<>>
+/\ NotifyRead = FALSE
+/\ Buffer = <<>>
+/\ SenderIT = FALSE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<>>
+/\ ReceiverState = "Idle"
+/\ SenderState = "Idle"
+/\ ReceiverLive = TRUE
+/\ SenderLive = TRUE
+/\ ReceiverIT = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <SenderIdle2 line 111, col 16 to line 117, col 133 of module vchan>
+/\ msg = <<1>>
+/\ NotifyRead = FALSE
+/\ Buffer = <<>>
+/\ SenderIT = FALSE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<1>>
+/\ ReceiverState = "Idle"
+/\ SenderState = "Writing"
+/\ ReceiverLive = TRUE
+/\ SenderLive = TRUE
+/\ ReceiverIT = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <SenderWrite1 line 122, col 17 to line 129, col 120 of module vchan>
+/\ msg = <<>>
+/\ NotifyRead = TRUE
+/\ Buffer = <<1>>
+/\ SenderIT = FALSE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<1>>
+/\ ReceiverState = "Idle"
+/\ SenderState = "AfterWriting"
+/\ ReceiverLive = TRUE
+/\ SenderLive = TRUE
+/\ ReceiverIT = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <SenderClose line 239, col 16 to line 242, col 133 of module vchan>
+/\ msg = <<>>
+/\ NotifyRead = TRUE
+/\ Buffer = <<1>>
+/\ SenderIT = FALSE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<1>>
+/\ ReceiverState = "Idle"
+/\ SenderState = "AfterWriting"
+/\ ReceiverLive = TRUE
+/\ SenderLive = FALSE
+/\ ReceiverIT = TRUE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <SenderWriteNext1 line 139, col 21 to line 143, col 124 of module vchan>
+/\ msg = <<>>
+/\ NotifyRead = TRUE
+/\ Buffer = <<1>>
+/\ SenderIT = FALSE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<1>>
+/\ ReceiverState = "Idle"
+/\ SenderState = "Idle"
+/\ ReceiverLive = TRUE
+/\ SenderLive = FALSE
+/\ ReceiverIT = TRUE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <SenderEnd line 173, col 14 to line 176, col 142 of module vchan>
+/\ msg = <<>>
+/\ NotifyRead = TRUE
+/\ Buffer = <<1>>
+/\ SenderIT = FALSE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<1>>
+/\ ReceiverState = "Idle"
+/\ SenderState = "Done"
+/\ ReceiverLive = TRUE
+/\ SenderLive = FALSE
+/\ ReceiverIT = TRUE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <ReceiverClose line 245, col 18 to line 248, col 133 of module vchan>
+/\ msg = <<>>
+/\ NotifyRead = TRUE
+/\ Buffer = <<1>>
+/\ SenderIT = TRUE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<1>>
+/\ ReceiverState = "Idle"
+/\ SenderState = "Done"
+/\ ReceiverLive = FALSE
+/\ SenderLive = FALSE
+/\ ReceiverIT = TRUE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <ReceiverEnd line 229, col 16 to line 232, col 154 of module vchan>
+/\ msg = <<>>
+/\ NotifyRead = TRUE
+/\ Buffer = <<1>>
+/\ SenderIT = TRUE
+/\ Got = <<>>
+/\ NotifyWrite = FALSE
+/\ Sent = <<1>>
+/\ ReceiverState = "Done"
+/\ SenderState = "Done"
+/\ ReceiverLive = FALSE
+/\ SenderLive = FALSE
+/\ ReceiverIT = TRUE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2218:4 @!@!@
+9: Stuttering
+@!@!@ENDMSG 2218 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 00s at 2024-03-20 11:44:33
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2024-03-20 11:44:33
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 88, col 1 to line 88, col 4 of module vchan>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 9 to line 99, col 27 of module vchan: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderIdle1 line 104, col 1 to line 104, col 11 of module vchan>: 93:169
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 19 to line 104, col 28 of module vchan: 169
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 19 to line 105, col 36 of module vchan: 1551
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 105, col 19 to line 105, col 29 of module vchan: 1382
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 105, col 33 to line 105, col 36 of module vchan: 1382
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 19 to line 106, col 31 of module vchan: 495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 106, col 20 to line 106, col 31 of module vchan: 326
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 19 to line 107, col 37 of module vchan: 169
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 19 to line 108, col 144 of module vchan: 169
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderIdle2 line 111, col 1 to line 111, col 11 of module vchan>: 25:652
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 111, col 19 to line 111, col 28 of module vchan: 326
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 112, col 19 to line 112, col 36 of module vchan: 1708
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 112, col 19 to line 112, col 29 of module vchan: 1382
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 112, col 33 to line 112, col 36 of module vchan: 1382
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 22 to line 115, col 41 of module vchan: 652
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 113, col 28 to line 113, col 43 of module vchan: 326
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 80, col 13 to line 80, col 63 of module vchan: 326:978
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 80, col 15 to line 80, col 46 of module vchan: 652:148160
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 80, col 56 to line 80, col 61 of module vchan: 326
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 113, col 32 to line 113, col 42 of module vchan: 326
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 116, col 19 to line 116, col 40 of module vchan: 652
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 19 to line 117, col 133 of module vchan: 652
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderWrite1 line 122, col 1 to line 122, col 12 of module vchan>: 86:603
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 122, col 20 to line 122, col 40 of module vchan: 3791
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 122, col 20 to line 122, col 30 of module vchan: 3268
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 122, col 34 to line 122, col 40 of module vchan: 3268
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 124, col 24 to line 124, col 52 of module vchan: 603
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 124, col 24 to line 124, col 33 of module vchan: 713
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 124, col 38 to line 124, col 52 of module vchan: 713
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 24 to line 125, col 54 of module vchan: 603
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 126, col 24 to line 126, col 41 of module vchan: 603
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 29 to line 123, col 57 of module vchan: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 123, col 32 to line 123, col 57 of module vchan: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 31, col 14 to line 31, col 35 of module vchan: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 31, col 17 to line 31, col 21 of module vchan: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 31, col 28 to line 31, col 28 of module vchan: 483
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 31, col 35 to line 31, col 35 of module vchan: 115
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 123, col 36 to line 123, col 43 of module vchan: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 123, col 46 to line 123, col 56 of module vchan: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 127, col 20 to line 127, col 37 of module vchan: 603
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 128, col 20 to line 128, col 46 of module vchan: 603
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 20 to line 129, col 120 of module vchan: 603
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderWrite2 line 132, col 1 to line 132, col 12 of module vchan>: 4:75
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 132, col 20 to line 132, col 40 of module vchan: 3342
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 132, col 20 to line 132, col 30 of module vchan: 3267
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 132, col 34 to line 132, col 40 of module vchan: 3267
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 133, col 20 to line 133, col 43 of module vchan: 672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 133, col 20 to line 133, col 30 of module vchan: 597
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 133, col 34 to line 133, col 43 of module vchan: 597
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 134, col 20 to line 134, col 37 of module vchan: 75
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 135, col 20 to line 135, col 41 of module vchan: 75
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 136, col 20 to line 136, col 133 of module vchan: 75
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderWriteNext1 line 139, col 1 to line 139, col 16 of module vchan>: 49:556
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 24 to line 139, col 49 of module vchan: 3823
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 139, col 24 to line 139, col 34 of module vchan: 3267
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 139, col 38 to line 139, col 49 of module vchan: 3267
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 24 to line 140, col 35 of module vchan: 1343
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 140, col 24 to line 140, col 31 of module vchan: 787
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 141, col 27 to line 141, col 37 of module vchan: 556
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 141, col 44 to line 141, col 85 of module vchan: 395
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 141, col 92 to line 141, col 131 of module vchan: 161
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 142, col 24 to line 142, col 42 of module vchan: 556
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 143, col 24 to line 143, col 124 of module vchan: 556
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderWriteNext2 line 147, col 1 to line 147, col 16 of module vchan>: 14:231
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 147, col 24 to line 147, col 49 of module vchan: 3497
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 147, col 24 to line 147, col 34 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 147, col 38 to line 147, col 49 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 24 to line 148, col 36 of module vchan: 1017
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 148, col 24 to line 148, col 31 of module vchan: 786
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 27 to line 149, col 37 of module vchan: 231
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 44 to line 149, col 85 of module vchan: 167
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 92 to line 149, col 131 of module vchan: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 150, col 24 to line 150, col 45 of module vchan: 231
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 24 to line 151, col 124 of module vchan: 231
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderUnblock1 line 156, col 1 to line 156, col 14 of module vchan>: 14:114
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 22 to line 156, col 42 of module vchan: 3380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 156, col 22 to line 156, col 32 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 156, col 36 to line 156, col 42 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 157, col 22 to line 157, col 33 of module vchan: 114
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 158, col 25 to line 158, col 34 of module vchan: 114
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 158, col 41 to line 158, col 80 of module vchan: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 158, col 87 to line 158, col 122 of module vchan: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 159, col 22 to line 159, col 43 of module vchan: 114
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 22 to line 160, col 125 of module vchan: 114
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderUnblock2 line 166, col 1 to line 166, col 14 of module vchan>: 105:166
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 166, col 22 to line 166, col 42 of module vchan: 3432
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 166, col 22 to line 166, col 32 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 166, col 36 to line 166, col 42 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 167, col 22 to line 167, col 34 of module vchan: 446
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 167, col 23 to line 167, col 34 of module vchan: 280
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 168, col 22 to line 168, col 38 of module vchan: 166
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 169, col 22 to line 169, col 40 of module vchan: 166
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 170, col 22 to line 170, col 137 of module vchan: 166
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderEnd line 173, col 1 to line 173, col 9 of module vchan>: 219:1145
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 173, col 17 to line 173, col 35 of module vchan: 4411
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 173, col 17 to line 173, col 27 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 173, col 32 to line 173, col 35 of module vchan: 3266
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 17 to line 174, col 27 of module vchan: 3429
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 18 to line 174, col 27 of module vchan: 2284
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 17 to line 175, col 35 of module vchan: 1145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 176, col 17 to line 176, col 142 of module vchan: 1145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverIdle1 line 181, col 1 to line 181, col 13 of module vchan>: 31:63
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 181, col 21 to line 181, col 32 of module vchan: 63
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 182, col 21 to line 182, col 40 of module vchan: 1481
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 21 to line 182, col 33 of module vchan: 1418
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 37 to line 182, col 40 of module vchan: 1418
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 183, col 21 to line 183, col 30 of module vchan: 63
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 21 to line 184, col 35 of module vchan: 242
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 21 to line 184, col 31 of module vchan: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 185, col 21 to line 185, col 44 of module vchan: 63
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 186, col 21 to line 186, col 39 of module vchan: 63
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 187, col 21 to line 187, col 131 of module vchan: 63
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverIdle2 line 190, col 1 to line 190, col 13 of module vchan>: 135:296
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 190, col 21 to line 190, col 32 of module vchan: 296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 191, col 21 to line 191, col 40 of module vchan: 1714
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 191, col 21 to line 191, col 33 of module vchan: 1418
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 191, col 37 to line 191, col 40 of module vchan: 1418
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 192, col 21 to line 192, col 36 of module vchan: 760
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 192, col 21 to line 192, col 31 of module vchan: 464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 193, col 21 to line 193, col 44 of module vchan: 296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 194, col 21 to line 194, col 39 of module vchan: 296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 195, col 21 to line 195, col 131 of module vchan: 296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverIdle3 line 198, col 1 to line 198, col 13 of module vchan>: 58:105
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 198, col 21 to line 198, col 32 of module vchan: 105
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 199, col 21 to line 199, col 40 of module vchan: 1523
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 199, col 21 to line 199, col 33 of module vchan: 1418
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 199, col 37 to line 199, col 40 of module vchan: 1418
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 200, col 21 to line 200, col 31 of module vchan: 569
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 200, col 22 to line 200, col 31 of module vchan: 464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 201, col 21 to line 201, col 35 of module vchan: 390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 201, col 21 to line 201, col 31 of module vchan: 285
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 202, col 21 to line 202, col 41 of module vchan: 105
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 203, col 21 to line 203, col 39 of module vchan: 105
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 21 to line 204, col 131 of module vchan: 105
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverRead line 207, col 1 to line 207, col 12 of module vchan>: 171:781
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 207, col 20 to line 207, col 42 of module vchan: 3855
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 207, col 20 to line 207, col 32 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 207, col 36 to line 207, col 42 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 209, col 21 to line 210, col 51 of module vchan: 781
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 208, col 29 to line 208, col 59 of module vchan: 590
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 208, col 32 to line 208, col 59 of module vchan: 590
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 31, col 14 to line 31, col 35 of module vchan: 590
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 31, col 17 to line 31, col 21 of module vchan: 590
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 31, col 28 to line 31, col 28 of module vchan: 399
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 31, col 35 to line 31, col 35 of module vchan: 191
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 208, col 36 to line 208, col 46 of module vchan: 590
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 208, col 49 to line 208, col 58 of module vchan: 590
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 211, col 20 to line 211, col 48 of module vchan: 781
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 212, col 20 to line 212, col 130 of module vchan: 781
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverReadNext line 215, col 1 to line 215, col 16 of module vchan>: 96:577
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 215, col 24 to line 215, col 51 of module vchan: 3842
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 215, col 24 to line 215, col 36 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 215, col 40 to line 215, col 51 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 216, col 27 to line 216, col 36 of module vchan: 577
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 216, col 43 to line 216, col 81 of module vchan: 406
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 216, col 88 to line 216, col 123 of module vchan: 171
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 217, col 24 to line 217, col 44 of module vchan: 577
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 218, col 24 to line 218, col 125 of module vchan: 577
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverUnblock line 223, col 1 to line 223, col 15 of module vchan>: 138:430
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 223, col 23 to line 223, col 45 of module vchan: 3695
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 223, col 23 to line 223, col 35 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 223, col 39 to line 223, col 45 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 224, col 23 to line 224, col 41 of module vchan: 430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 225, col 23 to line 225, col 43 of module vchan: 430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 226, col 23 to line 226, col 134 of module vchan: 430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverEnd line 229, col 1 to line 229, col 11 of module vchan>: 563:1215
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 229, col 19 to line 229, col 39 of module vchan: 4480
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 229, col 19 to line 229, col 31 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 229, col 36 to line 229, col 39 of module vchan: 3265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 230, col 19 to line 230, col 31 of module vchan: 3706
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 230, col 20 to line 230, col 31 of module vchan: 2491
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 231, col 19 to line 231, col 39 of module vchan: 1215
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 232, col 19 to line 232, col 154 of module vchan: 1215
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SenderClose line 239, col 1 to line 239, col 11 of module vchan>: 294:1380
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 239, col 19 to line 239, col 28 of module vchan: 1380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 240, col 19 to line 240, col 37 of module vchan: 1380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 241, col 19 to line 241, col 36 of module vchan: 1380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 242, col 19 to line 242, col 133 of module vchan: 1380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiverClose line 245, col 1 to line 245, col 13 of module vchan>: 968:1417
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 245, col 18 to line 247, col 34 of module vchan: 1417
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 248, col 19 to line 248, col 133 of module vchan: 1417
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<TypeOk line 274, col 1 to line 274, col 6 of module vchan>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 275, col 3 to line 286, col 22 of module vchan: 3395
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Integrity line 289, col 1 to line 289, col 9 of module vchan>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 289, col 15 to line 289, col 40 of module vchan: 3395
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv_1710931471398515000 line 29, col 1 to line 29, col 23 of module MC>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 30, col 1 to line 30, col 12 of module MC: 3395
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(19) at 2024-03-20 11:44:33: 9 144 states generated (234 561 s/min), 3 064 distinct states found (78 597 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+9144 states generated, 3064 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 2355ms at (2024-03-20 11:44:33)
+@!@!@ENDMSG 2186 @!@!@
